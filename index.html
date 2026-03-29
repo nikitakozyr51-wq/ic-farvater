@@ -24,6 +24,7 @@
       <nav class="header__nav">
         <a href="pages/products.html" class="header__link">Каталог</a>
         <a href="pages/about.html" class="header__link">О компании</a>
+        <a href="#services" class="header__link">Услуги</a>
         <a href="pages/contacts.html" class="header__link">Контакты</a>
       </nav>
       <button class="header__burger" aria-label="Меню">
@@ -118,7 +119,7 @@
   </section>
 
   <!-- Services -->
-  <section class="section section--bordered">
+  <section id="services" class="section section--bordered">
     <div class="container">
       <div class="section-header">
         <div class="section-header__left">
@@ -127,34 +128,144 @@
         </div>
       </div>
       <div class="service-list">
-        <a href="#" class="service-item">
-          <div class="service-item__left">
-            <span class="service-item__number">01</span>
-            <span class="service-item__title">ПРЯМЫЕ ПОСТАВКИ ЭЛЕКТРОННЫХ КОМПОНЕНТОВ</span>
+
+        <!-- 01 -->
+        <div class="service-item">
+          <button class="service-item__header" aria-expanded="false">
+            <div class="service-item__left">
+              <span class="service-item__number">01</span>
+              <span class="service-item__title">ПРЯМЫЕ ПОСТАВКИ ЭЛЕКТРОННЫХ КОМПОНЕНТОВ</span>
+            </div>
+            <span class="service-item__toggle">&mdash;</span>
+          </button>
+          <div class="service-item__body">
+            <div class="service-item__desc">
+              <p class="service-item__text">Осуществляем прямые поставки электронной компонентной базы от ведущих российских производителей. Работаем с предприятиями оборонно-промышленного комплекса, авиации, космоса и телекоммуникаций.</p>
+              <div class="service-item__tags">
+                <span class="service-tag">ОПК</span>
+                <span class="service-tag">АВИАЦИЯ</span>
+                <span class="service-tag">ТЕЛЕКОММУНИКАЦИИ</span>
+              </div>
+            </div>
+            <div class="service-item__points">
+              <div class="service-point">
+                <span class="service-point__title">СЕРТИФИЦИРОВАННЫЕ ПОСТАВКИ</span>
+                <p class="service-point__desc">Вся продукция сопровождается сертификатами соответствия и паспортами качества.</p>
+              </div>
+              <div class="service-point">
+                <span class="service-point__title">СРОКИ И ЛОГИСТИКА</span>
+                <p class="service-point__desc">Отгрузка со склада в Санкт-Петербурге. Доставка по всей России.</p>
+              </div>
+              <div class="service-point">
+                <span class="service-point__title">МИНИМАЛЬНЫЙ ЗАКАЗ</span>
+                <p class="service-point__desc">Работаем как с крупными партиями, так и с единичными заказами под проект.</p>
+              </div>
+            </div>
           </div>
-          <span class="service-item__arrow">&#8599;</span>
-        </a>
-        <a href="#" class="service-item">
-          <div class="service-item__left">
-            <span class="service-item__number">02</span>
-            <span class="service-item__title">ИМПОРТОЗАМЕЩЕНИЕ</span>
+        </div>
+
+        <!-- 02 -->
+        <div class="service-item">
+          <button class="service-item__header" aria-expanded="false">
+            <div class="service-item__left">
+              <span class="service-item__number">02</span>
+              <span class="service-item__title">ИМПОРТОЗАМЕЩЕНИЕ</span>
+            </div>
+            <span class="service-item__toggle">&mdash;</span>
+          </button>
+          <div class="service-item__body">
+            <div class="service-item__desc">
+              <p class="service-item__text">Подбираем российские и дружественные аналоги иностранной электронной компонентной базы. Помогаем предприятиям перейти на отечественные решения без потери качества и надёжности.</p>
+              <div class="service-item__tags">
+                <span class="service-tag">РОССИЙСКИЕ АНАЛОГИ</span>
+                <span class="service-tag">ТЕХНИЧЕСКИЙ АНАЛИЗ</span>
+              </div>
+            </div>
+            <div class="service-item__points">
+              <div class="service-point">
+                <span class="service-point__title">БАЗА АНАЛОГОВ</span>
+                <p class="service-point__desc">Более 5000 позиций с подтверждёнными российскими и азиатскими аналогами.</p>
+              </div>
+              <div class="service-point">
+                <span class="service-point__title">ТЕХНИЧЕСКАЯ ЭКСПЕРТИЗА</span>
+                <p class="service-point__desc">Проводим анализ применимости и согласовываем замену с техническими службами заказчика.</p>
+              </div>
+              <div class="service-point">
+                <span class="service-point__title">ДОКУМЕНТАЦИЯ</span>
+                <p class="service-point__desc">Готовим полный пакет документов для замены компонентов в конструкторской документации.</p>
+              </div>
+            </div>
           </div>
-          <span class="service-item__arrow">&#8599;</span>
-        </a>
-        <a href="#" class="service-item">
-          <div class="service-item__left">
-            <span class="service-item__number">03</span>
-            <span class="service-item__title">КАБЕЛЬНЫЕ СБОРКИ</span>
+        </div>
+
+        <!-- 03 -->
+        <div class="service-item">
+          <button class="service-item__header" aria-expanded="false">
+            <div class="service-item__left">
+              <span class="service-item__number">03</span>
+              <span class="service-item__title">КАБЕЛЬНЫЕ СБОРКИ</span>
+            </div>
+            <span class="service-item__toggle">&mdash;</span>
+          </button>
+          <div class="service-item__body">
+            <div class="service-item__desc">
+              <p class="service-item__text">Производим кабельные сборки и жгуты по конструкторской документации заказчика. Используем сертифицированные материалы и компоненты отечественного производства.</p>
+              <div class="service-item__tags">
+                <span class="service-tag">ПО КД ЗАКАЗЧИКА</span>
+                <span class="service-tag">СЕРИЙНОЕ ПРОИЗВОДСТВО</span>
+              </div>
+            </div>
+            <div class="service-item__points">
+              <div class="service-point">
+                <span class="service-point__title">МАТЕРИАЛЫ</span>
+                <p class="service-point__desc">Провода и соединители серий РШ, ОНЦ-БС, СНЦ23 и зарубежные аналоги.</p>
+              </div>
+              <div class="service-point">
+                <span class="service-point__title">ОБЪЁМ</span>
+                <p class="service-point__desc">От опытных образцов до серийных партий от 50 штук.</p>
+              </div>
+              <div class="service-point">
+                <span class="service-point__title">ИСПЫТАНИЯ</span>
+                <p class="service-point__desc">Выходной контроль и испытания на соответствие ТУ в собственной лаборатории.</p>
+              </div>
+            </div>
           </div>
-          <span class="service-item__arrow">&#8599;</span>
-        </a>
-        <a href="#" class="service-item">
-          <div class="service-item__left">
-            <span class="service-item__number">04</span>
-            <span class="service-item__title">ИСПЫТАТЕЛЬНАЯ ЛАБОРАТОРИЯ</span>
+        </div>
+
+        <!-- 04 -->
+        <div class="service-item">
+          <button class="service-item__header" aria-expanded="false">
+            <div class="service-item__left">
+              <span class="service-item__number">04</span>
+              <span class="service-item__title">ИСПЫТАТЕЛЬНАЯ ЛАБОРАТОРИЯ</span>
+            </div>
+            <span class="service-item__toggle">&mdash;</span>
+          </button>
+          <div class="service-item__body">
+            <div class="service-item__desc">
+              <p class="service-item__text">Проводим испытания электронных компонентов и кабельных изделий на соответствие требованиям ТУ, ГОСТ и военных стандартов. Собственная аккредитованная лаборатория.</p>
+              <div class="service-item__tags">
+                <span class="service-tag">ГОСТ РВ</span>
+                <span class="service-tag">АККРЕДИТАЦИЯ</span>
+              </div>
+            </div>
+            <div class="service-item__points">
+              <div class="service-point">
+                <span class="service-point__title">ВИДЫ ИСПЫТАНИЙ</span>
+                <p class="service-point__desc">Климатические, механические, электрические. Входной контроль ЭКБ по ОСТ В 11 0334.</p>
+              </div>
+              <div class="service-point">
+                <span class="service-point__title">ПРОТОКОЛЫ</span>
+                <p class="service-point__desc">Оформляем протоколы испытаний установленного образца с подписью и печатью.</p>
+              </div>
+              <div class="service-point">
+                <span class="service-point__title">СРОКИ</span>
+                <p class="service-point__desc">Стандартный цикл испытаний — 5–10 рабочих дней в зависимости от программы.</p>
+              </div>
+            </div>
           </div>
-          <span class="service-item__arrow">&#8599;</span>
-        </a>
+        </div>
+
       </div>
     </div>
   </section>
@@ -172,6 +283,7 @@
           <a href="index.html" class="footer__link">Главная</a>
           <a href="pages/products.html" class="footer__link">Продукция</a>
           <a href="pages/about.html" class="footer__link">О компании</a>
+          <a href="#services" class="footer__link">Услуги</a>
           <a href="pages/contacts.html" class="footer__link">Контакты</a>
         </nav>
         <div class="footer__col">

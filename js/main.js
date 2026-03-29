@@ -5,6 +5,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
+  initServiceAccordion();
 });
 
 /** Mobile burger menu toggle */
@@ -26,6 +27,17 @@ function initMobileMenu() {
       nav.classList.remove('header__nav--open');
       burger.classList.remove('header__burger--open');
       burger.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
+
+/** Service accordion toggle */
+function initServiceAccordion() {
+  document.querySelectorAll('.service-item__header').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.service-item');
+      const isOpen = item.classList.toggle('service-item--open');
+      btn.setAttribute('aria-expanded', isOpen);
     });
   });
 }

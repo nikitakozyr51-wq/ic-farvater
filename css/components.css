@@ -206,24 +206,31 @@ p.product-card__desc {
 }
 
 
-/* ===== SERVICE LIST — compact rows (v2) ===== */
+/* ===== SERVICE LIST — accordion (v2) ===== */
 .service-list {
   display: flex;
   flex-direction: column;
 }
 
 .service-item {
+  border-bottom: 1px solid var(--color-border);
+  padding: 24px 0 40px;
+}
+
+.service-item__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--space-24) 0;
-  border-bottom: 1px solid var(--color-border);
-  text-decoration: none;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
   color: inherit;
-  transition: opacity 0.2s;
 }
 
-.service-item:hover {
+.service-item__header:hover {
   opacity: 0.6;
 }
 
@@ -249,10 +256,90 @@ p.product-card__desc {
   color: var(--color-text);
 }
 
-.service-item__arrow {
-  font-size: var(--text-14);
-  color: var(--color-text-muted);
+.service-item__toggle {
+  font-size: var(--text-24);
+  font-weight: 400;
+  color: var(--color-text);
   flex-shrink: 0;
+  transition: transform 0.3s;
+}
+
+.service-item--open .service-item__toggle {
+  transform: rotate(90deg);
+}
+
+/* Accordion body */
+.service-item__body {
+  display: none;
+  padding-top: 32px;
+  gap: 80px;
+}
+
+.service-item--open .service-item__body {
+  display: flex;
+}
+
+.service-item__desc {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.service-item__text {
+  font-size: var(--text-14);
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+.service-item__tags {
+  display: flex;
+  gap: 8px;
+}
+
+.service-tag {
+  font-size: var(--text-12);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--color-text);
+  padding: 8px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 100px;
+  background: var(--color-bg);
+}
+
+.service-item__points {
+  width: 480px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-point {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.service-point:last-child {
+  border-bottom: none;
+}
+
+.service-point__title {
+  font-size: var(--text-12);
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--color-text-muted);
+}
+
+.service-point__desc {
+  font-size: var(--text-12);
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-text);
 }
 
 
