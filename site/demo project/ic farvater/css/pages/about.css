@@ -1,0 +1,146 @@
+/* ===== ABOUT PAGE ===== */
+
+.about {
+  margin-top: 64px;
+}
+
+/* Page Top */
+.about__top {
+  padding: var(--space-48) 0 var(--space-80);
+}
+
+.about__top-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about__title {
+  font-size: var(--text-72);
+  font-weight: 500;
+  letter-spacing: -2px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  display: flex;
+  align-items: flex-start;
+}
+
+.about__desc {
+  max-width: 460px;
+  text-align: right;
+  padding-top: var(--space-12);
+}
+
+.about__desc-text {
+  font-size: var(--text-12);
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+/* Mission Section */
+.mission__content {
+  display: flex;
+  gap: var(--space-80);
+}
+
+.mission__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-32);
+}
+
+.mission__text p {
+  font-size: var(--text-12);
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  text-transform: uppercase;
+}
+
+.mission__text p.text-muted {
+  color: var(--color-text-muted);
+}
+
+.mission__image {
+  width: 480px;
+  height: 320px;
+  background: var(--color-bg-alt);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.mission__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Stats Section */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-32);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.stat__number {
+  font-size: var(--text-40);
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1;
+  color: var(--color-text);
+}
+
+.stat__label {
+  font-size: var(--text-12);
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+}
+
+/* Certs Section */
+.certs-grid {
+  display: flex;
+  gap: var(--space-16);
+}
+
+.cert-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+}
+
+.cert-card__img {
+  width: 100%;
+  height: 200px;
+  background: var(--color-bg-alt);
+}
+
+.cert-card__name {
+  font-size: var(--text-12);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .mission__content {
+    flex-direction: column;
+    gap: var(--space-48);
+  }
+  .mission__image {
+    width: 100%;
+    height: 280px;
+  }
+}

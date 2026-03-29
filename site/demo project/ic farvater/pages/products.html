@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Продукция — ООО «Айси Фарватер»</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages/products.css?v=16">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/mobile.css?v=14" media="(max-width: 768px)">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="../index.html" class="header__logo">ООО «Айси Фарватер»</a>
+      <nav class="header__nav">
+        <a href="products.html" class="header__link header__link--active">Каталог</a>
+        <a href="about.html" class="header__link">О компании</a>
+        <a href="services.html" class="header__link">Услуги</a>
+        <a href="contacts.html" class="header__link">Контакты</a>
+        <div class="header__nav-contact">
+          <span class="header__nav-contact-label">ТЕЛЕФОН</span>
+          <a href="tel:+79967788842" class="header__nav-contact-value">+7 996 778-88-42</a>
+        </div>
+      </nav>
+      <button class="header__burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="catalog">
+
+    <!-- Page Top -->
+    <section class="catalog__top">
+      <div class="container catalog__top-inner">
+        <h1 class="catalog__title">
+          <span class="desktop-only">ПРОДУКЦИЯ</span>
+          <span class="mobile-only">КАТАЛОГ</span>
+          <span class="catalog__title-count desktop-only">(01)</span>
+          <span class="catalog__title-count mobile-only" id="catalog-count">(156)</span>
+        </h1>
+        <div class="catalog__desc">
+          <p class="catalog__desc-text">ИНТЕГРАТОР КОМПЛЕКСНЫХ РЕШЕНИЙ В МИКРОЭЛЕКТРОНИКЕ. ПОЛНЫЙ СПЕКТР ЭКБ ДЛЯ ОТВЕТСТВЕННЫХ ПРИМЕНЕНИЙ.</p>
+          <p class="catalog__desc-text catalog__desc-text--sub">ПОСТАВКИ ПО ВСЕЙ РОССИИ.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content: Sidebar + Grid -->
+    <section class="catalog__content">
+      <div class="container catalog__content-inner">
+
+        <!-- Sidebar -->
+        <aside class="catalog__sidebar" id="catalog-sidebar">
+
+          <!-- Sort + Category -->
+          <div class="sidebar__group sidebar__group--split">
+            <div class="sidebar__col">
+              <span class="sidebar__label">СОРТИРОВКА</span>
+              <button class="sidebar__radio sidebar__radio--active" data-sort="recommended">РЕКОМЕНДУЕМЫЕ</button>
+              <button class="sidebar__radio" data-sort="popular">ПОПУЛЯРНЫЕ</button>
+              <button class="sidebar__radio" data-sort="name-asc">НАЗВАНИЕ А–Я</button>
+              <button class="sidebar__radio" data-sort="name-desc">НАЗВАНИЕ Я–А</button>
+            </div>
+            <div class="sidebar__col sidebar__col--right">
+              <div class="sidebar__spacer"></div>
+              <button class="sidebar__radio" data-category="all">ВСЕ</button>
+              <button class="sidebar__radio desktop-only" data-category="microchips">МИКРОСХЕМЫ</button>
+              <button class="sidebar__radio" data-category="connectors">РАЗЪЁМЫ</button>
+              <button class="sidebar__radio desktop-only" data-category="converters">ПРЕОБРАЗОВАТЕЛИ</button>
+              <button class="sidebar__radio desktop-only" data-category="capacitors">КОНДЕНСАТОРЫ</button>
+              <button class="sidebar__radio desktop-only" data-category="transistors">ТРАНЗИСТОРЫ</button>
+              <button class="sidebar__radio desktop-only" data-category="pcb">ПЛАТЫ</button>
+              <button class="sidebar__radio mobile-only" data-category="svch">СВЧ</button>
+            </div>
+          </div>
+
+          <!-- Применение -->
+          <div class="sidebar__group">
+            <span class="sidebar__label">ПРИМЕНЕНИЕ</span>
+            <button class="sidebar__radio">ТЕЛЕКОММУНИКАЦИИ</button>
+            <button class="sidebar__radio">РАДИОЛОКАЦИЯ</button>
+            <button class="sidebar__radio">АВИАЦИЯ</button>
+            <button class="sidebar__radio">КОСМОС</button>
+            <button class="sidebar__radio">МЕДИЦИНА</button>
+            <button class="sidebar__radio">ПРОМЫШЛЕННОСТЬ</button>
+          </div>
+
+          <!-- Сбросить фильтры -->
+          <div class="sidebar__clear-row">
+            <span class="sidebar__count" id="sidebar-count">0</span>
+            <button class="sidebar__clear" id="sidebar-reset">СБРОСИТЬ ФИЛЬТРЫ</button>
+          </div>
+
+        </aside>
+
+        <!-- Search + Products Grid -->
+        <div class="catalog__grid-wrap">
+          <div class="catalog__search" id="catalog-search">
+            <input type="text" class="catalog__search-input" placeholder="ПОИСК ПО ПРОДУКЦИИ..." aria-label="Поиск по продукции">
+            <button class="catalog__search-btn" aria-label="Искать">&rarr;</button>
+          </div>
+          <div class="catalog__grid" id="products-grid">
+
+            <!-- Row 1: 2 cards -->
+            <div class="catalog__grid-row">
+              <div class="cat-card" data-category="microchips">
+                <div class="cat-card__img">
+                  <img src="../assets/images/products/microchips.jpg" alt="Микросхемы" loading="lazy">
+                </div>
+                <div class="cat-card__info">
+                  <h3 class="cat-card__name">МИКРОСХЕМЫ</h3>
+                  <p class="cat-card__desc">ЦИФРОВЫЕ И АНАЛОГОВЫЕ МИКРОСХЕМЫ.</p>
+                </div>
+              </div>
+              <div class="cat-card" data-category="converters">
+                <div class="cat-card__img">
+                  <img src="../assets/images/products/converters.jpg" alt="Преобразователи напряжения" loading="lazy">
+                </div>
+                <div class="cat-card__info">
+                  <h3 class="cat-card__name">ПРЕОБРАЗОВАТЕЛИ НАПРЯЖЕНИЯ</h3>
+                  <p class="cat-card__desc">DC/DC И AC/DC СЕРИЙ ИРТЫШ, ВОЛГА, ЕНИСЕЙ, КАМА.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 2: 3 cards -->
+            <div class="catalog__grid-row">
+              <div class="cat-card" data-category="transistors">
+                <div class="cat-card__img">
+                  <img src="../assets/images/products/transistors.png" alt="СВЧ-транзисторы" loading="lazy">
+                </div>
+                <div class="cat-card__info">
+                  <h3 class="cat-card__name">СВЧ-ТРАНЗИСТОРЫ</h3>
+                  <p class="cat-card__desc">LDMOS ДЛЯ УСИЛИТЕЛЕЙ МОЩНОСТИ.</p>
+                </div>
+              </div>
+              <div class="cat-card" data-category="connectors">
+                <div class="cat-card__img">
+                  <img src="../assets/images/products/connectors.jpg" alt="Разъёмы" loading="lazy">
+                </div>
+                <div class="cat-card__info">
+                  <h3 class="cat-card__name">РАЗЪЁМЫ</h3>
+                  <p class="cat-card__desc">СЕРИИ ЕТ-2РМ И АНАЛОГИ.</p>
+                </div>
+              </div>
+              <div class="cat-card" data-category="capacitors">
+                <div class="cat-card__img">
+                  <img src="../assets/images/products/capacitors.png" alt="СВЧ-конденсаторы" loading="lazy">
+                </div>
+                <div class="cat-card__info">
+                  <h3 class="cat-card__name">СВЧ-КОНДЕНСАТОРЫ</h3>
+                  <p class="cat-card__desc">СЕРИЯ ARC70. КОМПОНЕНТЫ ДЛЯ СВЧ-МОДУЛЕЙ.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 3: 1 card -->
+            <div class="catalog__grid-row">
+              <div class="cat-card" data-category="pcb">
+                <div class="cat-card__img">
+                  <img src="../assets/images/products/pcb.jpg" alt="Печатные платы" loading="lazy">
+                </div>
+                <div class="cat-card__info">
+                  <h3 class="cat-card__name">ПЕЧАТНЫЕ ПЛАТЫ</h3>
+                  <p class="cat-card__desc">ПРОЕКТИРОВАНИЕ И ИЗГОТОВЛЕНИЕ МНОГОСЛОЙНЫХ ПП.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <canvas class="footer__canvas" id="footer-canvas"></canvas>
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <span class="footer__brand">ООО «Айси Фарватер»</span>
+          <p class="footer__desc">Надёжный интегратор комплексных решений в микроэлектронике.<br>ул. Беринга, д. 1-А, оф. 46-Н, г. Санкт-Петербург, 199397</p>
+        </div>
+        <nav class="footer__col footer__col--nav">
+          <span class="footer__col-title">Навигация</span>
+          <a href="../index.html" class="footer__link">Главная</a>
+          <a href="products.html" class="footer__link desktop-only">Продукция</a>
+          <a href="products.html" class="footer__link mobile-only">Каталог</a>
+          <a href="about.html" class="footer__link">О компании</a>
+          <a href="services.html" class="footer__link">Услуги</a>
+          <a href="contacts.html" class="footer__link">Контакты</a>
+        </nav>
+        <div class="footer__col">
+          <span class="footer__col-title">Контакты</span>
+          <a href="tel:+79967788842" class="footer__link">+7 (996) 778-88-42</a>
+          <a href="mailto:info@ic-farvater.ru" class="footer__link">info@ic-farvater.ru</a>
+          <span class="footer__text">пн.–пт. 10:00–18:00</span>
+        </div>
+        <div class="footer__col">
+          <span class="footer__col-title">Продукция</span>
+          <a href="products.html" class="footer__link">Микросхемы</a>
+          <a href="products.html" class="footer__link">Разъёмы</a>
+          <a href="products.html" class="footer__link">Преобразователи</a>
+          <a href="products.html" class="footer__link">СВЧ-конденсаторы</a>
+          <a href="products.html" class="footer__link">СВЧ-транзисторы</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 ООО «Айси Фарватер». Все права защищены.</span>
+        <span>Политика конфиденциальности</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/products.js?v=3"></script>
+  <script src="../js/catalog.js?v=3"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/parallax.js"></script>
+  <script src="../js/footer-canvas.js"></script>
+  <script src="../js/scroll-reveal.js"></script>
+</body>
+</html>

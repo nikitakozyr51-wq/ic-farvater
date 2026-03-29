@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Продукция — ИК Фарватер</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <style>
+    /* Category tabs */
+    .category-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: var(--space-8);
+    }
+    .category-tab {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      border: 1.5px solid var(--color-border);
+      border-radius: 100px;
+      background: transparent;
+      font-family: var(--font-primary);
+      font-size: var(--text-sm);
+      font-weight: 500;
+      color: var(--color-text-muted);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .category-tab:hover {
+      border-color: var(--color-accent);
+      color: var(--color-accent);
+    }
+    .category-tab.active {
+      background: var(--color-accent);
+      border-color: var(--color-accent);
+      color: #fff;
+    }
+    .category-tab__count {
+      font-size: 11px;
+      opacity: 0.75;
+    }
+
+    /* Product grid */
+    #products-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+    }
+    @media (max-width: 1024px) {
+      #products-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 640px) {
+      #products-grid { grid-template-columns: 1fr; }
+    }
+
+    /* Product card */
+    .product-card {
+      display: flex;
+      flex-direction: column;
+      background: var(--color-bg-card, #fff);
+      border: 1px solid var(--color-border);
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .product-card:hover {
+      box-shadow: 0 8px 32px rgba(51, 102, 255, 0.12);
+      transform: translateY(-2px);
+      z-index: 1;
+      position: relative;
+    }
+    .product-card__img {
+      aspect-ratio: 4/3;
+      overflow: hidden;
+      background: linear-gradient(135deg, #e8eeff, #dce8ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .product-card__img img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 12px;
+    }
+    .product-card__img--empty {
+      background: linear-gradient(135deg, #f0f2ff, #e8ecff);
+    }
+    .product-card__body {
+      flex: 1;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .product-card__category {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--color-accent);
+    }
+    .product-card__name {
+      font-size: var(--text-base);
+      font-weight: 600;
+      line-height: 1.3;
+      color: var(--color-text);
+      margin: 0;
+    }
+    .product-card__desc {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      line-height: 1.5;
+      flex: 1;
+    }
+    .product-card__specs {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      margin-top: 4px;
+    }
+    .product-card__spec {
+      font-size: 12px;
+      color: var(--color-text-muted);
+    }
+    .product-card__spec span {
+      font-weight: 500;
+      color: var(--color-text);
+    }
+    .product-card__footer {
+      display: flex;
+      gap: 8px;
+      margin-top: 12px;
+      flex-wrap: wrap;
+    }
+    .btn--sm {
+      padding: 7px 14px;
+      font-size: var(--text-sm);
+    }
+    .products-empty {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 64px 0;
+      color: var(--color-text-muted);
+      font-size: var(--text-lg);
+    }
+
+    /* Search bar */
+    .catalog-search {
+      display: flex;
+      gap: 8px;
+      max-width: 480px;
+    }
+    .catalog-search__input {
+      flex: 1;
+      padding: 10px 16px;
+      border: 1.5px solid var(--color-border);
+      border-radius: 8px;
+      font-family: var(--font-primary);
+      font-size: var(--text-base);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .catalog-search__input:focus {
+      border-color: var(--color-accent);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="../index.html" class="header__logo">
+        <svg viewBox="0 0 32 32" fill="none" width="32" height="32">
+          <rect width="32" height="32" rx="8" fill="#3366FF"/>
+          <path d="M10 16L16 10L22 16L16 22Z" fill="white"/>
+        </svg>
+        ИК Фарватер
+      </a>
+      <nav class="header__nav">
+        <a href="products.html" class="header__link header__link--active">Каталог</a>
+        <a href="about.html" class="header__link">О компании</a>
+        <a href="services.html" class="header__link">Услуги</a>
+        <a href="contacts.html" class="header__link">Контакты</a>
+      </nav>
+      <button class="header__burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main style="margin-top: 72px; padding-bottom: 80px;">
+
+    <!-- Page header -->
+    <section style="padding: var(--space-12) 0 var(--space-8);">
+      <div class="container">
+        <div style="display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: var(--space-6);">
+          <div>
+            <h1 style="font-size: clamp(2rem, 4vw, 3.5rem); text-transform: none; letter-spacing: -0.03em; margin-bottom: 8px;">Продукция</h1>
+            <p style="font-size: var(--text-base); color: var(--color-text-muted);">90 наименований · 6 категорий · собственное производство</p>
+          </div>
+          <div class="catalog-search">
+            <input type="text" class="catalog-search__input" placeholder="Поиск по каталогу..." id="search-input">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category filter tabs -->
+    <section style="padding-bottom: var(--space-6);">
+      <div class="container">
+        <div class="category-tabs" id="category-tabs">
+          <!-- Filled by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Products grid — filled by JS -->
+    <section>
+      <div class="container">
+        <div id="products-grid">
+          <!-- Filled by products.js -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="../index.html" class="header__logo" style="color: rgba(255,255,255,0.9);">
+          <svg viewBox="0 0 32 32" fill="none" width="28" height="28">
+            <rect width="32" height="32" rx="8" fill="rgba(255,255,255,0.2)"/>
+            <path d="M10 16L16 10L22 16L16 22Z" fill="white"/>
+          </svg>
+          ИК Фарватер
+        </a>
+        <p class="footer__tagline">Интегратор комплексных решений<br>в микроэлектронике</p>
+      </div>
+      <nav class="footer__nav">
+        <a href="products.html" class="footer__link">Продукция</a>
+        <a href="about.html" class="footer__link">О компании</a>
+        <a href="services.html" class="footer__link">Услуги</a>
+        <a href="contacts.html" class="footer__link">Контакты</a>
+      </nav>
+      <div class="footer__contacts">
+        <div class="footer__contact-item">info@farvater.ru</div>
+        <div class="footer__contact-item">+7 (812) 000-00-00</div>
+        <div class="footer__contact-item">Санкт-Петербург</div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2024 ИК Фарватер. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/products.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+/* Layout — 12-column Swiss grid */
+
+.grid {
+  display: grid;
+  gap: var(--grid-gutter);
+}
+
+.grid--2 { grid-template-columns: repeat(2, 1fr); }
+.grid--3 { grid-template-columns: repeat(3, 1fr); }
+.grid--4 { grid-template-columns: repeat(4, 1fr); }
+.grid--12 { grid-template-columns: repeat(12, 1fr); }
+
+.col-span-4 { grid-column: span 4; }
+.col-span-6 { grid-column: span 6; }
+.col-span-8 { grid-column: span 8; }
+.col-span-12 { grid-column: span 12; }
+
+@media (max-width: 768px) {
+  .grid--2, .grid--3, .grid--4 { grid-template-columns: 1fr; }
+  .grid--12 { grid-template-columns: 1fr; }
+  .col-span-4, .col-span-6, .col-span-8 { grid-column: span 1; }
+}

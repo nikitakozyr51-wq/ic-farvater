@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ООО «Айси Фарватер» — Интегратор решений в микроэлектронике</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/mobile.css?v=14" media="(max-width: 768px)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">ООО «Айси Фарватер»</a>
+      <nav class="header__nav">
+        <a href="pages/products.html" class="header__link">Каталог</a>
+        <a href="pages/about.html" class="header__link">О компании</a>
+        <a href="pages/services.html" class="header__link">Услуги</a>
+        <a href="pages/contacts.html" class="header__link">Контакты</a>
+        <div class="header__nav-contact">
+          <span class="header__nav-contact-label">ТЕЛЕФОН</span>
+          <a href="tel:+79967788842" class="header__nav-contact-value">+7 996 778-88-42</a>
+        </div>
+      </nav>
+      <button class="header__burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero — ASCII canvas + centered title -->
+  <section class="hero">
+    <canvas id="ascii-canvas" class="hero__ascii" aria-hidden="true"></canvas>
+    <div class="hero__ui">
+      <div class="hero__content">
+        <h1 class="hero__title desktop-only">IC FARVATER:<br>КОМПЛЕКСНЫЕ РЕШЕНИЯ<br>В МИКРОЭЛЕКТРОНИКЕ.</h1>
+        <h1 class="hero__title mobile-only">Инновационные компоненты для вашего производства</h1>
+        <p class="hero__subtitle">Дистрибьютор микроэлектроники</p>
+        <a href="pages/products.html" class="hero__cta">КАТАЛОГ ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="section products-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-header__title desktop-only">Продукция <span class="title-count">(01)</span></h2>
+        <h2 class="section-header__title mobile-only">КАТАЛОГ</h2>
+        <a href="pages/products.html" class="section-header__link desktop-only">Все категории &#8594;</a>
+        <a href="pages/products.html" class="section-header__link mobile-only">ВСЕ &#8594;</a>
+      </div>
+      <div class="products-grid">
+        <!-- Row 1: 2 cards (desktop) -->
+        <div class="products-grid__row desktop-only">
+          <a href="pages/products.html#microchips" class="product-card">
+            <div class="product-card__img">
+              <img src="assets/images/products/microchips.jpg" alt="Микросхемы" loading="lazy">
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__info-top">
+                <span class="product-card__name">МИКРОСХЕМЫ</span>
+                <span class="product-card__count">23 НАИМЕНОВАНИЯ</span>
+              </div>
+              <p class="product-card__desc">ЦИФРОВЫЕ И АНАЛОГОВЫЕ МИКРОСХЕМЫ.</p>
+            </div>
+          </a>
+          <a href="pages/products.html#connectors" class="product-card">
+            <div class="product-card__img">
+              <img src="assets/images/products/connectors.jpg" alt="Разъёмы" loading="lazy">
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__info-top">
+                <span class="product-card__name">РАЗЪЁМЫ</span>
+                <span class="product-card__count">6 СЕРИЙ</span>
+              </div>
+              <p class="product-card__desc">СЕРИИ ЕТ-2РМ И АНАЛОГИ.</p>
+            </div>
+          </a>
+        </div>
+        <!-- Row 1: 2 cards (mobile) -->
+        <div class="products-grid__row mobile-only--flex">
+          <a href="pages/products.html#connectors" class="product-card">
+            <div class="product-card__img">
+              <img src="assets/images/products/connectors.jpg" alt="Разъёмы" loading="lazy">
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__info-top">
+                <span class="product-card__name">РАЗЪЁМЫ</span>
+                <span class="product-card__count">48 ПОЗИЦИЙ</span>
+              </div>
+            </div>
+          </a>
+          <a href="pages/products.html#capacitors" class="product-card">
+            <div class="product-card__img">
+              <img src="assets/images/products/capacitors.png" alt="Конденсаторы" loading="lazy">
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__info-top">
+                <span class="product-card__name">КОНДЕНСАТОРЫ</span>
+                <span class="product-card__count">12 ПОЗИЦИЙ</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Row 2: 3 cards -->
+        <div class="products-grid__row desktop-only">
+          <a href="pages/products.html#converters" class="product-card">
+            <div class="product-card__img">
+              <img src="assets/images/products/converters.jpg" alt="Преобразователи напряжения" loading="lazy">
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__info-top">
+                <span class="product-card__name">ПРЕОБРАЗОВАТЕЛИ НАПРЯЖЕНИЯ</span>
+                <span class="product-card__count">36 МОДЕЛЕЙ</span>
+              </div>
+              <p class="product-card__desc">DC/DC И AC/DC СЕРИЙ ИРТЫШ, ВОЛГА, ЕНИСЕЙ, КАМА.</p>
+            </div>
+          </a>
+          <a href="pages/products.html#transistors" class="product-card">
+            <div class="product-card__img">
+              <img src="assets/images/products/transistors.png" alt="СВЧ-транзисторы" loading="lazy">
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__info-top">
+                <span class="product-card__name">СВЧ-ТРАНЗИСТОРЫ</span>
+                <span class="product-card__count">17 МОДЕЛЕЙ LDMOS</span>
+              </div>
+              <p class="product-card__desc">LDMOS ДЛЯ УСИЛИТЕЛЕЙ МОЩНОСТИ.</p>
+            </div>
+          </a>
+          <a href="pages/products.html#capacitors" class="product-card">
+            <div class="product-card__img">
+              <img src="assets/images/products/capacitors.png" alt="СВЧ-конденсаторы" loading="lazy">
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__info-top">
+                <span class="product-card__name">СВЧ-КОНДЕНСАТОРЫ</span>
+                <span class="product-card__count">7 СЕРИЙ</span>
+              </div>
+              <p class="product-card__desc">СЕРИЯ ARC70. КОМПОНЕНТЫ ДЛЯ СВЧ-МОДУЛЕЙ.</p>
+            </div>
+          </a>
+        </div>
+        <!-- Row 3: 1 card -->
+        <div class="products-grid__row desktop-only">
+          <a href="pages/products.html#pcb" class="product-card">
+            <div class="product-card__img">
+              <img src="assets/images/products/pcb.jpg" alt="Печатные платы" loading="lazy">
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__info-top">
+                <span class="product-card__name">ПЕЧАТНЫЕ ПЛАТЫ</span>
+                <span class="product-card__count">ПРОИЗВОДСТВО</span>
+              </div>
+              <p class="product-card__desc">ПРОЕКТИРОВАНИЕ И ИЗГОТОВЛЕНИЕ МНОГОСЛОЙНЫХ ПП.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services (desktop only) -->
+  <section class="section section--bordered desktop-only">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-header__title">Услуги <span class="title-count">(3)</span></h2>
+        <a href="pages/services.html" class="section-header__link">Подробнее &#8594;</a>
+      </div>
+      <div class="service-rows">
+        <div class="service-row">
+          <div class="service-row__left">
+            <span class="service-row__number">01</span>
+            <div class="service-row__icon"></div>
+          </div>
+          <div class="service-row__right">
+            <h3 class="service-row__title">ПРЯМЫЕ ПОСТАВКИ<br>ЭЛЕКТРОННЫХ КОМПОНЕНТОВ</h3>
+            <p class="service-row__text">Работаем с крупнейшими мировыми производителями</p>
+          </div>
+        </div>
+        <div class="service-row">
+          <div class="service-row__left">
+            <span class="service-row__number">03</span>
+            <div class="service-row__icon"></div>
+          </div>
+          <div class="service-row__right">
+            <h3 class="service-row__title">ИМПОРТОЗАМЕЩЕНИЕ</h3>
+            <p class="service-row__text">Создание отечественных аналогов. Таблицы pin-to-pin и функциональных замен для вашей продукции.</p>
+          </div>
+        </div>
+        <div class="service-row">
+          <div class="service-row__left">
+            <span class="service-row__number">03</span>
+            <div class="service-row__icon"></div>
+          </div>
+          <div class="service-row__right">
+            <h3 class="service-row__title">КАБЕЛЬНЫЕ СБОРКИ</h3>
+            <p class="service-row__text">Полный цикл производства кабельных сборок любой сложности в кратчайшие сроки.</p>
+          </div>
+        </div>
+        <div class="service-row">
+          <div class="service-row__left">
+            <span class="service-row__number">04</span>
+            <div class="service-row__icon"></div>
+          </div>
+          <div class="service-row__right">
+            <h3 class="service-row__title">ИСПЫТАТЕЛЬНАЯ<br>ЛАБОРАТОРИЯ</h3>
+            <p class="service-row__text">Входной контроль, сертификационные испытания, диагностический неразрушающий контроль, анализ отказов.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mobile Stats -->
+  <section class="section mobile-only mobile-stats">
+    <div class="container mobile-stats__inner">
+      <div class="mobile-stats__item">
+        <span class="mobile-stats__number">5+</span>
+        <span class="mobile-stats__label">ЛЕТ НА РЫНКЕ</span>
+      </div>
+      <div class="mobile-stats__item">
+        <span class="mobile-stats__number">500+</span>
+        <span class="mobile-stats__label">БРЕНДОВ</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <canvas class="footer__canvas" id="footer-canvas"></canvas>
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <span class="footer__brand">ООО «Айси Фарватер»</span>
+          <p class="footer__desc">Надёжный интегратор комплексных решений в микроэлектронике.<br>ул. Беринга, д. 1-А, оф. 46-Н, г. Санкт-Петербург, 199397</p>
+        </div>
+        <nav class="footer__col footer__col--nav">
+          <span class="footer__col-title">Навигация</span>
+          <a href="index.html" class="footer__link">Главная</a>
+          <a href="pages/products.html" class="footer__link desktop-only">Продукция</a>
+          <a href="pages/products.html" class="footer__link mobile-only">Каталог</a>
+          <a href="pages/about.html" class="footer__link">О компании</a>
+          <a href="pages/services.html" class="footer__link">Услуги</a>
+          <a href="pages/contacts.html" class="footer__link">Контакты</a>
+        </nav>
+        <div class="footer__col">
+          <span class="footer__col-title">Контакты</span>
+          <a href="tel:+79967788842" class="footer__link">+7 (996) 778-88-42</a>
+          <a href="mailto:info@ic-farvater.ru" class="footer__link">info@ic-farvater.ru</a>
+          <span class="footer__text">пн.–пт. 10:00–18:00</span>
+        </div>
+        <div class="footer__col">
+          <span class="footer__col-title">Продукция</span>
+          <a href="pages/products.html" class="footer__link">Микросхемы</a>
+          <a href="pages/products.html" class="footer__link">Разъёмы</a>
+          <a href="pages/products.html" class="footer__link">Преобразователи</a>
+          <a href="pages/products.html" class="footer__link">СВЧ-конденсаторы</a>
+          <a href="pages/products.html" class="footer__link">СВЧ-транзисторы</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 ООО «Айси Фарватер». Все права защищены.</span>
+        <span>Политика конфиденциальности</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/ascii-animation.js"></script>
+  <script src="js/footer-canvas.js"></script>
+  <script src="js/parallax.js"></script>
+  <script src="js/scroll-reveal.js"></script>
+</body>
+</html>

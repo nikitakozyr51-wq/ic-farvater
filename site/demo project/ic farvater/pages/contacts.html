@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — ООО «Айси Фарватер»</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages/contacts.css?v=14">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/mobile.css?v=14" media="(max-width: 768px)">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="../index.html" class="header__logo">ООО «Айси Фарватер»</a>
+      <nav class="header__nav">
+        <a href="products.html" class="header__link">Каталог</a>
+        <a href="about.html" class="header__link">О компании</a>
+        <a href="services.html" class="header__link">Услуги</a>
+        <a href="contacts.html" class="header__link header__link--active">Контакты</a>
+        <div class="header__nav-contact">
+          <span class="header__nav-contact-label">ТЕЛЕФОН</span>
+          <a href="tel:+79967788842" class="header__nav-contact-value">+7 996 778-88-42</a>
+        </div>
+      </nav>
+      <button class="header__burger" aria-label="Меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Top -->
+  <section class="contacts">
+    <div class="contacts__top">
+      <div class="container contacts__top-inner">
+        <h1 class="contacts__title">КОНТАКТЫ <span class="title-count">(01)</span></h1>
+        <div class="contacts__desc">
+          <p class="contacts__desc-text desktop-only">Свяжитесь с нами для консультации по подбору компонентной базы и услугам.</p>
+          <p class="contacts__desc-text mobile-only">Свяжитесь с нами для консультации по подбору компонентной базы.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content: Contact Info + Form -->
+    <div class="contacts__content">
+      <div class="container contacts__content-inner">
+
+        <!-- Contact Info (left) -->
+        <div class="contact-info">
+          <div class="contact-info__group">
+            <span class="contact-info__label">Телефон</span>
+            <a href="tel:+79967788842" class="contact-info__value">+7 (996) 778-88-42</a>
+          </div>
+          <div class="contact-info__group">
+            <span class="contact-info__label">Общие вопросы</span>
+            <a href="mailto:info@ic-farvater.ru" class="contact-info__value">info@ic-farvater.ru</a>
+          </div>
+          <div class="contact-info__group">
+            <span class="contact-info__label">Коммерческий отдел</span>
+            <a href="mailto:sale@ic-farvater.ru" class="contact-info__value">sale@ic-farvater.ru</a>
+          </div>
+          <div class="contact-info__group desktop-only">
+            <span class="contact-info__label">Отдел закупок</span>
+            <a href="mailto:purchase@ic-farvater.ru" class="contact-info__value">purchase@ic-farvater.ru</a>
+          </div>
+          <div class="contact-info__group">
+            <span class="contact-info__label">Адрес</span>
+            <span class="contact-info__value contact-info__value--multiline">ул. Беринга, д. 1-А, оф. 46-Н, г. Санкт-Петербург, 199397</span>
+          </div>
+          <div class="contact-info__group">
+            <span class="contact-info__label">Режим работы</span>
+            <span class="contact-info__value">пн.–пт. 10:00–18:00</span>
+          </div>
+        </div>
+
+        <!-- Contact Form (right) -->
+        <form class="contact-form" id="contactForm">
+          <span class="contact-form__title">Написать нам</span>
+          <input type="text" class="contact-form__field" name="name" placeholder="Имя" required>
+          <input type="email" class="contact-form__field" name="email" placeholder="Электронная почта" required>
+          <input type="tel" class="contact-form__field" name="phone" placeholder="Телефон">
+          <textarea class="contact-form__textarea" name="message" placeholder="Сообщение" required></textarea>
+          <button type="submit" class="contact-form__submit">ОТПРАВИТЬ</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="map-section">
+    <div class="container">
+      <span class="map-section__label">Как нас найти</span>
+      <div class="map-section__placeholder"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <canvas class="footer__canvas" id="footer-canvas"></canvas>
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <span class="footer__brand">ООО «Айси Фарватер»</span>
+          <p class="footer__desc">Надёжный интегратор комплексных решений в микроэлектронике.<br>ул. Беринга, д. 1-А, оф. 46-Н, г. Санкт-Петербург, 199397</p>
+        </div>
+        <nav class="footer__col footer__col--nav">
+          <span class="footer__col-title">Навигация</span>
+          <a href="../index.html" class="footer__link">Главная</a>
+          <a href="products.html" class="footer__link desktop-only">Продукция</a>
+          <a href="products.html" class="footer__link mobile-only">Каталог</a>
+          <a href="about.html" class="footer__link">О компании</a>
+          <a href="services.html" class="footer__link">Услуги</a>
+          <a href="contacts.html" class="footer__link">Контакты</a>
+        </nav>
+        <div class="footer__col">
+          <span class="footer__col-title">Контакты</span>
+          <a href="tel:+79967788842" class="footer__link">+7 (996) 778-88-42</a>
+          <a href="mailto:info@ic-farvater.ru" class="footer__link">info@ic-farvater.ru</a>
+          <span class="footer__text">пн.–пт. 10:00–18:00</span>
+        </div>
+        <div class="footer__col">
+          <span class="footer__col-title">Продукция</span>
+          <a href="products.html" class="footer__link">Микросхемы</a>
+          <a href="products.html" class="footer__link">Разъёмы</a>
+          <a href="products.html" class="footer__link">Преобразователи</a>
+          <a href="products.html" class="footer__link">СВЧ-конденсаторы</a>
+          <a href="products.html" class="footer__link">СВЧ-транзисторы</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 ООО «Айси Фарватер». Все права защищены.</span>
+        <span>Политика конфиденциальности</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/parallax.js"></script>
+  <script src="../js/footer-canvas.js"></script>
+  <script src="../js/scroll-reveal.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Pencil design files
+*.pen
+
+# Backups
+*_backup*/
+.claude/skills/ui-ux-pro-max-skill/

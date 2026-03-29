@@ -1,0 +1,1465 @@
+[
+  {
+    "id": 1,
+    "name": "Микросхемы ЭКБ ТЕСТ",
+    "category": "Микросхемы",
+    "subcategory": "",
+    "description": "Отечественный разработчик и производитель микросхем. 26 наименований: микросхемы управления питанием (КПД до 97%), микросхемы памяти (до 120 МГц), контроллеры на базе ARM Cortex-M3.",
+    "specs": {
+      "product_count": 26,
+      "types": ["Управление питанием", "Память", "Микроконтроллеры ARM Cortex-M3"]
+    },
+    "url": "https://ekb-test.ru/mikroskhemy/mikroskhemy-ekb-test/",
+    "imageUrl": ""
+  },
+  {
+    "id": 2,
+    "name": "ET1310PN1U",
+    "category": "Микросхемы",
+    "subcategory": "Микросхемы ЭКБ ТЕСТ",
+    "description": "Импульсный понижающий DC/DC преобразователь с током нагрузки до 2А. Функциональная замена 1310ПН1У (Миландр). Преимущества: ток 2А против 1.5А у Миландр, потребление в режиме ожидания 50 мкА против 400 мкА.",
+    "specs": {
+      "package": "SOT23, SOT-224",
+      "input_voltage": "2.5–5.5 В",
+      "output_voltage": "регулируемое",
+      "max_load_current": "2 А",
+      "quiescent_current": "≤50 мкА",
+      "frequency": "1.3 МГц",
+      "efficiency": "до 97%",
+      "temp_range": "-40...+85 °С",
+      "replaces": "1310ПН1У (Миландр)"
+    },
+    "url": "https://ekb-test.ru/mikroskhemy/mikroskhemy-ekb-test/mikroskhema-et1310pn1u/",
+    "imageUrl": "https://ekb-test.ru/upload/iblock/7cf/yqtbcbnj09w0s3sbgzs54b9v9ogetob1/ET1310PN1U.jpg"
+  },
+  {
+    "id": 3,
+    "name": "ET1309EN3.3T",
+    "category": "Микросхемы",
+    "subcategory": "Микросхемы ЭКБ ТЕСТ",
+    "description": "Линейный стабилизатор напряжения с фиксированным выходом 3.3 В.",
+    "specs": {
+      "package": "TO-263-3",
+      "output_voltage": "3.3 В"
+    },
+    "url": "https://ekb-test.ru/mikroskhemy/mikroskhemy-ekb-test/mikroskhema-et1309en3-3t/",
+    "imageUrl": ""
+  },
+  {
+    "id": 4,
+    "name": "ET1309ES035",
+    "category": "Микросхемы",
+    "subcategory": "Микросхемы ЭКБ ТЕСТ",
+    "description": "Линейный стабилизатор напряжения (LDO). Доступен в нескольких корпусах.",
+    "specs": {
+      "package": "SOT-23, TO-92, SOT-89, SOP-8, TO-92L"
+    },
+    "url": "https://ekb-test.ru/mikroskhemy/mikroskhemy-ekb-test/mikroskhema-et1309es035/",
+    "imageUrl": ""
+  },
+  {
+    "id": 5,
+    "name": "ET1309ES055",
+    "category": "Микросхемы",
+    "subcategory": "Микросхемы ЭКБ ТЕСТ",
+    "description": "Линейный стабилизатор напряжения (LDO). Доступен в нескольких корпусах.",
+    "specs": {
+      "package": "SOT-23, TO-92, SOT-89, SOP-8, TO-92L"
+    },
+    "url": "https://ekb-test.ru/mikroskhemy/mikroskhemy-ekb-test/mikroskhema-et1309es055/",
+    "imageUrl": ""
+  },
+  {
+    "id": 6,
+    "name": "ET1309ES065",
+    "category": "Микросхемы",
+    "subcategory": "Микросхемы ЭКБ ТЕСТ",
+    "description": "Линейный стабилизатор напряжения (LDO). Доступен в нескольких корпусах.",
+    "specs": {
+      "package": "SOT-23, TO-92, SOT-89, SOP-8, TO-92L"
+    },
+    "url": "https://ekb-test.ru/mikroskhemy/mikroskhemy-ekb-test/mikroskhema-et1309es065/",
+    "imageUrl": ""
+  },
+  {
+    "id": 7,
+    "name": "ET1645RU1U",
+    "category": "Микросхемы",
+    "subcategory": "Микросхемы ЭКБ ТЕСТ",
+    "description": "Микросхема памяти.",
+    "specs": {
+      "package": "32TSOP1"
+    },
+    "url": "https://ekb-test.ru/mikroskhemy/mikroskhemy-ekb-test/mikroskhema-et1645ru1u/",
+    "imageUrl": ""
+  },
+  {
+    "id": 8,
+    "name": "ET1645RU3U",
+    "category": "Микросхемы",
+    "subcategory": "Микросхемы ЭКБ ТЕСТ",
+    "description": "Микросхема памяти.",
+    "specs": {
+      "package": "44TSOP2"
+    },
+    "url": "https://ekb-test.ru/mikroskhemy/mikroskhemy-ekb-test/mikroskhema-et1645ru3u/",
+    "imageUrl": ""
+  },
+  {
+    "id": 9,
+    "name": "ET1645RU4",
+    "category": "Микросхемы",
+    "subcategory": "Микросхемы ЭКБ ТЕСТ",
+    "description": "Микросхема памяти.",
+    "specs": {
+      "package": "48TSOP1, 48TSOP2"
+    },
+    "url": "https://ekb-test.ru/mikroskhemy/mikroskhemy-ekb-test/mikroskhema-et1645ru4/",
+    "imageUrl": ""
+  },
+  {
+    "id": 10,
+    "name": "ET1645RU7YA",
+    "category": "Микросхемы",
+    "subcategory": "Микросхемы ЭКБ ТЕСТ",
+    "description": "Микросхема памяти в корпусе TQFP.",
+    "specs": {
+      "package": "100TQFP",
+      "dimensions": "20×14 мм"
+    },
+    "url": "https://ekb-test.ru/mikroskhemy/mikroskhemy-ekb-test/mikroskhema-et1645ru7ya/",
+    "imageUrl": ""
+  },
+  {
+    "id": 11,
+    "name": "ET1663RA06V4",
+    "category": "Микросхемы",
+    "subcategory": "Микросхемы ЭКБ ТЕСТ",
+    "description": "Микросхема памяти.",
+    "specs": {
+      "package": "48TSOP1"
+    },
+    "url": "https://ekb-test.ru/mikroskhemy/mikroskhemy-ekb-test/mikroskhema-et1663ra06v4/",
+    "imageUrl": ""
+  },
+  {
+    "id": 12,
+    "name": "ET1636RR1",
+    "category": "Микросхемы",
+    "subcategory": "Микросхемы ЭКБ ТЕСТ",
+    "description": "Микросхема памяти в керамическом корпусе CQFP.",
+    "specs": {
+      "package": "CQFP44"
+    },
+    "url": "https://ekb-test.ru/mikroskhemy/mikroskhemy-ekb-test/mikroskhema-et1636rr1/",
+    "imageUrl": ""
+  },
+  {
+    "id": 13,
+    "name": "ET5559IN4U",
+    "category": "Микросхемы",
+    "subcategory": "Микросхемы ЭКБ ТЕСТ",
+    "description": "Интерфейсная микросхема.",
+    "specs": {
+      "package": "SSOP-24"
+    },
+    "url": "https://ekb-test.ru/mikroskhemy/mikroskhemy-ekb-test/mikroskhema-et5559in4u/",
+    "imageUrl": ""
+  },
+  {
+    "id": 14,
+    "name": "ET5559IN10BU",
+    "category": "Микросхемы",
+    "subcategory": "Микросхемы ЭКБ ТЕСТ",
+    "description": "Интерфейсная микросхема.",
+    "specs": {
+      "package": "SOP8"
+    },
+    "url": "https://ekb-test.ru/mikroskhemy/mikroskhemy-ekb-test/mikroskhema-et5559in10bu/",
+    "imageUrl": ""
+  },
+  {
+    "id": 15,
+    "name": "ET5559IN14AU",
+    "category": "Микросхемы",
+    "subcategory": "Микросхемы ЭКБ ТЕСТ",
+    "description": "Интерфейсная микросхема.",
+    "specs": {
+      "package": "SO-8"
+    },
+    "url": "https://ekb-test.ru/mikroskhemy/mikroskhemy-ekb-test/mikroskhema-et5559in14au/",
+    "imageUrl": ""
+  },
+  {
+    "id": 16,
+    "name": "ET5559IN28U",
+    "category": "Микросхемы",
+    "subcategory": "Микросхемы ЭКБ ТЕСТ",
+    "description": "Интерфейсная микросхема.",
+    "specs": {
+      "package": "SOP8"
+    },
+    "url": "https://ekb-test.ru/mikroskhemy/mikroskhemy-ekb-test/mikroskhema-et5559in28u/",
+    "imageUrl": ""
+  },
+  {
+    "id": 17,
+    "name": "ET5600VG1U",
+    "category": "Микросхемы",
+    "subcategory": "Микросхемы ЭКБ ТЕСТ",
+    "description": "Контроллер канального уровня протокола IEEE 802.3/Ethernet. Функциональная замена 5600ВГ1У (ПКК Миландр). Поддерживает 10/100BASE-T, полный и полудуплексный режим работы.",
+    "specs": {
+      "package": "LQFP64M, LQFP128",
+      "supply_voltage": "2.7–3.6 В",
+      "temp_range": "-40...+85 °С",
+      "protocol": "10/100BASE-T IEEE802.3/Ethernet",
+      "interface": "8-битная параллельная шина данных и адреса",
+      "replaces": "5600ВГ1У (АО «ПКК Миландр»)"
+    },
+    "url": "https://ekb-test.ru/mikroskhemy/mikroskhemy-ekb-test/mikroskhema-et5600vg1u/",
+    "imageUrl": "https://ekb-test.ru/upload/uf/4b4/a44f127hodycume6jr1h8wzvhlnkiwib/ET5600VG1U.png"
+  },
+  {
+    "id": 18,
+    "name": "ET2011VV034",
+    "category": "Микросхемы",
+    "subcategory": "Микросхемы ЭКБ ТЕСТ",
+    "description": "Микросхема.",
+    "specs": {
+      "package": "SO-16, QSOP-16"
+    },
+    "url": "https://ekb-test.ru/mikroskhemy/mikroskhemy-ekb-test/mikroskhema-et2011vv034/",
+    "imageUrl": ""
+  },
+  {
+    "id": 19,
+    "name": "ET5572IN1AU",
+    "category": "Микросхемы",
+    "subcategory": "Микросхемы ЭКБ ТЕСТ",
+    "description": "Интерфейсная микросхема.",
+    "specs": {
+      "package": "TSSOP48"
+    },
+    "url": "https://ekb-test.ru/mikroskhemy/mikroskhemy-ekb-test/mikroskhema-et5572in1au/",
+    "imageUrl": ""
+  },
+  {
+    "id": 20,
+    "name": "ET5572IN2AU",
+    "category": "Микросхемы",
+    "subcategory": "Микросхемы ЭКБ ТЕСТ",
+    "description": "Интерфейсная микросхема.",
+    "specs": {
+      "package": "TSSOP24"
+    },
+    "url": "https://ekb-test.ru/mikroskhemy/mikroskhemy-ekb-test/mikroskhema-et5572in2au/",
+    "imageUrl": ""
+  },
+  {
+    "id": 21,
+    "name": "ET1986VE-100",
+    "category": "Микросхемы",
+    "subcategory": "Микросхемы ЭКБ ТЕСТ",
+    "description": "32-битный микроконтроллер ARM Cortex-M3. Функциональная замена 1986ВЕ91Т (Миландр). Превосходит аналог по частоте (120 МГц против 80 МГц), объёму памяти и набору периферии.",
+    "specs": {
+      "package": "LQFP100",
+      "architecture": "32-bit ARM Cortex-M3",
+      "frequency": "до 120 МГц",
+      "flash": "512 КБ",
+      "sram": "128 КБ",
+      "supply_voltage": "2.2–3.6 В",
+      "temp_range": "-40...+105 °С",
+      "interfaces": "2×UART, CAN, 3×SPI, 2×I2C",
+      "adc": "3×12-бит",
+      "dac": "2×12-бит",
+      "timers": "2×16-бит с ШИМ",
+      "io_lines": "до 112",
+      "external_bus": "CF, SRAM, PSRAM, SDRAM, NOR",
+      "replaces": "1986ВЕ91Т (Миландр)"
+    },
+    "url": "https://ekb-test.ru/mikroskhemy/mikroskhemy-ekb-test/mikroskhema-et1986ve-100/",
+    "imageUrl": "https://ekb-test.ru/upload/iblock/5fd/gqwgifcm153l80ml1bni4kzgbuojt2ql/ET1986VE_100.png"
+  },
+  {
+    "id": 22,
+    "name": "ET1986VE-64",
+    "category": "Микросхемы",
+    "subcategory": "Микросхемы ЭКБ ТЕСТ",
+    "description": "32-битный микроконтроллер ARM Cortex-M3 в корпусе LQFP64.",
+    "specs": {
+      "architecture": "32-bit ARM Cortex-M3"
+    },
+    "url": "https://ekb-test.ru/mikroskhemy/mikroskhemy-ekb-test/mikroskhema-et1986ve-64/",
+    "imageUrl": ""
+  },
+  {
+    "id": 23,
+    "name": "ET557BQ",
+    "category": "Микросхемы",
+    "subcategory": "Микросхемы ЭКБ ТЕСТ",
+    "description": "Микросхема в керамическом корпусе CQFP.",
+    "specs": {
+      "package": "CQFP44"
+    },
+    "url": "https://ekb-test.ru/mikroskhemy/mikroskhemy-ekb-test/mikroskhema-et557bq/",
+    "imageUrl": ""
+  },
+  {
+    "id": 24,
+    "name": "ET557BQ_1",
+    "category": "Микросхемы",
+    "subcategory": "Микросхемы ЭКБ ТЕСТ",
+    "description": "Микросхема в керамическом корпусе CQFP (модификация).",
+    "specs": {
+      "package": "CQFP44"
+    },
+    "url": "https://ekb-test.ru/mikroskhemy/mikroskhemy-ekb-test/mikroskhema-et557bq-1/",
+    "imageUrl": ""
+  },
+  {
+    "id": 25,
+    "name": "Серия ЕТ-2РМ(Д)Т",
+    "category": "Разъёмы",
+    "subcategory": "ЕТ-2РМ(Д)Т",
+    "description": "Малогабаритные цилиндрические соединители для коммутации электрических цепей в электрических приборах и радиоустановках. Резьбовое соединение, однозначная поляризация, экранированные и неэкранированные варианты. Более 912 исполнений (38 страниц × 24 изделия).",
+    "specs": {
+      "max_voltage": "560 В",
+      "min_service_life": "1000 ч",
+      "standard": "ТКЕС.434410.016 ТУ",
+      "connection_type": "резьбовое",
+      "polarization": "однозначная",
+      "total_products": "более 912",
+      "datasheet": "https://ekb-test.ru/upload/iblock/.../ET_2RMT_-2RMDT-v1.5.pdf"
+    },
+    "url": "https://ekb-test.ru/razyomy/et-2rm-d-t/",
+    "imageUrl": "https://ekb-test.ru/upload/resize_cache/iblock/.../ET_2RM_KUE_1.jpg"
+  },
+  {
+    "id": 26,
+    "name": "Розетка ЕТ-2РМДТ45КУЭ50Г8А1В",
+    "category": "Разъёмы",
+    "subcategory": "ЕТ-2РМ(Д)Т",
+    "description": "Малогабаритный цилиндрический соединитель (розетка), серия ЕТ-2РМ(Д)Т.",
+    "specs": {
+      "max_voltage": "560 В",
+      "min_service_life": "1000 ч",
+      "standard": "ТКЕС.434410.016 ТУ"
+    },
+    "url": "https://ekb-test.ru/razyomy/et-2rm-d-t/rozetka-et-2rmdt45kueh50g8a1v-tkes-434410-016-tu/",
+    "imageUrl": "https://ekb-test.ru/upload/resize_cache/iblock/077/dxzigscx2kqsf0pu8drbdrbpkveje2yh/200_200_1/ET_2RTT_KUE_2.JPG"
+  },
+  {
+    "id": 27,
+    "name": "Розетка ЕТ-2РМДТ42КУЭ45Г5А1В",
+    "category": "Разъёмы",
+    "subcategory": "ЕТ-2РМ(Д)Т",
+    "description": "Малогабаритный цилиндрический соединитель (розетка), серия ЕТ-2РМ(Д)Т.",
+    "specs": {
+      "max_voltage": "560 В",
+      "min_service_life": "1000 ч",
+      "standard": "ТКЕС.434410.016 ТУ"
+    },
+    "url": "https://ekb-test.ru/razyomy/et-2rm-d-t/rozetka-et-2rmdt42kueh45g5a1v-tkes-434410-016-tu/",
+    "imageUrl": ""
+  },
+  {
+    "id": 28,
+    "name": "Серия ЕТ-2РМГ(Д)",
+    "category": "Разъёмы",
+    "subcategory": "ЕТ-2РМГ(Д)",
+    "description": "Герметичные блочные вилки для коммутации электрических цепей в электрических приборах и радиоустановках. Вилки ЕТ-2РМГ сопрягаются с розетками ЕТ-2РМТ; вилки ЕТ-2РМГД — с розетками ЕТ-2РМТД. Внутренний монтаж, климатика УХЛ.",
+    "specs": {
+      "max_voltage": "560 В",
+      "min_service_life": "1000 ч",
+      "standard": "ТКЕС.434410.039 ТУ",
+      "type": "герметичные блочные вилки",
+      "datasheet": "https://ekb-test.ru/upload/iblock/63b/5xxghpj71kyku9o7pz14a5d2mx83qsx5/ET_2RMG-v1.3.pdf"
+    },
+    "url": "https://ekb-test.ru/razyomy/seriya-et-2rmg-d/",
+    "imageUrl": "https://ekb-test.ru/upload/resize_cache/iblock/9fd/lz59qpe8ifr8o8osetf77r6ug4ay7tzl/200_200_1/ET_2RMG_1.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Вилка ЕТ-2РМГД42Б45Ш5Е2Б",
+    "category": "Разъёмы",
+    "subcategory": "ЕТ-2РМГ(Д)",
+    "description": "Герметичная блочная вилка, 42 контакта.",
+    "specs": {
+      "contacts": 42,
+      "max_voltage": "560 В",
+      "min_service_life": "1000 ч",
+      "standard": "ТКЕС.434410.039 ТУ"
+    },
+    "url": "https://ekb-test.ru/razyomy/seriya-et-2rmg-d/vilka-et-2rmgd42b45sh5e2b-tkes-434410-039-tu/",
+    "imageUrl": ""
+  },
+  {
+    "id": 30,
+    "name": "Вилка ЕТ-2РМГ42Б50Ш2Е2Б",
+    "category": "Разъёмы",
+    "subcategory": "ЕТ-2РМГ(Д)",
+    "description": "Герметичная блочная вилка, 42 контакта.",
+    "specs": {
+      "contacts": 42,
+      "max_voltage": "560 В",
+      "min_service_life": "1000 ч",
+      "standard": "ТКЕС.434410.039 ТУ"
+    },
+    "url": "https://ekb-test.ru/razyomy/seriya-et-2rmg-d/vilka-et-2rmg42b50sh2e2b-tkes-434410-039-tu/",
+    "imageUrl": ""
+  },
+  {
+    "id": 31,
+    "name": "Серия ЕТ-2РМГП(Д)",
+    "category": "Разъёмы",
+    "subcategory": "ЕТ-2РМГП(Д)",
+    "description": "Герметичные блочные вилки для коммутации электрических цепей. Аналог серии ЕТ-2РМГ(Д) с другим типом монтажа. Всего 5 страниц (более 120 исполнений).",
+    "specs": {
+      "max_voltage": "560 В",
+      "min_service_life": "1000 ч",
+      "standard": "ТКЕС.434410.039 ТУ",
+      "datasheet": "https://ekb-test.ru/upload/iblock/63b/5xxghpj71kyku9o7pz14a5d2mx83qsx5/ET_2RMG-v1.3.pdf"
+    },
+    "url": "https://ekb-test.ru/razyomy/seriya-et-2rmgp-d/",
+    "imageUrl": "https://ekb-test.ru/upload/resize_cache/iblock/db3/s9pj224f77j1lt3azxdndxj13l35uvgh/200_200_1/ET_2RMGP_1.jpg"
+  },
+  {
+    "id": 32,
+    "name": "Вилка ЕТ-2РМГПД42Б45Ш5Е2Б",
+    "category": "Разъёмы",
+    "subcategory": "ЕТ-2РМГП(Д)",
+    "description": "Герметичная блочная вилка серии ЕТ-2РМГП(Д), 42 контакта.",
+    "specs": {
+      "contacts": 42,
+      "max_voltage": "560 В",
+      "min_service_life": "1000 ч",
+      "standard": "ТКЕС.434410.039 ТУ"
+    },
+    "url": "https://ekb-test.ru/razyomy/seriya-et-2rmgp-d/vilka-et-2rmgpd42b45sh5e2b-tkes-434410-039-tu/",
+    "imageUrl": ""
+  },
+  {
+    "id": 33,
+    "name": "Серия ЕТ-2РТТ",
+    "category": "Разъёмы",
+    "subcategory": "ЕТ-2РТТ",
+    "description": "Электрические соединители для коммутации электрических цепей в электрических приборах и радиоустановках. Повышенное рабочее напряжение 850 В, термостойкость 100 °С, 500 циклов сочленения.",
+    "specs": {
+      "max_voltage": "850 В",
+      "min_service_life": "1000 ч",
+      "heat_resistance": "100 °С",
+      "mating_cycles": 500,
+      "standard": "ТКЕС.434410.005 ТУ",
+      "datasheet": "https://ekb-test.ru/upload/iblock/4be/z68d531qdakaydursb8q4h7evxynl0ld/ET_2RTT-v1.2.pdf"
+    },
+    "url": "https://ekb-test.ru/razyomy/et-2rtt/",
+    "imageUrl": "https://ekb-test.ru/upload/resize_cache/iblock/077/dxzigscx2kqsf0pu8drbdrbpkveje2yh/200_200_1/ET_2RTT_KUE_2.JPG"
+  },
+  {
+    "id": 34,
+    "name": "Розетка ЕТ-2РТТ60КУЭ47Г37В",
+    "category": "Разъёмы",
+    "subcategory": "ЕТ-2РТТ",
+    "description": "Электрический соединитель (розетка), серия ЕТ-2РТТ.",
+    "specs": {
+      "max_voltage": "850 В",
+      "min_service_life": "1000 ч",
+      "heat_resistance": "100 °С",
+      "mating_cycles": 500,
+      "standard": "ТКЕС.434410.005 ТУ"
+    },
+    "url": "https://ekb-test.ru/razyomy/et-2rtt/rozetka-et-2rtt60kueh47g37v-tkes-434410-005-tu/",
+    "imageUrl": ""
+  },
+  {
+    "id": 35,
+    "name": "Розетка ЕТ-2РТТ60КУЭ45Г36В",
+    "category": "Разъёмы",
+    "subcategory": "ЕТ-2РТТ",
+    "description": "Электрический соединитель (розетка), серия ЕТ-2РТТ.",
+    "specs": {
+      "max_voltage": "850 В",
+      "min_service_life": "1000 ч",
+      "standard": "ТКЕС.434410.005 ТУ"
+    },
+    "url": "https://ekb-test.ru/razyomy/et-2rtt/rozetka-et-2rtt60kueh45g36v-tkes-434410-005-tu/",
+    "imageUrl": ""
+  },
+  {
+    "id": 36,
+    "name": "Серия ЕТ-СНЦ23",
+    "category": "Разъёмы",
+    "subcategory": "ЕТ-СНЦ23",
+    "description": "Электрические соединители серии ЕТ-СНЦ23 для коммутации электрических цепей. Байонетное соединение, пятипозиционная поляризация, золочение контактов, термостойкость 200 °С. 42 страницы каталога.",
+    "specs": {
+      "max_voltage": "400–500 В",
+      "min_service_life": "1000 ч",
+      "heat_resistance": "200 °С",
+      "contact_coating": "золото",
+      "connection_type": "байонетное",
+      "polarization": "пятипозиционная",
+      "standard": "ТКЕС.434410.014 ТУ",
+      "datasheet": "https://ekb-test.ru/upload/iblock/053/259g3800h5lt7bagfekx0361yu9n6ds0/ET_SNTS23-v-1.4.pdf"
+    },
+    "url": "https://ekb-test.ru/razyomy/seriya-et-snts23/",
+    "imageUrl": "https://ekb-test.ru/upload/resize_cache/iblock/a33/.../ET_SNTS23_V_R_13.JPG"
+  },
+  {
+    "id": 37,
+    "name": "Розетка ЕТ-СНЦ23-45/39Р-13-г-В",
+    "category": "Разъёмы",
+    "subcategory": "ЕТ-СНЦ23",
+    "description": "Электрический соединитель (розетка), серия ЕТ-СНЦ23.",
+    "specs": {
+      "max_voltage": "500 В",
+      "min_service_life": "1000 ч",
+      "standard": "ТКЕС.434410.014 ТУ"
+    },
+    "url": "https://ekb-test.ru/razyomy/seriya-et-snts23/rozetka-et-snc23-45-39r-13-g-v-tkes-434410-014-tu/",
+    "imageUrl": ""
+  },
+  {
+    "id": 38,
+    "name": "Вилка ЕТ-СНЦ23-45/39В-13-г-В",
+    "category": "Разъёмы",
+    "subcategory": "ЕТ-СНЦ23",
+    "description": "Электрический соединитель (вилка), серия ЕТ-СНЦ23.",
+    "specs": {
+      "max_voltage": "500 В",
+      "min_service_life": "1000 ч",
+      "standard": "ТКЕС.434410.014 ТУ"
+    },
+    "url": "https://ekb-test.ru/razyomy/seriya-et-snts23/vilka-et-snts23-45-39v-13-g-v-tkes-434410-014-tu/",
+    "imageUrl": ""
+  },
+  {
+    "id": 39,
+    "name": "Серия ЕТ-СНЦ144",
+    "category": "Разъёмы",
+    "subcategory": "ЕТ-СНЦ144",
+    "description": "Высоконадёжные электрические соединители класса MIL-DTL-38999 Series III для авиации, космоса, военной техники и промышленных систем. Корпус из алюминиевого сплава с никелевым или кадмиевым покрытием, контакты с золочением. 330 страниц каталога.",
+    "specs": {
+      "standard_compliance": "MIL-DTL-38999 Series III",
+      "housing_material": "алюминиевый сплав",
+      "housing_coating": "никель или кадмий",
+      "contact_coating": "золото",
+      "contacts_range": "4–151",
+      "max_voltage": "250–700 В",
+      "min_service_life": "1000 ч",
+      "tu_standard": "ТКЕС.434410.049 ТУ",
+      "datasheet": "https://ekb-test.ru/upload/iblock/908/4lr6p8xm4nll71c881ip36qqzn7t4j4v/ET_SNTS144-v1.2.pdf"
+    },
+    "url": "https://ekb-test.ru/razyomy/seriya-et-snts144/",
+    "imageUrl": "https://ekb-test.ru/upload/resize_cache/iblock/c51/muqcprp5pba0pg9o8hjpuhoo8o64wnne/200_200_1/SNTS144_Cd.jpeg"
+  },
+  {
+    "id": 40,
+    "name": "Вилка ЕТ-СНЦ144-151/23ВО11-AWК",
+    "category": "Разъёмы",
+    "subcategory": "ЕТ-СНЦ144",
+    "description": "Высоконадёжный разъём серии ЕТ-СНЦ144, 151 контакт.",
+    "specs": {
+      "contacts": 151,
+      "max_voltage": "250 В",
+      "min_service_life": "1000 ч",
+      "standard": "ТКЕС.434410.049 ТУ"
+    },
+    "url": "https://ekb-test.ru/razyomy/seriya-et-snts144/vilka-et-snc144-151-23vo11-awk-tkes-434410-049-tu/",
+    "imageUrl": ""
+  },
+  {
+    "id": 41,
+    "name": "Вилка ЕТ-СНЦ144-100/23ВО11-AWК",
+    "category": "Разъёмы",
+    "subcategory": "ЕТ-СНЦ144",
+    "description": "Высоконадёжный разъём серии ЕТ-СНЦ144, 100 контактов.",
+    "specs": {
+      "contacts": 100,
+      "max_voltage": "300 В",
+      "min_service_life": "1000 ч",
+      "standard": "ТКЕС.434410.049 ТУ"
+    },
+    "url": "https://ekb-test.ru/razyomy/seriya-et-snts144/vilka-et-snc144-100-23vo11-awk-tkes-434410-049-tu/",
+    "imageUrl": ""
+  },
+  {
+    "id": 42,
+    "name": "Вилка ЕТ-СНЦ144-55/23ВО11-AWК",
+    "category": "Разъёмы",
+    "subcategory": "ЕТ-СНЦ144",
+    "description": "Высоконадёжный разъём серии ЕТ-СНЦ144, 55 контактов.",
+    "specs": {
+      "contacts": 55,
+      "max_voltage": "500 В",
+      "min_service_life": "1000 ч",
+      "standard": "ТКЕС.434410.049 ТУ"
+    },
+    "url": "https://ekb-test.ru/razyomy/seriya-et-snts144/vilka-et-snc144-55-23vo11-awk-tkes-434410-049-tu/",
+    "imageUrl": ""
+  },
+  {
+    "id": 43,
+    "name": "Вилка ЕТ-СНЦ144-21/23ВО11-AWК",
+    "category": "Разъёмы",
+    "subcategory": "ЕТ-СНЦ144",
+    "description": "Высоконадёжный разъём серии ЕТ-СНЦ144, 21 контакт.",
+    "specs": {
+      "contacts": 21,
+      "max_voltage": "700 В",
+      "min_service_life": "1000 ч",
+      "standard": "ТКЕС.434410.049 ТУ"
+    },
+    "url": "https://ekb-test.ru/razyomy/seriya-et-snts144/vilka-et-snc144-21-23vo11-awk-tkes-434410-049-tu/",
+    "imageUrl": ""
+  },
+  {
+    "id": 44,
+    "name": "Серия ИРТЫШ (DC/DC)",
+    "category": "Преобразователи напряжения",
+    "subcategory": "ИРТЫШ",
+    "description": "Модульные DC/DC преобразователи серии ИРТЫШ с полной PIN-TO-PIN совместимостью с продукцией VICOR. 370 моделей. Корпуса: Full Brick, 1/2 Brick, 1/4 Brick. Входное напряжение: 24 В, 28 В, 300 В, 375 В. Диапазоны температур: C (-20..100°C), H (-40..100°C), M (-55..100°C).",
+    "specs": {
+      "type": "DC/DC",
+      "compatibility": "PIN-TO-PIN с VICOR",
+      "total_models": 370,
+      "cases": ["Full Brick", "1/2 Brick", "1/4 Brick"],
+      "input_voltages": ["24 В", "28 В", "300 В", "375 В"],
+      "temp_options": {
+        "C": "-20...+100 °С",
+        "H": "-40...+100 °С",
+        "M": "-55...+100 °С"
+      },
+      "datasheet": "https://ekb-test.ru/upload/iblock/6d5/zv8rr31qciiahcz5b8s8r060rvkzh23z/ET_F300.pdf"
+    },
+    "url": "https://ekb-test.ru/proizvodstvo-preobrazovatelej-napryazheniya/modulnye-preobrazovateli-irtysh/",
+    "imageUrl": ""
+  },
+  {
+    "id": 45,
+    "name": "ET-F300C-3V3P264R23",
+    "category": "Преобразователи напряжения",
+    "subcategory": "ИРТЫШ",
+    "description": "Модульный DC/DC преобразователь серии ИРТЫШ, корпус Full Brick.",
+    "specs": {
+      "output_voltage": "3.3 В",
+      "power": "264 Вт",
+      "case": "Full Brick",
+      "dimensions": "117×55.9×12.7 мм",
+      "type": "DC/DC"
+    },
+    "url": "https://ekb-test.ru/proizvodstvo-preobrazovatelej-napryazheniya/modulnye-preobrazovateli-irtysh/",
+    "imageUrl": ""
+  },
+  {
+    "id": 46,
+    "name": "ET-F300C-05VP400R23",
+    "category": "Преобразователи напряжения",
+    "subcategory": "ИРТЫШ",
+    "description": "Модульный DC/DC преобразователь серии ИРТЫШ, корпус Full Brick.",
+    "specs": {
+      "output_voltage": "5 В",
+      "power": "400 Вт",
+      "case": "Full Brick",
+      "dimensions": "117×55.9×12.7 мм",
+      "type": "DC/DC"
+    },
+    "url": "https://ekb-test.ru/proizvodstvo-preobrazovatelej-napryazheniya/modulnye-preobrazovateli-irtysh/",
+    "imageUrl": ""
+  },
+  {
+    "id": 47,
+    "name": "ET-F300C-12VP600R23",
+    "category": "Преобразователи напряжения",
+    "subcategory": "ИРТЫШ",
+    "description": "Модульный DC/DC преобразователь серии ИРТЫШ, корпус Full Brick, 600 Вт.",
+    "specs": {
+      "output_voltage": "12 В",
+      "power": "600 Вт",
+      "case": "Full Brick",
+      "dimensions": "117×55.9×12.7 мм",
+      "type": "DC/DC"
+    },
+    "url": "https://ekb-test.ru/proizvodstvo-preobrazovatelej-napryazheniya/modulnye-preobrazovateli-irtysh/",
+    "imageUrl": ""
+  },
+  {
+    "id": 48,
+    "name": "ET-F300C-48VP600R23",
+    "category": "Преобразователи напряжения",
+    "subcategory": "ИРТЫШ",
+    "description": "Модульный DC/DC преобразователь серии ИРТЫШ, корпус Full Brick, 600 Вт.",
+    "specs": {
+      "output_voltage": "48 В",
+      "power": "600 Вт",
+      "case": "Full Brick",
+      "dimensions": "117×55.9×12.7 мм",
+      "type": "DC/DC"
+    },
+    "url": "https://ekb-test.ru/proizvodstvo-preobrazovatelej-napryazheniya/modulnye-preobrazovateli-irtysh/",
+    "imageUrl": ""
+  },
+  {
+    "id": 49,
+    "name": "Серия ВОЛГА (AC/DC)",
+    "category": "Преобразователи напряжения",
+    "subcategory": "ВОЛГА",
+    "description": "Модульные AC/DC преобразователи серии ВОЛГА с повышенной энергетической плотностью. Входное напряжение 115 В (80–140 В). Мощности: 50, 100, 300, 700, 1200 Вт. Выходные напряжения: 5, 12, 15, 24, 27, 48 В.",
+    "specs": {
+      "type": "AC/DC",
+      "input_voltage": "115 В (80–140 В)",
+      "power_range": "50–1200 Вт",
+      "output_voltages": ["5 В", "12 В", "15 В", "24 В", "27 В", "48 В"],
+      "temp_options": {
+        "Р": "-50...+100 °С",
+        "С": "-40...+100 °С"
+      }
+    },
+    "url": "https://ekb-test.ru/proizvodstvo-preobrazovatelej-napryazheniya/seriya-volga/",
+    "imageUrl": ""
+  },
+  {
+    "id": 50,
+    "name": "ЭТВА50-115О05ПГККС",
+    "category": "Преобразователи напряжения",
+    "subcategory": "ВОЛГА",
+    "description": "Модульный AC/DC преобразователь серии ВОЛГА, 50 Вт, выход 5 В.",
+    "specs": {
+      "output_voltage": "5 В",
+      "power": "50 Вт",
+      "case": "A1",
+      "dimensions": "101×51×19 мм",
+      "input_voltage": "115 В",
+      "type": "AC/DC",
+      "datasheet": "https://ekb-test.ru/upload/iblock/bd7/lyscfzcu7f1xgx3d3682ydoq7wyveww0/ETVA50.pdf"
+    },
+    "url": "https://ekb-test.ru/proizvodstvo-preobrazovatelej-napryazheniya/seriya-volga/",
+    "imageUrl": ""
+  },
+  {
+    "id": 51,
+    "name": "ЭТВА50-115О12ПГККС",
+    "category": "Преобразователи напряжения",
+    "subcategory": "ВОЛГА",
+    "description": "Модульный AC/DC преобразователь серии ВОЛГА, 50 Вт, выход 12 В.",
+    "specs": {
+      "output_voltage": "12 В",
+      "power": "50 Вт",
+      "case": "A1",
+      "dimensions": "101×51×19 мм",
+      "input_voltage": "115 В",
+      "type": "AC/DC",
+      "datasheet": "https://ekb-test.ru/upload/iblock/bd7/lyscfzcu7f1xgx3d3682ydoq7wyveww0/ETVA50.pdf"
+    },
+    "url": "https://ekb-test.ru/proizvodstvo-preobrazovatelej-napryazheniya/seriya-volga/",
+    "imageUrl": ""
+  },
+  {
+    "id": 52,
+    "name": "ЭТВА100-115О24ПГККС",
+    "category": "Преобразователи напряжения",
+    "subcategory": "ВОЛГА",
+    "description": "Модульный AC/DC преобразователь серии ВОЛГА, 100 Вт, выход 24 В.",
+    "specs": {
+      "output_voltage": "24 В",
+      "power": "100 Вт",
+      "case": "A2",
+      "dimensions": "111×61×21 мм",
+      "input_voltage": "115 В",
+      "type": "AC/DC",
+      "datasheet": "https://ekb-test.ru/upload/iblock/825/96xwcgvnz7b8coriz2h0zce986o0g2w5/ETVA100.pdf"
+    },
+    "url": "https://ekb-test.ru/proizvodstvo-preobrazovatelej-napryazheniya/seriya-volga/",
+    "imageUrl": ""
+  },
+  {
+    "id": 53,
+    "name": "ЭТВА300-115О48ПГККС",
+    "category": "Преобразователи напряжения",
+    "subcategory": "ВОЛГА",
+    "description": "Модульный AC/DC преобразователь серии ВОЛГА, 300 Вт, выход 48 В.",
+    "specs": {
+      "output_voltage": "48 В",
+      "power": "300 Вт",
+      "case": "A3",
+      "dimensions": "134×84×27.5 мм",
+      "input_voltage": "115 В",
+      "type": "AC/DC",
+      "datasheet": "https://ekb-test.ru/upload/iblock/95f/ztpo37eoshfdrt06b1dd52ze7gr0b7z9/ETVA300.pdf"
+    },
+    "url": "https://ekb-test.ru/proizvodstvo-preobrazovatelej-napryazheniya/seriya-volga/",
+    "imageUrl": ""
+  },
+  {
+    "id": 54,
+    "name": "ЭТВА700-115О27ПГККС",
+    "category": "Преобразователи напряжения",
+    "subcategory": "ВОЛГА",
+    "description": "Модульный AC/DC преобразователь серии ВОЛГА, 700 Вт, выход 27 В.",
+    "specs": {
+      "output_voltage": "27 В",
+      "power": "700 Вт",
+      "case": "A4",
+      "dimensions": "175×93×29 мм",
+      "input_voltage": "115 В",
+      "type": "AC/DC",
+      "datasheet": "https://ekb-test.ru/upload/iblock/734/ui4hxkanqmm2xbcmoe0sqo5dvpdcnkff/ETVA700.pdf"
+    },
+    "url": "https://ekb-test.ru/proizvodstvo-preobrazovatelej-napryazheniya/seriya-volga/",
+    "imageUrl": ""
+  },
+  {
+    "id": 55,
+    "name": "ЭТВА1200-115О15ПГККС",
+    "category": "Преобразователи напряжения",
+    "subcategory": "ВОЛГА",
+    "description": "Модульный AC/DC преобразователь серии ВОЛГА, 1200 Вт, выход 15 В.",
+    "specs": {
+      "output_voltage": "15 В",
+      "power": "1200 Вт",
+      "case": "A5",
+      "dimensions": "211×117×38 мм",
+      "input_voltage": "115 В",
+      "type": "AC/DC",
+      "datasheet": "https://ekb-test.ru/upload/iblock/fdf/m39en8d61zyvev44mdujfa135ihr5bpb/ETVA1200.pdf"
+    },
+    "url": "https://ekb-test.ru/proizvodstvo-preobrazovatelej-napryazheniya/seriya-volga/",
+    "imageUrl": ""
+  },
+  {
+    "id": 56,
+    "name": "Серия ЕНИСЕЙ (DC/DC)",
+    "category": "Преобразователи напряжения",
+    "subcategory": "ЕНИСЕЙ",
+    "description": "Многоканальные модульные DC/DC преобразователи серии ЕНИСЕЙ. Входное напряжение 27 В (17–36 В). Мощности: 7.5, 20, 30, 50, 80, 200, 600, 1200 Вт. Корпуса F1–F8. Одно- и двухполярные выходы.",
+    "specs": {
+      "type": "DC/DC",
+      "input_voltage": "27 В (17–36 В)",
+      "power_range": "7.5–1200 Вт",
+      "output_voltages": ["5 В", "12 В", "15 В", "24 В", "27 В"],
+      "cases": ["F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8"],
+      "temp_range": "-40...+100 °С"
+    },
+    "url": "https://ekb-test.ru/proizvodstvo-preobrazovatelej-napryazheniya/modulnye-preobrazovateli-enisey/",
+    "imageUrl": ""
+  },
+  {
+    "id": 57,
+    "name": "ЭТЕНД7.5-27ФО05МФС",
+    "category": "Преобразователи напряжения",
+    "subcategory": "ЕНИСЕЙ",
+    "description": "Модульный DC/DC преобразователь серии ЕНИСЕЙ, 7.5 Вт, выход 5 В.",
+    "specs": {
+      "output_voltage": "5 В",
+      "power": "7.5 Вт",
+      "case": "F1",
+      "dimensions": "30×20×10 мм",
+      "input_voltage": "27 В",
+      "type": "DC/DC"
+    },
+    "url": "https://ekb-test.ru/proizvodstvo-preobrazovatelej-napryazheniya/modulnye-preobrazovateli-enisey/modulnyj-preobrazovatel-dc-dc-enisej-5-v-7-5-vt-ehtend7-5-27fo05mfs/",
+    "imageUrl": ""
+  },
+  {
+    "id": 58,
+    "name": "ЭТЕНД7.5-27ФО12МФС",
+    "category": "Преобразователи напряжения",
+    "subcategory": "ЕНИСЕЙ",
+    "description": "Модульный DC/DC преобразователь серии ЕНИСЕЙ, 7.5 Вт, выход 12 В.",
+    "specs": {
+      "output_voltage": "12 В",
+      "power": "7.5 Вт",
+      "case": "F1",
+      "dimensions": "30×20×10 мм",
+      "input_voltage": "27 В",
+      "type": "DC/DC"
+    },
+    "url": "https://ekb-test.ru/proizvodstvo-preobrazovatelej-napryazheniya/modulnye-preobrazovateli-enisey/modulnyj-preobrazovatel-dc-dc-enisej-12-v-7-5-vt-ehtend7-5-27fo12mfs/",
+    "imageUrl": ""
+  },
+  {
+    "id": 59,
+    "name": "ЭТЕНД7.5-27ФД0505МФС",
+    "category": "Преобразователи напряжения",
+    "subcategory": "ЕНИСЕЙ",
+    "description": "Модульный DC/DC преобразователь серии ЕНИСЕЙ, 7.5 Вт, двухполярный выход ±5 В.",
+    "specs": {
+      "output_voltage": "±5 В",
+      "power": "7.5 Вт",
+      "case": "F1",
+      "dimensions": "30×20×10 мм",
+      "input_voltage": "27 В",
+      "type": "DC/DC"
+    },
+    "url": "https://ekb-test.ru/proizvodstvo-preobrazovatelej-napryazheniya/modulnye-preobrazovateli-enisey/modulnyj-preobrazovatel-dc-dc-enisej-5-v-7-5-vt-ehtend7-5-27fd0505mfs/",
+    "imageUrl": ""
+  },
+  {
+    "id": 60,
+    "name": "Серия КАМА (AC/DC)",
+    "category": "Преобразователи напряжения",
+    "subcategory": "КАМА",
+    "description": "Модульные AC/DC преобразователи серии КАМА. Универсальное входное напряжение 176–242 В (50/60 Гц). Мощности: 50, 100, 200, 500, 1000 Вт. Выходные напряжения: 5, 12, 15, 24, 27, 48 В.",
+    "specs": {
+      "type": "AC/DC",
+      "input_voltage": "176–242 В",
+      "power_range": "50–1000 Вт",
+      "output_voltages": ["5 В", "12 В", "15 В", "24 В", "27 В", "48 В"],
+      "temp_options": {
+        "Р": "-60...+100 °С",
+        "С": "-40...+100 °С"
+      }
+    },
+    "url": "https://ekb-test.ru/proizvodstvo-preobrazovatelej-napryazheniya/seriya-kama/",
+    "imageUrl": ""
+  },
+  {
+    "id": 61,
+    "name": "ЭТКАВ50-230О05МФС",
+    "category": "Преобразователи напряжения",
+    "subcategory": "КАМА",
+    "description": "Модульный AC/DC преобразователь серии КАМА, 50 Вт, выход 5 В.",
+    "specs": {
+      "output_voltage": "5 В",
+      "power": "50 Вт",
+      "case": "F5",
+      "dimensions": "84.5×53×12.5 мм",
+      "input_voltage": "176–242 В",
+      "type": "AC/DC"
+    },
+    "url": "https://ekb-test.ru/proizvodstvo-preobrazovatelej-napryazheniya/seriya-kama/",
+    "imageUrl": ""
+  },
+  {
+    "id": 62,
+    "name": "ЭТКАВ50-230О24МФС",
+    "category": "Преобразователи напряжения",
+    "subcategory": "КАМА",
+    "description": "Модульный AC/DC преобразователь серии КАМА, 50 Вт, выход 24 В.",
+    "specs": {
+      "output_voltage": "24 В",
+      "power": "50 Вт",
+      "case": "F5",
+      "dimensions": "84.5×53×12.5 мм",
+      "input_voltage": "176–242 В",
+      "type": "AC/DC"
+    },
+    "url": "https://ekb-test.ru/proizvodstvo-preobrazovatelej-napryazheniya/seriya-kama/",
+    "imageUrl": ""
+  },
+  {
+    "id": 63,
+    "name": "ЭТКАВ100-230О12МФС",
+    "category": "Преобразователи напряжения",
+    "subcategory": "КАМА",
+    "description": "Модульный AC/DC преобразователь серии КАМА, 100 Вт, выход 12 В.",
+    "specs": {
+      "output_voltage": "12 В",
+      "power": "100 Вт",
+      "case": "F5",
+      "dimensions": "84.5×53×12.5 мм",
+      "input_voltage": "176–242 В",
+      "type": "AC/DC"
+    },
+    "url": "https://ekb-test.ru/proizvodstvo-preobrazovatelej-napryazheniya/seriya-kama/",
+    "imageUrl": ""
+  },
+  {
+    "id": 64,
+    "name": "ЭТКАВ200-230О48МФС",
+    "category": "Преобразователи напряжения",
+    "subcategory": "КАМА",
+    "description": "Модульный AC/DC преобразователь серии КАМА, 200 Вт, выход 48 В.",
+    "specs": {
+      "output_voltage": "48 В",
+      "power": "200 Вт",
+      "case": "F6",
+      "dimensions": "107×67.3×13 мм",
+      "input_voltage": "176–242 В",
+      "type": "AC/DC"
+    },
+    "url": "https://ekb-test.ru/proizvodstvo-preobrazovatelej-napryazheniya/seriya-kama/",
+    "imageUrl": ""
+  },
+  {
+    "id": 65,
+    "name": "ЭТКАВ500-230О24МФС",
+    "category": "Преобразователи напряжения",
+    "subcategory": "КАМА",
+    "description": "Модульный AC/DC преобразователь серии КАМА, 500 Вт, выход 24 В.",
+    "specs": {
+      "output_voltage": "24 В",
+      "power": "500 Вт",
+      "case": "F7",
+      "dimensions": "122×84×15 мм",
+      "input_voltage": "176–242 В",
+      "type": "AC/DC"
+    },
+    "url": "https://ekb-test.ru/proizvodstvo-preobrazovatelej-napryazheniya/seriya-kama/",
+    "imageUrl": ""
+  },
+  {
+    "id": 66,
+    "name": "ЭТКАВ1000-230О24МФС",
+    "category": "Преобразователи напряжения",
+    "subcategory": "КАМА",
+    "description": "Модульный AC/DC преобразователь серии КАМА, 1000 Вт, выход 24 В.",
+    "specs": {
+      "output_voltage": "24 В",
+      "power": "1000 Вт",
+      "case": "F8",
+      "dimensions": "168×122×16 мм",
+      "input_voltage": "176–242 В",
+      "type": "AC/DC"
+    },
+    "url": "https://ekb-test.ru/proizvodstvo-preobrazovatelej-napryazheniya/seriya-kama/",
+    "imageUrl": ""
+  },
+  {
+    "id": 67,
+    "name": "Серия ARC70A",
+    "category": "СВЧ-конденсаторы",
+    "subcategory": "ARC70A",
+    "description": "Сверхвысокочастотные многослойные керамические чип-конденсаторы серии ARC70A. Прямая замена конденсаторов ATC (American Technical Ceramics) и других производителей. Корпус 0505. Диапазон ёмкостей: 0.1–1000 пФ. 86 позиций.",
+    "specs": {
+      "case_size": "0505",
+      "capacitance_range": "0.1–1000 пФ",
+      "voltage_options": ["150 В (код 151)", "200 В (код 201)"],
+      "tolerance": "±0.05–±0.5 пФ / ±1%–±5%",
+      "temp_coefficient": "0±30 ppm/°C",
+      "temp_range": "-55...+200 °С",
+      "total_products": 86,
+      "replaces": "ATC конденсаторы",
+      "datasheet": "https://ekb-test.ru/upload/iblock/1eb/lnboiprf0xht2l7q2emh121lgu073rfn/ARC70A-EKB-TEST.pdf"
+    },
+    "url": "https://ekb-test.ru/svch-kondensatory/svch-kondensatory-arc70a/",
+    "imageUrl": "https://ekb-test.ru/upload/uf/bf0/k29x09kqdlzz4b06klqe20e6thwvxga4/ARC70A.jpg"
+  },
+  {
+    "id": 68,
+    "name": "ARC70A 0.1 пФ",
+    "category": "СВЧ-конденсаторы",
+    "subcategory": "ARC70A",
+    "description": "СВЧ многослойный керамический чип-конденсатор, ёмкость 0.1 пФ.",
+    "specs": {
+      "capacitance": "0.1 пФ",
+      "case_size": "0505",
+      "voltage": "150 В или 200 В",
+      "temp_coefficient": "0±30 ppm/°C",
+      "temp_range": "-55...+200 °С"
+    },
+    "url": "https://ekb-test.ru/svch-kondensatory/svch-kondensatory-arc70a/svch-kondensator-arc70a-0-1-pf/",
+    "imageUrl": "https://ekb-test.ru/upload/resize_cache/iblock/13d/qqpn8letfk89sbf7fu48g95uqi6hqriv/550_420_1/5.jpg"
+  },
+  {
+    "id": 69,
+    "name": "ARC70A 100 пФ",
+    "category": "СВЧ-конденсаторы",
+    "subcategory": "ARC70A",
+    "description": "СВЧ многослойный керамический чип-конденсатор, ёмкость 100 пФ.",
+    "specs": {
+      "capacitance": "100 пФ",
+      "case_size": "0505",
+      "voltage": "150 В или 200 В",
+      "tolerance": "±1%–±5%",
+      "temp_coefficient": "0±30 ppm/°C",
+      "temp_range": "-55...+200 °С",
+      "datasheet": "https://ekb-test.ru/upload/iblock/1eb/lnboiprf0xht2l7q2emh121lgu073rfn/ARC70A-EKB-TEST.pdf"
+    },
+    "url": "https://ekb-test.ru/svch-kondensatory/svch-kondensatory-arc70a/svch-kondensator-arc70a-100-pf/",
+    "imageUrl": "https://ekb-test.ru/upload/resize_cache/iblock/13d/qqpn8letfk89sbf7fu48g95uqi6hqriv/550_420_1/5.jpg"
+  },
+  {
+    "id": 70,
+    "name": "ARC70A 1000 пФ",
+    "category": "СВЧ-конденсаторы",
+    "subcategory": "ARC70A",
+    "description": "СВЧ многослойный керамический чип-конденсатор, ёмкость 1000 пФ.",
+    "specs": {
+      "capacitance": "1000 пФ",
+      "case_size": "0505",
+      "voltage": "150 В или 200 В",
+      "temp_coefficient": "0±30 ppm/°C",
+      "temp_range": "-55...+200 °С"
+    },
+    "url": "https://ekb-test.ru/svch-kondensatory/svch-kondensatory-arc70a/svch-kondensator-arc70a-1000-pf/",
+    "imageUrl": ""
+  },
+  {
+    "id": 71,
+    "name": "Серия ARC70C",
+    "category": "СВЧ-конденсаторы",
+    "subcategory": "ARC70C",
+    "description": "Сверхвысокочастотные многослойные керамические чип-конденсаторы серии ARC70C высоковольтного исполнения. Корпус 2225. Диапазон ёмкостей: 0.5–3000 пФ. Рабочее напряжение до 3600 В. 89 позиций.",
+    "specs": {
+      "case_size": "2225",
+      "capacitance_range": "0.5–3000 пФ",
+      "voltage_options": ["2500 В (код 252)", "3600 В (код 362)"],
+      "tolerance": "±1%–±5%",
+      "temp_coefficient": "0±30 ppm/°C",
+      "temp_range": "-55...+200 °С",
+      "total_products": 89,
+      "datasheet": "https://ekb-test.ru/upload/iblock/996/kgvl92jr1qm5reb2zhdfaz7jxvuhfzf3/ARC70C-EKB-TEST.pdf"
+    },
+    "url": "https://ekb-test.ru/svch-kondensatory/seriya-arc70c/",
+    "imageUrl": "https://ekb-test.ru/upload/uf/582/q6hmgve7f71xy16qieeg90n1cywf0y0y/ARC70C.jpg"
+  },
+  {
+    "id": 72,
+    "name": "ARC70C 100 пФ",
+    "category": "СВЧ-конденсаторы",
+    "subcategory": "ARC70C",
+    "description": "СВЧ высоковольтный многослойный керамический чип-конденсатор, ёмкость 100 пФ.",
+    "specs": {
+      "capacitance": "100 пФ",
+      "case_size": "2225",
+      "voltage": "2500 В или 3600 В",
+      "tolerance": "±1%–±5%",
+      "temp_coefficient": "0±30 ppm/°C",
+      "temp_range": "-55...+200 °С",
+      "datasheet": "https://ekb-test.ru/upload/iblock/996/kgvl92jr1qm5reb2zhdfaz7jxvuhfzf3/ARC70C-EKB-TEST.pdf"
+    },
+    "url": "https://ekb-test.ru/svch-kondensatory/seriya-arc70c/svch-kondensator-arc70c-100-pf/",
+    "imageUrl": "https://ekb-test.ru/upload/resize_cache/iblock/13d/qqpn8letfk89sbf7fu48g95uqi6hqriv/550_420_1/5.jpg"
+  },
+  {
+    "id": 73,
+    "name": "Серия ARC70E",
+    "category": "СВЧ-конденсаторы",
+    "subcategory": "ARC70E",
+    "description": "Сверхвысокочастотные многослойные керамические чип-конденсаторы серии ARC70E сверхвысоковольтного исполнения. Корпус 3838. Диапазон ёмкостей: 0.5–4700 пФ. Рабочее напряжение до 7200 В. 96 позиций.",
+    "specs": {
+      "case_size": "3838",
+      "capacitance_range": "0.5–4700 пФ",
+      "voltage_options": ["3600 В (код 362)", "7200 В (код 722)"],
+      "tolerance": "±0.05 пФ–±5%",
+      "temp_coefficient": "0±30 ppm/°C",
+      "temp_range": "-55...+200 °С",
+      "total_products": 96,
+      "datasheet": "https://ekb-test.ru/upload/iblock/076/6tb4gpozre10w3l3kecli3u7xx8xm3d0/ARC70E-EKB-TEST.pdf"
+    },
+    "url": "https://ekb-test.ru/svch-kondensatory/seriya-arc7e/",
+    "imageUrl": "https://ekb-test.ru/upload/uf/ce6/2vqfe2coot0maq0othg34x81elqygozw/ARC70E.jpg"
+  },
+  {
+    "id": 74,
+    "name": "ARC70E 0.5 пФ",
+    "category": "СВЧ-конденсаторы",
+    "subcategory": "ARC70E",
+    "description": "СВЧ сверхвысоковольтный многослойный керамический чип-конденсатор, ёмкость 0.5 пФ.",
+    "specs": {
+      "capacitance": "0.5 пФ",
+      "case_size": "3838",
+      "voltage": "3600 В или 7200 В",
+      "temp_coefficient": "0±30 ppm/°C",
+      "temp_range": "-55...+200 °С"
+    },
+    "url": "https://ekb-test.ru/svch-kondensatory/seriya-arc7e/svch-kondensator-arc70e-0-5-pf/",
+    "imageUrl": "https://ekb-test.ru/upload/resize_cache/iblock/4a0/qq6siqp1q4sokmjhpu6xhuw9wwqgjj4r/200_200_1/14.jpg"
+  },
+  {
+    "id": 75,
+    "name": "ARC70E 3.3 пФ",
+    "category": "СВЧ-конденсаторы",
+    "subcategory": "ARC70E",
+    "description": "СВЧ сверхвысоковольтный многослойный керамический чип-конденсатор, ёмкость 3.3 пФ.",
+    "specs": {
+      "capacitance": "3.3 пФ",
+      "case_size": "3838",
+      "voltage": "3600 В или 7200 В",
+      "temp_coefficient": "0±30 ppm/°C",
+      "temp_range": "-55...+200 °С"
+    },
+    "url": "https://ekb-test.ru/svch-kondensatory/seriya-arc7e/svch-kondensator-arc70e-3-3-pf/",
+    "imageUrl": "https://ekb-test.ru/upload/resize_cache/iblock/6e0/mw3t8an92b3l7eoiqzbbad9oastj2xxg/200_200_1/12.jpg"
+  },
+  {
+    "id": 76,
+    "name": "СВЧ-транзисторы LDMOS",
+    "category": "СВЧ-транзисторы",
+    "subcategory": "LDMOS",
+    "description": "Высокочастотные транзисторы LDMOS производства ЭКБ ТЕСТ. 17 моделей. Корпуса: керамические с фланцами (4 вывода), пластиковые SMD (SO8, PSMD). Частотный диапазон: 500 МГц – 4 ГГц. Мощность: 3–700 Вт.",
+    "specs": {
+      "technology": "LDMOS",
+      "total_models": 17,
+      "power_range": "3–700 Вт",
+      "frequency_range": "500 МГц–4 ГГц",
+      "package_options": ["Керамический с фланцами 4-вывод", "Пластиковый SMD", "Пластиковый SO8 SMD"]
+    },
+    "url": "https://ekb-test.ru/svch-tranzistory/svch-tranzistory-ldmos/",
+    "imageUrl": ""
+  },
+  {
+    "id": 77,
+    "name": "ET1008",
+    "category": "СВЧ-транзисторы",
+    "subcategory": "LDMOS",
+    "description": "Высокочастотный LDMOS транзистор, 90 Вт, 1 ГГц. Двойной N-канальный РЧ LDMOS транзистор. Функциональная замена SEMELAB D1008UK.",
+    "specs": {
+      "power": "90 Вт",
+      "frequency": "до 1 ГГц",
+      "gain": "18 дБ",
+      "supply_voltage": "28 В",
+      "package": "Керамический с фланцами, 4 вывода, 2 монтажных отверстия",
+      "dimensions": "28.95×17.78×4.85 мм",
+      "replaces": "SEMELAB D1008UK",
+      "datasheet": "https://ekb-test.ru/upload/iblock/96e/ahgfy9j660utf222y9gsu919hhow3ro2/ET1008.pdf"
+    },
+    "url": "https://ekb-test.ru/svch-tranzistory/svch-tranzistory-ldmos/vysokochastotnyj-tranzistor-1-ggc-et1008/",
+    "imageUrl": "https://ekb-test.ru/upload/uf/3b7/v1i1ygu2dxwi7lkhvrip4i1y5pr1jz6f/ET2028.png"
+  },
+  {
+    "id": 78,
+    "name": "ET1006",
+    "category": "СВЧ-транзисторы",
+    "subcategory": "LDMOS",
+    "description": "Высокочастотный LDMOS транзистор, 70 Вт, 1.5 ГГц.",
+    "specs": {
+      "power": "70 Вт",
+      "frequency": "до 1.5 ГГц",
+      "package": "Керамический с фланцами, 4 вывода"
+    },
+    "url": "https://ekb-test.ru/svch-tranzistory/svch-tranzistory-ldmos/vysokochastotnyj-tranzistor-1-5-ggc-et1006/",
+    "imageUrl": ""
+  },
+  {
+    "id": 79,
+    "name": "ET2022",
+    "category": "СВЧ-транзисторы",
+    "subcategory": "LDMOS",
+    "description": "Высокочастотный LDMOS транзистор, 50 Вт, 1 ГГц.",
+    "specs": {
+      "power": "50 Вт",
+      "frequency": "до 1 ГГц",
+      "package": "Керамический с фланцами, 4 вывода"
+    },
+    "url": "https://ekb-test.ru/svch-tranzistory/svch-tranzistory-ldmos/vysokochastotnyj-tranzistor-1-ggc-et2022/",
+    "imageUrl": ""
+  },
+  {
+    "id": 80,
+    "name": "ET1028",
+    "category": "СВЧ-транзисторы",
+    "subcategory": "LDMOS",
+    "description": "Высокочастотный LDMOS транзистор, 400 Вт, 250 МГц. Функциональная замена PD55015-E (SEMELAB).",
+    "specs": {
+      "power": "400 Вт",
+      "frequency": "до 250 МГц",
+      "gain": "17 дБ",
+      "supply_voltage": "28 В",
+      "package": "Керамический с фланцами, 4 вывода, 2 монтажных отверстия",
+      "dimensions": "28.95×17.78×4.85 мм",
+      "replaces": "PD55015-E (SEMELAB)",
+      "datasheet": "https://ekb-test.ru/upload/iblock/3a6/zcg35ukkrggefubfrg1xf9aczkekomjf/ET1028.pdf"
+    },
+    "url": "https://ekb-test.ru/svch-tranzistory/svch-tranzistory-ldmos/vysokochastotnyj-tranzistor-250-ggc-et1028/",
+    "imageUrl": ""
+  },
+  {
+    "id": 81,
+    "name": "ET09100",
+    "category": "СВЧ-транзисторы",
+    "subcategory": "LDMOS",
+    "description": "Высокочастотный LDMOS транзистор, 30 Вт, 1 ГГц, пластиковый SMD корпус.",
+    "specs": {
+      "power": "30 Вт",
+      "frequency": "до 1 ГГц",
+      "package": "Пластиковый SMD"
+    },
+    "url": "https://ekb-test.ru/svch-tranzistory/svch-tranzistory-ldmos/vysokochastotnyj-tranzistor-1-ggc-et09100/",
+    "imageUrl": ""
+  },
+  {
+    "id": 82,
+    "name": "ET25007",
+    "category": "СВЧ-транзисторы",
+    "subcategory": "LDMOS",
+    "description": "Высокочастотный LDMOS транзистор, 3 Вт, 2.5 ГГц, пластиковый SMD корпус.",
+    "specs": {
+      "power": "3 Вт",
+      "frequency": "до 2.5 ГГц",
+      "package": "Пластиковый SMD"
+    },
+    "url": "https://ekb-test.ru/svch-tranzistory/svch-tranzistory-ldmos/vysokochastotnyj-tranzistor-2-5-ggc-et25007/",
+    "imageUrl": ""
+  },
+  {
+    "id": 83,
+    "name": "ET6004H",
+    "category": "СВЧ-транзисторы",
+    "subcategory": "LDMOS",
+    "description": "Высокочастотный LDMOS транзистор, 35 Вт, 4 ГГц, керамический корпус с фланцами.",
+    "specs": {
+      "power": "35 Вт",
+      "frequency": "до 4 ГГц",
+      "package": "Керамический с фланцами"
+    },
+    "url": "https://ekb-test.ru/svch-tranzistory/svch-tranzistory-ldmos/vysokochastotnyj-tranzistor-4-ggc-et6004h/",
+    "imageUrl": ""
+  },
+  {
+    "id": 84,
+    "name": "ET0506",
+    "category": "СВЧ-транзисторы",
+    "subcategory": "LDMOS",
+    "description": "Высокочастотный LDMOS транзистор, 60 Вт, 1 ГГц.",
+    "specs": {
+      "power": "60 Вт",
+      "frequency": "до 1 ГГц",
+      "package": "Керамический с фланцами"
+    },
+    "url": "https://ekb-test.ru/svch-tranzistory/svch-tranzistory-ldmos/vysokochastotnyj-tranzistor-1-ggc-et0506/",
+    "imageUrl": ""
+  },
+  {
+    "id": 85,
+    "name": "ET0520",
+    "category": "СВЧ-транзисторы",
+    "subcategory": "LDMOS",
+    "description": "Высокочастотный LDMOS транзистор, 200 Вт, 500 МГц.",
+    "specs": {
+      "power": "200 Вт",
+      "frequency": "до 500 МГц",
+      "package": "Керамический с фланцами"
+    },
+    "url": "https://ekb-test.ru/svch-tranzistory/svch-tranzistory-ldmos/vysokochastotnyj-tranzistor-0-5-ggc-et0520/",
+    "imageUrl": ""
+  },
+  {
+    "id": 86,
+    "name": "ET1503V",
+    "category": "СВЧ-транзисторы",
+    "subcategory": "LDMOS",
+    "description": "Высокочастотный LDMOS транзистор, 30 Вт, 1500 МГц.",
+    "specs": {
+      "power": "30 Вт",
+      "frequency": "до 1500 МГц",
+      "package": "Керамический с фланцами"
+    },
+    "url": "https://ekb-test.ru/svch-tranzistory/svch-tranzistory-ldmos/vysokochastotnyj-tranzistor-1500-mgc-et1503v/",
+    "imageUrl": ""
+  },
+  {
+    "id": 87,
+    "name": "ET0535",
+    "category": "СВЧ-транзисторы",
+    "subcategory": "LDMOS",
+    "description": "Высокочастотный LDMOS транзистор, 300 Вт, 500 МГц.",
+    "specs": {
+      "power": "300 Вт",
+      "frequency": "до 500 МГц",
+      "package": "Керамический с фланцами"
+    },
+    "url": "https://ekb-test.ru/svch-tranzistory/svch-tranzistory-ldmos/vysokochastotnyj-tranzistor-500-mgc-et0535/",
+    "imageUrl": ""
+  },
+  {
+    "id": 88,
+    "name": "ET1001",
+    "category": "СВЧ-транзисторы",
+    "subcategory": "LDMOS",
+    "description": "Высокочастотный LDMOS транзистор, 10 Вт, 2 ГГц, пластиковый корпус SO8 SMD.",
+    "specs": {
+      "power": "10 Вт",
+      "frequency": "до 2 ГГц",
+      "package": "Пластиковый SO8 SMD"
+    },
+    "url": "https://ekb-test.ru/svch-tranzistory/svch-tranzistory-ldmos/vysokochastotnyj-tranzistor-2-ggc-et1001/",
+    "imageUrl": ""
+  },
+  {
+    "id": 89,
+    "name": "ET574F",
+    "category": "СВЧ-транзисторы",
+    "subcategory": "LDMOS",
+    "description": "Высокочастотный LDMOS транзистор, 700 Вт, 500 МГц. Функциональная замена Ampleon D1207UK.",
+    "specs": {
+      "power": "700 Вт",
+      "frequency": "до 500 МГц",
+      "gain": "17.7 дБ",
+      "supply_voltage": "50 В",
+      "package": "Керамический с фланцами",
+      "dimensions": "41.15×16.60×4.45 мм",
+      "replaces": "Ampleon D1207UK"
+    },
+    "url": "https://ekb-test.ru/svch-tranzistory/svch-tranzistory-ldmos/vysokochastotnyj-tranzistor-500-mgc-et574f/",
+    "imageUrl": "https://ekb-test.ru/upload/uf/8f8/79qcm13c46o58nke0r53eul3a02u61s7/ET574F.png"
+  },
+  {
+    "id": 90,
+    "name": "ET2006C",
+    "category": "СВЧ-транзисторы",
+    "subcategory": "LDMOS",
+    "description": "Высокочастотный LDMOS транзистор, 24 Вт, 2 ГГц.",
+    "specs": {
+      "power": "24 Вт",
+      "frequency": "до 2 ГГц",
+      "package": "Керамический с фланцами"
+    },
+    "url": "https://ekb-test.ru/svch-tranzistory/svch-tranzistory-ldmos/vysokochastotnyj-tranzistor-2-ggc-et2006c/",
+    "imageUrl": ""
+  },
+  {
+    "id": 91,
+    "name": "ETM1001",
+    "category": "СВЧ-транзисторы",
+    "subcategory": "LDMOS",
+    "description": "Высокочастотный LDMOS транзистор, 10 Вт, 2 ГГц.",
+    "specs": {
+      "power": "10 Вт",
+      "frequency": "до 2 ГГц",
+      "package": "Керамический с фланцами"
+    },
+    "url": "https://ekb-test.ru/svch-tranzistory/svch-tranzistory-ldmos/vysokochastotnyj-tranzistor-2-ggc-etm1001/",
+    "imageUrl": ""
+  },
+  {
+    "id": 92,
+    "name": "ET2201N",
+    "category": "СВЧ-транзисторы",
+    "subcategory": "LDMOS",
+    "description": "Высокочастотный LDMOS транзистор, 10 Вт, 2.2 ГГц.",
+    "specs": {
+      "power": "10 Вт",
+      "frequency": "до 2.2 ГГц",
+      "package": "Керамический с фланцами"
+    },
+    "url": "https://ekb-test.ru/svch-tranzistory/svch-tranzistory-ldmos/vysokochastotnyj-tranzistor-2-2-ggc-et2201n/",
+    "imageUrl": ""
+  },
+  {
+    "id": 93,
+    "name": "ET3135",
+    "category": "СВЧ-транзисторы",
+    "subcategory": "LDMOS",
+    "description": "Высокочастотный широкополосный LDMOS транзистор, 20 Вт, диапазон 700–3500 МГц.",
+    "specs": {
+      "power": "20 Вт",
+      "frequency": "700–3500 МГц",
+      "package": "Керамический с фланцами"
+    },
+    "url": "https://ekb-test.ru/svch-tranzistory/svch-tranzistory-ldmos/vysokochastotnyj-tranzistor-700-3500-mgc-et3135/",
+    "imageUrl": ""
+  },
+  {
+    "id": 94,
+    "name": "Производство печатных плат",
+    "category": "Производство печатных плат",
+    "subcategory": "",
+    "description": "Производство печатных плат всех видов: многослойные (до 40 слоёв), односторонние, двусторонние, СВЧ-платы, гибкие, гибко-жёсткие, на металлическом основании. Класс точности до 6-го (ГОСТ Р 53429-2009).",
+    "specs": {
+      "board_types": ["ОПП", "ДПП", "МПП до 40 слоёв", "СВЧ-платы", "Гибкие", "Гибко-жёсткие", "На металлическом основании"],
+      "accuracy_class": "до 6-го включительно",
+      "min_conductor_width": "0.07 мм",
+      "aspect_ratio": "1:10–1:20",
+      "board_thickness": "0.1–6.0 мм",
+      "min_via_diameter": "0.1 мм (сверло 0.15)",
+      "copper_foil_options": ["5", "12", "18", "35", "50", "70", "105", "150 мкм"],
+      "surface_finish": ["HASL", "HASL безсвинцовый", "Ni-Au (иммерсионный/гальванический)", "ENEPIG", "OSP", "Никелирование", "Палладирование"],
+      "solder_mask": "Жидкая фотопроявляемая (несколько цветов)",
+      "materials": ["FR-4", "Rogers", "Taconic", "Isola", "Алюминиевая/медная подложка"],
+      "quality_standards": ["IPC-A-600G", "IPC-6012C", "ГОСТ Р 55490-2013"]
+    },
+    "url": "https://ekb-test.ru/proizvodstvo-pechatnyh-plat/",
+    "imageUrl": "https://ekb-test.ru/images/content/printed-boards-main.jpg"
+  }
+]

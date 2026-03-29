@@ -1,0 +1,35 @@
+/* Design Tokens — Swiss Style, Beige/Navy */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Colors — Beige/Navy palette */
+  --color-bg: #F5F3EF;
+  --color-bg-alt: #E9E8EB;
+  --color-text: #112F6E;
+  --color-text-muted: #8C96AB;
+  --color-border: #D7D3CB;
+
+  /* Typography — Inter only, strictly 5 sizes */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --text-72: 72px;
+  --text-40: 40px;
+  --text-24: 24px;
+  --text-14: 14px;
+  --text-12: 12px;
+
+  /* Spacing — 8px grid */
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-80: 80px;
+  --space-120: 120px;
+
+  /* Layout */
+  --container-max: 1440px;
+  --container-padding: 120px;
+}
