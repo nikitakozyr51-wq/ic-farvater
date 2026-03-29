@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(winget --version)",
-      "Bash(choco --version)",
-      "Bash(scoop --version)"
-    ]
-  }
-}
