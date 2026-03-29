@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="../css/variables.css">
   <link rel="stylesheet" href="../css/base.css">
   <link rel="stylesheet" href="../css/layout.css">
-  <link rel="stylesheet" href="../css/components.css?v=3">
-  <link rel="stylesheet" href="../css/pages/products.css?v=17">
+  <link rel="stylesheet" href="../css/components.css?v=4">
+  <link rel="stylesheet" href="../css/pages/products.css?v=18">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/mobile.css?v=15" media="(max-width: 768px)">
@@ -27,10 +27,6 @@
         <a href="about.html" class="header__link">О компании</a>
         <a href="../index.html#services" class="header__link">Услуги</a>
         <a href="contacts.html" class="header__link">Контакты</a>
-        <div class="header__nav-contact">
-          <span class="header__nav-contact-label">ТЕЛЕФОН</span>
-          <a href="tel:+79967788842" class="header__nav-contact-value">+7 996 778-88-42</a>
-        </div>
       </nav>
       <button class="header__burger" aria-label="Меню">
         <span></span><span></span><span></span>
@@ -44,12 +40,8 @@
     <section class="catalog__top">
       <div class="container catalog__top-inner">
         <div class="catalog__title-wrap">
-          <h1 class="catalog__title">
-            <span class="desktop-only">ПРОДУКЦИЯ</span>
-            <span class="mobile-only">КАТАЛОГ</span>
-          </h1>
-          <span class="catalog__title-count desktop-only">(01)</span>
-          <span class="catalog__title-count mobile-only" id="catalog-count">(156)</span>
+          <h1 class="catalog__title">ПРОДУКЦИЯ</h1>
+          <span class="catalog__title-count">(01)</span>
         </div>
         <div class="catalog__desc">
           <p class="catalog__desc-text">ИНТЕГРАТОР КОМПЛЕКСНЫХ РЕШЕНИЙ В МИКРОЭЛЕКТРОНИКЕ. ПОЛНЫЙ СПЕКТР ЭКБ ДЛЯ ОТВЕТСТВЕННЫХ ПРИМЕНЕНИЙ.</p>
@@ -65,43 +57,47 @@
         <!-- Sidebar -->
         <aside class="catalog__sidebar" id="catalog-sidebar">
 
-          <!-- Sort + Category -->
-          <div class="sidebar__group sidebar__group--split">
-            <div class="sidebar__col">
-              <span class="sidebar__label">СОРТИРОВКА</span>
-              <button class="sidebar__radio sidebar__radio--active" data-sort="recommended">РЕКОМЕНДУЕМЫЕ</button>
-              <button class="sidebar__radio" data-sort="popular">ПОПУЛЯРНЫЕ</button>
-              <button class="sidebar__radio" data-sort="name-asc">НАЗВАНИЕ А–Я</button>
-              <button class="sidebar__radio" data-sort="name-desc">НАЗВАНИЕ Я–А</button>
-            </div>
-            <div class="sidebar__col sidebar__col--right">
-              <div class="sidebar__spacer"></div>
-              <button class="sidebar__radio" data-category="all">ВСЕ</button>
-              <button class="sidebar__radio desktop-only" data-category="microchips">МИКРОСХЕМЫ</button>
-              <button class="sidebar__radio" data-category="connectors">РАЗЪЁМЫ</button>
-              <button class="sidebar__radio desktop-only" data-category="converters">ПРЕОБРАЗОВАТЕЛИ</button>
-              <button class="sidebar__radio desktop-only" data-category="capacitors">КОНДЕНСАТОРЫ</button>
-              <button class="sidebar__radio desktop-only" data-category="transistors">ТРАНЗИСТОРЫ</button>
-              <button class="sidebar__radio desktop-only" data-category="pcb">ПЛАТЫ</button>
-              <button class="sidebar__radio mobile-only" data-category="svch">СВЧ</button>
+          <div class="filter-header">
+            <span class="filter-header__title">ФИЛЬТРЫ</span>
+          </div>
+
+          <!-- Категория -->
+          <div class="filter-group" data-filter="category">
+            <button class="filter-group__header" aria-expanded="true">
+              <span class="filter-group__name">КАТЕГОРИЯ</span>
+              <svg class="filter-group__chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="filter-group__items">
+              <button class="filter-radio filter-radio--active" data-category="all">ВСЕ</button>
+              <button class="filter-radio" data-category="microchips">МИКРОСХЕМЫ</button>
+              <button class="filter-radio" data-category="connectors">РАЗЪЁМЫ</button>
+              <button class="filter-radio" data-category="converters">ПРЕОБРАЗОВАТЕЛИ</button>
+              <button class="filter-radio" data-category="capacitors">СВЧ-КОНДЕНСАТОРЫ</button>
+              <button class="filter-radio" data-category="transistors">СВЧ-ТРАНЗИСТОРЫ</button>
+              <button class="filter-radio" data-category="pcb">ПЕЧАТНЫЕ ПЛАТЫ</button>
             </div>
           </div>
 
           <!-- Применение -->
-          <div class="sidebar__group">
-            <span class="sidebar__label">ПРИМЕНЕНИЕ</span>
-            <button class="sidebar__radio">ТЕЛЕКОММУНИКАЦИИ</button>
-            <button class="sidebar__radio">РАДИОЛОКАЦИЯ</button>
-            <button class="sidebar__radio">АВИАЦИЯ</button>
-            <button class="sidebar__radio">КОСМОС</button>
-            <button class="sidebar__radio">МЕДИЦИНА</button>
-            <button class="sidebar__radio">ПРОМЫШЛЕННОСТЬ</button>
+          <div class="filter-group" data-filter="application">
+            <button class="filter-group__header" aria-expanded="false">
+              <span class="filter-group__name">ПРИМЕНЕНИЕ</span>
+              <svg class="filter-group__chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="filter-group__items" style="display: none;">
+              <button class="filter-radio" data-application="telecom">ТЕЛЕКОММУНИКАЦИИ</button>
+              <button class="filter-radio" data-application="radar">РАДИОЛОКАЦИЯ</button>
+              <button class="filter-radio" data-application="aviation">АВИАЦИЯ</button>
+              <button class="filter-radio" data-application="space">КОСМОС</button>
+              <button class="filter-radio" data-application="medical">МЕДИЦИНА</button>
+              <button class="filter-radio" data-application="industry">ПРОМЫШЛЕННОСТЬ</button>
+            </div>
           </div>
 
-          <!-- Сбросить фильтры -->
-          <div class="sidebar__clear-row">
-            <span class="sidebar__count" id="sidebar-count">0</span>
-            <button class="sidebar__clear" id="sidebar-reset">СБРОСИТЬ ФИЛЬТРЫ</button>
+          <!-- Сбросить -->
+          <div class="filter-clear-row">
+            <span class="filter-clear-badge" id="sidebar-count">0</span>
+            <button class="filter-clear-btn" id="sidebar-reset">СБРОСИТЬ ФИЛЬТРЫ</button>
           </div>
 
         </aside>
@@ -114,10 +110,10 @@
           </div>
           <div class="catalog__grid" id="products-grid">
 
-            <!-- Row 1: 2 cards -->
+            <!-- Row 1 -->
             <div class="catalog__grid-row">
               <div class="cat-card" data-category="microchips">
-                <div class="cat-card__img">
+                <div class="cat-card__img cat-card__img--tall">
                   <img src="../assets/images/products/microchips.jpg" alt="Микросхемы" loading="lazy">
                 </div>
                 <div class="cat-card__info">
@@ -125,6 +121,19 @@
                   <p class="cat-card__desc">ЦИФРОВЫЕ И АНАЛОГОВЫЕ МИКРОСХЕМЫ.</p>
                 </div>
               </div>
+              <div class="cat-card" data-category="connectors">
+                <div class="cat-card__img cat-card__img--tall">
+                  <img src="../assets/images/products/connectors.jpg" alt="Разъёмы" loading="lazy">
+                </div>
+                <div class="cat-card__info">
+                  <h3 class="cat-card__name">РАЗЪЁМЫ</h3>
+                  <p class="cat-card__desc">СЕРИИ ЕТ-2РМ И АНАЛОГИ.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="catalog__grid-row">
               <div class="cat-card" data-category="converters">
                 <div class="cat-card__img">
                   <img src="../assets/images/products/converters.jpg" alt="Преобразователи напряжения" loading="lazy">
@@ -132,28 +141,6 @@
                 <div class="cat-card__info">
                   <h3 class="cat-card__name">ПРЕОБРАЗОВАТЕЛИ НАПРЯЖЕНИЯ</h3>
                   <p class="cat-card__desc">DC/DC И AC/DC СЕРИЙ ИРТЫШ, ВОЛГА, ЕНИСЕЙ, КАМА.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Row 2: 3 cards -->
-            <div class="catalog__grid-row">
-              <div class="cat-card" data-category="transistors">
-                <div class="cat-card__img">
-                  <img src="../assets/images/products/transistors.png" alt="СВЧ-транзисторы" loading="lazy">
-                </div>
-                <div class="cat-card__info">
-                  <h3 class="cat-card__name">СВЧ-ТРАНЗИСТОРЫ</h3>
-                  <p class="cat-card__desc">LDMOS ДЛЯ УСИЛИТЕЛЕЙ МОЩНОСТИ.</p>
-                </div>
-              </div>
-              <div class="cat-card" data-category="connectors">
-                <div class="cat-card__img">
-                  <img src="../assets/images/products/connectors.jpg" alt="Разъёмы" loading="lazy">
-                </div>
-                <div class="cat-card__info">
-                  <h3 class="cat-card__name">РАЗЪЁМЫ</h3>
-                  <p class="cat-card__desc">СЕРИИ ЕТ-2РМ И АНАЛОГИ.</p>
                 </div>
               </div>
               <div class="cat-card" data-category="capacitors">
@@ -167,7 +154,7 @@
               </div>
             </div>
 
-            <!-- Row 3: 1 card -->
+            <!-- Row 3 -->
             <div class="catalog__grid-row">
               <div class="cat-card" data-category="pcb">
                 <div class="cat-card__img">
@@ -176,6 +163,15 @@
                 <div class="cat-card__info">
                   <h3 class="cat-card__name">ПЕЧАТНЫЕ ПЛАТЫ</h3>
                   <p class="cat-card__desc">ПРОЕКТИРОВАНИЕ И ИЗГОТОВЛЕНИЕ МНОГОСЛОЙНЫХ ПП.</p>
+                </div>
+              </div>
+              <div class="cat-card" data-category="transistors">
+                <div class="cat-card__img">
+                  <img src="../assets/images/products/transistors.png" alt="СВЧ-транзисторы" loading="lazy">
+                </div>
+                <div class="cat-card__info">
+                  <h3 class="cat-card__name">СВЧ-ТРАНЗИСТОРЫ</h3>
+                  <p class="cat-card__desc">LDMOS ДЛЯ УСИЛИТЕЛЕЙ МОЩНОСТИ.</p>
                 </div>
               </div>
             </div>
@@ -227,7 +223,7 @@
   </footer>
 
   <script src="../js/products.js?v=3"></script>
-  <script src="../js/catalog.js?v=3"></script>
+  <script src="../js/catalog.js?v=4"></script>
   <script src="../js/main.js"></script>
 </body>
 </html>
