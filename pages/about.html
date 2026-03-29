@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../css/pages/about.css?v=17">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/animations.css?v=1">
   <link rel="stylesheet" href="../css/mobile.css?v=15" media="(max-width: 768px)">
 </head>
 <body>
@@ -42,10 +43,10 @@
     <section class="about__top">
       <div class="container about__top-inner">
         <div class="about__title-wrap">
-          <h1 class="about__title">О КОМПАНИИ</h1>
+          <h1 class="about__title" data-animate="split">О КОМПАНИИ</h1>
           <span class="title-count">(01)</span>
         </div>
-        <div class="about__desc">
+        <div class="about__desc" data-animate="fade-up">
           <p class="about__desc-text desktop-only">IC ФАРВАТЕР — ИНТЕГРАТОР КОМПЛЕКСНЫХ РЕШЕНИЙ В МИКРОЭЛЕКТРОНИКЕ. НАДЁЖНЫЙ ПАРТНЁР С МНОГОЛЕТНИМ ОПЫТОМ.</p>
           <p class="about__desc-text mobile-only">Более 5 лет работы в области микроэлектроники и импортозамещения.</p>
         </div>
@@ -61,7 +62,7 @@
             <span class="title-count">(02)</span>
           </div>
         </div>
-        <div class="mission__content">
+        <div class="mission__content" data-animate="fade-up">
           <div class="mission__text desktop-only">
             <p>МЫ ОБЕСПЕЧИВАЕМ РОССИЙСКУЮ ПРОМЫШЛЕННОСТЬ НАДЁЖНОЙ ЭЛЕКТРОННОЙ КОМПОНЕНТНОЙ БАЗОЙ. НАША ЦЕЛЬ — ПОЛНЫЙ ЦИКЛ: ОТ ПОДБОРА КОМПОНЕНТОВ ДО ИСПЫТАНИЙ И СЕРТИФИКАЦИИ.</p>
             <p class="text-muted">МЫ СПЕЦИАЛИЗИРУЕМСЯ НА ДИСТРИБУЦИИ ЭЛЕКТРОННО-КОМПОНЕНТНОЙ БАЗЫ КОМПАНИИ ЭКБ ТЕСТ.</p>
@@ -69,7 +70,7 @@
           <div class="mission__text mobile-only">
             <p>Интегратор комплексных решений в микроэлектронике. Полный цикл от подбора компонентов до готовых изделий. Основана в Санкт-Петербурге, работаем с предприятиями ОПК.</p>
           </div>
-          <div class="mission__image">
+          <div class="mission__image" data-animate="scale-reveal">
             <img src="../assets/images/mission.png" alt="Микроэлектроника" loading="lazy">
           </div>
         </div>
@@ -85,7 +86,7 @@
             <span class="title-count">(03)</span>
           </div>
         </div>
-        <div class="certs-grid desktop-only">
+        <div class="certs-grid desktop-only" data-animate="fade-up-stagger">
           <div class="cert-row">
             <button class="cert-row__header" aria-expanded="false">
               <div class="cert-row__left">
@@ -133,7 +134,7 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer__grid">
+      <div class="footer__grid" data-animate="fade-up-stagger">
         <div class="footer__col">
           <span class="footer__brand">IC FARVATER</span>
           <p class="footer__desc">Надёжный интегратор комплексных решений в микроэлектронике.<br>ул. Беринга, д. 1-А, оф. 46-Н, г. Санкт-Петербург, 199397</p>
@@ -168,6 +169,10 @@
     </div>
   </footer>
 
-  <script src="../js/main.js?v=2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/ScrollTrigger.min.js"></script>
+  <script src="../js/main.js?v=3"></script>
+  <script src="../js/animations.js?v=1"></script>
 </body>
 </html>

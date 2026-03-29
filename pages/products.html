@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../css/pages/products.css?v=18">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/animations.css?v=1">
   <link rel="stylesheet" href="../css/mobile.css?v=15" media="(max-width: 768px)">
 </head>
 <body>
@@ -40,10 +41,10 @@
     <section class="catalog__top">
       <div class="container catalog__top-inner">
         <div class="catalog__title-wrap">
-          <h1 class="catalog__title">ПРОДУКЦИЯ</h1>
+          <h1 class="catalog__title" data-animate="split">ПРОДУКЦИЯ</h1>
           <span class="catalog__title-count">(01)</span>
         </div>
-        <div class="catalog__desc">
+        <div class="catalog__desc" data-animate="fade-up">
           <p class="catalog__desc-text">ИНТЕГРАТОР КОМПЛЕКСНЫХ РЕШЕНИЙ В МИКРОЭЛЕКТРОНИКЕ. ПОЛНЫЙ СПЕКТР ЭКБ ДЛЯ ОТВЕТСТВЕННЫХ ПРИМЕНЕНИЙ.</p>
           <p class="catalog__desc-text catalog__desc-text--sub">ПОСТАВКИ ПО ВСЕЙ РОССИИ.</p>
         </div>
@@ -111,7 +112,7 @@
           <div class="catalog__grid" id="products-grid">
 
             <!-- Row 1 -->
-            <div class="catalog__grid-row">
+            <div class="catalog__grid-row" data-animate="fade-up-stagger">
               <div class="cat-card" data-category="microchips">
                 <div class="cat-card__img cat-card__img--tall">
                   <img src="../assets/images/products/microchips.jpg" alt="Микросхемы" loading="lazy">
@@ -133,7 +134,7 @@
             </div>
 
             <!-- Row 2 -->
-            <div class="catalog__grid-row">
+            <div class="catalog__grid-row" data-animate="fade-up-stagger">
               <div class="cat-card" data-category="converters">
                 <div class="cat-card__img">
                   <img src="../assets/images/products/converters.jpg" alt="Преобразователи напряжения" loading="lazy">
@@ -155,7 +156,7 @@
             </div>
 
             <!-- Row 3 -->
-            <div class="catalog__grid-row">
+            <div class="catalog__grid-row" data-animate="fade-up-stagger">
               <div class="cat-card" data-category="pcb">
                 <div class="cat-card__img">
                   <img src="../assets/images/products/pcb.jpg" alt="Печатные платы" loading="lazy">
@@ -187,7 +188,7 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer__grid">
+      <div class="footer__grid" data-animate="fade-up-stagger">
         <div class="footer__col">
           <span class="footer__brand">IC FARVATER</span>
           <p class="footer__desc">Надёжный интегратор комплексных решений в микроэлектронике.<br>ул. Беринга, д. 1-А, оф. 46-Н, г. Санкт-Петербург, 199397</p>
@@ -222,8 +223,12 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/ScrollTrigger.min.js"></script>
   <script src="../js/products.js?v=3"></script>
   <script src="../js/catalog.js?v=4"></script>
-  <script src="../js/main.js?v=2"></script>
+  <script src="../js/main.js?v=3"></script>
+  <script src="../js/animations.js?v=1"></script>
 </body>
 </html>

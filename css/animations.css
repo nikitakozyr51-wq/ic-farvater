@@ -1,0 +1,92 @@
+/* ============================================================
+   ANIMATIONS.CSS — Scroll-triggered motion layer
+   GPU-friendly: only transform + opacity
+   ============================================================ */
+
+/* ─── Fade-up ─── */
+[data-animate="fade-up"],
+[data-animate="fade-up-stagger"] > * {
+  opacity: 0;
+  transform: translateY(30px) translateZ(0);
+}
+
+/* ─── Split text ─── */
+.word {
+  display: inline-block;
+  clip-path: inset(0 0 -0.15em 0);
+}
+.word-inner {
+  display: inline-block;
+  transform: translateY(130%);
+}
+
+/* ─── Scale reveal ─── */
+[data-animate="scale-reveal"] {
+  overflow: hidden;
+}
+[data-animate="scale-reveal"] > img,
+[data-animate="scale-reveal"] > video,
+[data-animate="scale-reveal"] > div {
+  opacity: 0;
+  transform: scale(1.05) translateZ(0);
+}
+
+/* ─── Line draw ─── */
+[data-animate="line-draw"] {
+  transform-origin: left center;
+  transform: scaleX(0);
+}
+
+/* ─── Product card hover (main page) ─── */
+a.product-card {
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+a.product-card:hover {
+  transform: translateY(-6px);
+}
+a.product-card:hover .product-card__name {
+  opacity: 0.7;
+}
+
+/* ─── Catalog card hover (products page) ─── */
+.cat-card {
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+.cat-card:hover {
+  transform: translateY(-6px);
+}
+.cat-card__img {
+  overflow: hidden;
+}
+.cat-card__img img {
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.cat-card:hover .cat-card__img img {
+  transform: scale(1.06);
+}
+.cat-card:hover .cat-card__name {
+  opacity: 0.7;
+}
+
+/* ─── Footer link hover ─── */
+.footer__link {
+  transition: color 0.25s ease, transform 0.3s ease;
+}
+
+/* ─── Reduced motion ─── */
+@media (prefers-reduced-motion: reduce) {
+  [data-animate="fade-up"],
+  [data-animate="fade-up-stagger"] > *,
+  [data-animate="scale-reveal"] > img,
+  [data-animate="scale-reveal"] > video,
+  [data-animate="scale-reveal"] > div,
+  [data-animate="line-draw"] {
+    opacity: 1 !important;
+    transform: none !important;
+    clip-path: none !important;
+  }
+  .word-inner {
+    transform: none !important;
+  }
+}
