@@ -6,6 +6,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initServiceAccordion();
+  initCertAccordion();
 });
 
 /** Mobile burger menu toggle */
@@ -27,6 +28,17 @@ function initMobileMenu() {
       nav.classList.remove('header__nav--open');
       burger.classList.remove('header__burger--open');
       burger.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
+
+/** Cert accordion toggle */
+function initCertAccordion() {
+  document.querySelectorAll('.cert-row__header').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const row = btn.closest('.cert-row');
+      const isOpen = row.classList.toggle('cert-row--open');
+      btn.setAttribute('aria-expanded', isOpen);
     });
   });
 }

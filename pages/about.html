@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="../css/variables.css">
   <link rel="stylesheet" href="../css/base.css">
   <link rel="stylesheet" href="../css/layout.css">
-  <link rel="stylesheet" href="../css/components.css?v=3">
-  <link rel="stylesheet" href="../css/pages/about.css?v=15">
+  <link rel="stylesheet" href="../css/components.css?v=4">
+  <link rel="stylesheet" href="../css/pages/about.css?v=16">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/mobile.css?v=15" media="(max-width: 768px)">
@@ -87,26 +87,26 @@
         </div>
         <div class="certs-grid desktop-only">
           <div class="cert-row">
-            <div class="cert-row__header">
+            <button class="cert-row__header" aria-expanded="false">
               <div class="cert-row__left">
                 <span class="cert-row__number">01</span>
                 <span class="cert-row__name">ISO 9001:2015</span>
               </div>
-              <span class="cert-row__toggle">—</span>
-            </div>
-            <div class="cert-row__content">
+              <span class="cert-row__toggle">&mdash;</span>
+            </button>
+            <div class="cert-row__body">
               <div class="cert-row__photo"></div>
             </div>
           </div>
           <div class="cert-row">
-            <div class="cert-row__header">
+            <button class="cert-row__header" aria-expanded="false">
               <div class="cert-row__left">
                 <span class="cert-row__number">02</span>
                 <span class="cert-row__name">АККРЕДИТАЦИЯ ЛАБОРАТОРИИ</span>
               </div>
-              <span class="cert-row__toggle">—</span>
-            </div>
-            <div class="cert-row__content">
+              <span class="cert-row__toggle">&mdash;</span>
+            </button>
+            <div class="cert-row__body">
               <div class="cert-row__photo"></div>
             </div>
           </div>
@@ -168,6 +168,6 @@
     </div>
   </footer>
 
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js?v=2"></script>
 </body>
 </html>
