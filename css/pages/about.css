@@ -69,7 +69,8 @@
 }
 
 .mission__image {
-  width: 480px;
+  width: 40%;
+  min-width: 400px;
   height: 320px;
   background: var(--color-bg-alt);
   flex-shrink: 0;

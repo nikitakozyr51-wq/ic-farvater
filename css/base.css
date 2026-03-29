@@ -90,10 +90,10 @@ a.cat-card:hover {
 }
 
 @media (max-width: 1200px) {
-  .container { padding: 0 var(--space-64); }
+  .container { padding: 0 var(--space-48); }
 }
 
 @media (max-width: 1024px) {
-  .container { padding: 0 var(--space-48); }
+  .container { padding: 0 var(--space-32); }
 }
 
