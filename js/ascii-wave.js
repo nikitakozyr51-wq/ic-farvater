@@ -60,19 +60,27 @@
         var mountainHeight = 0.7 + Math.sin(x * 0.05 + time * 0.1) * 0.1 +
                              Math.cos(x * 0.2) * 0.05;
 
-        if (normalizedY < mountainHeight + noiseVal * 0.1) {
+        // Top edge (organic, from top down)
+        var topEdge = mountainHeight + noiseVal * 0.1;
+        // Bottom edge (organic, mirrored)
+        var noiseValB = simpleNoise(x, r - y, time * 0.5 + 100);
+        var bottomMountain = 0.7 + Math.sin(x * 0.07 + time * 0.1 + 2) * 0.1 +
+                             Math.cos(x * 0.15 + 1) * 0.05;
+        var bottomEdge = bottomMountain + noiseValB * 0.1;
+        var normalizedYInv = y / r;
+
+        if (normalizedY < topEdge && normalizedYInv < bottomEdge) {
           var index = Math.floor(Math.abs(noiseVal) * densityChars.length);
           var char = densityChars[index % densityChars.length];
-          var alpha = 1 - normalizedY * 1.5;
 
-          // Fade bottom
-          if (y > r - fadeRows) {
-            alpha *= (r - y) / fadeRows;
-          }
-          // Fade top
-          if (y < fadeRows) {
-            alpha *= y / fadeRows;
-          }
+          // Distance from edges for alpha
+          var distFromTop = topEdge - normalizedY;
+          var distFromBottom = bottomEdge - normalizedYInv;
+          var alpha = Math.min(distFromTop * 4, distFromBottom * 4, 1);
+
+          // Extra fade at very top/bottom rows
+          if (y < fadeRows) alpha *= y / fadeRows;
+          if (y > r - fadeRows) alpha *= (r - y) / fadeRows;
 
           if (alpha <= 0) continue;
 
