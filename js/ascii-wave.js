@@ -46,7 +46,7 @@
       for (var x = 0; x < c; x++) {
         var normalizedY = (r - y) / r;
         var noiseVal = simpleNoise(x, y, time * 0.5);
-        var mountainHeight = 0.35 + Math.sin(x * 0.05 + time * 0.1) * 0.1 +
+        var mountainHeight = 0.55 + Math.sin(x * 0.05 + time * 0.1) * 0.1 +
                              Math.cos(x * 0.2) * 0.05;
 
         if (normalizedY < mountainHeight + noiseVal * 0.1) {
@@ -69,7 +69,7 @@
       }
     }
 
-    time += 0.01;
+    time += 0.004;
     requestAnimationFrame(render);
   }
 
