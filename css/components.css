@@ -75,9 +75,6 @@
 
 .hero--image {
   height: 430px;
-  display: flex;
-  align-items: flex-end;
-  padding-bottom: 0;
 }
 
 .hero__bg {
@@ -92,7 +89,7 @@
 .hero--image .container {
   position: relative;
   z-index: 1;
-  padding-bottom: 48px;
+  padding-top: 139px;
 }
 
 .hero__title {
@@ -327,20 +324,21 @@
   width: calc(100% - 120px);
   height: 580px;
   object-fit: cover;
+  border-radius: 0;
 }
 
 .product-banner__overlay {
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
-  height: 350px;
-  background: linear-gradient(to top, rgba(17,47,110,0.85) 0%, transparent 100%);
+  left: 60px;
+  right: 60px;
+  top: 370px;
+  background: linear-gradient(to top, rgba(17,47,110,0.95) 0%, rgba(17,47,110,0) 100%);
 }
 
 .product-banner__content {
   position: absolute;
-  bottom: 60px;
+  bottom: 120px;
   left: 0;
   right: 0;
   display: flex;
