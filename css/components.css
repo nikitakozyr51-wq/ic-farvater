@@ -79,21 +79,20 @@
 
 .hero__bg {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
-}
-
-.hero--image .container {
-  position: relative;
-  z-index: 1;
-  padding-top: 139px;
+  object-position: left center;
 }
 
 .hero__title {
-  max-width: 902px;
+  position: absolute;
+  left: 60px;
+  top: 139px;
+  z-index: 1;
+  max-width: 919px;
   font-size: var(--text-72);
   font-weight: 500;
   letter-spacing: -2px;
@@ -306,12 +305,11 @@
 }
 
 /* ===== PRODUCT BANNER ===== */
+/* ===== PRODUCT BANNER ===== */
 .product-banner {
   position: relative;
   height: 720px;
   overflow: hidden;
-  max-width: 1920px;
-  margin: 0 auto;
 }
 
 .product-banner__img-wrap {
@@ -334,8 +332,8 @@
 
 .product-banner__content {
   position: absolute;
-  bottom: 80px;
-  left: 120px;
+  top: 476px;
+  left: 129px;
   display: flex;
   flex-direction: column;
   gap: var(--space-16);
