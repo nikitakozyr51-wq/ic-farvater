@@ -334,9 +334,8 @@
 
 .product-banner__content {
   position: absolute;
-  bottom: 120px;
-  left: 0;
-  right: 0;
+  bottom: 80px;
+  left: 120px;
   display: flex;
   flex-direction: column;
   gap: var(--space-16);
