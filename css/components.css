@@ -75,9 +75,6 @@
 
 .hero--image {
   height: 430px;
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .hero__bg {
@@ -317,8 +314,6 @@
 .product-banner {
   position: relative;
   height: 720px;
-  max-width: 1440px;
-  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -329,9 +324,9 @@
 
 .product-banner__img {
   position: absolute;
-  left: 60px;
+  left: var(--container-padding);
   top: 80px;
-  width: 1320px;
+  width: calc(100% - var(--container-padding) * 2);
   height: 580px;
   object-fit: cover;
 }
@@ -343,7 +338,7 @@
 .product-banner__content {
   position: absolute;
   top: 476px;
-  left: 129px;
+  left: calc(var(--container-padding) + 69px);
   display: flex;
   flex-direction: column;
   gap: var(--space-16);
