@@ -276,16 +276,12 @@
 
 .cat-card__img {
   width: 100%;
-  height: 300px;
+  aspect-ratio: 1 / 1;
   background: var(--color-bg-alt);
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.cat-card__img--tall {
-  height: 340px;
 }
 
 .cat-card__img img {
@@ -351,7 +347,7 @@ p.cat-card__desc {
 
 .catalog__products-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
 
