@@ -59,7 +59,7 @@ h3 { font-size: var(--text-24); }
 
 .header__link::after {
   content: '↗';
-  font-size: var(--text-14);
+  font-size: var(--text-16);
   color: var(--color-text-muted);
   font-weight: normal;
 }
@@ -79,7 +79,7 @@ h3 { font-size: var(--text-24); }
 }
 
 .header__nav-contact-label {
-  font-size: var(--text-12);
+  font-size: var(--text-14);
   font-weight: 700;
   letter-spacing: 1px;
   color: var(--color-text-muted);
@@ -87,7 +87,7 @@ h3 { font-size: var(--text-24); }
 }
 
 .header__nav-contact-value {
-  font-size: var(--text-14);
+  font-size: var(--text-16);
   color: var(--color-text);
   text-decoration: none;
 }
@@ -112,13 +112,13 @@ h3 { font-size: var(--text-24); }
 }
 
 .section-header__title {
-  font-size: var(--text-12);
+  font-size: var(--text-14);
   font-weight: 700;
   letter-spacing: 1px;
 }
 
 .section-header__link {
-  font-size: var(--text-12);
+  font-size: var(--text-14);
   font-weight: 500;
   letter-spacing: 1px;
 }
@@ -148,15 +148,15 @@ h3 { font-size: var(--text-24); }
 }
 
 .product-card__name {
-  font-size: var(--text-12);
+  font-size: var(--text-14);
 }
 
 .product-card__count {
-  font-size: var(--text-12);
+  font-size: var(--text-14);
 }
 
 .product-card__desc {
-  font-size: var(--text-12);
+  font-size: var(--text-14);
 }
 
 .product-card__info {
@@ -184,7 +184,7 @@ h3 { font-size: var(--text-24); }
 }
 
 .stat__label {
-  font-size: var(--text-12);
+  font-size: var(--text-14);
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -192,7 +192,7 @@ h3 { font-size: var(--text-24); }
 
 /* --- SERVICE LIST --- */
 .service-item__title {
-  font-size: var(--text-14);
+  font-size: var(--text-16);
 }
 
 .service-item__left {
@@ -242,20 +242,20 @@ h3 { font-size: var(--text-24); }
 
 .footer__col-title {
   color: var(--color-text) !important;
-  font-size: var(--text-12);
+  font-size: var(--text-14);
   font-weight: 700;
   letter-spacing: 1px;
 }
 
 .footer__link {
   color: var(--color-text-muted) !important;
-  font-size: var(--text-12);
+  font-size: var(--text-14);
   line-height: 1.4;
 }
 
 .footer__text {
   color: var(--color-text-muted) !important;
-  font-size: var(--text-12);
+  font-size: var(--text-14);
 }
 
 .footer__bottom {
@@ -264,7 +264,7 @@ h3 { font-size: var(--text-24); }
   justify-content: space-between !important;
   align-items: flex-start !important;
   padding-top: 24px !important;
-  font-size: var(--text-12);
+  font-size: var(--text-14);
   color: var(--color-text-muted) !important;
 }
 
@@ -288,7 +288,7 @@ h3 { font-size: var(--text-24); }
 }
 
 .catalog__title-count {
-  font-size: var(--text-12);
+  font-size: var(--text-14);
   margin-top: var(--space-8);
 }
 
@@ -348,7 +348,7 @@ h3 { font-size: var(--text-24); }
   text-align: center;
   white-space: nowrap;
   padding: 6px 12px;
-  font-size: var(--text-12);
+  font-size: var(--text-14);
   border: 1px solid var(--color-border);
 }
 
@@ -400,15 +400,15 @@ h3 { font-size: var(--text-24); }
 }
 
 .catalog__all-products .product-card__name {
-  font-size: var(--text-12);
+  font-size: var(--text-14);
 }
 
 .catalog__all-products .product-card__count {
-  font-size: var(--text-12);
+  font-size: var(--text-14);
 }
 
 .catalog__all-products .product-card__desc {
-  font-size: var(--text-12);
+  font-size: var(--text-14);
   margin-top: 3px;
 }
 
@@ -462,7 +462,7 @@ h3 { font-size: var(--text-24); }
   width: 100%;
   padding: 16px 32px;
   text-align: center;
-  font-size: var(--text-12);
+  font-size: var(--text-14);
   font-weight: 700;
   letter-spacing: 1px;
   background: var(--color-text);
@@ -502,7 +502,7 @@ h3 { font-size: var(--text-24); }
 }
 
 .about__desc-text {
-  font-size: var(--text-12);
+  font-size: var(--text-14);
   letter-spacing: 1px;
   line-height: 1.5;
   color: var(--color-text-muted);
@@ -533,7 +533,7 @@ h3 { font-size: var(--text-24); }
 }
 
 .about .section:has(.certs-grid) .section-header__title {
-  font-size: var(--text-12);
+  font-size: var(--text-14);
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -552,7 +552,7 @@ h3 { font-size: var(--text-24); }
 }
 
 .mission__text p {
-  font-size: var(--text-12);
+  font-size: var(--text-14);
   letter-spacing: 1px;
   line-height: 1.6;
   color: var(--color-text-muted);
@@ -581,7 +581,7 @@ h3 { font-size: var(--text-24); }
 }
 
 .about .stat__label {
-  font-size: var(--text-12);
+  font-size: var(--text-14);
 }
 
 .certs-grid {
@@ -593,7 +593,7 @@ h3 { font-size: var(--text-24); }
 }
 
 .cert-card__name {
-  font-size: var(--text-12);
+  font-size: var(--text-14);
 }
 
 
@@ -619,7 +619,7 @@ h3 { font-size: var(--text-24); }
 }
 
 .contacts__desc-text {
-  font-size: var(--text-12);
+  font-size: var(--text-14);
   letter-spacing: 1px;
   line-height: 1.5;
   color: var(--color-text-muted);
@@ -640,7 +640,7 @@ h3 { font-size: var(--text-24); }
 }
 
 .contact-info__label {
-  font-size: var(--text-12);
+  font-size: var(--text-14);
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -648,7 +648,7 @@ h3 { font-size: var(--text-24); }
 }
 
 .contact-info__value {
-  font-size: var(--text-14);
+  font-size: var(--text-16);
   color: var(--color-text);
 }
 
@@ -663,7 +663,7 @@ h3 { font-size: var(--text-24); }
 }
 
 .contact-form__title {
-  font-size: var(--text-12);
+  font-size: var(--text-14);
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -671,7 +671,7 @@ h3 { font-size: var(--text-24); }
 
 .contact-form__field,
 .contact-form__textarea {
-  font-size: var(--text-12);
+  font-size: var(--text-14);
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -681,7 +681,7 @@ h3 { font-size: var(--text-24); }
   padding: 16px 32px;
   background: var(--color-text);
   border-radius: 100px;
-  font-size: var(--text-12);
+  font-size: var(--text-14);
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -692,7 +692,7 @@ h3 { font-size: var(--text-24); }
 }
 
 .map-section__label {
-  font-size: var(--text-12);
+  font-size: var(--text-14);
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;

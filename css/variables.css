@@ -6,7 +6,7 @@
   --color-bg: #F5F3EF;
   --color-bg-alt: #E9E8EB;
   --color-text: #112F6E;
-  --color-text-muted: #8C96AB;
+  --color-text-muted: #6B7A94;
   --color-border: #D7D3CB;
 
   /* Typography — Inter only, strictly 5 sizes */
@@ -14,8 +14,8 @@
   --text-72: 72px;
   --text-40: 40px;
   --text-24: 24px;
+  --text-16: 16px;
   --text-14: 14px;
-  --text-12: 12px;
 
   /* Spacing — 8px grid */
   --space-4: 4px;

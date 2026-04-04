@@ -37,7 +37,7 @@
 }
 
 .contacts__desc-text {
-  font-size: var(--text-12);
+  font-size: var(--text-14);
   font-weight: 400;
   letter-spacing: 1px;
   line-height: 1.6;
@@ -72,7 +72,7 @@
 }
 
 .contact-info__label {
-  font-size: var(--text-12);
+  font-size: var(--text-14);
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -80,7 +80,7 @@
 }
 
 .contact-info__value {
-  font-size: var(--text-14);
+  font-size: var(--text-16);
   font-weight: 400;
   color: var(--color-text);
 }
@@ -115,7 +115,7 @@
   border-bottom: 1px solid var(--color-border);
   background: none;
   font-family: var(--font-primary);
-  font-size: var(--text-12);
+  font-size: var(--text-14);
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--color-text);
@@ -134,7 +134,7 @@
   border-bottom: 1px solid var(--color-border);
   background: none;
   font-family: var(--font-primary);
-  font-size: var(--text-12);
+  font-size: var(--text-14);
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--color-text);
@@ -154,7 +154,7 @@
   border: 1px solid var(--color-text);
   border-radius: 100px;
   font-family: var(--font-primary);
-  font-size: var(--text-12);
+  font-size: var(--text-14);
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -178,7 +178,7 @@
 
 .map-section__label {
   display: block;
-  font-size: var(--text-12);
+  font-size: var(--text-14);
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;

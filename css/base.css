@@ -1,7 +1,7 @@
 /* Base — Swiss Typography */
 body {
   font-family: var(--font-primary);
-  font-size: var(--text-14);
+  font-size: var(--text-16);
   font-weight: 400;
   color: var(--color-text);
   background-color: var(--color-bg);
