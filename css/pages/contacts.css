@@ -173,14 +173,14 @@
 
 /* Map Section */
 .map-section {
-  padding: var(--space-80) 0;
+  padding: var(--space-80) 120px;
 }
 
 .map-section__label {
   display: block;
   font-size: var(--text-14);
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 0.6px;
   text-transform: uppercase;
   margin-bottom: var(--space-16);
 }
