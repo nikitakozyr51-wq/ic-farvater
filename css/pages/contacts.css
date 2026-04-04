@@ -173,21 +173,23 @@
 
 /* Map Section */
 .map-section {
-  padding: var(--space-80) 0;
+  padding: var(--space-80) 120px;
 }
 
 .map-section__label {
   display: block;
-  font-size: var(--text-14);
-  font-weight: 700;
-  letter-spacing: 1px;
+  font-size: var(--text-24);
+  font-weight: 500;
+  letter-spacing: -0.5px;
   text-transform: uppercase;
+  color: var(--color-text);
   margin-bottom: var(--space-16);
 }
 
 .map-section__map {
   width: 100%;
-  height: 400px;
+  height: 1000px;
+  background: var(--color-bg-alt);
 }
 
 .map-section__map iframe {

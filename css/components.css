@@ -482,7 +482,9 @@
   gap: var(--space-16);
 }
 
-a.product-card {
+a.product-card,
+a.product-card-v2,
+a.bottom-card {
   text-decoration: none;
   color: inherit;
 }
@@ -689,6 +691,55 @@ p.product-card__desc {
   color: var(--color-text);
 }
 
+
+/* ===== SERVICE ROWS — simple list (main page) ===== */
+.service-rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-24) 0;
+  border-bottom: 1px solid var(--color-border);
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s;
+}
+
+.service-row:hover {
+  opacity: 0.6;
+}
+
+.service-row__left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-32);
+}
+
+.service-row__num {
+  font-size: var(--text-14);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  letter-spacing: 1px;
+  min-width: 24px;
+}
+
+.service-row__title {
+  font-size: var(--text-24);
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+.service-row__arrow {
+  font-size: var(--text-16);
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
 
 /* ===== VISIBILITY HELPERS ===== */
 .mobile-only { display: none !important; }
