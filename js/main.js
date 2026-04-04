@@ -5,7 +5,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
-  initServiceAccordion();
   initCertAccordion();
 });
 
@@ -43,13 +42,3 @@ function initCertAccordion() {
   });
 }
 
-/** Service accordion toggle */
-function initServiceAccordion() {
-  document.querySelectorAll('.service-item__header').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const item = btn.closest('.service-item');
-      const isOpen = item.classList.toggle('service-item--open');
-      btn.setAttribute('aria-expanded', isOpen);
-    });
-  });
-}
