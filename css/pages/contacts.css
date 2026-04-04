@@ -185,10 +185,14 @@
   margin-bottom: var(--space-16);
 }
 
-.map-section__placeholder {
+.map-section__map {
   width: 100%;
   height: 400px;
-  background: var(--color-bg-alt);
+}
+
+.map-section__map iframe {
+  width: 100%;
+  height: 100%;
 }
 
 

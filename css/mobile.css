@@ -698,7 +698,7 @@ h3 { font-size: var(--text-24); }
   text-transform: uppercase;
 }
 
-.map-section__placeholder {
+.map-section__map {
   height: 200px;
 }
 
