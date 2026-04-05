@@ -338,12 +338,11 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 60px;
+  background: var(--color-bg);
 }
 
-.cables-split__top {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-24);
+.cables-split__text .cables-split__title {
+  margin-bottom: auto;
 }
 
 .cables-split__title {
@@ -362,19 +361,6 @@
   text-transform: uppercase;
 }
 
-.cables-split__link {
-  font-size: var(--text-14);
-  font-weight: 600;
-  letter-spacing: 1px;
-  color: var(--color-text);
-  text-align: right;
-  text-decoration: none;
-  transition: opacity 0.2s;
-}
-
-.cables-split__link:hover {
-  opacity: 0.6;
-}
 
 /* ===== PRODUCT BANNER ===== */
 .product-banner {
