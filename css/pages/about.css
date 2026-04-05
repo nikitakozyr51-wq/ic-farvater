@@ -69,9 +69,8 @@
 }
 
 .mission__image {
-  width: 40%;
-  min-width: 400px;
-  aspect-ratio: 1 / 1;
+  width: 652px;
+  height: 600px;
   background: var(--color-bg-alt);
   flex-shrink: 0;
   overflow: hidden;
