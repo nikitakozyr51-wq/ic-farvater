@@ -57,7 +57,7 @@
 
 .product-detail__image {
   width: 560px;
-  height: 480px;
+  aspect-ratio: 1 / 1;
   flex-shrink: 0;
   background: var(--color-bg-alt);
   display: flex;
