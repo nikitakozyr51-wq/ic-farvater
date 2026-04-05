@@ -71,7 +71,6 @@
 .mission__image {
   width: 652px;
   height: 600px;
-  background: var(--color-bg-alt);
   flex-shrink: 0;
   overflow: hidden;
 }
@@ -79,7 +78,7 @@
 .mission__image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 /* Certs Section — v2 accordion rows */
