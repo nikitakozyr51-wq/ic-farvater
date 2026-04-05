@@ -58,20 +58,23 @@ ic farvater/
 
 ## Typography Rules
 Шрифт — **Inter** везде. Все заголовки — **UPPERCASE**.
-**Строго 5 размеров** — никаких других (запрещены 11px, 12px, 32px, 50px и т.д.).
+Масштабирование по Swiss-принципу (base unit 8px, коэффициент ~0.78 tablet / ~0.56 mobile).
 
-| Токен | px | Вес | Letter-spacing | Где |
-|-------|----|-----|----------------|-----|
-| `--text-72` | 72px | 500 | -2px | Главный заголовок страницы (один на страницу) |
-| `--text-40` | 40px | 500 | -1px | Заголовки секций |
-| `--text-24` | 24px | 500 | -0.5px | Список услуг, подзаголовки |
-| `--text-16` | 16px | 400 | 0 | Тело, навигация, описания |
-| `--text-14` | 14px | 600 | +1px | UPPERCASE метки, счётчики |
+### Размеры по брейкпоинтам
+
+| Роль | Токен | Desktop (1440) | Tablet (1024) | Mobile (390) | Вес | Letter-spacing |
+|------|-------|----------------|---------------|--------------|-----|----------------|
+| Hero H1 | `--text-hero` | 72px | 56px | 40px | 500 | -2px / -1.5px / -1px |
+| Section H2 | `--text-section` | 40px | 32px | 28px | 500 | -1px / -0.5px / -0.5px |
+| Subtitle H3 | `--text-subtitle` | 24px | 20px | 18px | 500 | -0.5px / -0.5px / 0 |
+| Body | `--text-body` | 16px | 16px | 16px | 400 | 0 |
+| Label | `--text-label` | 14px | 14px | 14px | 600 | +1px |
 
 ### Жёсткие правила типографики
-- Только эти 5 размеров — любой другой запрещён
+- Только размеры из таблицы выше — любой другой запрещён
 - Заголовки H1/H2/H3 — weight 500, UPPERCASE, отрицательный letter-spacing
 - Метки/счётчики — 14px, weight 600, UPPERCASE, letter-spacing +1px
+- Body и Label не масштабируются — одинаковы на всех брейкпоинтах
 - **Никаких теней** — ни `box-shadow`, ни `text-shadow`
 - **Никаких скруглений** — `border-radius: 0` везде, **кроме кнопок** (pill: `border-radius: 100px`)
 
@@ -96,41 +99,58 @@ ic farvater/
 ---
 
 ## Spacing Rules
-Контейнер: 120px горизонтально (desktop), 24px (mobile).
+Все отступы кратны base unit 8px (Swiss grid).
 
-| Где | Значение |
-|-----|----------|
-| Между секциями | 80px |
-| Gap внутри секций | 48px |
-| Gap карточек | 16px |
-| Container padding desktop | 120px |
-| Container padding mobile | 24px |
-| Header height desktop | 64px |
-| Header height mobile | 56px |
+| Параметр | Desktop (1440) | Tablet (1024) | Mobile (390) |
+|----------|----------------|---------------|--------------|
+| Container padding | 120px / 60px | 40px | 24px |
+| Между секциями | 80px | 60px | 48px |
+| Gap внутри секций | 48px | 32px | 24px |
+| Gap карточек | 16px | 16px | 12px |
+| Header height | 64px | 64px | 56px |
 
 ---
 
-## Desktop vs Mobile — Правила контента
+## Image Rules
+Все изображения секций и товаров — **квадрат или близко к квадрату** (aspect-ratio ≈ 1:1).
+Изображение масштабируется вместе с контейнером, **не обрезается**.
 
-| Аспект | Desktop | Mobile |
-|--------|---------|--------|
-| Регистр описаний | UPPERCASE | Sentence case |
-| Цвет текста | `#112F6E` | `#112F6E` |
-| Нумерация услуг | В скобках: `(02)`, `(03)` | Без скобок: `01`, `02` |
-| Описания | Длинные, формальные | Короткие, живые |
-| Теги услуг | Текст через ` / ` | Pill с рамкой `--color-border` |
-| Hero бренд | `IC FARVATER` (латиница) | Другой заголовок |
-| Сертификаты | 2 карточки (ISO 9001:2015, Аккредитация) | 3 карточки (ГОСТ РВ, ИСО 9001, Военный реестр) |
+| Параметр | Desktop | Tablet | Mobile |
+|----------|---------|--------|--------|
+| object-fit | `contain` | `contain` | `contain` |
+| Карточка товара | 280×280 | 220×220 | 160×160 |
+| sec4top / Mission | 600×600 | 400×400 | 342×342 (full-width) |
+| Hero | 1440×780 (banner) | 1024×600 | 390×400 |
+| Product Banner | 1200×720 | 944×500 | 342×400 |
+| Map | 1200×1000 | 944×600 | 342×300 |
 
-## Правила сетки по секциям
+### Жёсткие правила изображений
+- `object-fit: cover` запрещён для контентных изображений
+- Изображения-заглушки (placeholder) — фон `--color-bg-alt` (#E9E8EB)
+- Все изображения `loading="lazy"` в HTML (кроме hero)
 
-| Страница | Секция | Desktop | Mobile |
-|----------|--------|---------|--------|
-| Главная | Услуги | 4 строки | Скрыто |
-| Главная | Stats | Скрыто | 2 блока (5+, 500+) |
-| О компании | Certs | 2 карточки | 3 карточки |
-| Услуги | 3-я услуга | "ПРЯМЫЕ ПОСТАВКИ ЭЛЕКТРОННЫХ КОМПОНЕНТОВ" | "ПОЛНЫЙ ЦИКЛ ПРОИЗВОДСТВА" |
-| Каталог | Фильтры | Sidebar, 7 категорий | 3 pill: ВСЕ, РАЗЪЁМЫ, СВЧ |
+---
+
+## Responsive — единый контент на всех устройствах
+Мобильная и планшетная версии = точная копия десктопа по контенту.
+Никаких различий в тексте, количестве секций или элементов между брейкпоинтами.
+
+### Адаптация лейаутов
+| Элемент | Desktop (1440) | Tablet (1024) | Mobile (390) |
+|---------|----------------|---------------|--------------|
+| Header | logo + nav inline | logo + burger | logo + burger |
+| Двухколоночные блоки | row | row (50/50) | column (stacked) |
+| Карточки товаров | 4 в ряд | 2 в ряд | 2 в ряд |
+| Sidebar каталога | sidebar 240px | sidebar 200px | pill-фильтры сверху |
+| Footer grid | 4 колонки | 2 колонки | 2 колонки |
+
+### Высоты секций
+| Элемент | Desktop | Tablet | Mobile |
+|---------|---------|--------|--------|
+| Hero | 780px | 600px | 400px |
+| sec4top | 600px | 450px | auto (stacked) |
+| Product Banner | 720px | 500px | 400px |
+| Map | 1000px | 600px | 300px |
 
 ---
 
@@ -141,6 +161,7 @@ ic farvater/
 - HTML атрибуты: двойные кавычки
 - Изображения: всегда `alt`, `loading="lazy"` для каталога
 - `mobile.css` подключается через `media="(max-width: 768px)"` — не через JS
+- `tablet.css` подключается через `media="(min-width: 769px) and (max-width: 1024px)"` — если нужен
 - Версионирование кэша: `?v=N` в `<link>` на CSS/JS файлы
 
 ### Visibility классы
@@ -155,36 +176,42 @@ ic farvater/
 ---
 
 ## Workflow
-1. **Сначала макет в Pencil** — утверждаем в `pencil-new.pen`, проверяем скриншотом
+1. **Сначала макет в Pencil** — утверждаем в `ic farvater.pen`, проверяем скриншотом
 2. **Потом HTML/CSS** — переносим один в один
 3. **Проверка:** сверяем отступы, цвета и типографику с правилами выше
 
 ### Pencil-файл
-- **Файл:** `pencil-new.pen` (открывается через Pencil MCP в VS Code)
-- **Ширина макета:** 1440px (desktop), 390px (mobile)
-- **Padding:** 120px desktop, 24px mobile
+- **Файл:** `ic farvater.pen` (`/D:/Загрузки/Downloads/ic farvater.pen`, открывается через Pencil MCP в VS Code)
+- **Ширина макета:** 1440px (desktop), 1024px (tablet), 390px (mobile)
+- **Padding:** 60–120px desktop, 40px tablet, 24px mobile
 
-#### Фреймы Desktop
+#### Фреймы Desktop (1440px)
 | ID | Страница |
 |----|----------|
-| `bbLsF` | IC Farvater — Main Page |
-| `f83cg` | About Page |
-| `ItVWl` | Services Page |
-| `FOq5p` | Products Page |
-| `Iblg8` | Contacts Page |
-| `TUJwy` | Product Detail Page |
-| `RsFCk` | 404 Page |
+| `Ns26c` | IC Farvater — Main Page |
+| `Q6E76` | About |
+| `KMFNi` | Products Page |
+| `W3oj8` | Product Detail |
+| `HJty4` | Contacts |
 
-#### Фреймы Mobile
+#### Фреймы Tablet (1024px)
 | ID | Страница |
 |----|----------|
-| `WPq9h` | Mobile — Главная |
-| `kT3Fj` | Mobile — Меню |
-| `V6jv1` | Mobile — Каталог |
-| `lgELV` | Mobile — Карточка |
-| `xZh1f` | Mobile — О компании |
-| `x9utE` | Mobile — Услуги |
-| `2BfHx` | Mobile — Контакты |
+| `b7RXn` | Tablet — Главная |
+| `gDOOk` | Tablet — О компании |
+| `QoHf2` | Tablet — Каталог |
+| `j8h6y` | Tablet — Карточка товара |
+| `tC6O5` | Tablet — Контакты |
+
+#### Фреймы Mobile (390px)
+| ID | Страница |
+|----|----------|
+| `XqqmZ` | Mobile — Главная |
+| `MlENF` | Mobile — Меню |
+| `X3Cjv` | Mobile — О компании |
+| `xEgU3` | Mobile — Каталог |
+| `mPQ4E` | Mobile — Карточка товара |
+| `IlduO` | Mobile — Контакты |
 
 ---
 
