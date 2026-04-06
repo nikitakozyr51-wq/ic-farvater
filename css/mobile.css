@@ -145,8 +145,8 @@ h3 {
 }
 
 .hero__btn {
-  top: auto;
-  bottom: 48px;
+  top: 320px;
+  bottom: auto;
   left: 24px;
 }
 
@@ -172,7 +172,7 @@ h3 {
 
 .about-block__img {
   width: 100%;
-  height: auto;
+  height: 342px;
 }
 
 .about-block__img img {
@@ -309,8 +309,7 @@ h3 {
 
 .cables-split__img {
   width: 100%;
-  height: auto;
-  aspect-ratio: 1 / 1;
+  height: 342px;
 }
 
 .cables-split__img img {
