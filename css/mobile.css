@@ -155,6 +155,10 @@ h3 {
   gap: 24px;
 }
 
+.about-block__text {
+  width: 100%;
+}
+
 .about-block__title {
   font-size: 28px;
   letter-spacing: -0.5px;
