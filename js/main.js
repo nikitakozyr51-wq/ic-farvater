@@ -6,6 +6,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initCertAccordion();
+  initServiceAccordion();
 });
 
 /** Mobile burger menu toggle */
@@ -38,6 +39,18 @@ function initCertAccordion() {
       const row = btn.closest('.cert-row');
       const isOpen = row.classList.toggle('cert-row--open');
       btn.setAttribute('aria-expanded', isOpen);
+    });
+  });
+}
+
+/** Service accordion toggle */
+function initServiceAccordion() {
+  document.querySelectorAll('.service-row__header').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const row = btn.closest('.service-row');
+      const isOpen = row.classList.toggle('service-row--open');
+      btn.setAttribute('aria-expanded', isOpen);
+      btn.querySelector('.service-row__arrow').textContent = isOpen ? '—' : '→';
     });
   });
 }
