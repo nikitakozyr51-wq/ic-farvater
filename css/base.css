@@ -6,6 +6,7 @@ body {
   color: var(--color-text);
   background-color: var(--color-bg);
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 h1 {
