@@ -181,6 +181,11 @@ h3 {
   padding-bottom: 16px;
 }
 
+.section-header__left {
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 .section-header__title {
   font-size: 28px;
   letter-spacing: -0.5px;
@@ -193,6 +198,14 @@ h3 {
 }
 
 .title-count {
+  display: inline;
+}
+
+.section-header-v2__desc {
+  display: none;
+}
+
+.cables-split__desc {
   display: none;
 }
 
@@ -204,13 +217,14 @@ h3 {
   gap: 12px;
 }
 
+.section-header-v2__top {
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 .section-header-v2__title {
   font-size: 28px;
   letter-spacing: -0.5px;
-}
-
-.section-header-v2__desc {
-  font-size: 16px;
 }
 
 
@@ -367,6 +381,15 @@ h3 {
 .service-row__title {
   font-size: 18px;
   letter-spacing: 0;
+}
+
+.service-row__expanded {
+  flex-direction: column;
+  gap: 24px;
+}
+
+.service-row__points {
+  width: 100%;
 }
 
 
