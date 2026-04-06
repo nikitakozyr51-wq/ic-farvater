@@ -804,7 +804,9 @@ p.product-card__desc {
 .footer {
   background: var(--color-text);
   color: var(--color-bg);
-  padding: 80px 60px 48px;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 80px var(--container-padding) 48px;
 }
 
 .footer__top {
