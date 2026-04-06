@@ -667,6 +667,7 @@ p.cat-card__desc {
 }
 
 .product-detail__back {
+  width: 100%;
   font-size: 14px;
   text-align: center;
 }
