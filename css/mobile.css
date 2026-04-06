@@ -139,9 +139,6 @@ h3 {
   width: calc(100% - 48px);
 }
 
-.hero__title br {
-  display: none;
-}
 
 .hero__sub {
   display: none;
