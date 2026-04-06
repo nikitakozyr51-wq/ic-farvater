@@ -563,13 +563,13 @@ h3 {
 }
 
 .catalog__grid {
-  gap: 24px;
-}
-
-.catalog__grid-row {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 12px;
+}
+
+.catalog__grid-row {
+  display: contents;
 }
 
 .cat-card__img {
