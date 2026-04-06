@@ -130,13 +130,17 @@ h3 {
 }
 
 .hero__title {
-  font-size: 40px;
+  font-size: 39px;
   letter-spacing: -1px;
+  line-height: 1.15;
   max-width: 100%;
   top: 120px;
   left: 24px;
   width: calc(100% - 48px);
-  word-break: break-word;
+}
+
+.hero__title br {
+  display: none;
 }
 
 .hero__sub {
@@ -145,7 +149,7 @@ h3 {
 
 .hero__btn {
   top: auto;
-  bottom: 40px;
+  bottom: 48px;
   left: 24px;
 }
 
@@ -366,7 +370,7 @@ h3 {
 }
 
 .bottom-card__img {
-  aspect-ratio: 1 / 1;
+  height: 342px;
 }
 
 .bottom-card__img img {
