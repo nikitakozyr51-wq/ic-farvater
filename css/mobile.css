@@ -136,6 +136,7 @@ h3 {
   top: 120px;
   left: 24px;
   width: calc(100% - 48px);
+  word-break: break-word;
 }
 
 .hero__sub {
@@ -171,7 +172,6 @@ h3 {
 .about-block__img {
   width: 100%;
   height: auto;
-  aspect-ratio: 1 / 1;
 }
 
 .about-block__img img {
@@ -391,6 +391,7 @@ h3 {
 .service-row__title {
   font-size: 18px;
   letter-spacing: 0;
+  text-align: left;
 }
 
 .service-row__expanded {
