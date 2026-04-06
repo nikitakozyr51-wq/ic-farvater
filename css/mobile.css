@@ -430,31 +430,39 @@ h3 {
 }
 
 
-/* ===== FOOTER — ref style mobile ===== */
-.footer-ref {
-  padding: 48px 24px 32px;
+/* ===== FOOTER — navy bg, 2x2 grid ===== */
+.footer {
+  padding: 48px 0 32px;
 }
 
-.footer-ref__top {
-  flex-direction: column;
-  gap: 32px;
-  padding-bottom: 32px;
+.footer .container {
+  padding: 0 24px;
 }
 
-.footer-ref__nav-group {
-  flex-direction: column;
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.footer-ref__brand {
-  font-size: 48px;
-  letter-spacing: -1px;
-  padding: 32px 0;
+.footer__col {
+  gap: 12px;
+  min-width: 0;
 }
 
-.footer-ref__legal {
-  flex-direction: column;
-  gap: 8px;
+.footer__col:first-child {
+  grid-column: 1 / -1;
+}
+
+.footer__desc {
+  font-size: 14px;
+}
+
+.footer__bottom {
+  padding-top: 24px;
+  font-size: 14px;
 }
 
 
