@@ -802,77 +802,78 @@ p.product-card__desc {
 
 /* ===== FOOTER ===== */
 .footer {
-  position: relative;
   background: var(--color-text);
   color: var(--color-bg);
-  padding: var(--space-80) 0 var(--space-48);
-  overflow: hidden;
+  padding: 80px 60px 48px;
 }
 
-.footer > .container {
-  position: relative;
-  z-index: 1;
-}
-
-.footer__grid {
+.footer__top {
   display: flex;
-  gap: var(--space-48);
-  padding-bottom: var(--space-64);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 48px;
+  padding: 48px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.footer__col {
+.footer__nav {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  gap: var(--space-16);
-  flex: 1;
-}
-
-.footer__brand {
-  font-size: var(--text-14);
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.footer__desc {
-  font-size: var(--text-16);
-  color: rgba(255, 255, 255, 0.5);
-  line-height: 1.6;
-}
-
-.footer__col-title {
-  font-size: var(--text-14);
-  font-weight: 600;
-  letter-spacing: 1px;
-  color: rgba(255, 255, 255, 0.4);
-  text-transform: uppercase;
+  gap: 12px;
 }
 
 .footer__link {
   display: block;
-  font-size: var(--text-16);
-  color: rgba(255, 255, 255, 0.7);
-  line-height: 1.7;
-  transition: color 0.25s ease;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-bg);
+  text-decoration: none;
+  transition: opacity 0.25s ease;
 }
 
 .footer__link:hover {
-  color: var(--color-bg);
-  opacity: 1;
+  opacity: 0.5;
 }
 
-.footer__text {
-  font-size: var(--text-16);
-  color: rgba(255, 255, 255, 0.7);
-  line-height: 1.7;
+.footer__contacts {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+}
+
+.footer__contacts a {
+  color: var(--color-bg);
+  text-decoration: none;
+  transition: opacity 0.25s ease;
+}
+
+.footer__contacts a:hover {
+  opacity: 0.5;
+}
+
+.footer__brand {
+  font-size: 120px;
+  font-weight: 500;
+  letter-spacing: -3px;
+  line-height: 1;
+  text-transform: uppercase;
+  padding: 64px 0;
 }
 
 .footer__bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: var(--space-64);
-  font-size: var(--text-14);
-  color: rgba(255, 255, 255, 0.35);
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: var(--color-bg);
 }
