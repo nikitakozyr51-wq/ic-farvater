@@ -57,15 +57,16 @@
 }
 
 .mission__text p {
-  font-size: var(--text-14);
+  font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.6px;
   line-height: 1.8;
   text-transform: uppercase;
+  color: var(--color-text);
 }
 
 .mission__text p.text-muted {
-  color: var(--color-text-muted);
+  color: #8C96AB;
 }
 
 .mission__image {
@@ -148,9 +149,14 @@
 }
 
 .cert-row__photo {
-  width: 480px;
-  aspect-ratio: 1 / 1;
+  width: 652px;
   background: var(--color-bg-alt);
+}
+
+.cert-row__photo img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Mobile cert cards (kept from v1) */
