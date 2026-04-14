@@ -957,11 +957,16 @@ p.cat-card__desc {
   align-items: flex-start;
 }
 
-.series-table {
-  font-size: 13px;
+.series-page__grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
 }
 
-.series-table th,
-.series-table td {
-  padding: 8px 10px;
+.variant-card__info {
+  margin-top: 8px;
+  gap: 8px;
+}
+
+.variant-card__spec {
+  font-size: 12px;
 }

@@ -1,5 +1,5 @@
 // connector-series.js — Страница серии разъёмов
-// Читает slug из hash, рендерит таблицу с расшифровкой
+// Читает slug из hash, рендерит карточки вариантов с расшифровкой
 
 (function () {
   'use strict';
@@ -26,53 +26,26 @@
   const parser = ConnectorParsers.getParser(slug);
   const hasParser = parser.columns.length > 0;
 
-  // Build columns: # + Наименование + parsed columns (or Тип + ТУ for basic)
-  const columns = ['#', 'НАИМЕНОВАНИЕ'];
-  if (hasParser) {
-    columns.push(...parser.columns);
-  } else {
-    columns.push('ТИП', 'ТУ');
-  }
-
-  // ── Parse all items ──
-  const rows = series.items.map((item, i) => {
-    const parsed = hasParser ? parser.parse(item.name) : null;
-    return { idx: i + 1, item, parsed };
-  });
-
-  // ── Render table header ──
-  const thead = document.getElementById('sp-thead');
-  const headerRow = document.createElement('tr');
-  columns.forEach((col, ci) => {
-    const th = document.createElement('th');
-    th.textContent = col;
-    if (ci > 0) {
-      th.dataset.sort = ci;
-    }
-    headerRow.appendChild(th);
-  });
-  thead.appendChild(headerRow);
+  // ── Build parsed rows ──
+  const rows = series.items.map(item => ({
+    item,
+    parsed: hasParser ? parser.parse(item.name) : null
+  }));
 
   // ── Type filter (Вилка/Розетка) ──
   const filtersEl = document.getElementById('sp-filters');
   let typeFilter = 'all';
 
-  // Find if parsed data has Часть or Тип field
   const typeField = hasParser
     ? (parser.columns.includes('Часть') ? 'Часть' : parser.columns.includes('Тип') ? 'Тип' : null)
     : null;
 
   if (typeField) {
     const types = new Set();
-    rows.forEach(r => {
-      if (r.parsed && r.parsed[typeField]) types.add(r.parsed[typeField]);
-    });
+    rows.forEach(r => { if (r.parsed && r.parsed[typeField]) types.add(r.parsed[typeField]); });
     if (types.size > 1) {
-      const allBtn = createFilterBtn('ВСЕ', 'all', true);
-      filtersEl.appendChild(allBtn);
-      types.forEach(t => {
-        filtersEl.appendChild(createFilterBtn(t.toUpperCase(), t, false));
-      });
+      filtersEl.appendChild(createFilterBtn('ВСЕ', 'all', true));
+      types.forEach(t => filtersEl.appendChild(createFilterBtn(t.toUpperCase(), t, false)));
     }
   }
 
@@ -85,7 +58,7 @@
       filtersEl.querySelectorAll('.series-page__filter-btn').forEach(b =>
         b.classList.toggle('series-page__filter-btn--active', b === btn)
       );
-      renderRows();
+      render();
     });
     return btn;
   }
@@ -95,78 +68,24 @@
   let searchQuery = '';
   searchInput.addEventListener('input', () => {
     searchQuery = searchInput.value.trim().toUpperCase();
-    renderRows();
-  });
-
-  // ── Sort ──
-  let sortCol = null;
-  let sortDir = 'asc';
-
-  thead.addEventListener('click', (e) => {
-    const th = e.target.closest('th[data-sort]');
-    if (!th) return;
-    const ci = parseInt(th.dataset.sort);
-    if (sortCol === ci) {
-      sortDir = sortDir === 'asc' ? 'desc' : 'asc';
-    } else {
-      sortCol = ci;
-      sortDir = 'asc';
-    }
-    thead.querySelectorAll('th').forEach(t => t.classList.remove('sort-asc', 'sort-desc'));
-    th.classList.add(sortDir === 'asc' ? 'sort-asc' : 'sort-desc');
-    renderRows();
+    render();
   });
 
   // ── Render ──
-  const tbody = document.getElementById('sp-tbody');
+  const gridEl = document.getElementById('sp-grid');
   const emptyEl = document.getElementById('sp-empty');
+  const imageSrc = series.image || '../assets/images/products/connectors.png';
 
-  function getRowValues(row) {
-    const vals = [String(row.idx), row.item.name];
-    if (hasParser && row.parsed) {
-      parser.columns.forEach(col => vals.push(row.parsed[col] || '—'));
-    } else if (!hasParser) {
-      vals.push(row.item.type || '—', row.item.tu || '—');
-    } else {
-      parser.columns.forEach(() => vals.push('—'));
-    }
-    return vals;
-  }
-
-  function renderRows() {
-    // Filter
-    let filtered = rows.filter(r => {
-      // Type filter
+  function render() {
+    const filtered = rows.filter(r => {
       if (typeFilter !== 'all' && typeField && r.parsed) {
         if (r.parsed[typeField] !== typeFilter) return false;
       }
-      // Search
-      if (searchQuery) {
-        if (!r.item.name.toUpperCase().includes(searchQuery)) return false;
-      }
+      if (searchQuery && !r.item.name.toUpperCase().includes(searchQuery)) return false;
       return true;
     });
 
-    // Sort
-    if (sortCol !== null) {
-      filtered.sort((a, b) => {
-        const va = getRowValues(a)[sortCol] || '';
-        const vb = getRowValues(b)[sortCol] || '';
-        // Try numeric
-        const na = parseFloat(va);
-        const nb = parseFloat(vb);
-        let cmp;
-        if (!isNaN(na) && !isNaN(nb)) {
-          cmp = na - nb;
-        } else {
-          cmp = va.localeCompare(vb, 'ru');
-        }
-        return sortDir === 'desc' ? -cmp : cmp;
-      });
-    }
-
-    // Render
-    tbody.innerHTML = '';
+    gridEl.innerHTML = '';
     if (filtered.length === 0) {
       emptyEl.style.display = '';
       return;
@@ -174,18 +93,48 @@
     emptyEl.style.display = 'none';
 
     const fragment = document.createDocumentFragment();
-    filtered.forEach(r => {
-      const tr = document.createElement('tr');
-      const vals = getRowValues(r);
-      vals.forEach(v => {
-        const td = document.createElement('td');
-        td.textContent = v;
-        tr.appendChild(td);
-      });
-      fragment.appendChild(tr);
-    });
-    tbody.appendChild(fragment);
+    filtered.forEach(r => fragment.appendChild(buildCard(r)));
+    gridEl.appendChild(fragment);
   }
 
-  renderRows();
+  function buildCard(row) {
+    const card = document.createElement('div');
+    card.className = 'variant-card';
+
+    const specsHtml = hasParser && row.parsed
+      ? parser.columns.map(col =>
+          '<div class="variant-card__spec">' +
+            '<span class="variant-card__spec-key">' + esc(col) + '</span>' +
+            '<span class="variant-card__spec-val">' + esc(row.parsed[col] || '—') + '</span>' +
+          '</div>'
+        ).join('')
+      : [
+          ['Тип', row.item.type],
+          ['ТУ', row.item.tu]
+        ].filter(p => p[1]).map(p =>
+          '<div class="variant-card__spec">' +
+            '<span class="variant-card__spec-key">' + esc(p[0]) + '</span>' +
+            '<span class="variant-card__spec-val">' + esc(p[1]) + '</span>' +
+          '</div>'
+        ).join('');
+
+    card.innerHTML =
+      '<div class="variant-card__img">' +
+        '<img src="' + esc(imageSrc) + '" alt="' + esc(row.item.name) + '" loading="lazy">' +
+      '</div>' +
+      '<div class="variant-card__info">' +
+        '<h3 class="variant-card__name">' + esc(row.item.name) + '</h3>' +
+        '<div class="variant-card__specs">' + specsHtml + '</div>' +
+      '</div>';
+
+    return card;
+  }
+
+  function esc(str) {
+    const d = document.createElement('div');
+    d.textContent = str == null ? '' : String(str);
+    return d.innerHTML;
+  }
+
+  render();
 })();
