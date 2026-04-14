@@ -964,9 +964,4 @@ p.cat-card__desc {
 
 .variant-card__info {
   margin-top: 8px;
-  gap: 8px;
-}
-
-.variant-card__spec {
-  font-size: 12px;
 }

@@ -1,5 +1,6 @@
 // connector-series.js — Страница серии разъёмов
-// Читает slug из hash, рендерит карточки вариантов с расшифровкой
+// Читает slug из hash, рендерит сетку карточек вариантов (картинка + имя).
+// Клик → connector-variant.html#<slug>:<index>
 
 (function () {
   'use strict';
@@ -14,7 +15,6 @@
     return;
   }
 
-  // ── Title & meta ──
   document.title = series.name + ' — IC FARVATER';
   document.getElementById('sp-breadcrumb').textContent = series.name;
   document.getElementById('sp-title').textContent = series.name;
@@ -22,17 +22,15 @@
   document.getElementById('sp-tu').textContent = series.tu || '';
   document.getElementById('sp-desc').textContent = series.description || '';
 
-  // ── Parser ──
   const parser = ConnectorParsers.getParser(slug);
   const hasParser = parser.columns.length > 0;
 
-  // ── Build parsed rows ──
-  const rows = series.items.map(item => ({
-    item,
+  const rows = series.items.map((item, idx) => ({
+    item, idx,
     parsed: hasParser ? parser.parse(item.name) : null
   }));
 
-  // ── Type filter (Вилка/Розетка) ──
+  // ── Type filter ──
   const filtersEl = document.getElementById('sp-filters');
   let typeFilter = 'all';
 
@@ -78,9 +76,7 @@
 
   function render() {
     const filtered = rows.filter(r => {
-      if (typeFilter !== 'all' && typeField && r.parsed) {
-        if (r.parsed[typeField] !== typeFilter) return false;
-      }
+      if (typeFilter !== 'all' && typeField && r.parsed && r.parsed[typeField] !== typeFilter) return false;
       if (searchQuery && !r.item.name.toUpperCase().includes(searchQuery)) return false;
       return true;
     });
@@ -98,35 +94,16 @@
   }
 
   function buildCard(row) {
-    const card = document.createElement('div');
+    const card = document.createElement('a');
     card.className = 'variant-card';
-
-    const specsHtml = hasParser && row.parsed
-      ? parser.columns.map(col =>
-          '<div class="variant-card__spec">' +
-            '<span class="variant-card__spec-key">' + esc(col) + '</span>' +
-            '<span class="variant-card__spec-val">' + esc(row.parsed[col] || '—') + '</span>' +
-          '</div>'
-        ).join('')
-      : [
-          ['Тип', row.item.type],
-          ['ТУ', row.item.tu]
-        ].filter(p => p[1]).map(p =>
-          '<div class="variant-card__spec">' +
-            '<span class="variant-card__spec-key">' + esc(p[0]) + '</span>' +
-            '<span class="variant-card__spec-val">' + esc(p[1]) + '</span>' +
-          '</div>'
-        ).join('');
-
+    card.href = 'connector-variant.html#' + slug + ':' + row.idx;
     card.innerHTML =
       '<div class="variant-card__img">' +
         '<img src="' + esc(imageSrc) + '" alt="' + esc(row.item.name) + '" loading="lazy">' +
       '</div>' +
       '<div class="variant-card__info">' +
         '<h3 class="variant-card__name">' + esc(row.item.name) + '</h3>' +
-        '<div class="variant-card__specs">' + specsHtml + '</div>' +
       '</div>';
-
     return card;
   }
 
