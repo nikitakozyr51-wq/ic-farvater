@@ -56,6 +56,17 @@ TU_MAP = {
     'et-rvn2':   'ТКЕС.434410.020 ТУ',
 }
 
+# Individual images — fallback to connectors.png
+IMAGE_MAP = {
+    'et-2rmt':   '../assets/images/products/connectors/et-2rmt.png',
+    'et-2rtt':   '../assets/images/products/connectors/et-2rtt.png',
+    'et-2rmg':   '../assets/images/products/connectors/et-2rmg.png',
+    'et-snc23':  '../assets/images/products/connectors/et-snc23.png',
+    'et-snc144': '../assets/images/products/connectors/et-snc144.png',
+    'et-ek-ep':  '../assets/images/products/connectors/et-ek-ep.png',
+}
+IMAGE_FALLBACK = '../assets/images/products/connectors.png'
+
 # Short descriptions for cards
 DESC_MAP = {
     'et-2rmt':   'Цилиндрические разъёмы с байонетной фиксацией. Ток 5–40 А, до 150°C.',
@@ -130,6 +141,7 @@ def main():
                 'group': group,
                 'tu': TU_MAP.get(slug, ''),
                 'description': DESC_MAP.get(slug, ''),
+                'image': IMAGE_MAP.get(slug, IMAGE_FALLBACK),
                 'items': []
             }
         series_data[slug]['items'].append({
@@ -164,6 +176,7 @@ def main():
         js_lines.append(f'    group: {json.dumps(s["group"])},')
         js_lines.append(f'    tu: {json.dumps(s["tu"])},')
         js_lines.append(f'    description: {json.dumps(s["description"])},')
+        js_lines.append(f'    image: {json.dumps(s["image"])},')
         js_lines.append(f'    count: {len(s["items"])},')
         js_lines.append(f'    items: [')
         for item in s['items']:

@@ -8,6 +8,7 @@ const CONNECTOR_SERIES = [
     group: "main",
     tu: "\u0422\u041a\u0415\u0421.434410.039 \u0422\u0423",
     description: "\u0413\u0435\u0440\u043c\u0435\u0442\u0438\u0447\u043d\u044b\u0435 \u0446\u0438\u043b\u0438\u043d\u0434\u0440\u0438\u0447\u0435\u0441\u043a\u0438\u0435, \u0432\u0438\u0431\u0440\u0430\u0446\u0438\u044f 50g, \u0434\u043e 200\u00b0C.",
+    image: "../assets/images/products/connectors/et-2rmg.png",
     count: 30,
     items: [
       { name: "\u0415\u0422-2\u0420\u041c\u041314\u04114\u04281\u04102", type: "\u0412\u0438\u043b\u043a\u0430", tu: "\u0422\u041a\u0415\u0421.434410.039 \u0422\u0423" },
@@ -48,6 +49,7 @@ const CONNECTOR_SERIES = [
     group: "main",
     tu: "\u0422\u041a\u0415\u0421.434410.016 \u0422\u0423",
     description: "\u0426\u0438\u043b\u0438\u043d\u0434\u0440\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u0440\u0430\u0437\u044a\u0451\u043c\u044b \u0441 \u0431\u0430\u0439\u043e\u043d\u0435\u0442\u043d\u043e\u0439 \u0444\u0438\u043a\u0441\u0430\u0446\u0438\u0435\u0439. \u0422\u043e\u043a 5\u201340 \u0410, \u0434\u043e 150\u00b0C.",
+    image: "../assets/images/products/connectors/et-2rmt.png",
     count: 316,
     items: [
       { name: "\u0415\u0422-2\u0420\u041c\u0414\u042218\u04114\u04135\u04101\u0412", type: "\u0420\u043e\u0437\u0435\u0442\u043a\u0430", tu: "\u0422\u041a\u0415\u0421.434410.016 \u0422\u0423" },
@@ -374,6 +376,7 @@ const CONNECTOR_SERIES = [
     group: "main",
     tu: "\u0422\u041a\u0415\u0421.434410.005 \u0422\u0423",
     description: "\u041f\u0440\u044f\u043c\u043e\u0443\u0433\u043e\u043b\u044c\u043d\u044b\u0435 \u0440\u0430\u0437\u044a\u0451\u043c\u044b \u0441 \u0442\u043e\u043a\u043e\u043c \u0434\u043e 200 \u0410.",
+    image: "../assets/images/products/connectors/et-2rtt.png",
     count: 310,
     items: [
       { name: "\u0415\u0422-2\u0420\u0422\u042216\u04111\u04132\u0412", type: "\u0420\u043e\u0437\u0435\u0442\u043a\u0430", tu: "\u0422\u041a\u0415\u0421.434410.005 \u0422\u0423" },
@@ -694,6 +697,7 @@ const CONNECTOR_SERIES = [
     group: "main",
     tu: "\u0422\u041a\u0415\u0421.434410.032 \u0422\u0423",
     description: "\u041c\u0430\u043b\u043e\u0433\u0430\u0431\u0430\u0440\u0438\u0442\u043d\u044b\u0435 \u0440\u0430\u0437\u044a\u0451\u043c\u044b \u0441\u0435\u0440\u0438\u0438 \u041c\u04201.",
+    image: "../assets/images/products/connectors.png",
     count: 19,
     items: [
       { name: "\u0415\u0422-\u041c\u04201-10-1-\u0412 \u0412\u0438\u043b\u043a\u0430 \u0441 \u043a\u043e\u0436\u0443\u0445\u043e\u043c", type: "\u0412\u0438\u043b\u043a\u0430 \u0441 \u043a\u043e\u0436\u0443\u0445\u043e\u043c", tu: "\u0422\u041a\u0415\u0421.434410.032 \u0422\u0423" },
@@ -723,6 +727,7 @@ const CONNECTOR_SERIES = [
     group: "main",
     tu: "\u0422\u041a\u0415\u0421.434410.024 \u0422\u0423",
     description: "\u0411\u044b\u0441\u0442\u0440\u043e\u0441\u044a\u0451\u043c\u043d\u044b\u0435 \u043e\u0434\u043d\u043e\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u043d\u044b\u0435 \u0441\u043e\u0435\u0434\u0438\u043d\u0438\u0442\u0435\u043b\u0438.",
+    image: "../assets/images/products/connectors.png",
     count: 42,
     items: [
       { name: "\u0415\u0422-\u041e\u041d\u0426-\u0411\u0421-1-10/14-\u04121-1-\u0412", type: "\u0412\u0438\u043b\u043a\u0430", tu: "\u0422\u041a\u0415\u0421.434410.024 \u0422\u0423" },
@@ -775,6 +780,7 @@ const CONNECTOR_SERIES = [
     group: "main",
     tu: "\u0422\u041a\u0415\u0421.434410.045 \u0422\u0423",
     description: "\u0413\u0435\u0440\u043c\u0435\u0442\u0438\u0447\u043d\u044b\u0435 \u0440\u0430\u0437\u044a\u0451\u043c\u044b \u0434\u043b\u044f \u0447\u0430\u0441\u0442\u043e\u0442 \u0434\u043e 3 \u041c\u0413\u0446, 200 \u0412.",
+    image: "../assets/images/products/connectors.png",
     count: 54,
     items: [
       { name: "\u0415\u0422-\u0420\u0420\u04213-10\u0410-0-1-\u0412", type: "\u0420\u043e\u0437\u0435\u0442\u043a\u0430 \u043a\u0430\u0431\u0435\u043b\u044c\u043d\u0430\u044f", tu: "\u0422\u041a\u0415\u0421.434410.045 \u0422\u0423" },
@@ -839,6 +845,7 @@ const CONNECTOR_SERIES = [
     group: "main",
     tu: "\u0422\u041a\u0415\u0421.434410.026 \u0422\u0423",
     description: "\u0420\u0430\u0434\u0438\u043e\u0447\u0430\u0441\u0442\u043e\u0442\u043d\u044b\u0435 \u0441\u043e\u0435\u0434\u0438\u043d\u0438\u0442\u0435\u043b\u0438 \u0441\u0435\u0440\u0438\u0438 \u0420\u0421(\u0413).",
+    image: "../assets/images/products/connectors.png",
     count: 47,
     items: [
       { name: "\u0415\u0422-\u0420\u042110\u0410\u0422\u0412 \u0412\u0438\u043b\u043a\u0430", type: "\u0412\u0438\u043b\u043a\u0430", tu: "\u0422\u041a\u0415\u0421.434410.026 \u0422\u0423" },
@@ -896,6 +903,7 @@ const CONNECTOR_SERIES = [
     group: "main",
     tu: "\u0422\u041a\u0415\u0421.434410.049 \u0422\u0423",
     description: "\u0421\u043e\u0432\u043c\u0435\u0441\u0442\u0438\u043c\u044b \u0441 MIL-DTL-38999. \u042d\u043a\u0440\u0430\u043d 65\u201385 \u0434\u0411, 15 \u043b\u0435\u0442.",
+    image: "../assets/images/products/connectors/et-snc144.png",
     count: 448,
     items: [
       { name: "\u0415\u0422-144-\u041a\u041f11F", type: "\u041a\u043e\u0436\u0443\u0445 \u0434\u043b\u044f \u0421\u041d\u0426144", tu: "\u0422\u041a\u0415\u0421.434410.049 \u0422\u0423" },
@@ -1354,6 +1362,7 @@ const CONNECTOR_SERIES = [
     group: "main",
     tu: "\u0422\u041a\u0415\u0421.434410.014 \u0422\u0423",
     description: "\u0411\u0430\u0439\u043e\u043d\u0435\u0442\u043d\u044b\u0435 \u0441 \u044d\u043a\u0440\u0430\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435\u043c \u043e\u0442 \u042d\u041c\u041f, 700 \u0412.",
+    image: "../assets/images/products/connectors/et-snc23.png",
     count: 142,
     items: [
       { name: "\u0415\u0422-C\u041d\u042623-4/14\u0420-6-\u0412", type: "\u0420\u043e\u0437\u0435\u0442\u043a\u0430", tu: "\u0422\u041a\u0415\u0421.434410.014 \u0422\u0423" },
@@ -1506,6 +1515,7 @@ const CONNECTOR_SERIES = [
     group: "main",
     tu: "\u0422\u041a\u0415\u0421.434410.012 \u0422\u0423",
     description: "\u0426\u0438\u043b\u0438\u043d\u0434\u0440\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u0441\u043e\u0435\u0434\u0438\u043d\u0438\u0442\u0435\u043b\u0438 \u0441\u0435\u0440\u0438\u0438 \u0421\u041d\u042628.",
+    image: "../assets/images/products/connectors.png",
     count: 10,
     items: [
       { name: "\u0415\u0422-\u0421\u041d\u042628-10/18\u0412-1-\u0412", type: "\u0412\u0438\u043b\u043a\u0430", tu: "\u0422\u041a\u0415\u0421.434410.012 \u0422\u0423" },
@@ -1526,6 +1536,7 @@ const CONNECTOR_SERIES = [
     group: "additional",
     tu: "",
     description: "\u0417\u0430\u0433\u043b\u0443\u0448\u043a\u0438 \u0434\u043b\u044f \u0440\u0430\u0437\u044a\u0451\u043c\u043e\u0432 \u0441\u0435\u0440\u0438\u0439 \u0415\u0422.",
+    image: "../assets/images/products/connectors/et-ek-ep.png",
     count: 27,
     items: [
       { name: "\u0415\u0422-\u042d\u041a-18", type: "\u0417\u0430\u0433\u043b\u0443\u0448\u043a\u0430 \u0434\u043b\u044f \u0421\u041d\u042623", tu: "\u0422\u041a\u0415\u0421.434410.014 \u0422\u0423" },
@@ -1563,6 +1574,7 @@ const CONNECTOR_SERIES = [
     group: "additional",
     tu: "\u0422\u041a\u0415\u0421.434410.047 \u0422\u0423",
     description: "\u0411\u0430\u0439\u043e\u043d\u0435\u0442\u043d\u044b\u0435, -60\u2026+85\u00b0C, \u0443\u0434\u0430\u0440 10000 \u043c/\u0441\u00b2.",
+    image: "../assets/images/products/connectors.png",
     count: 5,
     items: [
       { name: "\u0415\u0422-\u041e\u041d\u0426-\u0411\u041c-1-10/10-\u04121-1-\u0412", type: "\u0412\u0438\u043b\u043a\u0430", tu: "\u0422\u041a\u0415\u0421.434410.047 \u0422\u0423" },
@@ -1578,6 +1590,7 @@ const CONNECTOR_SERIES = [
     group: "additional",
     tu: "\u0422\u041a\u0415\u0421.434410.020 \u0422\u0423",
     description: "\u0420\u0430\u0437\u044a\u0451\u043c\u044b \u0432\u0440\u0443\u0431\u043d\u043e\u0433\u043e \u0442\u0438\u043f\u0430 \u0441\u0435\u0440\u0438\u0438 \u0420\u0412\u041d2.",
+    image: "../assets/images/products/connectors.png",
     count: 2,
     items: [
       { name: "\u0415\u0422-\u0420\u0412\u041d2-5-1\u04137\u0412", type: "\u0420\u043e\u0437\u0435\u0442\u043a\u0430", tu: "\u0422\u041a\u0415\u0421.434410.020 \u0422\u0423" },
@@ -1590,6 +1603,7 @@ const CONNECTOR_SERIES = [
     group: "additional",
     tu: "\u0422\u041a\u0415\u0421.434410.003 \u0422\u0423",
     description: "\u0428\u0442\u0435\u043f\u0441\u0435\u043b\u044c\u043d\u044b\u0435 \u0440\u0430\u0437\u044a\u0451\u043c\u044b \u0441\u0435\u0440\u0438\u0438 \u0428\u0420.",
+    image: "../assets/images/products/connectors.png",
     count: 36,
     items: [
       { name: "\u0415\u0422-\u0428\u042016\u041f2\u042d\u04135 \u0420\u043e\u0437\u0435\u0442\u043a\u0430 \u0431\u043b\u043e\u0447\u043d\u0430\u044f", type: "\u0420\u043e\u0437\u0435\u0442\u043a\u0430 \u0431\u043b\u043e\u0447\u043d\u0430\u044f", tu: "\u0422\u041a\u0415\u0421.434410.003 \u0422\u0423" },
@@ -1636,6 +1650,7 @@ const CONNECTOR_SERIES = [
     group: "additional",
     tu: "\u0422\u041a\u0415\u0421.434410.007 \u0422\u0423",
     description: "\u0426\u0438\u043b\u0438\u043d\u0434\u0440\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u0441\u043e\u0435\u0434\u0438\u043d\u0438\u0442\u0435\u043b\u0438 \u0441\u0435\u0440\u0438\u0438 \u0421\u041d\u0426127.",
+    image: "../assets/images/products/connectors.png",
     count: 22,
     items: [
       { name: "\u0415\u0422-\u0421\u041d\u0426127-10/14\u0412\u041f117-1-\u0412", type: "\u0412\u0438\u043b\u043a\u0430", tu: "\u0422\u041a\u0415\u0421.434410.007 \u0422\u0423" },
@@ -1668,6 +1683,7 @@ const CONNECTOR_SERIES = [
     group: "dev",
     tu: "",
     description: "\u0412 \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0435. \u0422\u0423 \u043d\u0435 \u0443\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043d\u044b.",
+    image: "../assets/images/products/connectors.png",
     count: 5,
     items: [
       { name: "\u0415\u0422-2\u0420\u041c\u041f14\u04114\u04281\u04121", type: "\u0412\u0438\u043b\u043a\u0430", tu: "0" },
@@ -1683,6 +1699,7 @@ const CONNECTOR_SERIES = [
     group: "dev",
     tu: "",
     description: "\u0412 \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0435. \u0422\u0423 \u043d\u0435 \u0443\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043d\u044b.",
+    image: "../assets/images/products/connectors.png",
     count: 6,
     items: [
       { name: "\u0415\u0422-\u0420\u0411\u041d2-4-18\u04132\u0412", type: "\u0420\u043e\u0437\u0435\u0442\u043a\u0430", tu: "\u0432 \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0435" },
@@ -1699,6 +1716,7 @@ const CONNECTOR_SERIES = [
     group: "dev",
     tu: "",
     description: "\u0427\u0430\u0441\u0442\u0438\u0447\u043d\u043e \u0432 \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0435.",
+    image: "../assets/images/products/connectors.png",
     count: 8,
     items: [
       { name: "\u0415\u0422-\u0421\u041d\u042613-10/10\u0420-6-\u0412", type: "\u0420\u043e\u0437\u0435\u0442\u043a\u0430", tu: "\u0422\u041a\u0415\u0421.434410.036 \u0422\u0423" },
@@ -1717,6 +1735,7 @@ const CONNECTOR_SERIES = [
     group: "dev",
     tu: "",
     description: "\u0412 \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0435. \u0422\u0423 \u043d\u0435 \u0443\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043d\u044b.",
+    image: "../assets/images/products/connectors.png",
     count: 16,
     items: [
       { name: "\u0415\u0422-\u0421\u041d\u0426147-12/12\u0412\u041e11-NW3", type: "\u0412\u0438\u043b\u043a\u0430", tu: "\u0432 \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0435" },

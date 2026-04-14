@@ -23,11 +23,18 @@
     card.className = 'conn-card';
     card.href = 'connector-series.html#' + series.slug;
 
+    const img = series.image || '../assets/images/products/connectors.png';
     card.innerHTML =
-      '<h3 class="conn-card__name">' + escHtml(series.name) + '</h3>' +
-      '<span class="conn-card__count">(' + String(series.count).padStart(2, '0') + ')</span>' +
-      '<p class="conn-card__desc">' + escHtml(series.description) + '</p>' +
-      (series.tu ? '<span class="conn-card__tu">' + escHtml(series.tu) + '</span>' : '');
+      '<div class="conn-card__img">' +
+        '<img src="' + escHtml(img) + '" alt="' + escHtml(series.name) + '" loading="lazy">' +
+      '</div>' +
+      '<div class="conn-card__info">' +
+        '<h3 class="conn-card__name">' + escHtml(series.name) +
+          ' <span class="conn-card__count">(' + String(series.count).padStart(2, '0') + ')</span>' +
+        '</h3>' +
+        '<p class="conn-card__desc">' + escHtml(series.description) + '</p>' +
+        (series.tu ? '<span class="conn-card__tu">' + escHtml(series.tu) + '</span>' : '') +
+      '</div>';
 
     grid.appendChild(card);
   });

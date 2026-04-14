@@ -913,17 +913,17 @@ p.cat-card__desc {
 }
 
 .conn-catalog__grid {
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 12px;
 }
 
-.conn-card {
-  padding: 20px;
+.conn-card__info {
+  margin-top: 8px;
+  gap: 4px;
 }
 
-.conn-card__name {
-  font-size: 18px;
-  letter-spacing: 0;
+.conn-card__desc {
+  display: none;
 }
 
 /* ── Connector series table ── */
