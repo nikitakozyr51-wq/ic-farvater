@@ -30,13 +30,14 @@
 
 .conn-catalog__title-wrap {
   display: flex;
-  align-items: baseline;
-  gap: 16px;
+  align-items: flex-start;
+  gap: 8px;
 }
 
 .conn-catalog__title {
   font-size: var(--text-hero);
   font-weight: 500;
+  line-height: 1;
   text-transform: uppercase;
   letter-spacing: -2px;
   color: var(--color-text);
@@ -44,9 +45,9 @@
 
 .conn-catalog__title-count {
   font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1px;
+  font-weight: 400;
   color: var(--color-text-muted);
+  margin-top: 14px;
 }
 
 .conn-catalog__desc-text {

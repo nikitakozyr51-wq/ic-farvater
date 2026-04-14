@@ -30,13 +30,14 @@
 
 .series-page__title-row {
   display: flex;
-  align-items: baseline;
-  gap: 16px;
+  align-items: flex-start;
+  gap: 8px;
 }
 
 .series-page__title {
   font-size: var(--text-section);
   font-weight: 500;
+  line-height: 1;
   text-transform: uppercase;
   letter-spacing: -1px;
   color: var(--color-text);
@@ -44,9 +45,9 @@
 
 .series-page__count {
   font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1px;
+  font-weight: 400;
   color: var(--color-text-muted);
+  margin-top: 10px;
 }
 
 .series-page__tu {

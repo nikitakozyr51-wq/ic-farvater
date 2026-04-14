@@ -912,6 +912,10 @@ p.cat-card__desc {
   letter-spacing: -1px;
 }
 
+.conn-catalog__title-count {
+  display: none;
+}
+
 .conn-catalog__grid {
   grid-template-columns: repeat(2, 1fr);
   gap: 12px;
@@ -934,6 +938,10 @@ p.cat-card__desc {
 .series-page__title {
   font-size: 28px;
   letter-spacing: -0.5px;
+}
+
+.series-page__count {
+  display: none;
 }
 
 .series-page__controls-inner {
