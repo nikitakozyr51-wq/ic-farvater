@@ -1,0 +1,156 @@
+/* connectors.css — Лендинг разъёмов */
+
+/* ── Top ── */
+.conn-catalog__top {
+  padding: 120px 0 48px;
+}
+
+.conn-catalog__top-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.conn-catalog__breadcrumb {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.conn-catalog__breadcrumb a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+.conn-catalog__breadcrumb a:hover {
+  color: var(--color-text);
+}
+
+.conn-catalog__title-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.conn-catalog__title {
+  font-size: var(--text-hero);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  color: var(--color-text);
+}
+
+.conn-catalog__title-count {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--color-text-muted);
+}
+
+.conn-catalog__desc-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text);
+  max-width: 640px;
+}
+
+/* ── Section ── */
+.conn-catalog__section {
+  padding-bottom: 48px;
+}
+
+.conn-catalog__section-title {
+  font-size: var(--text-subtitle);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  color: var(--color-text);
+  margin-bottom: 24px;
+}
+
+.conn-catalog__section-note {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 24px;
+}
+
+.conn-catalog__section--dev {
+  opacity: 0.7;
+}
+
+/* ── Grid ── */
+.conn-catalog__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+/* ── Card ── */
+.conn-card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  text-decoration: none;
+  transition: border-color 0.2s;
+}
+
+.conn-card:hover {
+  border-color: var(--color-text);
+}
+
+.conn-card__name {
+  font-size: var(--text-subtitle);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.conn-card__count {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--color-text-muted);
+  margin-bottom: 12px;
+}
+
+.conn-card__desc {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text);
+  flex: 1;
+}
+
+.conn-card__tu {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--color-text-muted);
+  margin-top: 16px;
+}
+
+/* ── Actions ── */
+.conn-catalog__actions {
+  padding: 0 0 80px;
+}
+
+.conn-catalog__back {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+.conn-catalog__back:hover {
+  color: var(--color-text);
+}

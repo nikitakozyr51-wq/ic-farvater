@@ -901,3 +901,67 @@ p.cat-card__desc {
   flex-direction: column;
   gap: 32px;
 }
+
+/* ── Connectors landing ── */
+.conn-catalog__top {
+  padding: 80px 0 32px;
+}
+
+.conn-catalog__title {
+  font-size: 40px;
+  letter-spacing: -1px;
+}
+
+.conn-catalog__grid {
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.conn-card {
+  padding: 20px;
+}
+
+.conn-card__name {
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+/* ── Connector series table ── */
+.series-page__top {
+  padding: 80px 0 32px;
+}
+
+.series-page__title {
+  font-size: 28px;
+  letter-spacing: -0.5px;
+}
+
+.series-page__controls-inner {
+  flex-direction: column;
+}
+
+.series-page__search {
+  max-width: 100%;
+}
+
+.series-page__filters {
+  width: 100%;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.series-page__actions-inner {
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.series-table {
+  font-size: 13px;
+}
+
+.series-table th,
+.series-table td {
+  padding: 8px 10px;
+}

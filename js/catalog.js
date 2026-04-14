@@ -224,7 +224,13 @@
     if (!staticGrid) return;
     staticGrid.querySelectorAll('.cat-card[data-category]').forEach(function(card) {
       card.addEventListener('click', function() {
-        activateCategory(card.getAttribute('data-category'));
+        var cat = card.getAttribute('data-category');
+        // Разъёмы → отдельная страница
+        if (cat === 'connectors') {
+          window.location.href = 'connectors.html';
+          return;
+        }
+        activateCategory(cat);
       });
     });
   }
