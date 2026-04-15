@@ -14,3 +14,20 @@ node_modules/
 # OS files
 Thumbs.db
 .DS_Store
+.vscode/
+.idea/
+
+# Stray assets (drop zones, not part of site)
+/1.png
+/2.png
+/Artboard*.png
+/gemini-*.png
+/процессор*.png
+/new images/
+/site/demo project/
+_data/images/*.rar
+_data/screenshot_live*.png
+
+# Archives
+*.rar
+*.zip

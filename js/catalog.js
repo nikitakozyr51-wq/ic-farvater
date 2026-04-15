@@ -184,7 +184,7 @@
           '<div class="product-card__img">' + img + '</div>' +
           '<div class="product-card__info">' +
             '<span class="product-card__name">' + esc(srs.name) + '</span>' +
-            '<span class="product-card__count">(' + srs.count + ')</span>' +
+            '<span class="product-card__count">' + (srs.count > 0 ? '(' + srs.count + ')' : 'в разработке') + '</span>' +
           '</div>' +
         '</a>';
       }
