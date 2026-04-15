@@ -231,7 +231,12 @@
       return true;
     });
 
-    var imageSrc = series.image || '../assets/images/products/connectors.png';
+    var fallbackImg = series.image || '../assets/images/products/connectors.png';
+    var imgByType = series.imageByType || {};
+    function pickImage(row) {
+      var t = (row.parsed && typeField && row.parsed[typeField]) || row.item.type;
+      return imgByType[t] || fallbackImg;
+    }
 
     var html = '<div class="catalog__category-section catalog__series-view">';
     html += '<h2 class="catalog__category-title">' + esc(series.name) +
@@ -242,6 +247,7 @@
     } else {
       html += '<div class="catalog__products-row">';
       filtered.forEach(function(r) {
+        var imageSrc = pickImage(r);
         html += '<a href="connector-variant.html#' + esc(series.slug) + ':' + r.idx + '" class="product-card">' +
           '<div class="product-card__img"><img src="' + esc(imageSrc) + '" alt="' + esc(r.item.name) + '" loading="lazy"></div>' +
           '<div class="product-card__info">' +

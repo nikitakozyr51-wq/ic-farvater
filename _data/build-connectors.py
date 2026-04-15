@@ -57,13 +57,25 @@ TU_MAP = {
 }
 
 # Individual images — fallback to connectors.png
+BASE = '../assets/images/products/connectors/'
 IMAGE_MAP = {
-    'et-2rmt':   '../assets/images/products/connectors/et-2rmt.png',
-    'et-2rtt':   '../assets/images/products/connectors/et-2rtt.png',
-    'et-2rmg':   '../assets/images/products/connectors/et-2rmg.png',
-    'et-snc23':  '../assets/images/products/connectors/et-snc23.png',
-    'et-snc144': '../assets/images/products/connectors/et-snc144.png',
-    'et-ek-ep':  '../assets/images/products/connectors/et-ek-ep.png',
+    'et-2rmt':   BASE + 'et-2rmt.webp',
+    'et-2rtt':   BASE + 'et-2rtt.webp',
+    'et-2rmg':   BASE + 'et-2rmg.webp',
+    'et-snc23':  BASE + 'et-snc23.webp',
+    'et-snc28':  BASE + 'et-snc28.webp',
+    'et-snc144': BASE + 'et-snc144.webp',
+    'et-mr1':    BASE + 'et-mr1.webp',
+    'et-onc-bs': BASE + 'et-onc-bs.webp',
+    'et-rrs':    BASE + 'et-rrs.webp',
+    'et-ek-ep':  BASE + 'et-ek-ep.png',
+}
+# Per-variant images by type (Вилка/Розетка)
+IMAGE_BY_TYPE = {
+    'et-2rmt':   {'Вилка': BASE + 'et-2rmt-vilka.webp',   'Розетка': BASE + 'et-2rmt-rozetka.webp'},
+    'et-onc-bs': {'Вилка': BASE + 'et-onc-bs-vilka.webp', 'Розетка': BASE + 'et-onc-bs-rozetka.webp'},
+    'et-rrs':    {'Вилка': BASE + 'et-rrs-vilka.webp',    'Розетка': BASE + 'et-rrs-rozetka.webp'},
+    'et-snc144': {'Вилка': BASE + 'et-snc144-vilka.webp', 'Розетка': BASE + 'et-snc144-rozetka.webp'},
 }
 IMAGE_FALLBACK = '../assets/images/products/connectors.png'
 
@@ -142,6 +154,7 @@ def main():
                 'tu': TU_MAP.get(slug, ''),
                 'description': DESC_MAP.get(slug, ''),
                 'image': IMAGE_MAP.get(slug, IMAGE_FALLBACK),
+                'imageByType': IMAGE_BY_TYPE.get(slug, {}),
                 'items': []
             }
         series_data[slug]['items'].append({
@@ -177,6 +190,7 @@ def main():
         js_lines.append(f'    tu: {json.dumps(s["tu"])},')
         js_lines.append(f'    description: {json.dumps(s["description"])},')
         js_lines.append(f'    image: {json.dumps(s["image"])},')
+        js_lines.append(f'    imageByType: {json.dumps(s["imageByType"], ensure_ascii=False)},')
         js_lines.append(f'    count: {len(s["items"])},')
         js_lines.append(f'    items: [')
         for item in s['items']:

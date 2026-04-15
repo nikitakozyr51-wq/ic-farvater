@@ -31,7 +31,12 @@
   document.getElementById('cv-subcategory').textContent = series.name + (series.tu ? ' · ' + series.tu : '');
 
   const img = document.getElementById('cv-image');
-  img.src = series.image || '../assets/images/products/connectors.png';
+  const typeField = parser && parser.columns
+    ? (parser.columns.indexOf('Часть') !== -1 ? 'Часть' : parser.columns.indexOf('Тип') !== -1 ? 'Тип' : null)
+    : null;
+  const itemType = (parsed && typeField && parsed[typeField]) || item.type;
+  const byType = series.imageByType || {};
+  img.src = byType[itemType] || series.image || '../assets/images/products/connectors.png';
   img.alt = item.name;
 
   document.getElementById('cv-description').textContent =
