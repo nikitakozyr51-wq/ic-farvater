@@ -68,7 +68,7 @@ IMAGE_MAP = {
     'et-mr1':    BASE + 'et-mr1.webp',
     'et-onc-bs': BASE + 'et-onc-bs.webp',
     'et-rrs':    BASE + 'et-rrs.webp',
-    'et-ek-ep':  BASE + 'et-ek-ep.png',
+    'et-ek-ep':  '../assets/images/products/connectors.png',
 }
 # Per-variant images by type (Вилка/Розетка)
 IMAGE_BY_TYPE = {

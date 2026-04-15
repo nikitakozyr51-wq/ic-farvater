@@ -1546,7 +1546,7 @@ const CONNECTOR_SERIES = [
     group: "additional",
     tu: "",
     description: "\u0417\u0430\u0433\u043b\u0443\u0448\u043a\u0438 \u0434\u043b\u044f \u0440\u0430\u0437\u044a\u0451\u043c\u043e\u0432 \u0441\u0435\u0440\u0438\u0439 \u0415\u0422.",
-    image: "../assets/images/products/connectors/et-ek-ep.png",
+    image: "../assets/images/products/connectors.png",
     imageByType: {},
     count: 27,
     items: [
