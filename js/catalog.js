@@ -5,7 +5,10 @@
   var state = {
     sort: 'recommended',
     category: null,
-    search: ''
+    search: '',
+    seriesSlug: null,
+    seriesType: 'all',
+    seriesSearch: ''
   };
 
   var browseMode = true;
@@ -66,6 +69,10 @@
       state.category = catKey ? (categoryMap[catKey] || null) : null;
       showAllMode = false;
     }
+    state.seriesSlug = null;
+    state.seriesType = 'all';
+    state.seriesSearch = '';
+    syncHash();
 
     // Sync radio buttons
     var radios = document.querySelectorAll('.filter-radio[data-category]');
@@ -122,7 +129,30 @@
     '</a>';
   }
 
-  function renderConnectorSeries() {
+  function esc(str) {
+    var d = document.createElement('div');
+    d.textContent = str == null ? '' : String(str);
+    return d.innerHTML;
+  }
+
+  function syncHash() {
+    var hash = '';
+    if (state.category === 'Разъёмы') {
+      hash = state.seriesSlug ? 'connectors/' + state.seriesSlug : 'connectors';
+    } else if (showAllMode) {
+      hash = 'all';
+    } else if (state.category) {
+      for (var key in categoryMap) {
+        if (categoryMap[key] === state.category) { hash = key; break; }
+      }
+    }
+    var target = hash ? ('#' + hash) : ' ';
+    if (window.location.hash !== target) {
+      history.replaceState(null, '', hash ? ('#' + hash) : window.location.pathname);
+    }
+  }
+
+  function renderConnectorSeriesList() {
     if (typeof CONNECTOR_SERIES === 'undefined') {
       dynamicContainer.innerHTML = '<p class="catalog__empty">ДАННЫЕ НЕ ЗАГРУЖЕНЫ</p>';
       return;
@@ -146,12 +176,12 @@
       for (var n = 0; n < list.length; n++) {
         var srs = list[n];
         var img = srs.image
-          ? '<img src="' + srs.image + '" alt="' + srs.name + '" loading="lazy" onerror="this.style.display=\'none\'">'
+          ? '<img src="' + esc(srs.image) + '" alt="' + esc(srs.name) + '" loading="lazy" onerror="this.style.display=\'none\'">'
           : '';
-        html += '<a href="connector-series.html#' + srs.slug + '" class="product-card">' +
+        html += '<a href="#connectors/' + esc(srs.slug) + '" class="product-card" data-series="' + esc(srs.slug) + '">' +
           '<div class="product-card__img">' + img + '</div>' +
           '<div class="product-card__info">' +
-            '<span class="product-card__name">' + srs.name + '</span>' +
+            '<span class="product-card__name">' + esc(srs.name) + '</span>' +
             '<span class="product-card__count">(' + srs.count + ')</span>' +
           '</div>' +
         '</a>';
@@ -161,11 +191,111 @@
     dynamicContainer.innerHTML = html;
   }
 
+  function renderConnectorSeriesDetail() {
+    var series = CONNECTOR_SERIES.find(function(s) { return s.slug === state.seriesSlug; });
+    if (!series) {
+      state.seriesSlug = null;
+      renderConnectorSeriesList();
+      return;
+    }
+
+    var parser = (typeof ConnectorParsers !== 'undefined') ? ConnectorParsers.getParser(series.slug) : { columns: [], parse: function() { return null; } };
+    var hasParser = parser.columns.length > 0;
+    var typeField = hasParser
+      ? (parser.columns.indexOf('Часть') !== -1 ? 'Часть' : parser.columns.indexOf('Тип') !== -1 ? 'Тип' : null)
+      : null;
+
+    var rows = series.items.map(function(item, idx) {
+      return { item: item, idx: idx, parsed: hasParser ? parser.parse(item.name) : null };
+    });
+
+    var types = [];
+    if (typeField) {
+      var seen = {};
+      rows.forEach(function(r) {
+        if (r.parsed && r.parsed[typeField] && !seen[r.parsed[typeField]]) {
+          seen[r.parsed[typeField]] = true;
+          types.push(r.parsed[typeField]);
+        }
+      });
+    }
+
+    var filtered = rows.filter(function(r) {
+      if (state.seriesType !== 'all' && typeField && r.parsed && r.parsed[typeField] !== state.seriesType) return false;
+      if (state.seriesSearch && r.item.name.toUpperCase().indexOf(state.seriesSearch) === -1) return false;
+      return true;
+    });
+
+    var imageSrc = series.image || '../assets/images/products/connectors.png';
+
+    var html = '<div class="catalog__category-section catalog__series-view">';
+    html += '<div class="catalog__series-head">';
+    html += '<h2 class="catalog__category-title">' + esc(series.name) +
+      ' <span class="title-count">(' + pad(series.count) + ')</span></h2>';
+    if (series.tu) html += '<p class="catalog__series-tu">' + esc(series.tu) + '</p>';
+    if (series.description) html += '<p class="catalog__series-desc">' + esc(series.description) + '</p>';
+    html += '</div>';
+
+    html += '<div class="catalog__series-controls">';
+    html += '<div class="catalog__series-search"><input type="text" id="series-search-input" class="catalog__series-search-input" placeholder="ПОИСК ПО НАИМЕНОВАНИЮ..." value="' + esc(state.seriesSearch) + '"></div>';
+    if (types.length > 1) {
+      html += '<div class="catalog__series-filters">';
+      html += '<button type="button" class="series-filter-btn' + (state.seriesType === 'all' ? ' series-filter-btn--active' : '') + '" data-type="all">ВСЕ</button>';
+      types.forEach(function(t) {
+        html += '<button type="button" class="series-filter-btn' + (state.seriesType === t ? ' series-filter-btn--active' : '') + '" data-type="' + esc(t) + '">' + esc(t.toUpperCase()) + '</button>';
+      });
+      html += '</div>';
+    }
+    html += '</div>';
+
+    if (filtered.length === 0) {
+      html += '<p class="catalog__empty">НЕТ РЕЗУЛЬТАТОВ</p>';
+    } else {
+      html += '<div class="catalog__products-row">';
+      filtered.forEach(function(r) {
+        html += '<a href="connector-variant.html#' + esc(series.slug) + ':' + r.idx + '" class="product-card">' +
+          '<div class="product-card__img"><img src="' + esc(imageSrc) + '" alt="' + esc(r.item.name) + '" loading="lazy"></div>' +
+          '<div class="product-card__info">' +
+            '<span class="product-card__name">' + esc(r.item.name) + '</span>' +
+          '</div>' +
+        '</a>';
+      });
+      html += '</div>';
+    }
+    html += '</div>';
+    dynamicContainer.innerHTML = html;
+
+    var searchInput = document.getElementById('series-search-input');
+    if (searchInput) {
+      var timer = null;
+      searchInput.addEventListener('input', function() {
+        clearTimeout(timer);
+        timer = setTimeout(function() {
+          state.seriesSearch = searchInput.value.trim().toUpperCase();
+          renderConnectorSeriesDetail();
+          var el = document.getElementById('series-search-input');
+          if (el) { el.focus(); var v = el.value; el.value = ''; el.value = v; }
+        }, 200);
+      });
+    }
+    dynamicContainer.querySelectorAll('.series-filter-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        state.seriesType = btn.getAttribute('data-type');
+        renderConnectorSeriesDetail();
+      });
+    });
+  }
+
+  function renderConnectors() {
+    if (state.seriesSlug) renderConnectorSeriesDetail();
+    else renderConnectorSeriesList();
+  }
+
   function render() {
     if (!dynamicContainer) return;
 
     if (state.category === 'Разъёмы') {
-      renderConnectorSeries();
+      renderConnectors();
       return;
     }
 
@@ -312,10 +442,23 @@
     var resetBtn = document.getElementById('sidebar-reset');
     if (resetBtn) resetBtn.addEventListener('click', resetAll);
 
-    // Hash navigation
+    applyHash();
+    window.addEventListener('hashchange', applyHash);
+  }
+
+  function applyHash() {
     var hash = window.location.hash ? window.location.hash.slice(1) : '';
-    if (hash && categoryMap[hash]) {
-      activateCategory(hash);
+    if (!hash) return;
+    var parts = hash.split('/');
+    var catKey = parts[0];
+    if (catKey === 'connectors' && parts[1]) {
+      activateCategory('connectors');
+      state.seriesSlug = parts[1];
+      render();
+      return;
+    }
+    if (categoryMap[catKey] || catKey === 'all') {
+      activateCategory(catKey);
     }
   }
 
