@@ -39,12 +39,12 @@
   font-weight: 500;
   line-height: 1;
   text-transform: uppercase;
-  letter-spacing: -2px;
+  letter-spacing: -2.9px;
   color: var(--color-text);
 }
 
 .conn-catalog__title-count {
-  font-size: 14px;
+  font-size: var(--text-14);
   font-weight: 400;
   color: var(--color-text-muted);
   margin-top: 14px;

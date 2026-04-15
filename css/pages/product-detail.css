@@ -51,6 +51,7 @@
 /* Content: image + info */
 .product-detail__content {
   display: flex;
+  align-items: flex-start;
   gap: var(--space-80);
   padding-bottom: var(--space-80);
 }
