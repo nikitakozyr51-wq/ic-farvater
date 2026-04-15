@@ -1,26 +1,26 @@
 #!/usr/bin/env python3
-"""02_preobrazovateli.csv → js/converters-data.js"""
-import csv, json, sys
+"""02_preobrazovateli.csv + scraped/names.json → js/converters-data.js"""
+import csv, json, re, sys
 sys.stdout.reconfigure(encoding='utf-8')
 
 CSV_PATH = r"d:/site/_data/02_preobrazovateli.csv"
+SCRAPED = r"d:/site/_data/scraped/names.json"
 OUT_PATH = r"d:/site/js/converters-data.js"
 
 BASE = '../assets/images/products/'
 
-# Серия → (slug, display, group, tu, description, image)
 SERIES_META = {
-    'ИРТЫШ': ('irtysh',  'ИРТЫШ',  'main', '',
+    'ИРТЫШ': ('irtysh', 'ИРТЫШ',  'main', '',
               'Модульные DC/DC преобразователи мощностью до 800 Вт. Входное напряжение 24/28/300/375 В.',
               BASE + 'items/Irtysh.webp'),
-    'ВОЛГА': ('volga',   'ВОЛГА',  'dev',  '',
-              'Модульные преобразователи напряжения серии ВОЛГА. В разработке.',
+    'ВОЛГА': ('volga',  'ВОЛГА',  'main', '',
+              'Модульные AC/DC преобразователи серии ВОЛГА. Питание от однофазной сети 115/230 В.',
               BASE + 'converters.webp'),
-    'ЕНИСЕЙ':('enisei',  'ЕНИСЕЙ', 'dev',  '',
-              'Модульные преобразователи напряжения серии ЕНИСЕЙ. В разработке.',
+    'ЕНИСЕЙ':('enisei', 'ЕНИСЕЙ', 'main', '',
+              'Модульные DC/DC преобразователи серии ЕНИСЕЙ. Вход 27 В, мощность до 30 Вт.',
               BASE + 'converters.webp'),
-    'КАМА':  ('kama',    'КАМА',   'dev',  '',
-              'Модульные преобразователи напряжения серии КАМА. В разработке.',
+    'КАМА':  ('kama',   'КАМА',   'main', '',
+              'Модульные AC/DC преобразователи серии КАМА. Вход 230 В, мощность 50–1000 Вт.',
               BASE + 'converters.webp'),
 }
 
@@ -30,29 +30,45 @@ def clean(s):
 def detect_brand(name):
     u = name.upper()
     for b in ('ИРТЫШ', 'ВОЛГА', 'ЕНИСЕЙ', 'КАМА'):
-        if b in u:
-            return b
+        if b in u: return b
     return None
+
+def parse_name_specs(name):
+    """Извлечь Vout/Power/partnumber/тип из строки вида 'XXX AC-DC Волга 12 В / 100 Вт ЭТВА100-...'."""
+    out = {}
+    m = re.search(r'\b(DC[-/]DC|AC[-/]DC)\b', name, re.I)
+    if m: out['type'] = m.group(1).replace('-', '/').upper()
+    m = re.search(r'(\d+(?:[.,]\d+)?)\s*В\s*/\s*(\d+(?:[.,]\d+)?)\s*Вт', name)
+    if m:
+        out['vout'] = m.group(1)
+        out['power'] = m.group(2)
+    # Партномер — последнее слово, состоящее из латиницы/кириллицы/цифр/дефиса, длиной > 6
+    parts = name.split()
+    for p in reversed(parts):
+        if len(p) >= 6 and re.match(r'^[A-ZА-ЯЁ0-9\-]+$', p):
+            out['partnumber'] = p
+            break
+    return out
 
 def main():
     with open(CSV_PATH, 'r', encoding='utf-8') as f:
         rows = list(csv.reader(f))
-
-    data = [r for r in rows if r and r[0].startswith('proizvodstvo-preobrazovatelej')]
+    csv_data = [r for r in rows if r and r[0].startswith('proizvodstvo-preobrazovatelej')]
 
     series = {b: {
-        'slug': meta[0], 'name': meta[1], 'group': meta[2], 'tu': meta[3],
-        'description': meta[4], 'image': meta[5], 'imageByType': {}, 'items': []
-    } for b, meta in SERIES_META.items()}
+        'slug': m[0], 'name': m[1], 'group': m[2], 'tu': m[3],
+        'description': m[4], 'image': m[5], 'imageByType': {}, 'items': []
+    } for b, m in SERIES_META.items()}
 
-    for r in data:
+    # ИРТЫШ — из CSV (подробные спеки)
+    for r in csv_data:
         name = clean(r[1])
         brand = detect_brand(name)
-        if not brand: continue
+        if brand != 'ИРТЫШ': continue
         series[brand]['items'].append({
             'name': name,
-            'type': clean(r[12]),               # DC/DC / AC/DC
-            'subseries': clean(r[13]),          # ET-F300 / ET-H300 / ...
+            'type': clean(r[12]),
+            'subseries': clean(r[13]),
             'partnumber': clean(r[14]),
             'vin': clean(r[15]),
             'vout': clean(r[16]),
@@ -64,15 +80,25 @@ def main():
             'datasheet': clean(r[25]),
         })
 
-    # Stats
-    order = ['main', 'dev']
-    ordered = sorted(series.values(), key=lambda s: (order.index(s['group']), s['slug']))
+    # ВОЛГА / ЕНИСЕЙ / КАМА — из scraped
+    with open(SCRAPED, 'r', encoding='utf-8') as f:
+        scraped = json.load(f)
+    for brand_key, scrape_key in [('ВОЛГА','volga'), ('ЕНИСЕЙ','enisei'), ('КАМА','kama')]:
+        for name in scraped.get(scrape_key, []):
+            name = clean(name)
+            specs = parse_name_specs(name)
+            item = {'name': name}
+            item.update(specs)
+            series[brand_key]['items'].append(item)
+
+    order_group = ['main', 'dev']
+    order_slug = ['irtysh', 'volga', 'enisei', 'kama']
+    ordered = sorted(series.values(), key=lambda s: (order_group.index(s['group']), order_slug.index(s['slug']) if s['slug'] in order_slug else 99))
     for s in ordered:
         print(f"  [{s['group']:4}] {s['name']:8} → {len(s['items'])} items")
 
-    # Generate JS
     lines = [
-        '// Auto-generated from 02_preobrazovateli.csv. Do not edit manually.',
+        '// Auto-generated from 02_preobrazovateli.csv + scraped/names.json.',
         '// Generated by _data/build-converters.py',
         '',
         'var CONVERTER_SERIES = [',
