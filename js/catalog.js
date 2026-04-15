@@ -72,6 +72,7 @@
     state.seriesSlug = null;
     state.seriesType = 'all';
     state.seriesSearch = '';
+    if (typeof hideSeriesTypeFilter === 'function') hideSeriesTypeFilter();
     syncHash();
 
     // Sync radio buttons
@@ -153,6 +154,7 @@
   }
 
   function renderConnectorSeriesList() {
+    hideSeriesTypeFilter();
     if (typeof CONNECTOR_SERIES === 'undefined') {
       dynamicContainer.innerHTML = '<p class="catalog__empty">ДАННЫЕ НЕ ЗАГРУЖЕНЫ</p>';
       return;
@@ -195,6 +197,7 @@
     var series = CONNECTOR_SERIES.find(function(s) { return s.slug === state.seriesSlug; });
     if (!series) {
       state.seriesSlug = null;
+      hideSeriesTypeFilter();
       renderConnectorSeriesList();
       return;
     }
@@ -220,33 +223,19 @@
       });
     }
 
+    if (types.length > 1) showSeriesTypeFilter(types);
+    else hideSeriesTypeFilter();
+
     var filtered = rows.filter(function(r) {
       if (state.seriesType !== 'all' && typeField && r.parsed && r.parsed[typeField] !== state.seriesType) return false;
-      if (state.seriesSearch && r.item.name.toUpperCase().indexOf(state.seriesSearch) === -1) return false;
       return true;
     });
 
     var imageSrc = series.image || '../assets/images/products/connectors.png';
 
     var html = '<div class="catalog__category-section catalog__series-view">';
-    html += '<div class="catalog__series-head">';
     html += '<h2 class="catalog__category-title">' + esc(series.name) +
-      ' <span class="title-count">(' + pad(series.count) + ')</span></h2>';
-    if (series.tu) html += '<p class="catalog__series-tu">' + esc(series.tu) + '</p>';
-    if (series.description) html += '<p class="catalog__series-desc">' + esc(series.description) + '</p>';
-    html += '</div>';
-
-    html += '<div class="catalog__series-controls">';
-    html += '<div class="catalog__series-search"><input type="text" id="series-search-input" class="catalog__series-search-input" placeholder="ПОИСК ПО НАИМЕНОВАНИЮ..." value="' + esc(state.seriesSearch) + '"></div>';
-    if (types.length > 1) {
-      html += '<div class="catalog__series-filters">';
-      html += '<button type="button" class="series-filter-btn' + (state.seriesType === 'all' ? ' series-filter-btn--active' : '') + '" data-type="all">ВСЕ</button>';
-      types.forEach(function(t) {
-        html += '<button type="button" class="series-filter-btn' + (state.seriesType === t ? ' series-filter-btn--active' : '') + '" data-type="' + esc(t) + '">' + esc(t.toUpperCase()) + '</button>';
-      });
-      html += '</div>';
-    }
-    html += '</div>';
+      ' <span class="title-count">(' + pad(filtered.length) + ')</span></h2>';
 
     if (filtered.length === 0) {
       html += '<p class="catalog__empty">НЕТ РЕЗУЛЬТАТОВ</p>';
@@ -264,26 +253,51 @@
     }
     html += '</div>';
     dynamicContainer.innerHTML = html;
+  }
 
-    var searchInput = document.getElementById('series-search-input');
-    if (searchInput) {
-      var timer = null;
-      searchInput.addEventListener('input', function() {
-        clearTimeout(timer);
-        timer = setTimeout(function() {
-          state.seriesSearch = searchInput.value.trim().toUpperCase();
-          renderConnectorSeriesDetail();
-          var el = document.getElementById('series-search-input');
-          if (el) { el.focus(); var v = el.value; el.value = ''; el.value = v; }
-        }, 200);
-      });
+  // --- Sidebar: dynamic "ТИП" group for connector series ---
+
+  function showSeriesTypeFilter(types) {
+    var sidebar = document.getElementById('catalog-sidebar');
+    if (!sidebar) return;
+    var group = document.getElementById('series-type-group');
+    if (!group) {
+      group = document.createElement('div');
+      group.className = 'filter-group';
+      group.id = 'series-type-group';
+      group.setAttribute('data-filter', 'series-type');
+      var clearRow = sidebar.querySelector('.filter-clear-row');
+      sidebar.insertBefore(group, clearRow);
     }
-    dynamicContainer.querySelectorAll('.series-filter-btn').forEach(function(btn) {
+    var buttonsHtml = '<button class="filter-radio' + (state.seriesType === 'all' ? ' filter-radio--active' : '') + '" data-series-type="all">ВСЕ</button>';
+    types.forEach(function(t) {
+      buttonsHtml += '<button class="filter-radio' + (state.seriesType === t ? ' filter-radio--active' : '') + '" data-series-type="' + esc(t) + '">' + esc(t.toUpperCase()) + '</button>';
+    });
+    group.innerHTML =
+      '<button class="filter-group__header" aria-expanded="true">' +
+        '<span class="filter-group__name">ТИП</span>' +
+        '<svg class="filter-group__chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>' +
+      '</button>' +
+      '<div class="filter-group__items">' + buttonsHtml + '</div>';
+
+    group.querySelector('.filter-group__header').addEventListener('click', function(e) {
+      var btn = e.currentTarget;
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !expanded);
+      var items = btn.nextElementSibling;
+      if (items) items.style.display = expanded ? 'none' : '';
+    });
+    group.querySelectorAll('[data-series-type]').forEach(function(btn) {
       btn.addEventListener('click', function() {
-        state.seriesType = btn.getAttribute('data-type');
+        state.seriesType = btn.getAttribute('data-series-type');
         renderConnectorSeriesDetail();
       });
     });
+  }
+
+  function hideSeriesTypeFilter() {
+    var group = document.getElementById('series-type-group');
+    if (group && group.parentNode) group.parentNode.removeChild(group);
   }
 
   function renderConnectors() {

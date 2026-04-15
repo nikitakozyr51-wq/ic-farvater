@@ -21,7 +21,7 @@
 
     const card = document.createElement('a');
     card.className = 'conn-card';
-    card.href = 'connector-series.html#' + series.slug;
+    card.href = 'products.html#connectors/' + series.slug;
 
     const img = series.image || '../assets/images/products/connectors.png';
     card.innerHTML =

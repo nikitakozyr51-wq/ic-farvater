@@ -25,7 +25,7 @@
 
   const seriesLink = document.getElementById('cv-series-link');
   seriesLink.textContent = series.name;
-  seriesLink.href = 'connector-series.html#' + slug;
+  seriesLink.href = 'products.html#connectors/' + slug;
 
   document.getElementById('cv-name').textContent = item.name;
   document.getElementById('cv-subcategory').textContent = series.name + (series.tu ? ' · ' + series.tu : '');
@@ -57,7 +57,7 @@
     '</div>'
   ).join('');
 
-  document.getElementById('cv-back').href = 'connector-series.html#' + slug;
+  document.getElementById('cv-back').href = 'products.html#connectors/' + slug;
 
   function esc(str) {
     const d = document.createElement('div');
