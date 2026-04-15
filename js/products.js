@@ -9,7 +9,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы ЭКБ ТЕСТ",
     "description": "Микросхема ET1310PN1U",
-    "image": "../assets/images/products/items/ET1310PN1U.png",
+    "image": "../assets/images/products/items/ET1310PN1U.webp",
     "specs": {
       "Тип корпуса": "SOT23, SOT-224",
       "Тип": "Управление питанием (Power management)",
@@ -27,7 +27,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы ЭКБ ТЕСТ",
     "description": "Микросхема ET1309EN3.3T",
-    "image": "../assets/images/products/items/ET1309EN3.3T 1.png",
+    "image": "../assets/images/products/items/ET1309EN3.3T 1.webp",
     "specs": {
       "Тип корпуса": "TO-263-3",
       "Тип": "Управление питанием (Power management)",
@@ -42,7 +42,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы ЭКБ ТЕСТ",
     "description": "Микросхема ET1309ES035",
-    "image": "../assets/images/products/items/550_420__1309ES035 1.png",
+    "image": "../assets/images/products/items/550_420__1309ES035 1.webp",
     "specs": {
       "Тип корпуса": "SOT-23, TO-92, SOT-89, SOP-8, TO-92L",
       "Тип": "Управление питанием (Power management)",
@@ -58,7 +58,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы ЭКБ ТЕСТ",
     "description": "Микросхема ET1309ES055",
-    "image": "../assets/images/products/items/550_420__1309ES035 1.png",
+    "image": "../assets/images/products/items/550_420__1309ES035 1.webp",
     "specs": {
       "Тип корпуса": "SOT-23, TO-92, SOT-89, SOP-8, TO-92L",
       "Тип": "Управление питанием (Power management)",
@@ -74,7 +74,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы ЭКБ ТЕСТ",
     "description": "Микросхема ET1309ES065",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип корпуса": "SOT-23, TO-92, SOT-89, SOP-8, TO-92L",
       "Тип": "Управление питанием (Power management)",
@@ -90,7 +90,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы ЭКБ ТЕСТ",
     "description": "Микросхема ET1645RU1U",
-    "image": "../assets/images/products/items/550_420__ET1645RU1U 1.png",
+    "image": "../assets/images/products/items/550_420__ET1645RU1U 1.webp",
     "specs": {
       "Тип корпуса": "32TSOP1",
       "Тип": "ПАМЯТЬ (MEMORY)",
@@ -104,7 +104,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы ЭКБ ТЕСТ",
     "description": "Микросхема ET1645RU3U",
-    "image": "../assets/images/products/items/ET1645RU3U 1.png",
+    "image": "../assets/images/products/items/ET1645RU3U 1.webp",
     "specs": {
       "Тип корпуса": "44TSOP2",
       "Тип": "ПАМЯТЬ (MEMORY)",
@@ -118,7 +118,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы ЭКБ ТЕСТ",
     "description": "Микросхема ET1645RU4",
-    "image": "../assets/images/products/items/ET1645RU4 1.png",
+    "image": "../assets/images/products/items/ET1645RU4 1.webp",
     "specs": {
       "Тип корпуса": "48TSOP1",
       "Тип": "ПАМЯТЬ (MEMORY)",
@@ -132,7 +132,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы ЭКБ ТЕСТ",
     "description": "Микросхема ET1645RU4",
-    "image": "../assets/images/products/items/ET1645RU4 1.png",
+    "image": "../assets/images/products/items/ET1645RU4 1.webp",
     "specs": {
       "Тип корпуса": "48TSOP2",
       "Тип": "ПАМЯТЬ (MEMORY)",
@@ -146,7 +146,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы ЭКБ ТЕСТ",
     "description": "Микросхема ET1645RU7YA",
-    "image": "../assets/images/products/items/ET1645RU7YA 1.png",
+    "image": "../assets/images/products/items/ET1645RU7YA 1.webp",
     "specs": {
       "Тип корпуса": "100TQFP (20mm x 14mm)",
       "Тип": "ПАМЯТЬ (MEMORY)",
@@ -160,7 +160,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы ЭКБ ТЕСТ",
     "description": "Микросхема ET1663RA06V4",
-    "image": "../assets/images/products/items/ET1663RA06V4.png",
+    "image": "../assets/images/products/items/ET1663RA06V4.webp",
     "specs": {
       "Тип корпуса": "48TSOP1",
       "Тип": "ПАМЯТЬ (MEMORY)",
@@ -174,7 +174,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы ЭКБ ТЕСТ",
     "description": "Микросхема ET1636RR1",
-    "image": "../assets/images/products/items/ET1636RR1 1.png",
+    "image": "../assets/images/products/items/ET1636RR1 1.webp",
     "specs": {
       "Тип корпуса": "CQFP44",
       "Тип": "ПАМЯТЬ (MEMORY)",
@@ -188,7 +188,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы ЭКБ ТЕСТ",
     "description": "Микросхема ET5559IN4U",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип корпуса": "SSOP-24",
       "Тип": "ИНТЕРФЕЙСЫ (INTERFACES)",
@@ -230,7 +230,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы ЭКБ ТЕСТ",
     "description": "Микросхема ET5559IN28U",
-    "image": "../assets/images/products/items/5559IN28U.png",
+    "image": "../assets/images/products/items/5559IN28U.webp",
     "specs": {
       "Тип корпуса": "SOP8",
       "Тип": "ИНТЕРФЕЙСЫ (INTERFACES)",
@@ -312,7 +312,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы ЭКБ ТЕСТ",
     "description": "Микросхема ET1986VE-64",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "МИКРОКОНТРОЛЛЕРЫ (MCU)",
       "Напряжение питания": "2,2 ÷ 3,6 В"
@@ -376,7 +376,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы Миландр",
     "description": "Микросхема 1310ПН1У",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип корпуса": "24-х выводной металлокерамический корпус Н06.24-1В"
     }
@@ -387,7 +387,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы Миландр",
     "description": "Микросхема 1309ЕН3.3Т",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип корпуса": "8-выводной металлокерамический корпус 4116.8-3"
     }
@@ -398,7 +398,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы Миландр",
     "description": "Микросхема 1309ЕС035",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип корпуса": "8-ми выводной металлокерамический корпус Н02.8-1В"
     }
@@ -409,7 +409,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы Миландр",
     "description": "Микросхема 1309ЕС055",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип корпуса": "8-ми выводной металлокерамический корпус Н02.8-1В"
     }
@@ -420,7 +420,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы Миландр",
     "description": "Микросхема 1309ЕС065",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип корпуса": "8-ми выводной металлокерамический корпус Н02.8-1В"
     }
@@ -431,7 +431,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы Миландр",
     "description": "Микросхема 1645РУ1А(Б)У",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип корпуса": "64-х выводной металлокерамический корпус Н18.64-3В"
     }
@@ -442,7 +442,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы Миландр",
     "description": "Микросхема 1645РУ3А(Б)У",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип корпуса": "64-х выв. металлокерамический корпус Н18.64-3В/МК 5153.64-2"
     }
@@ -453,7 +453,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы Миландр",
     "description": "Микросхема 1645РУ4АУ",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип корпуса": "64-выводной металлокерамический корпус 5134.64-6"
     }
@@ -464,7 +464,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы Миландр",
     "description": "Микросхема 1645РУ6У1",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип корпуса": "64-в. металлокерам. корп. Н18.64-2В, 64-в. металлокерам. корп. МК 5153.64-2"
     }
@@ -475,7 +475,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы Миландр",
     "description": "Микросхема 1645РУ7Я",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип корпуса": "BGA МК 8307.144-АНЗ (16 х 16 мм)"
     }
@@ -486,7 +486,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы Миландр",
     "description": "Микросхема 1663РА06В4",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип корпуса": "108-х выводной металлокерамический корпус 4226.108-2.03"
     }
@@ -497,7 +497,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы Миландр",
     "description": "Микросхема 1636РР1А(Б)У",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип корпуса": "42-х выводной металлокерамический корпус Н14.42-1В"
     }
@@ -508,7 +508,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы Миландр",
     "description": "Микросхема 5559ИН4У",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип корпуса": "28-и выводной металлокерамический корпус Н09.28-1В"
     }
@@ -519,7 +519,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы Миландр",
     "description": "Микросхема 5559ИН10БУ",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип корпуса": "8-выводной микро корпус Н02.8-1В, 8-выводной пластиковый корпус SO-8"
     }
@@ -541,7 +541,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы Миландр",
     "description": "Микросхема 5559ИН28У",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип корпуса": "Тип корпуса: Н02.8-1В"
     }
@@ -552,7 +552,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы Миландр",
     "description": "Микросхема 5600ВГ1У",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип корпуса": "64-х выводной металлокерамический корпус Н18.64-1В"
     }
@@ -574,7 +574,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы Миландр",
     "description": "Микросхема 5572ИН1АУ1",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип корпуса": "48-выводной металлокерамический корпус Н16.48-1В"
     }
@@ -585,7 +585,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы Миландр",
     "description": "Микросхема 5572ИН2АУ",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип корпуса": "24-выводной металлокерамический корпус: Н06.24-1В"
     }
@@ -596,7 +596,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы Миландр",
     "description": "Микросхема 1986ВЕ91Т",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип корпуса": "132-х выводной металлокерамический корпус 4229.132-3"
     }
@@ -607,7 +607,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы Миландр",
     "description": "Микросхема 5578РС015",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип корпуса": "Н09.28-1В"
     }
@@ -618,7 +618,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы Миландр",
     "description": "Микросхема 5576РС1У",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип корпуса": "28-и выводной металлокерамический корпус Н09.28-1В"
     }
@@ -629,7 +629,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы Миландр",
     "description": "Микросхема 5576ХС4Т",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип корпуса": "256-выводной металлокерамический корпус 4244.256-3"
     }
@@ -640,7 +640,7 @@ const PRODUCTS = [
     "category": "Микросхемы",
     "subcategory": "Микросхемы Миландр",
     "description": "Микросхема 5576ХС1Т",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип корпуса": "240-выводной металлокерамический корпус 4245.240-6"
     }
@@ -660,7 +660,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "Разъёмы ЭКБ ТЕСТ",
     "description": "Разъём многополюсный ЕТ-СНЦ13",
-    "image": "../assets/images/products/items/ET_SNC23 1.png",
+    "image": "../assets/images/products/items/ET_SNC23 1.webp",
     "specs": {
       "Количество контактов": "10–102",
       "Температурный диапазон": "-60… `+85 °C",
@@ -673,7 +673,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "Разъёмы ЭКБ ТЕСТ",
     "description": "Разъём многополюсный ЕТ-СНЦ14",
-    "image": "../assets/images/products/items/ET_SNC23 1.png",
+    "image": "../assets/images/products/items/ET_SNC23 1.webp",
     "specs": {
       "Количество контактов": "10–102",
       "Температурный диапазон": "-60… `+85 °C",
@@ -686,7 +686,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "Разъёмы ЭКБ ТЕСТ",
     "description": "Разъём многополюсный ЕТ-СНЦ43",
-    "image": "../assets/images/products/items/ET_SNC23 1.png",
+    "image": "../assets/images/products/items/ET_SNC23 1.webp",
     "specs": {
       "Количество контактов": "10–102",
       "Температурный диапазон": "-60… `+85 °C",
@@ -699,7 +699,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "Разъёмы ЭКБ ТЕСТ",
     "description": "Разъём многополюсный ЕТ-ШР",
-    "image": "../assets/images/products/items/b2llibz7_ET_2RTT.png",
+    "image": "../assets/images/products/items/b2llibz7_ET_2RTT.webp",
     "specs": {
       "Количество контактов": "1–48",
       "Температурный диапазон": "-60… `+50 °C",
@@ -712,7 +712,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "Разъёмы ЭКБ ТЕСТ",
     "description": "Разъём многополюсный ЕТ-СШР",
-    "image": "../assets/images/products/items/b2llibz7_ET_2RTT.png",
+    "image": "../assets/images/products/items/b2llibz7_ET_2RTT.webp",
     "specs": {
       "Количество контактов": "1–48",
       "Температурный диапазон": "-60… `+50 °C",
@@ -725,7 +725,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "Разъёмы ЭКБ ТЕСТ",
     "description": "Разъём многополюсный ЕТ-2РТТ",
-    "image": "../assets/images/products/items/b2llibz7_ET_2RTT.png",
+    "image": "../assets/images/products/items/b2llibz7_ET_2RTT.webp",
     "specs": {
       "Количество контактов": "1–48",
       "Температурный диапазон": "-60… `+150 °C",
@@ -738,7 +738,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "Разъёмы ЭКБ ТЕСТ",
     "description": "Разъём многополюсный ЕТ-СНЦ13-2",
-    "image": "../assets/images/products/items/ET_SNC23 1.png",
+    "image": "../assets/images/products/items/ET_SNC23 1.webp",
     "specs": {
       "Количество контактов": "2–47",
       "Температурный диапазон": "-60… `+400 °C",
@@ -751,7 +751,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "Разъёмы ЭКБ ТЕСТ",
     "description": "Разъём многополюсный ЕТ-СНЦ14-2",
-    "image": "../assets/images/products/items/ET_SNC23 1.png",
+    "image": "../assets/images/products/items/ET_SNC23 1.webp",
     "specs": {
       "Количество контактов": "2–47",
       "Температурный диапазон": "-60… `+400 °C",
@@ -764,7 +764,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "Разъёмы ЭКБ ТЕСТ",
     "description": "Разъём многополюсный ЕТ-СНЦ43-2",
-    "image": "../assets/images/products/items/ET_SNC23 1.png",
+    "image": "../assets/images/products/items/ET_SNC23 1.webp",
     "specs": {
       "Количество контактов": "2–47",
       "Температурный диапазон": "-60… `+400 °C",
@@ -777,7 +777,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "Разъёмы ЭКБ ТЕСТ",
     "description": "Разъём многополюсный ЕТ-ШР-2",
-    "image": "../assets/images/products/items/b2llibz7_ET_2RTT.png",
+    "image": "../assets/images/products/items/b2llibz7_ET_2RTT.webp",
     "specs": {
       "Количество контактов": "5–7",
       "Температурный диапазон": "-60… `+100 °C",
@@ -790,7 +790,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "Разъёмы ЭКБ ТЕСТ",
     "description": "Разъём многополюсный ЕТ-СШР-2",
-    "image": "../assets/images/products/items/b2llibz7_ET_2RTT.png",
+    "image": "../assets/images/products/items/b2llibz7_ET_2RTT.webp",
     "specs": {
       "Количество контактов": "5–7",
       "Температурный диапазон": "-60… `+100 °C",
@@ -803,7 +803,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "Разъёмы ЭКБ ТЕСТ",
     "description": "Разъём многополюсный ЕТ-2РТТ-2",
-    "image": "../assets/images/products/items/b2llibz7_ET_2RTT.png",
+    "image": "../assets/images/products/items/b2llibz7_ET_2RTT.webp",
     "specs": {
       "Количество контактов": "5–7",
       "Температурный диапазон": "-60… `+100 °C",
@@ -816,7 +816,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "Разъёмы ЭКБ ТЕСТ",
     "description": "Разъём многополюсный ЕТ-РБМ4",
-    "image": "../assets/images/products/items/ET_SNC23 1.png",
+    "image": "../assets/images/products/items/ET_SNC23 1.webp",
     "specs": {
       "Количество контактов": "4–55",
       "Температурный диапазон": "-60… `+100 °C",
@@ -829,7 +829,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "Разъёмы ЭКБ ТЕСТ",
     "description": "Разъём многополюсный ЕТ-СНО49",
-    "image": "../assets/images/products/items/ET_SNC23 1.png",
+    "image": "../assets/images/products/items/ET_SNC23 1.webp",
     "specs": {
       "Количество контактов": "2–64",
       "Температурный диапазон": "-60… `+155 °C",
@@ -842,7 +842,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "Разъёмы ЭКБ ТЕСТ",
     "description": "Разъём многополюсный ЕТ-СНО50",
-    "image": "../assets/images/products/items/ET_SNC23 1.png",
+    "image": "../assets/images/products/items/ET_SNC23 1.webp",
     "specs": {
       "Количество контактов": "2–64",
       "Температурный диапазон": "-60… `+155 °C",
@@ -855,7 +855,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "Разъёмы ЭКБ ТЕСТ",
     "description": "Разъём многополюсный ЕТ-СНЦ23",
-    "image": "../assets/images/products/items/ET_SNC23 1.png",
+    "image": "../assets/images/products/items/ET_SNC23 1.webp",
     "specs": {
       "Количество контактов": "10–102",
       "Температурный диапазон": "-60… `+85 °C",
@@ -868,7 +868,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "Разъёмы ЭКБ ТЕСТ",
     "description": "Разъём многополюсный ЕТ-СНЦ28",
-    "image": "../assets/images/products/items/ET_SNC23 1.png",
+    "image": "../assets/images/products/items/ET_SNC23 1.webp",
     "specs": {
       "Количество контактов": "10–102",
       "Температурный диапазон": "-60… `+85 °C",
@@ -881,7 +881,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "Разъёмы ЭКБ ТЕСТ",
     "description": "Разъём многополюсный ЕТ-РП16",
-    "image": "../assets/images/products/items/ET_2RMG_D_.png",
+    "image": "../assets/images/products/items/ET_2RMG_D_.webp",
     "specs": {
       "Количество контактов": "4–55",
       "Температурный диапазон": "-60… `+100 °C",
@@ -894,7 +894,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "Разъёмы ЭКБ ТЕСТ",
     "description": "Разъём многополюсный ЕТ-2РМ",
-    "image": "../assets/images/products/items/ET_2RMG_D_.png",
+    "image": "../assets/images/products/items/ET_2RMG_D_.webp",
     "specs": {
       "Количество контактов": "4–55",
       "Температурный диапазон": "-60… `+100 °C",
@@ -907,7 +907,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "Разъёмы ЭКБ ТЕСТ",
     "description": "Разъём многополюсный ЕТ-2РМД",
-    "image": "../assets/images/products/items/ET_2RMG_D_.png",
+    "image": "../assets/images/products/items/ET_2RMG_D_.webp",
     "specs": {
       "Количество контактов": "4–55",
       "Температурный диапазон": "-60… `+100 °C",
@@ -920,7 +920,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "Разъёмы ЭКБ ТЕСТ",
     "description": "Разъём многополюсный ЕТ-РС10",
-    "image": "../assets/images/products/items/ET_2RMG_D_.png",
+    "image": "../assets/images/products/items/ET_2RMG_D_.webp",
     "specs": {
       "Количество контактов": "2–64",
       "Температурный диапазон": "-60… `+155 °C",
@@ -933,7 +933,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "Разъёмы ЭКБ ТЕСТ",
     "description": "Разъём многополюсный ЕТ-СНП34",
-    "image": "../assets/images/products/items/ET_SNC23 1.png",
+    "image": "../assets/images/products/items/ET_SNC23 1.webp",
     "specs": {
       "Количество контактов": "10–102",
       "Температурный диапазон": "-60… `+85 °C",
@@ -946,7 +946,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "Разъёмы ЭКБ ТЕСТ",
     "description": "Разъём ВЧ ЕТ-СР",
-    "image": "../assets/images/products/items/ET_2RMG_D_.png",
+    "image": "../assets/images/products/items/ET_2RMG_D_.webp",
     "specs": {
       "Температурный диапазон": "-60… `+155 °C",
       "Макс. рабочее напряжение": "500 В",
@@ -960,7 +960,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "Разъёмы ЭКБ ТЕСТ",
     "description": "Разъём многополюсный ЕТ-2РМ-2",
-    "image": "../assets/images/products/items/ET_2RMG_D_.png",
+    "image": "../assets/images/products/items/ET_2RMG_D_.webp",
     "specs": {
       "Количество контактов": "4–55",
       "Температурный диапазон": "-60… `+100 °C",
@@ -973,7 +973,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "Разъёмы ЭКБ ТЕСТ",
     "description": "Разъём многополюсный ЕТ-2РМД-2",
-    "image": "../assets/images/products/items/ET_2RMG_D_.png",
+    "image": "../assets/images/products/items/ET_2RMG_D_.webp",
     "specs": {
       "Количество контактов": "4–55",
       "Температурный диапазон": "-60… `+100 °C",
@@ -986,7 +986,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "Разъёмы ЭКБ ТЕСТ",
     "description": "Разъём многополюсный ЕТ-СНП34-2",
-    "image": "../assets/images/products/items/ET_SNC23 1.png",
+    "image": "../assets/images/products/items/ET_SNC23 1.webp",
     "specs": {
       "Количество контактов": "10–102",
       "Температурный диапазон": "-60… `+85 °C",
@@ -999,7 +999,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "Разъёмы ЭКБ ТЕСТ",
     "description": "Разъём многополюсный ЕТ-СР",
-    "image": "../assets/images/products/items/ET_2RMG_D_.png",
+    "image": "../assets/images/products/items/ET_2RMG_D_.webp",
     "specs": {
       "Температурный диапазон": "-60… `+155 °C",
       "Макс. рабочее напряжение": "500 В",
@@ -1013,7 +1013,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "Разъёмы ЭКБ ТЕСТ",
     "description": "Разъём многополюсный ЕТ-РС19",
-    "image": "../assets/images/products/items/ET_2RMG_D_.png",
+    "image": "../assets/images/products/items/ET_2RMG_D_.webp",
     "specs": {
       "Количество контактов": "4–50",
       "Температурный диапазон": "-60… `+85 °C",
@@ -1026,7 +1026,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "PIN-TO-PIN и функциональные замены разъёмов других производителей",
     "description": "Разъём многополюсный СНЦ13",
-    "image": "../assets/images/products/items/ET_SNC23 1.png",
+    "image": "../assets/images/products/items/ET_SNC23 1.webp",
     "specs": {}
   },
   {
@@ -1035,7 +1035,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "PIN-TO-PIN и функциональные замены разъёмов других производителей",
     "description": "Разъём многополюсный СНЦ14",
-    "image": "../assets/images/products/items/ET_SNC23 1.png",
+    "image": "../assets/images/products/items/ET_SNC23 1.webp",
     "specs": {}
   },
   {
@@ -1044,7 +1044,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "PIN-TO-PIN и функциональные замены разъёмов других производителей",
     "description": "Разъём многополюсный СНЦ43",
-    "image": "../assets/images/products/items/ET_SNC23 1.png",
+    "image": "../assets/images/products/items/ET_SNC23 1.webp",
     "specs": {}
   },
   {
@@ -1053,7 +1053,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "PIN-TO-PIN и функциональные замены разъёмов других производителей",
     "description": "Разъём многополюсный ШР",
-    "image": "../assets/images/products/items/b2llibz7_ET_2RTT.png",
+    "image": "../assets/images/products/items/b2llibz7_ET_2RTT.webp",
     "specs": {}
   },
   {
@@ -1062,7 +1062,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "PIN-TO-PIN и функциональные замены разъёмов других производителей",
     "description": "Разъём многополюсный СШР",
-    "image": "../assets/images/products/items/b2llibz7_ET_2RTT.png",
+    "image": "../assets/images/products/items/b2llibz7_ET_2RTT.webp",
     "specs": {}
   },
   {
@@ -1071,7 +1071,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "PIN-TO-PIN и функциональные замены разъёмов других производителей",
     "description": "Разъём многополюсный 2РТТ",
-    "image": "../assets/images/products/items/b2llibz7_ET_2RTT.png",
+    "image": "../assets/images/products/items/b2llibz7_ET_2RTT.webp",
     "specs": {}
   },
   {
@@ -1080,7 +1080,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "PIN-TO-PIN и функциональные замены разъёмов других производителей",
     "description": "Разъём многополюсный 4РТ",
-    "image": "../assets/images/products/items/b2llibz7_ET_2RTT.png",
+    "image": "../assets/images/products/items/b2llibz7_ET_2RTT.webp",
     "specs": {}
   },
   {
@@ -1089,7 +1089,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "PIN-TO-PIN и функциональные замены разъёмов других производителей",
     "description": "Разъём многополюсный РВН1, РВН2, РВН3",
-    "image": "../assets/images/products/items/ET_SNC23 1.png",
+    "image": "../assets/images/products/items/ET_SNC23 1.webp",
     "specs": {}
   },
   {
@@ -1098,7 +1098,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "PIN-TO-PIN и функциональные замены разъёмов других производителей",
     "description": "Разъём многополюсный РВН1, РВН2, РВН4",
-    "image": "../assets/images/products/items/ET_SNC23 1.png",
+    "image": "../assets/images/products/items/ET_SNC23 1.webp",
     "specs": {}
   },
   {
@@ -1107,7 +1107,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "PIN-TO-PIN и функциональные замены разъёмов других производителей",
     "description": "Разъём многополюсный РВН1, РВН2, РВН5",
-    "image": "../assets/images/products/items/ET_SNC23 1.png",
+    "image": "../assets/images/products/items/ET_SNC23 1.webp",
     "specs": {}
   },
   {
@@ -1116,7 +1116,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "PIN-TO-PIN и функциональные замены разъёмов других производителей",
     "description": "Разъём многополюсный РБМ-4",
-    "image": "../assets/images/products/items/ET_SNC23 1.png",
+    "image": "../assets/images/products/items/ET_SNC23 1.webp",
     "specs": {}
   },
   {
@@ -1125,7 +1125,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "PIN-TO-PIN и функциональные замены разъёмов других производителей",
     "description": "Разъём многополюсный ШР, СШР, 2РТТ",
-    "image": "../assets/images/products/items/b2llibz7_ET_2RTT.png",
+    "image": "../assets/images/products/items/b2llibz7_ET_2RTT.webp",
     "specs": {}
   },
   {
@@ -1134,7 +1134,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "PIN-TO-PIN и функциональные замены разъёмов других производителей",
     "description": "Разъём многополюсный РП15",
-    "image": "../assets/images/products/items/ET_2RMG_D_.png",
+    "image": "../assets/images/products/items/ET_2RMG_D_.webp",
     "specs": {}
   },
   {
@@ -1143,7 +1143,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "PIN-TO-PIN и функциональные замены разъёмов других производителей",
     "description": "Разъём многополюсный 2РМ",
-    "image": "../assets/images/products/items/ET_2RMG_D_.png",
+    "image": "../assets/images/products/items/ET_2RMG_D_.webp",
     "specs": {}
   },
   {
@@ -1152,7 +1152,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "PIN-TO-PIN и функциональные замены разъёмов других производителей",
     "description": "Разъём многополюсный 2РМД",
-    "image": "../assets/images/products/items/ET_2RMG_D_.png",
+    "image": "../assets/images/products/items/ET_2RMG_D_.webp",
     "specs": {}
   },
   {
@@ -1161,7 +1161,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "PIN-TO-PIN и функциональные замены разъёмов других производителей",
     "description": "Разъём многополюсный РС10",
-    "image": "../assets/images/products/items/ET_2RMG_D_.png",
+    "image": "../assets/images/products/items/ET_2RMG_D_.webp",
     "specs": {}
   },
   {
@@ -1170,7 +1170,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "PIN-TO-PIN и функциональные замены разъёмов других производителей",
     "description": "Разъём многополюсный СНП34",
-    "image": "../assets/images/products/items/ET_SNC23 1.png",
+    "image": "../assets/images/products/items/ET_SNC23 1.webp",
     "specs": {}
   },
   {
@@ -1179,7 +1179,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "PIN-TO-PIN и функциональные замены разъёмов других производителей",
     "description": "Разъём ВЧ СР",
-    "image": "../assets/images/products/items/ET_2RMG_D_.png",
+    "image": "../assets/images/products/items/ET_2RMG_D_.webp",
     "specs": {}
   },
   {
@@ -1188,7 +1188,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "PIN-TO-PIN и функциональные замены разъёмов других производителей",
     "description": "Разъём многополюсный АЭР-85, АЭР-85М",
-    "image": "../assets/images/products/items/ET_SNC23 1.png",
+    "image": "../assets/images/products/items/ET_SNC23 1.webp",
     "specs": {}
   },
   {
@@ -1197,7 +1197,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "PIN-TO-PIN и функциональные замены разъёмов других производителей",
     "description": "Разъём многополюсный ОНЦ-БС, ОНЦ-БМ",
-    "image": "../assets/images/products/items/ET_SNC23 1.png",
+    "image": "../assets/images/products/items/ET_SNC23 1.webp",
     "specs": {}
   },
   {
@@ -1206,7 +1206,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "PIN-TO-PIN и функциональные замены разъёмов других производителей",
     "description": "Разъём многополюсный СНЦ127",
-    "image": "../assets/images/products/items/ET_SNC23 1.png",
+    "image": "../assets/images/products/items/ET_SNC23 1.webp",
     "specs": {}
   },
   {
@@ -1215,7 +1215,7 @@ const PRODUCTS = [
     "category": "Разъёмы",
     "subcategory": "PIN-TO-PIN и функциональные замены разъёмов других производителей",
     "description": "Разъём многополюсный РС(Г)19",
-    "image": "../assets/images/products/items/ET_2RMG_D_.png",
+    "image": "../assets/images/products/items/ET_2RMG_D_.webp",
     "specs": {}
   },
   {
@@ -1224,7 +1224,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 264 Вт ET-F300C-3V3P264R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F300",
@@ -1243,7 +1243,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 400 Вт ET-F300C-05VP400R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F300",
@@ -1262,7 +1262,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 8 В / 400 Вт ET-F300C-08VP400R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F300",
@@ -1281,7 +1281,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 600 Вт ET-F300C-12VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F300",
@@ -1300,7 +1300,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 600 Вт ET-F300C-15VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F300",
@@ -1319,7 +1319,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 600 Вт ET-F300C-24VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F300",
@@ -1338,7 +1338,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 600 Вт ET-F300C-28VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F300",
@@ -1357,7 +1357,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 600 Вт ET-F300C-36VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F300",
@@ -1376,7 +1376,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 600 Вт ET-F300C-48VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F300",
@@ -1395,7 +1395,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 264 Вт ET-F300H-3V3P264R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F300",
@@ -1414,7 +1414,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 400 Вт ET-F300H-05VP400R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F300",
@@ -1433,7 +1433,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 8 В / 400 Вт ET-F300H-08VP400R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F300",
@@ -1452,7 +1452,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 600 Вт ET-F300H-12VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F300",
@@ -1471,7 +1471,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 600 Вт ET-F300H-15VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F300",
@@ -1490,7 +1490,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 600 Вт ET-F300H-24VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F300",
@@ -1509,7 +1509,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 600 Вт ET-F300H-28VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F300",
@@ -1528,7 +1528,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 600 Вт ET-F300H-36VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F300",
@@ -1547,7 +1547,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 600 Вт ET-F300H-48VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F300",
@@ -1566,7 +1566,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 264 Вт ET-F300M-3V3P264R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F300",
@@ -1585,7 +1585,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 400 Вт ET-F300M-05VP400R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F300",
@@ -1604,7 +1604,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 8 В / 400 Вт ET-F300M-08VP400R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F300",
@@ -1623,7 +1623,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 600 Вт ET-F300M-12VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F300",
@@ -1642,7 +1642,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 600 Вт ET-F300M-15VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F300",
@@ -1661,7 +1661,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 600 Вт ET-F300M-24VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F300",
@@ -1680,7 +1680,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 600 Вт ET-F300M-28VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F300",
@@ -1699,7 +1699,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 600 Вт ET-F300M-36VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F300",
@@ -1718,7 +1718,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 600 Вт ET-F300M-48VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F300",
@@ -1737,7 +1737,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 150 Вт ET-H300C-3V3P150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H300",
@@ -1756,7 +1756,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 200 Вт ET-H300C-05VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H300",
@@ -1775,7 +1775,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 8 В / 200 Вт ET-H300C-08VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H300",
@@ -1794,7 +1794,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 250 Вт ET-H300C-12VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H300",
@@ -1813,7 +1813,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 250 Вт ET-H300C-15VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H300",
@@ -1832,7 +1832,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 250 Вт ET-H300C-24VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H300",
@@ -1851,7 +1851,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 250 Вт ET-H300C-28VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H300",
@@ -1870,7 +1870,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 250 Вт ET-H300C-36VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H300",
@@ -1889,7 +1889,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 250 Вт ET-H300C-48VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H300",
@@ -1908,7 +1908,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 150 Вт ET-H300H-3V3P150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H300",
@@ -1927,7 +1927,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 200 Вт ET-H300H-05VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H300",
@@ -1946,7 +1946,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 8 В / 200 Вт ET-H300H-08VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H300",
@@ -1965,7 +1965,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 250 Вт ET-H300H-12VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H300",
@@ -1984,7 +1984,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 250 Вт ET-H300H-15VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H300",
@@ -2003,7 +2003,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 250 Вт ET-H300H-24VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H300",
@@ -2022,7 +2022,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 250 Вт ET-H300H-28VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H300",
@@ -2041,7 +2041,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 250 Вт ET-H300H-36VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H300",
@@ -2060,7 +2060,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 250 Вт ET-H300H-48VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H300",
@@ -2079,7 +2079,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 150 Вт ET-H300M-3V3P150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H300",
@@ -2098,7 +2098,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 200 Вт ET-H300M-05VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H300",
@@ -2117,7 +2117,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 8 В / 200 Вт ET-H300M-08VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H300",
@@ -2136,7 +2136,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 250 Вт ET-H300M-12VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H300",
@@ -2155,7 +2155,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 250 Вт ET-H300M-15VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H300",
@@ -2174,7 +2174,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 250 Вт ET-H300M-24VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H300",
@@ -2193,7 +2193,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 250 Вт ET-H300M-28VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H300",
@@ -2212,7 +2212,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 250 Вт ET-H300M-36VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H300",
@@ -2231,7 +2231,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 250 Вт ET-H300M-48VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H300",
@@ -2250,7 +2250,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 150 Вт ET-Q300C-3V3P075R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q300",
@@ -2269,7 +2269,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 200 Вт ET-Q300C-05VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q300",
@@ -2288,7 +2288,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 8 В / 200 Вт ET-Q300C-08VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q300",
@@ -2307,7 +2307,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 250 Вт ET-Q300C-12VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q300",
@@ -2326,7 +2326,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 250 Вт ET-Q300C-15VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q300",
@@ -2345,7 +2345,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 250 Вт ET-Q300C-24VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q300",
@@ -2364,7 +2364,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 250 Вт ET-Q300C-28VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q300",
@@ -2383,7 +2383,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 250 Вт ET-Q300C-36VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q300",
@@ -2402,7 +2402,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 250 Вт ET-Q300C-48VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q300",
@@ -2421,7 +2421,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 150 Вт ET-Q300H-3V3P075R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q300",
@@ -2440,7 +2440,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 200 Вт ET-Q300H-05VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q300",
@@ -2459,7 +2459,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 8 В / 200 Вт ET-Q300H-08VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q300",
@@ -2478,7 +2478,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 250 Вт ET-Q300H-12VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q300",
@@ -2497,7 +2497,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 250 Вт ET-Q300H-15VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q300",
@@ -2516,7 +2516,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 250 Вт ET-Q300H-24VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q300",
@@ -2535,7 +2535,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 250 Вт ET-Q300H-28VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q300",
@@ -2554,7 +2554,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 250 Вт ET-Q300H-36VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q300",
@@ -2573,7 +2573,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 250 Вт ET-Q300H-48VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q300",
@@ -2592,7 +2592,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 150 Вт ET-Q300M-3V3P075R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q300",
@@ -2611,7 +2611,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 200 Вт ET-Q300M-05VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q300",
@@ -2630,7 +2630,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 8 В / 200 Вт ET-Q300M-08VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q300",
@@ -2649,7 +2649,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 250 Вт ET-Q300M-12VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q300",
@@ -2668,7 +2668,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 250 Вт ET-Q300M-15VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q300",
@@ -2687,7 +2687,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 250 Вт ET-Q300M-24VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q300",
@@ -2706,7 +2706,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 250 Вт ET-Q300M-28VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q300",
@@ -2725,7 +2725,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 250 Вт ET-Q300M-36VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q300",
@@ -2744,7 +2744,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 250 Вт ET-Q300M-48VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q300",
@@ -2763,7 +2763,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 264 Вт ET-F375C-3V3P264R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F375",
@@ -2782,7 +2782,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 400 Вт ET-F375C-05VP400R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F375",
@@ -2801,7 +2801,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 8 В / 400 Вт ET-F375C-08VP400R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F375",
@@ -2820,7 +2820,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 600 Вт ET-F375C-12VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F375",
@@ -2839,7 +2839,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 600 Вт ET-F375C-15VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F375",
@@ -2858,7 +2858,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 600 Вт ET-F375C-24VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F375",
@@ -2877,7 +2877,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 600 Вт ET-F375C-28VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F375",
@@ -2896,7 +2896,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 600 Вт ET-F375C-36VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F375",
@@ -2915,7 +2915,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 600 Вт ET-F375C-48VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F375",
@@ -2934,7 +2934,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 264 Вт ET-F375H-3V3P264R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F375",
@@ -2953,7 +2953,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 400 Вт ET-F375H-05VP400R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F375",
@@ -2972,7 +2972,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 8 В / 400 Вт ET-F375H-08VP400R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F375",
@@ -2991,7 +2991,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 600 Вт ET-F375H-12VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F375",
@@ -3010,7 +3010,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 600 Вт ET-F375H-15VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F375",
@@ -3029,7 +3029,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 600 Вт ET-F375H-24VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F375",
@@ -3048,7 +3048,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 600 Вт ET-F375H-28VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F375",
@@ -3067,7 +3067,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 600 Вт ET-F375H-36VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F375",
@@ -3086,7 +3086,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 600 Вт ET-F375H-48VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F375",
@@ -3105,7 +3105,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 264 Вт ET-F375M-3V3P264R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F375",
@@ -3124,7 +3124,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 400 Вт ET-F375M-05VP400R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F375",
@@ -3143,7 +3143,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 8 В / 400 Вт ET-F375M-08VP400R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F375",
@@ -3162,7 +3162,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 600 Вт ET-F375M-12VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F375",
@@ -3181,7 +3181,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 600 Вт ET-F375M-15VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F375",
@@ -3200,7 +3200,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 600 Вт ET-F375M-24VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F375",
@@ -3219,7 +3219,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 600 Вт ET-F375M-28VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F375",
@@ -3238,7 +3238,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 600 Вт ET-F375M-36VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F375",
@@ -3257,7 +3257,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 600 Вт ET-F375M-48VP600R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F375",
@@ -3276,7 +3276,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 150 Вт ET-H375C-3V3P150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H375",
@@ -3295,7 +3295,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 200 Вт ET-H375C-05VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H375",
@@ -3314,7 +3314,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 8 В / 200 Вт ET-H375C-08VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H375",
@@ -3333,7 +3333,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 250 Вт ET-H375C-12VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H375",
@@ -3352,7 +3352,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 250 Вт ET-H375C-15VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H375",
@@ -3371,7 +3371,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 250 Вт ET-H375C-24VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H375",
@@ -3390,7 +3390,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 250 Вт ET-H375C-28VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H375",
@@ -3409,7 +3409,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 250 Вт ET-H375C-36VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H375",
@@ -3428,7 +3428,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 250 Вт ET-H375C-48VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H375",
@@ -3447,7 +3447,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 150 Вт ET-H375H-3V3P150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H375",
@@ -3466,7 +3466,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 200 Вт ET-H375H-05VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H375",
@@ -3485,7 +3485,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 8 В / 200 Вт ET-H375H-08VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H375",
@@ -3504,7 +3504,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 250 Вт ET-H375H-12VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H375",
@@ -3523,7 +3523,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 250 Вт ET-H375H-15VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H375",
@@ -3542,7 +3542,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 250 Вт ET-H375H-24VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H375",
@@ -3561,7 +3561,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 250 Вт ET-H375H-28VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H375",
@@ -3580,7 +3580,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 250 Вт ET-H375H-36VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H375",
@@ -3599,7 +3599,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 250 Вт ET-H375H-48VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H375",
@@ -3618,7 +3618,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 150 Вт ET-H375M-3V3P150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H375",
@@ -3637,7 +3637,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 200 Вт ET-H375M-05VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H375",
@@ -3656,7 +3656,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 8 В / 200 Вт ET-H375M-08VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H375",
@@ -3675,7 +3675,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 250 Вт ET-H375M-12VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H375",
@@ -3694,7 +3694,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 250 Вт ET-H375M-15VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H375",
@@ -3713,7 +3713,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 250 Вт ET-H375M-24VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H375",
@@ -3732,7 +3732,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 250 Вт ET-H375M-28VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H375",
@@ -3751,7 +3751,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 250 Вт ET-H375M-36VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H375",
@@ -3770,7 +3770,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 250 Вт ET-H375M-48VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H375",
@@ -3789,7 +3789,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 150 Вт ET-Q375C-3V3P075R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q375",
@@ -3808,7 +3808,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 200 Вт ET-Q375C-05VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q375",
@@ -3827,7 +3827,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 8 В / 200 Вт ET-Q375C-08VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q375",
@@ -3846,7 +3846,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 250 Вт ET-Q375C-12VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q375",
@@ -3865,7 +3865,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 250 Вт ET-Q375C-15VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q375",
@@ -3884,7 +3884,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 250 Вт ET-Q375C-24VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q375",
@@ -3903,7 +3903,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 250 Вт ET-Q375C-28VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q375",
@@ -3922,7 +3922,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 250 Вт ET-Q375C-36VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q375",
@@ -3941,7 +3941,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 250 Вт ET-Q375C-48VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q375",
@@ -3960,7 +3960,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 150 Вт ET-Q375H-3V3P075R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q375",
@@ -3979,7 +3979,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 200 Вт ET-Q375H-05VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q375",
@@ -3998,7 +3998,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 8 В / 200 Вт ET-Q375H-08VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q375",
@@ -4017,7 +4017,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 250 Вт ET-Q375H-12VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q375",
@@ -4036,7 +4036,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 250 Вт ET-Q375H-15VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q375",
@@ -4055,7 +4055,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 250 Вт ET-Q375H-24VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q375",
@@ -4074,7 +4074,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 250 Вт ET-Q375H-28VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q375",
@@ -4093,7 +4093,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 250 Вт ET-Q375H-36VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q375",
@@ -4112,7 +4112,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 250 Вт ET-Q375H-48VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q375",
@@ -4131,7 +4131,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 150 Вт ET-Q375M-3V3P075R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q375",
@@ -4150,7 +4150,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 200 Вт ET-Q375M-05VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q375",
@@ -4169,7 +4169,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 8 В / 200 Вт ET-Q375M-08VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q375",
@@ -4188,7 +4188,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 250 Вт ET-Q375M-12VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q375",
@@ -4207,7 +4207,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 250 Вт ET-Q375M-15VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q375",
@@ -4226,7 +4226,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 250 Вт ET-Q375M-24VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q375",
@@ -4245,7 +4245,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 250 Вт ET-Q375M-28VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q375",
@@ -4264,7 +4264,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 250 Вт ET-Q375M-36VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q375",
@@ -4283,7 +4283,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 250 Вт ET-Q375M-48VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q375",
@@ -4302,7 +4302,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 264 Вт ET-F24C-3V3P264R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F24",
@@ -4321,7 +4321,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 300 Вт ET-F24C-05VP300R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F24",
@@ -4340,7 +4340,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 8 В / 400 Вт ET-F24C-08VP400R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F24",
@@ -4359,7 +4359,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 500 Вт ET-F24C-12VP500R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F24",
@@ -4378,7 +4378,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 500 Вт ET-F24C-15VP500R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F24",
@@ -4397,7 +4397,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 500 Вт ET-F24C-24VP500R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F24",
@@ -4416,7 +4416,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 500 Вт ET-F24C-28VP500R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F24",
@@ -4435,7 +4435,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 500 Вт ET-F24C-36VP500R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F24",
@@ -4454,7 +4454,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 500 Вт ET-F24C-48VP500R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F24",
@@ -4473,7 +4473,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 264 Вт ET-F24H-3V3P264R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F24",
@@ -4492,7 +4492,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 300 Вт ET-F24H-05VP300R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F24",
@@ -4511,7 +4511,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 8 В / 400 Вт ET-F24H-08VP400R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F24",
@@ -4530,7 +4530,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 500 Вт ET-F24H-12VP500R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F24",
@@ -4549,7 +4549,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 500 Вт ET-F24H-15VP500R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F24",
@@ -4568,7 +4568,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 500 Вт ET-F24H-24VP500R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F24",
@@ -4587,7 +4587,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 500 Вт ET-F24H-28VP500R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F24",
@@ -4606,7 +4606,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 500 Вт ET-F24H-36VP500R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F24",
@@ -4625,7 +4625,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 500 Вт ET-F24H-48VP500R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F24",
@@ -4644,7 +4644,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 264 Вт ET-F24M-3V3P264R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F24",
@@ -4663,7 +4663,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 300 Вт ET-F24M-05VP300R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F24",
@@ -4682,7 +4682,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 8 В / 400 Вт ET-F24M-08VP400R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F24",
@@ -4701,7 +4701,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 500 Вт ET-F24M-12VP500R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F24",
@@ -4720,7 +4720,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 500 Вт ET-F24M-15VP500R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F24",
@@ -4739,7 +4739,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 500 Вт ET-F24M-24VP500R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F24",
@@ -4758,7 +4758,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 500 Вт ET-F24M-28VP500R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F24",
@@ -4777,7 +4777,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 500 Вт ET-F24M-36VP500R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F24",
@@ -4796,7 +4796,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 500 Вт ET-F24M-48VP500R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F24",
@@ -4815,7 +4815,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 150 Вт ET-H24C-3V3P150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H24",
@@ -4834,7 +4834,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 200 Вт ET-H24C-05VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H24",
@@ -4853,7 +4853,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 8 В / 200 Вт ET-H24C-08VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H24",
@@ -4872,7 +4872,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 250 Вт ET-H24C-12VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H24",
@@ -4891,7 +4891,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 250 Вт ET-H24C-15VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H24",
@@ -4910,7 +4910,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 250 Вт ET-H24C-24VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H24",
@@ -4929,7 +4929,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 250 Вт ET-H24C-28VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H24",
@@ -4948,7 +4948,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 250 Вт ET-H24C-36VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H24",
@@ -4967,7 +4967,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 250 Вт ET-H24C-48VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H24",
@@ -4986,7 +4986,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 150 Вт ET-H24H-3V3P150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H24",
@@ -5005,7 +5005,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 200 Вт ET-H24H-05VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H24",
@@ -5024,7 +5024,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 8 В / 200 Вт ET-H24H-08VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H24",
@@ -5043,7 +5043,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 250 Вт ET-H24H-12VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H24",
@@ -5062,7 +5062,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 250 Вт ET-H24H-15VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H24",
@@ -5081,7 +5081,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 250 Вт ET-H24H-24VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H24",
@@ -5100,7 +5100,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 250 Вт ET-H24H-28VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H24",
@@ -5119,7 +5119,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 250 Вт ET-H24H-36VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H24",
@@ -5138,7 +5138,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 250 Вт ET-H24H-48VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H24",
@@ -5157,7 +5157,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 150 Вт ET-H24M-3V3P150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H24",
@@ -5176,7 +5176,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 200 Вт ET-H24M-05VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H24",
@@ -5195,7 +5195,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 8 В / 200 Вт ET-H24M-08VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H24",
@@ -5214,7 +5214,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 250 Вт ET-H24M-12VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H24",
@@ -5233,7 +5233,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 250 Вт ET-H24M-15VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H24",
@@ -5252,7 +5252,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 250 Вт ET-H24M-24VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H24",
@@ -5271,7 +5271,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 250 Вт ET-H24M-28VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H24",
@@ -5290,7 +5290,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 250 Вт ET-H24M-36VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H24",
@@ -5309,7 +5309,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 250 Вт ET-H24M-48VP250R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H24",
@@ -5328,7 +5328,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 75 Вт ET-Q24C-3V3P050R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q24",
@@ -5347,7 +5347,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 100 Вт ET-Q24C-05VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q24",
@@ -5366,7 +5366,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 8 В / 100 Вт ET-Q24C-08VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q24",
@@ -5385,7 +5385,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 150 Вт ET-Q24C-12VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q24",
@@ -5404,7 +5404,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 150 Вт ET-Q24C-15VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q24",
@@ -5423,7 +5423,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 150 Вт ET-Q24C-24VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q24",
@@ -5442,7 +5442,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 150 Вт ET-Q24C-28VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q24",
@@ -5461,7 +5461,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 150 Вт ET-Q24C-36VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q24",
@@ -5480,7 +5480,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 150 Вт ET-Q24C-48VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q24",
@@ -5499,7 +5499,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 75 Вт ET-Q24H-3V3P050R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q24",
@@ -5518,7 +5518,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 100 Вт ET-Q24H-05VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q24",
@@ -5537,7 +5537,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 8 В / 100 Вт ET-Q24H-08VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q24",
@@ -5556,7 +5556,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 150 Вт ET-Q24H-12VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q24",
@@ -5575,7 +5575,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 150 Вт ET-Q24H-15VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q24",
@@ -5594,7 +5594,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 150 Вт ET-Q24H-24VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q24",
@@ -5613,7 +5613,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 150 Вт ET-Q24H-28VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q24",
@@ -5632,7 +5632,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 150 Вт ET-Q24H-36VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q24",
@@ -5651,7 +5651,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 150 Вт ET-Q24H-48VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q24",
@@ -5670,7 +5670,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 75 Вт ET-Q24M-3V3P050R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q24",
@@ -5689,7 +5689,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 100 Вт ET-Q24M-05VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q24",
@@ -5708,7 +5708,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 8 В / 100 Вт ET-Q24M-08VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q24",
@@ -5727,7 +5727,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 150 Вт ET-Q24M-12VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q24",
@@ -5746,7 +5746,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 150 Вт ET-Q24M-15VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q24",
@@ -5765,7 +5765,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 150 Вт ET-Q24M-24VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q24",
@@ -5784,7 +5784,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 150 Вт ET-Q24M-28VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q24",
@@ -5803,7 +5803,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 150 Вт ET-Q24M-36VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q24",
@@ -5822,7 +5822,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 150 Вт ET-Q24M-48VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q24",
@@ -5841,7 +5841,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 150 Вт ET-F28C-3V3P150R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F28",
@@ -5860,7 +5860,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 175 Вт ET-F28C-05VP175R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F28",
@@ -5879,7 +5879,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 200 Вт ET-F28C-12VP200R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F28",
@@ -5898,7 +5898,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 200 Вт ET-F28C-15VP200R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F28",
@@ -5917,7 +5917,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 200 Вт ET-F28C-24VP200R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F28",
@@ -5936,7 +5936,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 200 Вт ET-F28C-28VP200R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F28",
@@ -5955,7 +5955,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 200 Вт ET-F28C-36VP200R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F28",
@@ -5974,7 +5974,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 200 Вт ET-F28C-48VP200R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F28",
@@ -5993,7 +5993,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 150 Вт ET-F28H-3V3P150R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F28",
@@ -6012,7 +6012,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 175 Вт ET-F28H-05VP175R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F28",
@@ -6031,7 +6031,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 200 Вт ET-F28H-12VP200R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F28",
@@ -6050,7 +6050,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 200 Вт ET-F28H-15VP200R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F28",
@@ -6069,7 +6069,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 200 Вт ET-F28H-24VP200R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F28",
@@ -6088,7 +6088,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 200 Вт ET-F28H-28VP200R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F28",
@@ -6107,7 +6107,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 200 Вт ET-F28H-36VP200R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F28",
@@ -6126,7 +6126,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 200 Вт ET-F28H-48VP200R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F28",
@@ -6145,7 +6145,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 150 Вт ET-F28M-3V3P150R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F28",
@@ -6164,7 +6164,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 175 Вт ET-F28M-05VP175R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F28",
@@ -6183,7 +6183,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 200 Вт ET-F28M-12VP200R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F28",
@@ -6202,7 +6202,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 200 Вт ET-F28M-15VP200R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F28",
@@ -6221,7 +6221,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 200 Вт ET-F28M-24VP200R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F28",
@@ -6240,7 +6240,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 200 Вт ET-F28M-28VP200R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F28",
@@ -6259,7 +6259,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 200 Вт ET-F28M-36VP200R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F28",
@@ -6278,7 +6278,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 200 Вт ET-F28M-48VP200R23",
-    "image": "../assets/images/products/items/ebbfosux_ET_F 1.png",
+    "image": "../assets/images/products/items/ebbfosux_ET_F 1.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-F28",
@@ -6297,7 +6297,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 75 Вт ET-H28C-3V3P075R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H28",
@@ -6316,7 +6316,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 75 Вт ET-H28C-05VP075R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H28",
@@ -6335,7 +6335,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 100 Вт ET-H28C-12VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H28",
@@ -6354,7 +6354,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 150 Вт ET-H28C-15VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H28",
@@ -6373,7 +6373,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 150 Вт ET-H28C-24VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H28",
@@ -6392,7 +6392,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 150 Вт ET-H28C-28VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H28",
@@ -6411,7 +6411,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 150 Вт ET-H28C-36VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H28",
@@ -6430,7 +6430,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 150 Вт ET-H28C-48VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H28",
@@ -6449,7 +6449,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 75 Вт ET-H28H-3V3P075R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H28",
@@ -6468,7 +6468,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 75 Вт ET-H28H-05VP075R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H28",
@@ -6487,7 +6487,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 100 Вт ET-H28H-12VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H28",
@@ -6506,7 +6506,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 150 Вт ET-H28H-15VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H28",
@@ -6525,7 +6525,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 150 Вт ET-H28H-24VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H28",
@@ -6544,7 +6544,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 150 Вт ET-H28H-28VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H28",
@@ -6563,7 +6563,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 150 Вт ET-H28H-36VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H28",
@@ -6582,7 +6582,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 150 Вт ET-H28H-48VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H28",
@@ -6601,7 +6601,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 75 Вт ET-H28M-3V3P075R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H28",
@@ -6620,7 +6620,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 75 Вт ET-H28M-05VP075R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H28",
@@ -6639,7 +6639,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 100 Вт ET-H28M-12VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H28",
@@ -6658,7 +6658,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 150 Вт ET-H28M-15VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H28",
@@ -6677,7 +6677,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 150 Вт ET-H28M-24VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H28",
@@ -6696,7 +6696,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 150 Вт ET-H28M-28VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H28",
@@ -6715,7 +6715,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 150 Вт ET-H28M-36VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H28",
@@ -6734,7 +6734,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 150 Вт ET-H28M-48VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-H28",
@@ -6753,7 +6753,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 50 Вт ET-Q28C-3V3P050R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q28",
@@ -6772,7 +6772,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 50 Вт ET-Q28C-05VP050R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q28",
@@ -6791,7 +6791,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 100 Вт ET-Q28C-12VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q28",
@@ -6810,7 +6810,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 100 Вт ET-Q28C-15VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q28",
@@ -6829,7 +6829,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 100 Вт ET-Q28C-24VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q28",
@@ -6848,7 +6848,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 100 Вт ET-Q28C-28VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q28",
@@ -6867,7 +6867,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 100 Вт ET-Q28C-36VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q28",
@@ -6886,7 +6886,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 100 Вт ET-Q28C-48VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q28",
@@ -6905,7 +6905,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 50 Вт ET-Q28H-3V3P050R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q28",
@@ -6924,7 +6924,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 50 Вт ET-Q28H-05VP050R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q28",
@@ -6943,7 +6943,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 100 Вт ET-Q28H-12VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q28",
@@ -6962,7 +6962,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 100 Вт ET-Q28H-15VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q28",
@@ -6981,7 +6981,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 100 Вт ET-Q28H-24VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q28",
@@ -7000,7 +7000,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 100 Вт ET-Q28H-28VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q28",
@@ -7019,7 +7019,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 100 Вт ET-Q28H-36VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q28",
@@ -7038,7 +7038,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 100 Вт ET-Q28H-48VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q28",
@@ -7057,7 +7057,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 3,3 В / 50 Вт ET-Q28M-3V3P050R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q28",
@@ -7076,7 +7076,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 5 В / 50 Вт ET-Q28M-05VP050R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q28",
@@ -7095,7 +7095,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 12 В / 100 Вт ET-Q28M-12VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q28",
@@ -7114,7 +7114,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 15 В / 100 Вт ET-Q28M-15VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q28",
@@ -7133,7 +7133,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 24 В / 100 Вт ET-Q28M-24VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q28",
@@ -7152,7 +7152,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 28 В / 100 Вт ET-Q28M-28VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q28",
@@ -7171,7 +7171,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 36 В / 100 Вт ET-Q28M-36VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q28",
@@ -7190,7 +7190,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш 48 В / 100 Вт ET-Q28M-48VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC",
       "Серия": "ET-Q28",
@@ -7209,7 +7209,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, серия V300 maxi",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Серия": "V300 maxi"
     }
@@ -7220,7 +7220,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, серия V300 mini",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Серия": "V300 mini"
     }
@@ -7231,7 +7231,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, серия V300 micro",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Серия": "V300 micro"
     }
@@ -7242,7 +7242,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, серия V375 maxi",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Серия": "V375 maxi"
     }
@@ -7253,7 +7253,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, серия V375 mini",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Серия": "V375 mini"
     }
@@ -7264,7 +7264,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, серия V375 micro",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Серия": "V375 micro"
     }
@@ -7275,7 +7275,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, серия V24 maxi",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Серия": "V24 maxi"
     }
@@ -7286,7 +7286,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, серия V24 mini",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Серия": "V24 mini"
     }
@@ -7297,7 +7297,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, серия V24 micro",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Серия": "V24 micro"
     }
@@ -7308,7 +7308,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, серия V28 maxi",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Серия": "V28 maxi"
     }
@@ -7319,7 +7319,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, серия V28 mini",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Серия": "V28 mini"
     }
@@ -7330,7 +7330,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, серия V28 micro",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Серия": "V28 micro"
     }
@@ -7341,7 +7341,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24A3V3H264BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "3,3 В",
@@ -7355,7 +7355,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24A5H400BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "5 В",
@@ -7369,7 +7369,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24A8H300BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "8 В",
@@ -7383,7 +7383,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24A12H400BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "12 В",
@@ -7397,7 +7397,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24A15H400BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "15 В",
@@ -7411,7 +7411,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24A24H400BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "24 В",
@@ -7425,7 +7425,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24A28H400BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "28 В",
@@ -7439,7 +7439,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24A36H400BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "36 В",
@@ -7453,7 +7453,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24A48H400BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "48 В",
@@ -7467,7 +7467,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24A3V3M264BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "3,3 В",
@@ -7481,7 +7481,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24A5M400BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "5 В",
@@ -7495,7 +7495,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24A8M300BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "8 В",
@@ -7509,7 +7509,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24A12M400BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "12 В",
@@ -7523,7 +7523,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24A15M400BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "15 В",
@@ -7537,7 +7537,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24A24M400BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "24 В",
@@ -7551,7 +7551,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24A28M400BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "28 В",
@@ -7565,7 +7565,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24A36M400BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "36 В",
@@ -7579,7 +7579,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24A48M400BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "48 В",
@@ -7593,7 +7593,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24B3V3H100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "3,3 В",
@@ -7607,7 +7607,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24B5H150BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "5 В",
@@ -7621,7 +7621,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24B8H200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "8 В",
@@ -7635,7 +7635,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24B12H200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "12 В",
@@ -7649,7 +7649,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24B15H200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "15 В",
@@ -7663,7 +7663,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24B24H200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "24 В",
@@ -7677,7 +7677,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24B28H200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "28 В",
@@ -7691,7 +7691,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24B36H200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "36 В",
@@ -7705,7 +7705,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24B48H200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "48 В",
@@ -7719,7 +7719,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24B3V3M100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "3,3 В",
@@ -7733,7 +7733,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24B5M150BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "5 В",
@@ -7747,7 +7747,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24B8M200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "8 В",
@@ -7761,7 +7761,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24B12M200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "12 В",
@@ -7775,7 +7775,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24B15M200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "15 В",
@@ -7789,7 +7789,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24B24M200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "24 В",
@@ -7803,7 +7803,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24B28M200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "28 В",
@@ -7817,7 +7817,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24B36M200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "36 В",
@@ -7831,7 +7831,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24B48M200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "48 В",
@@ -7845,7 +7845,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24C3V3H50BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "3,3 В",
@@ -7859,7 +7859,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24C5H100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "5 В",
@@ -7873,7 +7873,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24C8H100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "8 В",
@@ -7887,7 +7887,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24C12H100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "12 В",
@@ -7901,7 +7901,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24C15H100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "15 В",
@@ -7915,7 +7915,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24C24H100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "24 В",
@@ -7929,7 +7929,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24C28H100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "28 В",
@@ -7943,7 +7943,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24C36H100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "36 В",
@@ -7957,7 +7957,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24C48H100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "48 В",
@@ -7971,7 +7971,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24C3V3M50BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "3,3 В",
@@ -7985,7 +7985,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24C5M100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "5 В",
@@ -7999,7 +7999,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24C8M100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "8 В",
@@ -8013,7 +8013,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24C12M100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "12 В",
@@ -8027,7 +8027,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24C15M100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "15 В",
@@ -8041,7 +8041,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24C24M100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "24 В",
@@ -8055,7 +8055,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24C28M100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "28 В",
@@ -8069,7 +8069,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24C36M100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "36 В",
@@ -8083,7 +8083,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V24C48M100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "24 (18..36В) В",
       "Выходное напряжение": "48 В",
@@ -8097,7 +8097,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300A3V3H264BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "3,3 В",
@@ -8111,7 +8111,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300A5H400BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "5 В",
@@ -8125,7 +8125,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300A8H400BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "8 В",
@@ -8139,7 +8139,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300A12H500BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "12 В",
@@ -8153,7 +8153,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300A15H500BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "15 В",
@@ -8167,7 +8167,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300A24H500BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "24 В",
@@ -8181,7 +8181,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300A28H500BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "28 В",
@@ -8195,7 +8195,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300A36H500BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "36 В",
@@ -8209,7 +8209,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300A48H500BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "48 В",
@@ -8223,7 +8223,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300A3V3M264BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "3,3 В",
@@ -8237,7 +8237,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300A5M400BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "5 В",
@@ -8251,7 +8251,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300A8M400BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "8 В",
@@ -8265,7 +8265,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300A12M500BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "12 В",
@@ -8279,7 +8279,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300A15M500BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "15 В",
@@ -8293,7 +8293,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300A24M500BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "24 В",
@@ -8307,7 +8307,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300A28M500BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "28 В",
@@ -8321,7 +8321,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300A36M500BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "36 В",
@@ -8335,7 +8335,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300A48M500BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "48 В",
@@ -8349,7 +8349,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300B3V3H150BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "3,3 В",
@@ -8363,7 +8363,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300B5H200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "5 В",
@@ -8377,7 +8377,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300B8H200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "8 В",
@@ -8391,7 +8391,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300B12H250BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "12 В",
@@ -8405,7 +8405,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300B15H250BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "15 В",
@@ -8419,7 +8419,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300B24H250BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "24 В",
@@ -8433,7 +8433,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300B28H250BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "28 В",
@@ -8447,7 +8447,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300B36H250BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "36 В",
@@ -8461,7 +8461,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300B48H250BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "48 В",
@@ -8475,7 +8475,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300B3V3M150BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "3,3 В",
@@ -8489,7 +8489,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300B5M200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "5 В",
@@ -8503,7 +8503,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300B8M200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "8 В",
@@ -8517,7 +8517,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300B12M250BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "12 В",
@@ -8531,7 +8531,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300B15M250BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "15 В",
@@ -8545,7 +8545,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300B24M250BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "24 В",
@@ -8559,7 +8559,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300B28M250BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "28 В",
@@ -8573,7 +8573,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300B36M250BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "36 В",
@@ -8587,7 +8587,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300B48M250BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "48 В",
@@ -8601,7 +8601,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300C3V3H50BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "3,3 В",
@@ -8615,7 +8615,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300C5H100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "5 В",
@@ -8629,7 +8629,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300C8H100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "8 В",
@@ -8643,7 +8643,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300C12H150BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "12 В",
@@ -8657,7 +8657,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300C15H150BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "15 В",
@@ -8671,7 +8671,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300C24H150BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "24 В",
@@ -8685,7 +8685,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300C28H150BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "28 В",
@@ -8699,7 +8699,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300C36H150BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "36 В",
@@ -8713,7 +8713,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300C48H150BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "48 В",
@@ -8727,7 +8727,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300C3V3M50BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "3,3 В",
@@ -8741,7 +8741,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300C5M100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "5 В",
@@ -8755,7 +8755,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300C8M100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "8 В",
@@ -8769,7 +8769,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300C12M150BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "12 В",
@@ -8783,7 +8783,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300C15M150BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "15 В",
@@ -8797,7 +8797,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300C24M150BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "24 В",
@@ -8811,7 +8811,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300C28M150BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "28 В",
@@ -8825,7 +8825,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300C36M150BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "36 В",
@@ -8839,7 +8839,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V300C48M150BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "300 (180..375) В",
       "Выходное напряжение": "48 В",
@@ -8853,7 +8853,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28A3V3H150BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "3,3 В",
@@ -8867,7 +8867,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28A5H175BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "5 В",
@@ -8881,7 +8881,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28A12H200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "12 В",
@@ -8895,7 +8895,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28A15H200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "15 В",
@@ -8909,7 +8909,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28A24H200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "24 В",
@@ -8923,7 +8923,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28A28H200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "28 В",
@@ -8937,7 +8937,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28A36H200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "36 В",
@@ -8951,7 +8951,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28A48H200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "48 В",
@@ -8965,7 +8965,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28A3V3M150BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "3,3 В",
@@ -8979,7 +8979,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28A5M175BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "5 В",
@@ -8993,7 +8993,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28A12M200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "12 В",
@@ -9007,7 +9007,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28A15M200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "15 В",
@@ -9021,7 +9021,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28A24M200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "24 В",
@@ -9035,7 +9035,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28A28M200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "28 В",
@@ -9049,7 +9049,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28A36M200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "36 В",
@@ -9063,7 +9063,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28A48M200BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "48 В",
@@ -9077,7 +9077,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28B3V3H75BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "3,3 В",
@@ -9091,7 +9091,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28B5H75BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "5 В",
@@ -9105,7 +9105,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28B12H125BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "12 В",
@@ -9119,7 +9119,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28B15H150BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "15 В",
@@ -9133,7 +9133,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28B24H150BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "24 В",
@@ -9147,7 +9147,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28B28H150BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "28 В",
@@ -9161,7 +9161,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28B36H150BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "36 В",
@@ -9175,7 +9175,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28B48H150BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "48 В",
@@ -9189,7 +9189,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28B3V3M75BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "3,3 В",
@@ -9203,7 +9203,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28B5M75BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "5 В",
@@ -9217,7 +9217,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28B12M125BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "12 В",
@@ -9231,7 +9231,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28B15M150BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "15 В",
@@ -9245,7 +9245,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28B24M150BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "24 В",
@@ -9259,7 +9259,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28B28M150BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "28 В",
@@ -9273,7 +9273,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28B36M150BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "36 В",
@@ -9287,7 +9287,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28B48M150BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "48 В",
@@ -9301,7 +9301,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28C3V3H50BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "3,3 В",
@@ -9315,7 +9315,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28C5H50BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "5 В",
@@ -9329,7 +9329,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28C12H100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "12 В",
@@ -9343,7 +9343,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28C15H100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "15 В",
@@ -9357,7 +9357,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28C24H100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "24 В",
@@ -9371,7 +9371,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28C28H100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "28 В",
@@ -9385,7 +9385,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28C36H100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "36 В",
@@ -9399,7 +9399,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28C48H100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "48 В",
@@ -9413,7 +9413,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28C3V3M50BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "3,3 В",
@@ -9427,7 +9427,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28C5M50BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "5 В",
@@ -9441,7 +9441,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28C12M100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "12 В",
@@ -9455,7 +9455,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28C15M100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "15 В",
@@ -9469,7 +9469,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28C24M100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "24 В",
@@ -9483,7 +9483,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28C28M100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "28 В",
@@ -9497,7 +9497,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28C36M100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "36 В",
@@ -9511,7 +9511,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Полные pin-to-pin замены преобразователей Vicor",
     "description": "Vicor, V28C48M100BL",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Входное напряжение": "28 (9..36) В",
       "Выходное напряжение": "48 В",
@@ -9525,7 +9525,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-F24H-3V3P264R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9536,7 +9536,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-F24H-05VP400R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9547,7 +9547,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-F24H-08VP300R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9558,7 +9558,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-F24H-12VP400R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9569,7 +9569,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-F24H-15VP400R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9580,7 +9580,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-F24H-24VP400R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9591,7 +9591,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-F24H-28VP400R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9602,7 +9602,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-F24H-36VP400R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9613,7 +9613,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-F24H-48VP400R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9624,7 +9624,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-F24M-05VP400R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9635,7 +9635,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-F24M-08VP300R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9646,7 +9646,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-F24M-12VP400R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9657,7 +9657,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-F24M-15VP400R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9668,7 +9668,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-F24M-24VP400R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9679,7 +9679,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-F24M-28VP400R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9690,7 +9690,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-F24M-36VP400R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9701,7 +9701,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-F24M-48VP400R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9712,7 +9712,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-H24H-05VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9723,7 +9723,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-H24H-12VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9734,7 +9734,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-H24H-15VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9745,7 +9745,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-H24H-24VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9756,7 +9756,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-H24H-28VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9767,7 +9767,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-H24H-36VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9778,7 +9778,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-H24H-3V3P100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9789,7 +9789,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-H24H-48VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9800,7 +9800,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-H24M-05VP150R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9811,7 +9811,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-H24M-12VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9822,7 +9822,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-H24M-15VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9833,7 +9833,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-H24M-24VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9844,7 +9844,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-H24M-28VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9855,7 +9855,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-H24M-36VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9866,7 +9866,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-H24M-3V3P100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9877,7 +9877,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-H24M-48VP200R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9888,7 +9888,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-H28H-05VP75R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9899,7 +9899,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-H28H-12VP125R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9910,7 +9910,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-H28H-3V3P75R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9921,7 +9921,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-H28M-05VP75R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9932,7 +9932,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-H28M-12VP125R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9943,7 +9943,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-H28M-3V3P75R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9954,7 +9954,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-Q24H-12VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9965,7 +9965,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-Q24H-15VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9976,7 +9976,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-Q24H-24VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9987,7 +9987,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-Q24H-28VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -9998,7 +9998,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-Q24H-36VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -10009,7 +10009,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-Q24H-48VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -10020,7 +10020,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-Q24M-12VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -10031,7 +10031,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-Q24M-15VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -10042,7 +10042,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-Q24M-24VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -10053,7 +10053,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-Q24M-28VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -10064,7 +10064,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-Q24M-36VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -10075,7 +10075,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-Q24M-48VP100R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -10086,7 +10086,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-Q28H-05VP50R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -10097,7 +10097,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-Q28M-05VP50R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -10108,7 +10108,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-Q300H-3V3P050R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -10119,7 +10119,7 @@ const PRODUCTS = [
     "category": "Преобразователи напряжения",
     "subcategory": "Модульные преобразователи ИРТЫШ",
     "description": "Модульный преобразователь DC/DC Иртыш ET-Q300M-3V3P050R23",
-    "image": "../assets/images/products/items/Irtysh.png",
+    "image": "../assets/images/products/items/Irtysh.webp",
     "specs": {
       "Тип": "DC/DC"
     }
@@ -10689,7 +10689,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 6.8 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "6.8 пФ",
       "Корпус": "0505",
@@ -10706,7 +10706,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 7.5 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "7.5 пФ",
       "Корпус": "0505",
@@ -10723,7 +10723,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 8.2 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "8.2 пФ",
       "Корпус": "0505",
@@ -10740,7 +10740,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 9.1 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "9.1 пФ",
       "Корпус": "0505",
@@ -10757,7 +10757,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 10 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "10 пФ",
       "Корпус": "0505",
@@ -10774,7 +10774,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 11 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "11 пФ",
       "Корпус": "0505",
@@ -10791,7 +10791,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 12 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "12 пФ",
       "Корпус": "0505",
@@ -10808,7 +10808,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 13 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "13 пФ",
       "Корпус": "0505",
@@ -10825,7 +10825,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 15 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "15 пФ",
       "Корпус": "0505",
@@ -10842,7 +10842,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 16 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "16 пФ",
       "Корпус": "0505",
@@ -10859,7 +10859,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 18 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "18 пФ",
       "Корпус": "0505",
@@ -10876,7 +10876,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 20 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "20 пФ",
       "Корпус": "0505",
@@ -10893,7 +10893,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 22 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "22 пФ",
       "Корпус": "0505",
@@ -10910,7 +10910,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 24 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "24 пФ",
       "Корпус": "0505",
@@ -10927,7 +10927,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 27 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "27 пФ",
       "Корпус": "0505",
@@ -10944,7 +10944,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 30 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "30 пФ",
       "Корпус": "0505",
@@ -10961,7 +10961,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 33 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "33 пФ",
       "Корпус": "0505",
@@ -10978,7 +10978,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 36 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "36 пФ",
       "Корпус": "0505",
@@ -10995,7 +10995,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 39 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "39 пФ",
       "Корпус": "0505",
@@ -11012,7 +11012,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 43 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "43 пФ",
       "Корпус": "0505",
@@ -11029,7 +11029,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 47 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "47 пФ",
       "Корпус": "0505",
@@ -11046,7 +11046,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 51 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "51 пФ",
       "Корпус": "0505",
@@ -11063,7 +11063,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 56 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "56 пФ",
       "Корпус": "0505",
@@ -11080,7 +11080,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 62 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "62 пФ",
       "Корпус": "0505",
@@ -11097,7 +11097,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 68 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "68 пФ",
       "Корпус": "0505",
@@ -11114,7 +11114,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 75 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "75 пФ",
       "Корпус": "0505",
@@ -11131,7 +11131,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 82 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "82 пФ",
       "Корпус": "0505",
@@ -11148,7 +11148,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 91 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "91 пФ",
       "Корпус": "0505",
@@ -11165,7 +11165,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 100 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "100 пФ",
       "Корпус": "0505",
@@ -11182,7 +11182,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 110 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "110 пФ",
       "Корпус": "0505",
@@ -11199,7 +11199,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 120 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "120 пФ",
       "Корпус": "0505",
@@ -11216,7 +11216,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 130 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "130 пФ",
       "Корпус": "0505",
@@ -11233,7 +11233,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 150 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "150 пФ",
       "Корпус": "0505",
@@ -11250,7 +11250,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 160 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "160 пФ",
       "Корпус": "0505",
@@ -11267,7 +11267,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 180 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "180 пФ",
       "Корпус": "0505",
@@ -11284,7 +11284,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 200 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "200 пФ",
       "Корпус": "0505",
@@ -11301,7 +11301,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 220 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "220 пФ",
       "Корпус": "0505",
@@ -11318,7 +11318,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 240 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "240 пФ",
       "Корпус": "0505",
@@ -11335,7 +11335,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 270 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "270 пФ",
       "Корпус": "0505",
@@ -11352,7 +11352,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 300 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "300 пФ",
       "Корпус": "0505",
@@ -11369,7 +11369,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 330 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "330 пФ",
       "Корпус": "0505",
@@ -11386,7 +11386,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 360 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "360 пФ",
       "Корпус": "0505",
@@ -11403,7 +11403,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 390 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "390 пФ",
       "Корпус": "0505",
@@ -11420,7 +11420,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 430 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "430 пФ",
       "Корпус": "0505",
@@ -11437,7 +11437,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 470 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "470 пФ",
       "Корпус": "0505",
@@ -11454,7 +11454,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 510 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "510 пФ",
       "Корпус": "0505",
@@ -11471,7 +11471,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 560 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "560 пФ",
       "Корпус": "0505",
@@ -11488,7 +11488,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 620 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "620 пФ",
       "Корпус": "0505",
@@ -11505,7 +11505,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 680 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "680 пФ",
       "Корпус": "0505",
@@ -11522,7 +11522,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 750 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "750 пФ",
       "Корпус": "0505",
@@ -11539,7 +11539,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 820 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "820 пФ",
       "Корпус": "0505",
@@ -11556,7 +11556,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 910 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "910 пФ",
       "Корпус": "0505",
@@ -11573,7 +11573,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ЭКБ ТЕСТ",
     "description": "СВЧ-конденсатор ARC70A 1000 пФ",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {
       "Ёмкость": "1000 пФ",
       "Корпус": "0505",
@@ -11590,7 +11590,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы ATC (American Technical Ceramics)",
     "description": "СВЧ-конденсаторы ATC700A (American Technical Ceramics)",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {}
   },
   {
@@ -11599,7 +11599,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы PPI",
     "description": "СВЧ-конденсаторы 0505C/P (PPI)",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {}
   },
   {
@@ -11608,7 +11608,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы DLC",
     "description": "СВЧ-конденсаторы DLC70A (DLC)",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {}
   },
   {
@@ -11617,7 +11617,7 @@ const PRODUCTS = [
     "category": "СВЧ-конденсаторы",
     "subcategory": "СВЧ-конденсаторы Гериконд",
     "description": "СВЧ-конденсаторы К15-39 (Гериконд)",
-    "image": "../assets/images/products/items/ARC70A 1.png",
+    "image": "../assets/images/products/items/ARC70A 1.webp",
     "specs": {}
   },
   {
@@ -11626,7 +11626,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы LDMOS",
     "description": "Высокочастотный транзистор 1 ГГц ET1008",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Мощность": "90 Вт",
       "Рабочее напряжение": "28 В",
@@ -11642,7 +11642,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы LDMOS",
     "description": "Высокочастотный транзистор 1,5 ГГц ET1006",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Мощность": "70 Вт",
       "Рабочее напряжение": "28 В",
@@ -11658,7 +11658,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы LDMOS",
     "description": "Высокочастотный транзистор 1 ГГц ET2022",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Мощность": "50 Вт",
       "Рабочее напряжение": "28 В",
@@ -11674,7 +11674,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы LDMOS",
     "description": "Высокочастотный транзистор 250 ГГц ET1028",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Мощность": "400 Вт",
       "Рабочее напряжение": "28 В",
@@ -11706,7 +11706,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы LDMOS",
     "description": "Высокочастотный транзистор 2,5 ГГц ET25007",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Мощность": "3 Вт",
       "Рабочее напряжение": "12,5 В",
@@ -11722,7 +11722,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы LDMOS",
     "description": "Высокочастотный транзистор 4 ГГц ET6004H",
-    "image": "../assets/images/products/items/ET6004H 1.png",
+    "image": "../assets/images/products/items/ET6004H 1.webp",
     "specs": {
       "Мощность": "35 Вт",
       "Рабочее напряжение": "28 В",
@@ -11738,7 +11738,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы LDMOS",
     "description": "Высокочастотный транзистор 1 ГГц ET0506",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Мощность": "60 Вт",
       "Рабочее напряжение": "28 В",
@@ -11754,7 +11754,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы LDMOS",
     "description": "Высокочастотный транзистор 0,5 ГГц ET0520",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Мощность": "200 Вт",
       "Рабочее напряжение": "50 В",
@@ -11785,7 +11785,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы LDMOS",
     "description": "Высокочастотный транзистор 500 МГц ET0535",
-    "image": "../assets/images/products/items/ET0535.png",
+    "image": "../assets/images/products/items/ET0535.webp",
     "specs": {
       "Мощность": "300 Вт",
       "Рабочее напряжение": "50 В",
@@ -11800,7 +11800,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы LDMOS",
     "description": "Высокочастотный транзистор 2 ГГц ET1001",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Мощность": "10 Вт",
       "Рабочее напряжение": "28 В",
@@ -11847,7 +11847,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы LDMOS",
     "description": "Высокочастотный транзистор 2 ГГц ETM1001",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Мощность": "10 Вт",
       "Рабочее напряжение": "28 В",
@@ -11863,7 +11863,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы LDMOS",
     "description": "Высокочастотный транзистор 2,2 ГГц ET2201N",
-    "image": "../assets/images/products/items/ET2201N.png",
+    "image": "../assets/images/products/items/ET2201N.webp",
     "specs": {
       "Мощность": "10 Вт",
       "Рабочее напряжение": "12,5 В",
@@ -11879,7 +11879,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы LDMOS",
     "description": "Высокочастотный транзистор 700-3500 МГц ET3135",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Мощность": "20 Вт",
       "Рабочее напряжение": "28 В",
@@ -11894,7 +11894,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы других производителей",
     "description": "Высокочастотный транзистор D1008UK",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Тип": "Сдвоенный N-канальный радиочастотный LDMOS с общим истоком",
       "Мощность": "80 Вт",
@@ -11911,7 +11911,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы других производителей",
     "description": "Высокочастотный транзистор D2022UK",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Тип": "Сдвоенный N-канальный радиочастотный LDMOS с общим истоком",
       "Мощность": "45 Вт",
@@ -11928,7 +11928,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы других производителей",
     "description": "Высокочастотный транзистор D1028UK",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Тип": "Сдвоенный N-канальный радиочастотный LDMOS с общим истоком",
       "Мощность": "300 Вт",
@@ -11945,7 +11945,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы других производителей",
     "description": "Высокочастотный транзистор PD55015-E",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Тип": "Сдвоенный LDMOS с общим истоком",
       "Мощность": "15 Вт",
@@ -11962,7 +11962,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы других производителей",
     "description": "Высокочастотный транзистор PD55003",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Тип": "Радиочастотный N-канальный LDMOS",
       "Мощность": "3 Вт",
@@ -11979,7 +11979,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы других производителей",
     "description": "Высокочастотный транзистор NPTB00025",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Тип": "Радиочастотный N-канальный LDMOS",
       "Мощность": "25 Вт",
@@ -11996,7 +11996,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы других производителей",
     "description": "Высокочастотный транзистор BLF171A (MRF171A)",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Тип": "Нитрид-галлиевый (GaN) радиочастотный HEMT",
       "Мощность": "45 Вт",
@@ -12012,7 +12012,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы других производителей",
     "description": "Высокочастотный транзистор MFR174",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Тип": "Радиочастотный N-канальный LDMOS",
       "Мощность": "125 Вт",
@@ -12028,7 +12028,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы других производителей",
     "description": "Высокочастотный транзистор D1002UK",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Мощность": "40 Вт",
       "Рабочее напряжение": "28 В",
@@ -12043,7 +12043,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы других производителей",
     "description": "Высокочастотный транзистор BLF278",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Тип": "Радиочастотный N-канальный LDMOS",
       "Мощность": "300 Вт",
@@ -12059,7 +12059,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы других производителей",
     "description": "Высокочастотный транзистор BLF404",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Тип": "Сдвоенный N-канальный радиочастотный LDMOS с общим истоком",
       "Мощность": "4 Вт",
@@ -12076,7 +12076,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы других производителей",
     "description": "Высокочастотный транзистор BLF574",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Тип": "Радиочастотный LDMOS",
       "Мощность": "600 Вт",
@@ -12092,7 +12092,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы других производителей",
     "description": "Высокочастотный транзистор D1207UK",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Тип": "Сдвоенный N-канальный радиочастотный LDMOS с общим истоком",
       "Мощность": "20 Вт",
@@ -12109,7 +12109,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы других производителей",
     "description": "Высокочастотный транзистор D2001UK",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Тип": "Сдвоенный N-канальный радиочастотный LDMOS с общим истоком",
       "Мощность": "2,5 Вт",
@@ -12126,7 +12126,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы других производителей",
     "description": "Высокочастотный транзистор D2202UK",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Мощность": "5 Вт",
       "Рабочее напряжение": "12,5 В",
@@ -12142,7 +12142,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы других производителей",
     "description": "Высокочастотный транзистор BLS6G3135",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Мощность": "20 Вт",
       "Рабочее напряжение": "28 В",
@@ -12156,7 +12156,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы других производителей",
     "description": "Высокочастотный транзистор D2208UK (SemeLAB)",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Мощность": "40 Вт",
       "Рабочее напряжение": "12,5 В",
@@ -12172,7 +12172,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы других производителей",
     "description": "Высокочастотный транзистор BLF246",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Мощность": "80 Вт",
       "Рабочее напряжение": "28 В",
@@ -12187,7 +12187,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы других производителей",
     "description": "Высокочастотный транзистор D2213UK",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Мощность": "20 Вт",
       "Рабочее напряжение": "12,5 В",
@@ -12203,7 +12203,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы других производителей",
     "description": "Высокочастотный транзистор D2002UK",
-    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.png",
+    "image": "../assets/images/products/items/0eie6w0m_LDMOS_Microwave_Transistors 1.webp",
     "specs": {
       "Мощность": "5 Вт",
       "Рабочее напряжение": "28 В",

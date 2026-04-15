@@ -83,7 +83,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: left center;
 }
 
@@ -379,7 +379,7 @@
   display: block;
   width: 100%;
   aspect-ratio: 1320 / 580;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .product-banner__content {
@@ -633,7 +633,7 @@ p.product-card__desc {
 }
 
 .service-row__num {
-  font-size: 14px;
+  font-size: var(--text-label);
   font-weight: 600;
   color: #8C96AB;
   letter-spacing: 1px;
@@ -687,7 +687,7 @@ p.product-card__desc {
 }
 
 .service-row__desc p {
-  font-size: 14px;
+  font-size: var(--text-label);
   font-weight: 400;
   line-height: 1.8;
   color: var(--color-text);
@@ -700,7 +700,7 @@ p.product-card__desc {
 }
 
 .service-row__tag {
-  font-size: 14px;
+  font-size: var(--text-label);
   font-weight: 600;
   letter-spacing: 0.5px;
   color: var(--color-text);
@@ -732,7 +732,7 @@ p.product-card__desc {
 }
 
 .service-row__point-title {
-  font-size: 14px;
+  font-size: var(--text-label);
   font-weight: 600;
   letter-spacing: 1px;
   color: #8C96AB;
@@ -740,7 +740,7 @@ p.product-card__desc {
 }
 
 .service-row__point p {
-  font-size: 14px;
+  font-size: var(--text-label);
   font-weight: 400;
   line-height: 1.7;
   color: var(--color-text);
@@ -830,7 +830,7 @@ p.product-card__desc {
 
 .footer__link {
   display: block;
-  font-size: 14px;
+  font-size: var(--text-label);
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -848,7 +848,7 @@ p.product-card__desc {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  font-size: 14px;
+  font-size: var(--text-label);
   letter-spacing: 0.5px;
   line-height: 1.6;
 }
@@ -878,7 +878,7 @@ p.product-card__desc {
   align-items: center;
   padding-top: 24px;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
-  font-size: 14px;
+  font-size: var(--text-label);
   letter-spacing: 0.5px;
   color: var(--color-bg);
 }

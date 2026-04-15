@@ -40,7 +40,7 @@
     if (byType[itemType]) return byType[itemType];
     if (/^Вилка/i.test(itemType) && byType['Вилка']) return byType['Вилка'];
     if (/^Розетка/i.test(itemType) && byType['Розетка']) return byType['Розетка'];
-    return series.image || '../assets/images/products/connectors.png';
+    return series.image || '../assets/images/products/connectors.webp';
   }
   img.src = pickVariantImage();
   img.alt = item.name;

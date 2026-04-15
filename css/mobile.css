@@ -345,7 +345,7 @@ h3 {
 
 .product-banner__img {
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .product-banner__content {

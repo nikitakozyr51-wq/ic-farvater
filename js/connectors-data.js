@@ -851,7 +851,7 @@ const CONNECTOR_SERIES = [
     group: "main",
     tu: "\u0422\u041a\u0415\u0421.434410.026 \u0422\u0423",
     description: "\u0420\u0430\u0434\u0438\u043e\u0447\u0430\u0441\u0442\u043e\u0442\u043d\u044b\u0435 \u0441\u043e\u0435\u0434\u0438\u043d\u0438\u0442\u0435\u043b\u0438 \u0441\u0435\u0440\u0438\u0438 \u0420\u0421(\u0413).",
-    image: "../assets/images/products/connectors.png",
+    image: "../assets/images/products/connectors.webp",
     imageByType: {},
     count: 47,
     items: [
@@ -1546,7 +1546,7 @@ const CONNECTOR_SERIES = [
     group: "additional",
     tu: "",
     description: "\u0417\u0430\u0433\u043b\u0443\u0448\u043a\u0438 \u0434\u043b\u044f \u0440\u0430\u0437\u044a\u0451\u043c\u043e\u0432 \u0441\u0435\u0440\u0438\u0439 \u0415\u0422.",
-    image: "../assets/images/products/connectors.png",
+    image: "../assets/images/products/connectors.webp",
     imageByType: {},
     count: 27,
     items: [
@@ -1585,7 +1585,7 @@ const CONNECTOR_SERIES = [
     group: "additional",
     tu: "\u0422\u041a\u0415\u0421.434410.003 \u0422\u0423",
     description: "\u0428\u0442\u0435\u043f\u0441\u0435\u043b\u044c\u043d\u044b\u0435 \u0440\u0430\u0437\u044a\u0451\u043c\u044b \u0441\u0435\u0440\u0438\u0438 \u0428\u0420.",
-    image: "../assets/images/products/connectors.png",
+    image: "../assets/images/products/connectors.webp",
     imageByType: {},
     count: 36,
     items: [
@@ -1633,7 +1633,7 @@ const CONNECTOR_SERIES = [
     group: "dev",
     tu: "",
     description: "\u0412 \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0435. \u0422\u0423 \u043d\u0435 \u0443\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043d\u044b.",
-    image: "../assets/images/products/connectors.png",
+    image: "../assets/images/products/connectors.webp",
     imageByType: {},
     count: 5,
     items: [
@@ -1679,7 +1679,7 @@ const CONNECTOR_SERIES = [
     group: "dev",
     tu: "",
     description: "\u0412 \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0435. \u0422\u0423 \u043d\u0435 \u0443\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043d\u044b.",
-    image: "../assets/images/products/connectors.png",
+    image: "../assets/images/products/connectors.webp",
     imageByType: {},
     count: 6,
     items: [
@@ -1789,7 +1789,7 @@ const CONNECTOR_SERIES = [
     group: "dev",
     tu: "",
     description: "\u0412 \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0435. \u0422\u0423 \u043d\u0435 \u0443\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043d\u044b.",
-    image: "../assets/images/products/connectors.png",
+    image: "../assets/images/products/connectors.webp",
     imageByType: {},
     count: 16,
     items: [

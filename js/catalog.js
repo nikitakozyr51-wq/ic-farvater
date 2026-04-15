@@ -231,7 +231,7 @@
       return true;
     });
 
-    var fallbackImg = series.image || '../assets/images/products/connectors.png';
+    var fallbackImg = series.image || '../assets/images/products/connectors.webp';
     var imgByType = series.imageByType || {};
     function pickImage(row) {
       var t = (row.parsed && typeField && row.parsed[typeField]) || row.item.type || '';

@@ -76,7 +76,7 @@ IMAGE_MAP = {
     'et-mr1':    BASE + 'et-mr1.webp',
     'et-onc-bs': BASE + 'et-onc-bs.webp',
     'et-rrs':    BASE + 'et-rrs.webp',
-    'et-ek-ep':  '../assets/images/products/connectors.png',
+    'et-ek-ep':  '../assets/images/products/connectors.webp',
     'et-onc-bm': BASE + 'et-onc-bm.webp',
     'et-snc127': BASE + 'et-snc127.webp',
     'et-rvn2':   BASE + 'et-rvn2.webp',
@@ -94,7 +94,7 @@ IMAGE_BY_TYPE = {
     'et-rrs':    {'Вилка': BASE + 'et-rrs-vilka.webp',    'Розетка': BASE + 'et-rrs-rozetka.webp'},
     'et-snc144': {'Вилка': BASE + 'et-snc144-vilka.webp', 'Розетка': BASE + 'et-snc144-rozetka.webp'},
 }
-IMAGE_FALLBACK = '../assets/images/products/connectors.png'
+IMAGE_FALLBACK = '../assets/images/products/connectors.webp'
 
 # Short descriptions for cards
 DESC_MAP = {
