@@ -234,8 +234,11 @@
     var fallbackImg = series.image || '../assets/images/products/connectors.png';
     var imgByType = series.imageByType || {};
     function pickImage(row) {
-      var t = (row.parsed && typeField && row.parsed[typeField]) || row.item.type;
-      return imgByType[t] || fallbackImg;
+      var t = (row.parsed && typeField && row.parsed[typeField]) || row.item.type || '';
+      if (imgByType[t]) return imgByType[t];
+      if (/^Вилка/i.test(t) && imgByType['Вилка']) return imgByType['Вилка'];
+      if (/^Розетка/i.test(t) && imgByType['Розетка']) return imgByType['Розетка'];
+      return fallbackImg;
     }
 
     var html = '<div class="catalog__category-section catalog__series-view">';

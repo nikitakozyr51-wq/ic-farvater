@@ -34,9 +34,15 @@
   const typeField = parser && parser.columns
     ? (parser.columns.indexOf('Часть') !== -1 ? 'Часть' : parser.columns.indexOf('Тип') !== -1 ? 'Тип' : null)
     : null;
-  const itemType = (parsed && typeField && parsed[typeField]) || item.type;
+  const itemType = (parsed && typeField && parsed[typeField]) || item.type || '';
   const byType = series.imageByType || {};
-  img.src = byType[itemType] || series.image || '../assets/images/products/connectors.png';
+  function pickVariantImage() {
+    if (byType[itemType]) return byType[itemType];
+    if (/^Вилка/i.test(itemType) && byType['Вилка']) return byType['Вилка'];
+    if (/^Розетка/i.test(itemType) && byType['Розетка']) return byType['Розетка'];
+    return series.image || '../assets/images/products/connectors.png';
+  }
+  img.src = pickVariantImage();
   img.alt = item.name;
 
   document.getElementById('cv-description').textContent =
