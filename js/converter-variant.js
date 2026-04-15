@@ -23,9 +23,12 @@
   seriesLink.textContent = 'СЕРИЯ ' + series.name;
   seriesLink.href = 'products.html#converters/' + slug;
 
-  document.getElementById('cv-name').textContent = item.name;
+  const h1 = item.partnumber || item.displayName || item.name;
+  document.getElementById('cv-name').textContent = h1;
+  const shortName = item.displayName || item.name;
   document.getElementById('cv-subcategory').textContent =
-    'СЕРИЯ ' + series.name + (item.type ? ' · ' + item.type : '');
+    'СЕРИЯ ' + series.name + (item.type ? ' · ' + item.type : '') +
+    (shortName && shortName !== h1 ? ' · ' + shortName : '');
 
   const img = document.getElementById('cv-image');
   img.src = series.image || '../assets/images/products/converters.webp';

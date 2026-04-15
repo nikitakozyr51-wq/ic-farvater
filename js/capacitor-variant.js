@@ -23,9 +23,12 @@
   seriesLink.textContent = 'СЕРИЯ ' + series.name;
   seriesLink.href = 'products.html#capacitors/' + slug;
 
-  document.getElementById('cv-name').textContent = item.name;
+  const h1 = item.displayName || item.name;
+  document.getElementById('cv-name').textContent = h1;
   document.getElementById('cv-subcategory').textContent =
-    'СЕРИЯ ' + series.name + (series.tu ? ' · ' + series.tu : '');
+    'СЕРИЯ ' + series.name +
+    (item.partnumber ? ' · ' + item.partnumber : '') +
+    (series.tu ? ' · ' + series.tu : '');
 
   const img = document.getElementById('cv-image');
   img.src = series.image || '../assets/images/products/capacitors.webp';

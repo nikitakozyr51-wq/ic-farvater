@@ -42,13 +42,21 @@ def parse_name_specs(name):
     if m:
         out['vout'] = m.group(1)
         out['power'] = m.group(2)
-    # Партномер — последнее слово, состоящее из латиницы/кириллицы/цифр/дефиса, длиной > 6
     parts = name.split()
     for p in reversed(parts):
         if len(p) >= 6 and re.match(r'^[A-ZА-ЯЁ0-9\-]+$', p):
             out['partnumber'] = p
             break
     return out
+
+def make_display(name, brand, item):
+    """Короткое имя для карточки + партномер серой строкой."""
+    # drop prefix "Модульный преобразователь " and trailing partnumber
+    short = re.sub(r'^Модульный преобразователь\s+', '', name, flags=re.I)
+    pn = item.get('partnumber') or ''
+    if pn and short.endswith(pn):
+        short = short[:-len(pn)].rstrip()
+    return short.strip(), pn
 
 def main():
     with open(CSV_PATH, 'r', encoding='utf-8') as f:
@@ -65,7 +73,7 @@ def main():
         name = clean(r[1])
         brand = detect_brand(name)
         if brand != 'ИРТЫШ': continue
-        series[brand]['items'].append({
+        it = {
             'name': name,
             'type': clean(r[12]),
             'subseries': clean(r[13]),
@@ -78,7 +86,9 @@ def main():
             'power': clean(r[22]),
             'current': clean(r[23]),
             'datasheet': clean(r[25]),
-        })
+        }
+        it['displayName'], it['displaySub'] = make_display(name, brand, it)
+        series[brand]['items'].append(it)
 
     # ВОЛГА / ЕНИСЕЙ / КАМА — из scraped
     with open(SCRAPED, 'r', encoding='utf-8') as f:
@@ -89,6 +99,7 @@ def main():
             specs = parse_name_specs(name)
             item = {'name': name}
             item.update(specs)
+            item['displayName'], item['displaySub'] = make_display(name, brand_key, item)
             series[brand_key]['items'].append(item)
 
     order_group = ['main', 'dev']

@@ -275,10 +275,13 @@
       html += '<div class="catalog__products-row">';
       filtered.forEach(function(r) {
         var imageSrc = pickImage(r);
+        var displayName = r.item.displayName || r.item.name;
+        var displaySub = r.item.displaySub || '';
         html += '<a href="' + sc.variant + '#' + esc(series.slug) + ':' + r.idx + '" class="product-card">' +
           '<div class="product-card__img"><img src="' + esc(imageSrc) + '" alt="' + esc(r.item.name) + '" loading="lazy"></div>' +
           '<div class="product-card__info">' +
-            '<span class="product-card__name">' + esc(r.item.name) + '</span>' +
+            '<span class="product-card__name">' + esc(displayName) + '</span>' +
+            (displaySub ? '<span class="product-card__count">' + esc(displaySub) + '</span>' : '') +
           '</div>' +
         '</a>';
       });

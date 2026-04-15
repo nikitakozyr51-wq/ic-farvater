@@ -35,6 +35,11 @@ def parse_name_specs(name):
     if m: out['capacitance'] = m.group(1)
     return out
 
+def make_display(name, item):
+    short = re.sub(r'^СВЧ-конденсатор\s+', '', name, flags=re.I).strip()
+    sub = item.get('partnumber') or item.get('code') or ''
+    return short, sub
+
 def main():
     with open(CSV_PATH, 'r', encoding='utf-8') as f:
         rows = list(csv.reader(f))
@@ -50,7 +55,7 @@ def main():
         name = clean(r[1])
         b = detect(name)
         if b != 'ARC70A': continue
-        series[b]['items'].append({
+        it = {
             'name': name,
             'partnumber': clean(r[12]),
             'capacitance': clean(r[15]),
@@ -60,7 +65,9 @@ def main():
             'temp': (clean(r[20]) + ' … ' + clean(r[21]) + ' °C').strip() if clean(r[20]) else '',
             'voltage': clean(r[24]),
             'datasheet': clean(r[30]),
-        })
+        }
+        it['displayName'], it['displaySub'] = make_display(name, it)
+        series[b]['items'].append(it)
 
     # ARC70C / ARC70E — из scraped
     with open(SCRAPED, 'r', encoding='utf-8') as f:
@@ -74,6 +81,7 @@ def main():
             specs = parse_name_specs(name)
             item = {'name': name}
             item.update(specs)
+            item['displayName'], item['displaySub'] = make_display(name, item)
             series[brand_key]['items'].append(item)
 
     order_group = ['main', 'dev']
