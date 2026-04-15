@@ -73,6 +73,7 @@ IMAGE_MAP = {
 # Per-variant images by type (Вилка/Розетка)
 IMAGE_BY_TYPE = {
     'et-2rmt':   {'Вилка': BASE + 'et-2rmt-vilka.webp',   'Розетка': BASE + 'et-2rmt-rozetka.webp'},
+    'et-2rmg':   {'Вилка': BASE + 'et-2rmt-vilka.webp',   'Розетка': BASE + 'et-2rmt-rozetka.webp'},
     'et-onc-bs': {'Вилка': BASE + 'et-onc-bs-vilka.webp', 'Розетка': BASE + 'et-onc-bs-rozetka.webp'},
     'et-rrs':    {'Вилка': BASE + 'et-rrs-vilka.webp',    'Розетка': BASE + 'et-rrs-rozetka.webp'},
     'et-snc144': {'Вилка': BASE + 'et-snc144-vilka.webp', 'Розетка': BASE + 'et-snc144-rozetka.webp'},

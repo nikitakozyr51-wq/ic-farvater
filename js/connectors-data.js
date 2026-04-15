@@ -9,7 +9,7 @@ const CONNECTOR_SERIES = [
     tu: "\u0422\u041a\u0415\u0421.434410.039 \u0422\u0423",
     description: "\u0413\u0435\u0440\u043c\u0435\u0442\u0438\u0447\u043d\u044b\u0435 \u0446\u0438\u043b\u0438\u043d\u0434\u0440\u0438\u0447\u0435\u0441\u043a\u0438\u0435, \u0432\u0438\u0431\u0440\u0430\u0446\u0438\u044f 50g, \u0434\u043e 200\u00b0C.",
     image: "../assets/images/products/connectors/et-2rmg.webp",
-    imageByType: {},
+    imageByType: {"Вилка": "../assets/images/products/connectors/et-2rmt-vilka.webp", "Розетка": "../assets/images/products/connectors/et-2rmt-rozetka.webp"},
     count: 30,
     items: [
       { name: "\u0415\u0422-2\u0420\u041c\u041314\u04114\u04281\u04102", type: "\u0412\u0438\u043b\u043a\u0430", tu: "\u0422\u041a\u0415\u0421.434410.039 \u0422\u0423" },
