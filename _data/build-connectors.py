@@ -22,17 +22,25 @@ SERIES_RULES = [
     (r'^ЕТ-СНЦ\s*144|^ЕТ-144', 'et-snc144',  'ЕТ-СНЦ144 / ЕТ-144',         'main'),
 
     # Additional
-    (r'^ЕТ-ОНЦ-БМ',           'et-onc-bm',  'ЕТ-ОНЦ-БМ',                  'additional'),
-    (r'^ЕТ-СНЦ127',           'et-snc127',  'ЕТ-СНЦ127',                  'additional'),
     (r'^ЕТ-ШР',               'et-shr',     'ЕТ-ШР',                      'additional'),
-    (r'^ЕТ-РВН2',             'et-rvn2',    'ЕТ-РВН2',                    'additional'),
     (r'^ЕТ-ЭК|^ЕТ-ЭП',       'et-ek-ep',   'ЕТ-ЭК / ЕТ-ЭП (заглушки)',   'additional'),
 
     # В разработке
+    (r'^ЕТ-ОНЦ-БМ',           'et-onc-bm',  'ЕТ-ОНЦ-БМ',                  'dev'),
+    (r'^ЕТ-СНЦ127',           'et-snc127',  'ЕТ-СНЦ127',                  'dev'),
+    (r'^ЕТ-РВН2',             'et-rvn2',    'ЕТ-РВН2',                    'dev'),
     (r'^ЕТ-2РМП',             'et-2rmp',    'ЕТ-2РМП',                    'dev'),
     (r'^ЕТ-СНЦ147',           'et-snc147',  'ЕТ-СНЦ147',                  'dev'),
     (r'^ЕТ-РБН2',             'et-rbn2',    'ЕТ-РБН2',                    'dev'),
     (r'^ЕТ-СНЦ13(?!$|\d{2})', 'et-snc13',   'ЕТ-СНЦ13',                   'dev'),
+]
+
+# Extra dev series без позиций в прайсе (placeholder-карточки)
+EXTRA_DEV_SERIES = [
+    ('et-snc146', 'ЕТ-СНЦ146', '', 'В разработке. ТУ не утверждены.'),
+    ('et-snc233', 'ЕТ-СНЦ233', '', 'В разработке. ТУ не утверждены.'),
+    ('et-rbm4',   'ЕТ-РБМ4',   '', 'В разработке. ТУ не утверждены.'),
+    ('et-rvn1',   'ЕТ-РВН1',   '', 'В разработке. ТУ не утверждены.'),
 ]
 
 # Exclude these
@@ -69,6 +77,14 @@ IMAGE_MAP = {
     'et-onc-bs': BASE + 'et-onc-bs.webp',
     'et-rrs':    BASE + 'et-rrs.webp',
     'et-ek-ep':  '../assets/images/products/connectors.png',
+    'et-onc-bm': BASE + 'et-onc-bm.webp',
+    'et-snc127': BASE + 'et-snc127.webp',
+    'et-rvn2':   BASE + 'et-rvn2.webp',
+    'et-snc13':  BASE + 'et-snc13.webp',
+    'et-snc146': BASE + 'et-snc146.webp',
+    'et-snc233': BASE + 'et-snc233.webp',
+    'et-rbm4':   BASE + 'et-rbm4.webp',
+    'et-rvn1':   BASE + 'et-rvn1.webp',
 }
 # Per-variant images by type (Вилка/Розетка)
 IMAGE_BY_TYPE = {
@@ -163,6 +179,21 @@ def main():
             'type': item['type'],
             'tu': item['tu']
         })
+
+    # Append placeholder dev series (no price-list entries)
+    for slug, display, tu, desc in EXTRA_DEV_SERIES:
+        if slug in series_data:
+            continue
+        series_data[slug] = {
+            'slug': slug,
+            'name': display,
+            'group': 'dev',
+            'tu': tu,
+            'description': desc,
+            'image': IMAGE_MAP.get(slug, IMAGE_FALLBACK),
+            'imageByType': {},
+            'items': []
+        }
 
     if unmatched:
         print(f"WARNING: {len(unmatched)} unmatched items:")
