@@ -79,7 +79,7 @@
 .mission__image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 /* Certs Section — v2 accordion rows */
