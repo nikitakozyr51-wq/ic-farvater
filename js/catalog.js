@@ -136,10 +136,27 @@
     return d.innerHTML;
   }
 
+  // --- Series categories: routing + data sources ---
+  var SERIES_CATEGORIES = {
+    'Разъёмы':                   { key: 'connectors', data: 'CONNECTOR_SERIES', variant: 'connector-variant.html', fallbackImg: '../assets/images/products/connectors.webp', parser: function(slug){ return (typeof ConnectorParsers !== 'undefined') ? ConnectorParsers.getParser(slug) : { columns: [], parse: function(){ return null; } }; } },
+    'Преобразователи напряжения':{ key: 'converters', data: 'CONVERTER_SERIES', variant: 'converter-variant.html', fallbackImg: '../assets/images/products/converters.webp', parser: null },
+    'СВЧ-конденсаторы':          { key: 'capacitors', data: 'CAPACITOR_SERIES', variant: 'capacitor-variant.html', fallbackImg: '../assets/images/products/capacitors.webp', parser: null }
+  };
+  var SERIES_GROUP_LABELS = {
+    connectors: { main: 'ОСНОВНЫЕ СЕРИИ', additional: 'ДОПОЛНИТЕЛЬНЫЕ СЕРИИ', dev: 'В РАЗРАБОТКЕ' },
+    converters: { main: 'ОСНОВНЫЕ СЕРИИ', additional: 'ДОПОЛНИТЕЛЬНЫЕ СЕРИИ', dev: 'В РАЗРАБОТКЕ' },
+    capacitors: { main: 'ОСНОВНЫЕ СЕРИИ', additional: 'ДОПОЛНИТЕЛЬНЫЕ СЕРИИ', dev: 'В РАЗРАБОТКЕ' }
+  };
+
+  function currentSeriesCategory() {
+    return SERIES_CATEGORIES[state.category] || null;
+  }
+
   function syncHash() {
     var hash = '';
-    if (state.category === 'Разъёмы') {
-      hash = state.seriesSlug ? 'connectors/' + state.seriesSlug : 'connectors';
+    var sc = currentSeriesCategory();
+    if (sc) {
+      hash = state.seriesSlug ? sc.key + '/' + state.seriesSlug : sc.key;
     } else if (showAllMode) {
       hash = 'all';
     } else if (state.category) {
@@ -153,18 +170,21 @@
     }
   }
 
-  function renderConnectorSeriesList() {
+  function renderSeriesList() {
     hideSeriesTypeFilter();
-    if (typeof CONNECTOR_SERIES === 'undefined') {
+    var sc = currentSeriesCategory();
+    if (!sc) return;
+    var DATA = window[sc.data];
+    if (typeof DATA === 'undefined') {
       dynamicContainer.innerHTML = '<p class="catalog__empty">ДАННЫЕ НЕ ЗАГРУЖЕНЫ</p>';
       return;
     }
     var groups = { main: [], additional: [], dev: [] };
-    for (var i = 0; i < CONNECTOR_SERIES.length; i++) {
-      var s = CONNECTOR_SERIES[i];
+    for (var i = 0; i < DATA.length; i++) {
+      var s = DATA[i];
       (groups[s.group] || groups.main).push(s);
     }
-    var labels = { main: 'ОСНОВНЫЕ СЕРИИ', additional: 'ДОПОЛНИТЕЛЬНЫЕ СЕРИИ', dev: 'В РАЗРАБОТКЕ' };
+    var labels = SERIES_GROUP_LABELS[sc.key];
     var order = ['main', 'additional', 'dev'];
     var html = '';
     for (var k = 0; k < order.length; k++) {
@@ -180,7 +200,7 @@
         var img = srs.image
           ? '<img src="' + esc(srs.image) + '" alt="' + esc(srs.name) + '" loading="lazy" onerror="this.style.display=\'none\'">'
           : '';
-        html += '<a href="#connectors/' + esc(srs.slug) + '" class="product-card" data-series="' + esc(srs.slug) + '">' +
+        html += '<a href="#' + sc.key + '/' + esc(srs.slug) + '" class="product-card" data-series="' + esc(srs.slug) + '">' +
           '<div class="product-card__img">' + img + '</div>' +
           '<div class="product-card__info">' +
             '<span class="product-card__name">' + esc(srs.name) + '</span>' +
@@ -193,16 +213,20 @@
     dynamicContainer.innerHTML = html;
   }
 
-  function renderConnectorSeriesDetail() {
-    var series = CONNECTOR_SERIES.find(function(s) { return s.slug === state.seriesSlug; });
+  function renderSeriesDetail() {
+    var sc = currentSeriesCategory();
+    if (!sc) return;
+    var DATA = window[sc.data];
+    if (typeof DATA === 'undefined') return;
+    var series = DATA.find(function(s) { return s.slug === state.seriesSlug; });
     if (!series) {
       state.seriesSlug = null;
       hideSeriesTypeFilter();
-      renderConnectorSeriesList();
+      renderSeriesList();
       return;
     }
 
-    var parser = (typeof ConnectorParsers !== 'undefined') ? ConnectorParsers.getParser(series.slug) : { columns: [], parse: function() { return null; } };
+    var parser = sc.parser ? sc.parser(series.slug) : { columns: [], parse: function() { return null; } };
     var hasParser = parser.columns.length > 0;
     var typeField = hasParser
       ? (parser.columns.indexOf('Часть') !== -1 ? 'Часть' : parser.columns.indexOf('Тип') !== -1 ? 'Тип' : null)
@@ -231,7 +255,7 @@
       return true;
     });
 
-    var fallbackImg = series.image || '../assets/images/products/connectors.webp';
+    var fallbackImg = series.image || sc.fallbackImg;
     var imgByType = series.imageByType || {};
     function pickImage(row) {
       var t = (row.parsed && typeField && row.parsed[typeField]) || row.item.type || '';
@@ -251,7 +275,7 @@
       html += '<div class="catalog__products-row">';
       filtered.forEach(function(r) {
         var imageSrc = pickImage(r);
-        html += '<a href="connector-variant.html#' + esc(series.slug) + ':' + r.idx + '" class="product-card">' +
+        html += '<a href="' + sc.variant + '#' + esc(series.slug) + ':' + r.idx + '" class="product-card">' +
           '<div class="product-card__img"><img src="' + esc(imageSrc) + '" alt="' + esc(r.item.name) + '" loading="lazy"></div>' +
           '<div class="product-card__info">' +
             '<span class="product-card__name">' + esc(r.item.name) + '</span>' +
@@ -299,7 +323,7 @@
     group.querySelectorAll('[data-series-type]').forEach(function(btn) {
       btn.addEventListener('click', function() {
         state.seriesType = btn.getAttribute('data-series-type');
-        renderConnectorSeriesDetail();
+        renderSeriesDetail();
       });
     });
   }
@@ -309,16 +333,16 @@
     if (group && group.parentNode) group.parentNode.removeChild(group);
   }
 
-  function renderConnectors() {
-    if (state.seriesSlug) renderConnectorSeriesDetail();
-    else renderConnectorSeriesList();
+  function renderSeriesCategory() {
+    if (state.seriesSlug) renderSeriesDetail();
+    else renderSeriesList();
   }
 
   function render() {
     if (!dynamicContainer) return;
 
-    if (state.category === 'Разъёмы') {
-      renderConnectors();
+    if (currentSeriesCategory()) {
+      renderSeriesCategory();
       return;
     }
 
@@ -474,8 +498,8 @@
     if (!hash) return;
     var parts = hash.split('/');
     var catKey = parts[0];
-    if (catKey === 'connectors' && parts[1]) {
-      activateCategory('connectors');
+    if ((catKey === 'connectors' || catKey === 'converters' || catKey === 'capacitors') && parts[1]) {
+      activateCategory(catKey);
       state.seriesSlug = parts[1];
       render();
       return;
