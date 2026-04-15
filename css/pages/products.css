@@ -333,6 +333,10 @@ p.cat-card__desc {
   gap: 32px;
 }
 
+.catalog__category-section--dev {
+  opacity: 0.7;
+}
+
 .catalog__category-title {
   font-size: var(--text-40);
   font-weight: 500;

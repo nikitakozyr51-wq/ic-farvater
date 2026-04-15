@@ -122,8 +122,53 @@
     '</a>';
   }
 
+  function renderConnectorSeries() {
+    if (typeof CONNECTOR_SERIES === 'undefined') {
+      dynamicContainer.innerHTML = '<p class="catalog__empty">ДАННЫЕ НЕ ЗАГРУЖЕНЫ</p>';
+      return;
+    }
+    var groups = { main: [], additional: [], dev: [] };
+    for (var i = 0; i < CONNECTOR_SERIES.length; i++) {
+      var s = CONNECTOR_SERIES[i];
+      (groups[s.group] || groups.main).push(s);
+    }
+    var labels = { main: 'ОСНОВНЫЕ СЕРИИ', additional: 'ДОПОЛНИТЕЛЬНЫЕ СЕРИИ', dev: 'В РАЗРАБОТКЕ' };
+    var order = ['main', 'additional', 'dev'];
+    var html = '';
+    for (var k = 0; k < order.length; k++) {
+      var key = order[k];
+      var list = groups[key];
+      if (!list || list.length === 0) continue;
+      html += '<div class="catalog__category-section' + (key === 'dev' ? ' catalog__category-section--dev' : '') + '">';
+      html += '<h2 class="catalog__category-title">' + labels[key] +
+        ' <span class="title-count">(' + pad(list.length) + ')</span></h2>';
+      html += '<div class="catalog__products-row">';
+      for (var n = 0; n < list.length; n++) {
+        var srs = list[n];
+        var img = srs.image
+          ? '<img src="' + srs.image + '" alt="' + srs.name + '" loading="lazy" onerror="this.style.display=\'none\'">'
+          : '';
+        html += '<a href="connector-series.html#' + srs.slug + '" class="product-card">' +
+          '<div class="product-card__img">' + img + '</div>' +
+          '<div class="product-card__info">' +
+            '<span class="product-card__name">' + srs.name + '</span>' +
+            '<span class="product-card__count">(' + srs.count + ')</span>' +
+          '</div>' +
+        '</a>';
+      }
+      html += '</div></div>';
+    }
+    dynamicContainer.innerHTML = html;
+  }
+
   function render() {
     if (!dynamicContainer) return;
+
+    if (state.category === 'Разъёмы') {
+      renderConnectorSeries();
+      return;
+    }
+
     var items = getFiltered();
 
     if (items.length === 0) {
@@ -225,11 +270,6 @@
     staticGrid.querySelectorAll('.cat-card[data-category]').forEach(function(card) {
       card.addEventListener('click', function() {
         var cat = card.getAttribute('data-category');
-        // Разъёмы → отдельная страница
-        if (cat === 'connectors') {
-          window.location.href = 'connectors.html';
-          return;
-        }
         activateCategory(cat);
       });
     });
