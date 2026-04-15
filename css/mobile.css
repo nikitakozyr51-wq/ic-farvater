@@ -344,13 +344,21 @@ h3 {
 }
 
 .product-banner__img {
+  width: 100%;
   height: 100%;
+  aspect-ratio: auto;
   object-fit: cover;
 }
 
 .product-banner__content {
   bottom: 40px;
   left: 24px;
+  right: 24px;
+}
+
+.product-banner__btns {
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .product-banner__title {
