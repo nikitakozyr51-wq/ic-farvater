@@ -15,10 +15,10 @@ SERIES_META = {
                BASE + 'items/ARC70A 1.webp'),
     'ARC70C': ('arc70c', 'ARC70C', 'main', '',
                'СВЧ-конденсаторы серии ARC70C. Ёмкость 0,5–3000 пФ, корпус 2225.',
-               BASE + 'capacitors.webp'),
+               BASE + 'items/arc70c.jpg'),
     'ARC70E': ('arc70e', 'ARC70E', 'main', '',
                'СВЧ-конденсаторы серии ARC70E. Сверхвысокочастотные многослойные керамические чип-конденсаторы.',
-               BASE + 'capacitors.webp'),
+               BASE + 'items/arc70e.jpg'),
 }
 
 def clean(s):

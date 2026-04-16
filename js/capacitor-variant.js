@@ -31,8 +31,12 @@
     (series.tu ? ' · ' + series.tu : '');
 
   const img = document.getElementById('cv-image');
-  img.src = series.image || '../assets/images/products/capacitors.webp';
-  img.alt = item.name;
+  if (series.image) {
+    img.src = series.image;
+    img.alt = item.name;
+  } else {
+    img.style.display = 'none';
+  }
 
   document.getElementById('cv-description').textContent = series.description || '';
 

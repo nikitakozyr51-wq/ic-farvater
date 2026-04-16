@@ -255,14 +255,13 @@
       return true;
     });
 
-    var fallbackImg = series.image || sc.fallbackImg;
     var imgByType = series.imageByType || {};
     function pickImage(row) {
       var t = (row.parsed && typeField && row.parsed[typeField]) || row.item.type || '';
       if (imgByType[t]) return imgByType[t];
       if (/^Вилка/i.test(t) && imgByType['Вилка']) return imgByType['Вилка'];
       if (/^Розетка/i.test(t) && imgByType['Розетка']) return imgByType['Розетка'];
-      return fallbackImg;
+      return series.image || '';
     }
 
     var html = '<div class="catalog__category-section catalog__series-view">';
@@ -276,8 +275,11 @@
       filtered.forEach(function(r) {
         var imageSrc = pickImage(r);
         var displayName = r.item.displayName || r.item.name;
+        var imgHtml = imageSrc
+          ? '<img src="' + esc(imageSrc) + '" alt="' + esc(r.item.name) + '" loading="lazy">'
+          : '';
         html += '<a href="' + sc.variant + '#' + esc(series.slug) + ':' + r.idx + '" class="product-card">' +
-          '<div class="product-card__img"><img src="' + esc(imageSrc) + '" alt="' + esc(r.item.name) + '" loading="lazy"></div>' +
+          '<div class="product-card__img">' + imgHtml + '</div>' +
           '<div class="product-card__info">' +
             '<span class="product-card__name">' + esc(displayName) + '</span>' +
           '</div>' +

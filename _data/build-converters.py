@@ -15,13 +15,13 @@ SERIES_META = {
               BASE + 'items/Irtysh.webp'),
     'ВОЛГА': ('volga',  'ВОЛГА',  'main', '',
               'Модульные AC/DC преобразователи серии ВОЛГА. Питание от однофазной сети 115/230 В.',
-              BASE + 'converters.webp'),
+              BASE + 'items/volga.jpg'),
     'ЕНИСЕЙ':('enisei', 'ЕНИСЕЙ', 'main', '',
               'Модульные DC/DC преобразователи серии ЕНИСЕЙ. Вход 27 В, мощность до 30 Вт.',
-              BASE + 'converters.webp'),
+              BASE + 'items/enisei.jpg'),
     'КАМА':  ('kama',   'КАМА',   'main', '',
               'Модульные AC/DC преобразователи серии КАМА. Вход 230 В, мощность 50–1000 Вт.',
-              BASE + 'converters.webp'),
+              BASE + 'items/kama.jpg'),
 }
 
 def clean(s):

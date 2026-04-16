@@ -106,7 +106,7 @@ var CAPACITOR_SERIES = [
     group: "main",
     tu: "",
     description: "СВЧ-конденсаторы серии ARC70C. Ёмкость 0,5–3000 пФ, корпус 2225.",
-    image: "../assets/images/products/capacitors.webp",
+    image: "../assets/images/products/items/arc70c.jpg",
     imageByType: {},
     count: 90,
     items: [
@@ -208,7 +208,7 @@ var CAPACITOR_SERIES = [
     group: "main",
     tu: "",
     description: "СВЧ-конденсаторы серии ARC70E. Сверхвысокочастотные многослойные керамические чип-конденсаторы.",
-    image: "../assets/images/products/capacitors.webp",
+    image: "../assets/images/products/items/arc70e.jpg",
     imageByType: {},
     count: 97,
     items: [

@@ -21,9 +21,9 @@ SERIES_RULES = [
     (r'^ЕТ-СНЦ28',            'et-snc28',   'ЕТ-СНЦ28',                   'main'),
     (r'^ЕТ-СНЦ\s*144|^ЕТ-144', 'et-snc144',  'ЕТ-СНЦ144 / ЕТ-144',         'main'),
 
-    # Additional
-    (r'^ЕТ-ШР',               'et-shr',     'ЕТ-ШР',                      'additional'),
-    (r'^ЕТ-ЭК|^ЕТ-ЭП',       'et-ek-ep',   'ЕТ-ЭК / ЕТ-ЭП (заглушки)',   'additional'),
+    # Additional → перенесены в main
+    (r'^ЕТ-ШР',               'et-shr',     'ЕТ-ШР',                      'main'),
+    (r'^ЕТ-ЭК|^ЕТ-ЭП',       'et-ek-ep',   'ЕТ-ЭК / ЕТ-ЭП (заглушки)',   'main'),
 
     # В разработке
     (r'^ЕТ-ОНЦ-БМ',           'et-onc-bm',  'ЕТ-ОНЦ-БМ',                  'dev'),
@@ -76,7 +76,7 @@ IMAGE_MAP = {
     'et-mr1':    BASE + 'et-mr1.webp',
     'et-onc-bs': BASE + 'et-onc-bs.webp',
     'et-rrs':    BASE + 'et-rrs.webp',
-    'et-ek-ep':  '../assets/images/products/connectors.webp',
+    'et-ek-ep':  '',
     'et-onc-bm': BASE + 'et-onc-bm.webp',
     'et-snc127': BASE + 'et-snc127.webp',
     'et-rvn2':   BASE + 'et-rvn2.webp',
@@ -94,7 +94,7 @@ IMAGE_BY_TYPE = {
     'et-rrs':    {'Вилка': BASE + 'et-rrs-vilka.webp',    'Розетка': BASE + 'et-rrs-rozetka.webp'},
     'et-snc144': {'Вилка': BASE + 'et-snc144-vilka.webp', 'Розетка': BASE + 'et-snc144-rozetka.webp'},
 }
-IMAGE_FALLBACK = '../assets/images/products/connectors.webp'
+IMAGE_FALLBACK = ''
 
 # Short descriptions for cards
 DESC_MAP = {

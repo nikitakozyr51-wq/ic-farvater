@@ -40,10 +40,15 @@
     if (byType[itemType]) return byType[itemType];
     if (/^Вилка/i.test(itemType) && byType['Вилка']) return byType['Вилка'];
     if (/^Розетка/i.test(itemType) && byType['Розетка']) return byType['Розетка'];
-    return series.image || '../assets/images/products/connectors.webp';
+    return series.image || '';
   }
-  img.src = pickVariantImage();
-  img.alt = item.name;
+  const picked = pickVariantImage();
+  if (picked) {
+    img.src = picked;
+    img.alt = item.name;
+  } else {
+    img.style.display = 'none';
+  }
 
   document.getElementById('cv-description').textContent =
     (series.description || '') + (item.type ? ' Тип: ' + item.type + '.' : '');

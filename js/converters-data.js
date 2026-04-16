@@ -390,7 +390,7 @@ var CONVERTER_SERIES = [
     group: "main",
     tu: "",
     description: "Модульные AC/DC преобразователи серии ВОЛГА. Питание от однофазной сети 115/230 В.",
-    image: "../assets/images/products/converters.webp",
+    image: "../assets/images/products/items/volga.jpg",
     imageByType: {},
     count: 124,
     items: [
@@ -526,7 +526,7 @@ var CONVERTER_SERIES = [
     group: "main",
     tu: "",
     description: "Модульные DC/DC преобразователи серии ЕНИСЕЙ. Вход 27 В, мощность до 30 Вт.",
-    image: "../assets/images/products/converters.webp",
+    image: "../assets/images/products/items/enisei.jpg",
     imageByType: {},
     count: 80,
     items: [
@@ -618,7 +618,7 @@ var CONVERTER_SERIES = [
     group: "main",
     tu: "",
     description: "Модульные AC/DC преобразователи серии КАМА. Вход 230 В, мощность 50–1000 Вт.",
-    image: "../assets/images/products/converters.webp",
+    image: "../assets/images/products/items/kama.jpg",
     imageByType: {},
     count: 52,
     items: [
