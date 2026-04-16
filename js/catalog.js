@@ -62,6 +62,10 @@
   // --- Category ---
 
   function activateCategory(catKey) {
+    if (catKey === 'pcb') {
+      window.location.href = 'pcb-detail.html';
+      return;
+    }
     if (catKey === 'all') {
       state.category = null;
       showAllMode = true;
