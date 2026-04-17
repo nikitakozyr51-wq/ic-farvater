@@ -62,18 +62,6 @@
   // --- Category ---
 
   function activateCategory(catKey) {
-    if (catKey === 'pcb') {
-      window.location.href = 'pcb-detail.html';
-      return;
-    }
-    if (catKey === 'microchips') {
-      window.location.href = 'microchips-detail.html';
-      return;
-    }
-    if (catKey === 'transistors') {
-      window.location.href = 'transistors-detail.html';
-      return;
-    }
     if (catKey === 'all') {
       state.category = null;
       showAllMode = true;
@@ -460,7 +448,8 @@
   function initCategoryCards() {
     if (!staticGrid) return;
     staticGrid.querySelectorAll('.cat-card[data-category]').forEach(function(card) {
-      card.addEventListener('click', function() {
+      card.addEventListener('click', function(e) {
+        e.preventDefault();
         var cat = card.getAttribute('data-category');
         activateCategory(cat);
       });
