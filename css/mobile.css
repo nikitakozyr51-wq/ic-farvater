@@ -376,7 +376,7 @@ h3 {
 
 .bottom-card__img {
   height: auto;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 1 / 1;
 }
 
 .bottom-card__img img {
