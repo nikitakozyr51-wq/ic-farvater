@@ -1,0 +1,30 @@
+# IC Farvater
+
+> IC Farvater (ООО «Айси Фарватер») — интегратор и дистрибьютор электронной компонентной базы (ЭКБ) в Санкт-Петербурге. Прямые поставки микросхем, разъёмов, СВЧ-компонентов, преобразователей напряжения и печатных плат. Собственная испытательная лаборатория.
+
+## Контакты
+- Адрес: ул. Беринга, д. 1-А, оф. 46-Н, г. Санкт-Петербург, 199397
+- Телефон: +7 (996) 778-88-42
+- Email: info@ic-farvater.ru, sale@ic-farvater.ru
+- Режим работы: пн–пт 10:00–18:00
+
+## Страницы
+- [Главная](https://nikitakozyr51-wq.github.io/ic-farvater/): обзор компании и направлений
+- [О компании](https://nikitakozyr51-wq.github.io/ic-farvater/pages/about.html): история, лаборатория, сертификация
+- [Каталог](https://nikitakozyr51-wq.github.io/ic-farvater/pages/products.html): вся продукция
+- [Контакты](https://nikitakozyr51-wq.github.io/ic-farvater/pages/contacts.html): адрес, телефоны, карта
+
+## Продукция
+- [Микросхемы](https://nikitakozyr51-wq.github.io/ic-farvater/pages/microchips-detail.html): цифровые и аналоговые ИС, АЦП/ЦАП, процессоры, контроллеры питания
+- [СВЧ-транзисторы LDMOS](https://nikitakozyr51-wq.github.io/ic-farvater/pages/transistors-detail.html): для усилителей мощности, связи, радиолокации
+- [Печатные платы](https://nikitakozyr51-wq.github.io/ic-farvater/pages/pcb-detail.html): ОПП, ДПП, МПП до 40 слоёв, СВЧ, гибкие
+- [Разъёмы ЕТ-серии](https://nikitakozyr51-wq.github.io/ic-farvater/pages/connector-variant.html)
+- [Преобразователи напряжения](https://nikitakozyr51-wq.github.io/ic-farvater/pages/converter-variant.html): ИРТЫШ, ВОЛГА, ЕНИСЕЙ, КАМА
+- [СВЧ-конденсаторы ARC70](https://nikitakozyr51-wq.github.io/ic-farvater/pages/capacitor-variant.html)
+
+## Услуги
+- Прямые поставки ЭКБ от отечественных производителей
+- Испытательная лаборатория (ISO 9001)
+- Импортозамещение и подбор аналогов
+- Техническая экспертиза
+- Кабельные сборки под заказ
