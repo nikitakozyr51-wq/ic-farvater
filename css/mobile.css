@@ -378,7 +378,7 @@ h3 {
 }
 
 .bottom-card__img img {
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .bottom-card__desc {
