@@ -434,7 +434,7 @@
 
 .bottom-card__img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 3 / 2;
   background: var(--color-bg-alt);
   overflow: hidden;
 }
