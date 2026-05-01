@@ -177,33 +177,32 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 24px;
-  height: 24px;
-  background: var(--color-text);
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--color-border);
   border-radius: 100px;
   font-family: inherit;
-  font-size: 11px;
+  font-size: var(--text-14);
   font-weight: 600;
-  color: var(--color-bg);
+  color: var(--color-text);
   flex-shrink: 0;
 }
 
 .filter-clear-btn {
   flex: 1;
   font-family: inherit;
-  font-size: 11px;
+  font-size: var(--text-14);
   font-weight: 600;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   cursor: pointer;
   background: var(--color-text);
   color: var(--color-bg);
   border: none;
   border-radius: 100px;
-  padding: 10px 16px;
+  padding: 14px 0;
   text-align: center;
   transition: opacity 0.2s;
-  white-space: nowrap;
 }
 
 .filter-clear-btn:hover {
@@ -266,7 +265,7 @@
 
 .catalog__grid-row {
   display: flex;
-  gap: 16px;
+  gap: 24px;
 }
 
 .cat-card {
