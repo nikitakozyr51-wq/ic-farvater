@@ -13,7 +13,7 @@
 
 /* LEFT — big sticky title */
 .policy-layout__left {
-  padding: 48px 60px 80px;
+  padding: 48px 60px 80px 0;
   position: sticky;
   top: 64px;
   height: fit-content;
@@ -29,9 +29,13 @@
 
 /* RIGHT — date + all sections */
 .policy-layout__right {
-  padding: 48px 180px 120px 60px;
+  padding: 48px 0 120px 60px;
   display: flex;
   flex-direction: column;
+}
+
+.policy-layout__right > * {
+  max-width: 560px;
 }
 
 .policy-page__date {
@@ -110,7 +114,7 @@
   }
   .policy-layout__left {
     position: static;
-    padding: 48px 24px 32px;
+    padding: 48px 0 32px;
     border-right: none;
     border-bottom: 1px solid var(--color-border);
   }
@@ -119,7 +123,10 @@
     letter-spacing: -1px;
   }
   .policy-layout__right {
-    padding: 40px 24px 80px 24px;
+    padding: 40px 0 80px;
+  }
+  .policy-layout__right > * {
+    max-width: 100%;
   }
   .policy-page__date {
     margin-bottom: 40px;
