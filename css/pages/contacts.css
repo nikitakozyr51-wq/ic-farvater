@@ -52,7 +52,7 @@
 
 .contacts__content-inner {
   display: flex;
-  gap: var(--space-80);
+  gap: 160px;
 }
 
 
@@ -117,7 +117,6 @@
   font-family: var(--font-primary);
   font-size: var(--text-14);
   letter-spacing: 1px;
-  text-transform: uppercase;
   color: var(--color-text);
   outline: none;
 }
@@ -136,7 +135,6 @@
   font-family: var(--font-primary);
   font-size: var(--text-14);
   letter-spacing: 1px;
-  text-transform: uppercase;
   color: var(--color-text);
   resize: none;
   outline: none;
@@ -173,7 +171,7 @@
 
 /* Map Section */
 .map-section {
-  padding: var(--space-80) 120px;
+  padding: var(--space-80) 0;
 }
 
 .map-section__label {
