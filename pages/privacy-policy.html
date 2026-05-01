@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -10,151 +10,198 @@
   <meta name="theme-color" content="#112F6E">
   <link rel="stylesheet" href="../css/reset.css?v=5">
   <link rel="stylesheet" href="../css/variables.css?v=5">
-  <link rel="stylesheet" href="../css/base.css?v=8">
+  <link rel="stylesheet" href="../css/base.css?v=7">
   <link rel="stylesheet" href="../css/layout.css?v=7">
-  <link rel="stylesheet" href="../css/components.css?v=9">
+  <link rel="stylesheet" href="../css/components.css?v=8">
+  <link rel="stylesheet" href="../css/pages/privacy-policy.css?v=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/mobile.css?v=7" media="(max-width: 768px)">
 </head>
 <body>
 
   <!-- Header -->
   <header class="header">
-    <div class="header__inner">
+    <div class="container header__inner">
       <a href="../index.html" class="header__logo">IC FARVATER</a>
-      <nav class="header__nav desktop-only">
-        <a href="../index.html" class="header__link">ГЛАВНАЯ</a>
-        <a href="about.html" class="header__link">О КОМПАНИИ</a>
-        <a href="products.html" class="header__link">ПРОДУКЦИЯ</a>
-        <a href="../index.html#services" class="header__link">УСЛУГИ</a>
-        <a href="contacts.html" class="header__link">КОНТАКТЫ</a>
+      <nav class="header__nav">
+        <a href="products.html" class="header__link">Каталог</a>
+        <a href="about.html" class="header__link">О компании</a>
+        <a href="../index.html#services" class="header__link">Услуги</a>
+        <a href="contacts.html" class="header__link">Контакты</a>
+        <div class="header__nav-contact">
+          <span class="header__nav-contact-label">ТЕЛЕФОН</span>
+          <a href="tel:+79967788842" class="header__nav-contact-value">+7 996 778-88-42</a>
+        </div>
       </nav>
-      <button class="header__burger mobile-only" aria-label="Меню" id="burgerBtn">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="header__burger" aria-label="Меню"><span></span><span></span><span></span></button>
     </div>
   </header>
 
-  <!-- Мобильное меню -->
-  <div class="mobile-menu" id="mobileMenu">
-    <div class="mobile-menu__inner">
-      <nav class="mobile-menu__nav">
-        <a href="../index.html" class="mobile-menu__link">ГЛАВНАЯ</a>
-        <a href="about.html" class="mobile-menu__link">О КОМПАНИИ</a>
-        <a href="products.html" class="mobile-menu__link">ПРОДУКЦИЯ</a>
-        <a href="../index.html#services" class="mobile-menu__link">УСЛУГИ</a>
-        <a href="contacts.html" class="mobile-menu__link">КОНТАКТЫ</a>
-      </nav>
+  <main class="policy-page">
+
+    <!-- Page Top -->
+    <div class="policy-page__top">
+      <div class="container policy-page__top-inner">
+        <div class="policy-page__title-wrap">
+          <h1 class="policy-page__title">ПОЛИТИКА<br>КОНФИДЕНЦИАЛЬНОСТИ</h1>
+          <span class="title-count">(01)</span>
+        </div>
+        <span class="policy-page__date">Редакция от 01.05.2026</span>
+      </div>
     </div>
-  </div>
 
-  <!-- Контент -->
-  <main class="privacy-page">
-    <div class="container">
-      <h1 class="privacy-page__title">ПОЛИТИКА<br>КОНФИДЕНЦИАЛЬНОСТИ</h1>
-      <div class="privacy-page__meta">Редакция от 01.05.2026</div>
+    <!-- Content -->
+    <div class="policy-page__content">
+      <div class="container">
 
-      <div class="privacy-page__body">
-
-        <section class="privacy-section">
-          <h2 class="privacy-section__title">1. ОБЩИЕ ПОЛОЖЕНИЯ</h2>
-          <p>Настоящая Политика конфиденциальности (далее — Политика) определяет порядок обработки и защиты персональных данных физических лиц (далее — Пользователи), передающих свои персональные данные через сайт <strong>ic-farvater.ru</strong> (далее — Сайт).</p>
-          <p>Оператором персональных данных является:</p>
-          <p>
-            <strong>ООО «Айси Фарватер»</strong><br>
+        <div class="policy-row">
+          <div class="policy-row__meta">
+            <span class="policy-row__num">01</span>
+            <h2 class="policy-row__title">ОБЩИЕ ПОЛОЖЕНИЯ</h2>
+          </div>
+          <div class="policy-row__body">
+            <p>Настоящая Политика конфиденциальности (далее — Политика) определяет порядок обработки и защиты персональных данных физических лиц (далее — Пользователи), передающих свои персональные данные через сайт <strong>ic-farvater.ru</strong> (далее — Сайт).</p>
+            <p>Оператором персональных данных является:</p>
+            <p><strong>ООО «Айси Фарватер»</strong><br>
             Юридический адрес: ул. Беринга, д. 1-А, оф. 46-Н, г. Санкт-Петербург, 199397<br>
             Телефон: <a href="tel:+79967788842">+7 (996) 778-88-42</a><br>
-            Email: <a href="mailto:info@ic-farvater.ru">info@ic-farvater.ru</a>
-          </p>
-          <p>Обработка персональных данных осуществляется в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных».</p>
-        </section>
+            Email: <a href="mailto:info@ic-farvater.ru">info@ic-farvater.ru</a></p>
+            <p>Обработка персональных данных осуществляется в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных».</p>
+          </div>
+        </div>
 
-        <section class="privacy-section">
-          <h2 class="privacy-section__title">2. КАКИЕ ДАННЫЕ МЫ СОБИРАЕМ</h2>
-          <p>При заполнении формы обратной связи на Сайте мы собираем следующие персональные данные:</p>
-          <ul>
-            <li>Имя (фамилия, имя, отчество)</li>
-            <li>Адрес электронной почты</li>
-            <li>Номер телефона</li>
-            <li>Текст сообщения (может содержать персональные данные по усмотрению Пользователя)</li>
-          </ul>
-          <p>Мы также получаем технические данные в рамках стандартной работы Сайта: IP-адрес, тип браузера, дата и время обращения. Эти данные обрабатываются в обезличенном виде и не позволяют идентифицировать конкретного пользователя.</p>
-        </section>
+        <div class="policy-row">
+          <div class="policy-row__meta">
+            <span class="policy-row__num">02</span>
+            <h2 class="policy-row__title">КАКИЕ ДАННЫЕ МЫ СОБИРАЕМ</h2>
+          </div>
+          <div class="policy-row__body">
+            <p>При заполнении формы обратной связи на Сайте мы собираем следующие персональные данные:</p>
+            <ul>
+              <li>Имя (фамилия, имя, отчество)</li>
+              <li>Адрес электронной почты</li>
+              <li>Номер телефона</li>
+              <li>Текст сообщения (может содержать персональные данные по усмотрению Пользователя)</li>
+            </ul>
+            <p>Мы также получаем технические данные в рамках стандартной работы Сайта: IP-адрес, тип браузера, дата и время обращения. Эти данные обрабатываются в обезличенном виде и не позволяют идентифицировать конкретного пользователя.</p>
+          </div>
+        </div>
 
-        <section class="privacy-section">
-          <h2 class="privacy-section__title">3. ЦЕЛИ ОБРАБОТКИ ДАННЫХ</h2>
-          <p>Персональные данные обрабатываются исключительно для следующих целей:</p>
-          <ul>
-            <li>Ответ на запросы и обращения Пользователей через форму обратной связи</li>
-            <li>Информирование о продуктах и услугах компании (только при явном согласии)</li>
-            <li>Выполнение требований законодательства Российской Федерации</li>
-          </ul>
-        </section>
+        <div class="policy-row">
+          <div class="policy-row__meta">
+            <span class="policy-row__num">03</span>
+            <h2 class="policy-row__title">ЦЕЛИ ОБРАБОТКИ ДАННЫХ</h2>
+          </div>
+          <div class="policy-row__body">
+            <p>Персональные данные обрабатываются исключительно для следующих целей:</p>
+            <ul>
+              <li>Ответ на запросы и обращения Пользователей через форму обратной связи</li>
+              <li>Информирование о продуктах и услугах компании (только при явном согласии)</li>
+              <li>Выполнение требований законодательства Российской Федерации</li>
+            </ul>
+          </div>
+        </div>
 
-        <section class="privacy-section">
-          <h2 class="privacy-section__title">4. ПРАВОВЫЕ ОСНОВАНИЯ ОБРАБОТКИ</h2>
-          <p>Обработка персональных данных осуществляется на основании:</p>
-          <ul>
-            <li>Согласия субъекта персональных данных (ст. 9 ФЗ-152) — при отправке формы обратной связи</li>
-            <li>Необходимости исполнения договора, стороной которого является субъект персональных данных (ст. 6 ФЗ-152)</li>
-          </ul>
-        </section>
+        <div class="policy-row">
+          <div class="policy-row__meta">
+            <span class="policy-row__num">04</span>
+            <h2 class="policy-row__title">ПРАВОВЫЕ ОСНОВАНИЯ ОБРАБОТКИ</h2>
+          </div>
+          <div class="policy-row__body">
+            <p>Обработка персональных данных осуществляется на основании:</p>
+            <ul>
+              <li>Согласия субъекта персональных данных (ст. 9 ФЗ-152) — при отправке формы обратной связи</li>
+              <li>Необходимости исполнения договора, стороной которого является субъект персональных данных (ст. 6 ФЗ-152)</li>
+            </ul>
+          </div>
+        </div>
 
-        <section class="privacy-section">
-          <h2 class="privacy-section__title">5. ХРАНЕНИЕ И ЗАЩИТА ДАННЫХ</h2>
-          <p>Все персональные данные хранятся на серверах, расположенных на территории Российской Федерации, в соответствии с требованиями ст. 18.1 ФЗ-152.</p>
-          <p>Срок хранения персональных данных: не более 3 (трёх) лет с момента последнего взаимодействия с Пользователем, если иное не предусмотрено законодательством РФ.</p>
-          <p>Мы принимаем технические и организационные меры для защиты персональных данных от несанкционированного доступа, изменения, раскрытия или уничтожения.</p>
-        </section>
+        <div class="policy-row">
+          <div class="policy-row__meta">
+            <span class="policy-row__num">05</span>
+            <h2 class="policy-row__title">ХРАНЕНИЕ И ЗАЩИТА ДАННЫХ</h2>
+          </div>
+          <div class="policy-row__body">
+            <p>Все персональные данные хранятся на серверах, расположенных на территории Российской Федерации, в соответствии с требованиями ст. 18.1 ФЗ-152.</p>
+            <p>Срок хранения персональных данных: не более 3 (трёх) лет с момента последнего взаимодействия с Пользователем, если иное не предусмотрено законодательством РФ.</p>
+            <p>Мы принимаем технические и организационные меры для защиты персональных данных от несанкционированного доступа, изменения, раскрытия или уничтожения.</p>
+          </div>
+        </div>
 
-        <section class="privacy-section">
-          <h2 class="privacy-section__title">6. ПЕРЕДАЧА ДАННЫХ ТРЕТЬИМ ЛИЦАМ</h2>
-          <p>Мы не передаём персональные данные Пользователей третьим лицам, за исключением случаев:</p>
-          <ul>
-            <li>Прямо предусмотренных законодательством Российской Федерации</li>
-            <li>Когда Пользователь дал явное согласие на такую передачу</li>
-          </ul>
-        </section>
+        <div class="policy-row">
+          <div class="policy-row__meta">
+            <span class="policy-row__num">06</span>
+            <h2 class="policy-row__title">ПЕРЕДАЧА ДАННЫХ ТРЕТЬИМ ЛИЦАМ</h2>
+          </div>
+          <div class="policy-row__body">
+            <p>Мы не передаём персональные данные Пользователей третьим лицам, за исключением случаев:</p>
+            <ul>
+              <li>Прямо предусмотренных законодательством Российской Федерации</li>
+              <li>Когда Пользователь дал явное согласие на такую передачу</li>
+            </ul>
+          </div>
+        </div>
 
-        <section class="privacy-section">
-          <h2 class="privacy-section__title">7. COOKIES</h2>
-          <p>Сайт использует файлы cookie — небольшие текстовые файлы, сохраняемые на устройстве Пользователя. Cookie используются для:</p>
-          <ul>
-            <li>Корректной работы Сайта (технические cookie)</li>
-            <li>Анализа посещаемости (статистические cookie — только при наличии согласия)</li>
-          </ul>
-          <p>Пользователь вправе отказаться от использования cookie, изменив настройки браузера. При этом некоторые функции Сайта могут работать некорректно.</p>
-        </section>
+        <div class="policy-row">
+          <div class="policy-row__meta">
+            <span class="policy-row__num">07</span>
+            <h2 class="policy-row__title">COOKIES</h2>
+          </div>
+          <div class="policy-row__body">
+            <p>Сайт использует файлы cookie — небольшие текстовые файлы, сохраняемые на устройстве Пользователя. Cookie используются для:</p>
+            <ul>
+              <li>Корректной работы Сайта (технические cookie)</li>
+              <li>Анализа посещаемости (статистические cookie — только при наличии согласия)</li>
+            </ul>
+            <p>Пользователь вправе отказаться от использования cookie, изменив настройки браузера. При этом некоторые функции Сайта могут работать некорректно.</p>
+          </div>
+        </div>
 
-        <section class="privacy-section">
-          <h2 class="privacy-section__title">8. ПРАВА ПОЛЬЗОВАТЕЛЯ</h2>
-          <p>В соответствии с ФЗ-152 Пользователь имеет право:</p>
-          <ul>
-            <li>Получить информацию об обработке своих персональных данных</li>
-            <li>Потребовать уточнения, блокирования или уничтожения персональных данных</li>
-            <li>Отозвать согласие на обработку персональных данных в любое время</li>
-            <li>Обратиться с жалобой в Роскомнадзор (rkn.gov.ru)</li>
-          </ul>
-          <p>Для реализации своих прав Пользователь может обратиться к Оператору по электронной почте: <a href="mailto:info@ic-farvater.ru">info@ic-farvater.ru</a>. Срок ответа — не более 30 рабочих дней.</p>
-        </section>
+        <div class="policy-row">
+          <div class="policy-row__meta">
+            <span class="policy-row__num">08</span>
+            <h2 class="policy-row__title">ПРАВА ПОЛЬЗОВАТЕЛЯ</h2>
+          </div>
+          <div class="policy-row__body">
+            <p>В соответствии с ФЗ-152 Пользователь имеет право:</p>
+            <ul>
+              <li>Получить информацию об обработке своих персональных данных</li>
+              <li>Потребовать уточнения, блокирования или уничтожения персональных данных</li>
+              <li>Отозвать согласие на обработку персональных данных в любое время</li>
+              <li>Обратиться с жалобой в Роскомнадзор (rkn.gov.ru)</li>
+            </ul>
+            <p>Для реализации своих прав Пользователь может обратиться к Оператору по электронной почте: <a href="mailto:info@ic-farvater.ru">info@ic-farvater.ru</a>. Срок ответа — не более 30 рабочих дней.</p>
+          </div>
+        </div>
 
-        <section class="privacy-section">
-          <h2 class="privacy-section__title">9. ИЗМЕНЕНИЯ ПОЛИТИКИ</h2>
-          <p>Оператор вправе вносить изменения в настоящую Политику. Актуальная версия всегда доступна на данной странице. Продолжение использования Сайта после внесения изменений означает согласие с новой редакцией Политики.</p>
-        </section>
+        <div class="policy-row">
+          <div class="policy-row__meta">
+            <span class="policy-row__num">09</span>
+            <h2 class="policy-row__title">ИЗМЕНЕНИЯ ПОЛИТИКИ</h2>
+          </div>
+          <div class="policy-row__body">
+            <p>Оператор вправе вносить изменения в настоящую Политику. Актуальная версия всегда доступна на данной странице. Продолжение использования Сайта после внесения изменений означает согласие с новой редакцией Политики.</p>
+          </div>
+        </div>
 
-        <section class="privacy-section">
-          <h2 class="privacy-section__title">10. КОНТАКТЫ</h2>
-          <p>По вопросам обработки персональных данных обращайтесь:</p>
-          <p>
-            ООО «Айси Фарватер»<br>
+        <div class="policy-row">
+          <div class="policy-row__meta">
+            <span class="policy-row__num">10</span>
+            <h2 class="policy-row__title">КОНТАКТЫ</h2>
+          </div>
+          <div class="policy-row__body">
+            <p>По вопросам обработки персональных данных обращайтесь:</p>
+            <p>ООО «Айси Фарватер»<br>
             ул. Беринга, д. 1-А, оф. 46-Н, г. Санкт-Петербург, 199397<br>
             Email: <a href="mailto:info@ic-farvater.ru">info@ic-farvater.ru</a><br>
-            Телефон: <a href="tel:+79967788842">+7 (996) 778-88-42</a>
-          </p>
-        </section>
+            Телефон: <a href="tel:+79967788842">+7 (996) 778-88-42</a></p>
+          </div>
+        </div>
 
       </div>
     </div>
+
   </main>
 
   <!-- Footer -->
@@ -189,12 +236,13 @@
     </div>
   </div></footer>
 
-  <script src="../js/main.js?v=5" defer></script>
+  <script src="../js/main.js?v=6" defer></script>
 
   <!-- Cookie Banner -->
   <div class="cookie-banner" id="cookieBanner">
     <p class="cookie-banner__text">Мы используем файлы cookie для корректной работы сайта. Продолжая использовать сайт, вы соглашаетесь с нашей <a href="privacy-policy.html">Политикой конфиденциальности</a>.</p>
     <button class="cookie-banner__btn" type="button">Принять</button>
   </div>
+
 </body>
 </html>

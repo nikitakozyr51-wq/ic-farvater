@@ -1,0 +1,137 @@
+/* ===== PRIVACY POLICY PAGE ===== */
+
+.policy-page {
+  margin-top: 64px;
+}
+
+/* Page Top */
+.policy-page__top {
+  padding: 48px 0 80px;
+}
+
+.policy-page__top-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.policy-page__title-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.policy-page__title {
+  font-size: var(--text-72);
+  font-weight: 500;
+  letter-spacing: -2px;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.policy-page__date {
+  font-size: var(--text-14);
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  color: var(--color-text-muted);
+  padding-top: 12px;
+  text-transform: uppercase;
+}
+
+/* Content rows — two-column editorial */
+.policy-page__content {
+  padding-bottom: 80px;
+}
+
+.policy-row {
+  display: flex;
+  gap: 80px;
+  padding: 48px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.policy-row__meta {
+  width: 400px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.policy-row__num {
+  font-size: var(--text-14);
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--color-text-muted);
+}
+
+.policy-row__title {
+  font-size: var(--text-24);
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+.policy-row__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.policy-row__body p {
+  font-size: var(--text-16);
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+.policy-row__body ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.policy-row__body li {
+  font-size: var(--text-16);
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--color-text);
+  display: flex;
+  gap: 12px;
+}
+
+.policy-row__body li::before {
+  content: "—";
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
+.policy-row__body a {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .policy-page__top-inner {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .policy-page__title {
+    font-size: var(--text-40);
+    letter-spacing: -1px;
+  }
+  .policy-row {
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px 0;
+  }
+  .policy-row__meta {
+    width: 100%;
+  }
+}
