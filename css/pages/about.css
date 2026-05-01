@@ -92,7 +92,16 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  background: none;
+  border: none;
   padding: 24px 0;
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+}
+
+.cert-row__header:hover {
+  opacity: 0.6;
 }
 
 .cert-row__left {
@@ -117,10 +126,40 @@
   color: var(--color-text);
 }
 
-.cert-row__arrow {
+.cert-row__toggle--closed {
   font-size: var(--text-14);
   color: var(--color-text-muted);
   flex-shrink: 0;
+}
+
+.cert-row__toggle--open {
+  font-size: var(--text-24);
+  color: var(--color-text);
+  flex-shrink: 0;
+  display: none;
+}
+
+.cert-row--open .cert-row__toggle--closed { display: none; }
+.cert-row--open .cert-row__toggle--open { display: block; }
+
+.cert-row__body {
+  display: none;
+  padding: 32px 0 40px;
+}
+
+.cert-row--open .cert-row__body {
+  display: block;
+}
+
+.cert-row__photo {
+  width: 652px;
+  background: var(--color-bg-alt);
+}
+
+.cert-row__photo img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Mobile cert cards (kept from v1) */

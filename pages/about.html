@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="../css/base.css?v=7">
   <link rel="stylesheet" href="../css/layout.css?v=7">
   <link rel="stylesheet" href="../css/components.css?v=8">
-  <link rel="stylesheet" href="../css/pages/about.css?v=6">
+  <link rel="stylesheet" href="../css/pages/about.css?v=7">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/animations.css?v=5">
@@ -93,12 +93,18 @@
         </div>
         <div class="certs-grid" data-animate="fade-up-stagger">
           <div class="cert-row">
-            <div class="cert-row__header">
+            <button class="cert-row__header" aria-expanded="false">
               <div class="cert-row__left">
                 <span class="cert-row__number">01</span>
                 <span class="cert-row__name">ISO 9001:2015</span>
               </div>
-              <span class="cert-row__arrow">↗</span>
+              <span class="cert-row__toggle cert-row__toggle--closed">↗</span>
+              <span class="cert-row__toggle cert-row__toggle--open">—</span>
+            </button>
+            <div class="cert-row__body">
+              <div class="cert-row__photo">
+                <img src="../assets/images/zkWqx.webp" alt="Сертификат ISO 9001:2015" loading="lazy">
+              </div>
             </div>
           </div>
         </div>
