@@ -79,12 +79,11 @@
 .mission__image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
-/* Certs Section — v2 accordion rows */
+/* Certs Section */
 .cert-row {
-  padding: 24px 0 40px;
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -93,16 +92,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  font-family: inherit;
-  color: inherit;
-}
-
-.cert-row__header:hover {
-  opacity: 0.6;
+  padding: 24px 0;
 }
 
 .cert-row__left {
@@ -127,36 +117,10 @@
   color: var(--color-text);
 }
 
-.cert-row__toggle {
-  font-size: var(--text-24);
-  font-weight: 400;
-  color: var(--color-text);
+.cert-row__arrow {
+  font-size: var(--text-14);
+  color: var(--color-text-muted);
   flex-shrink: 0;
-  transition: transform 0.3s;
-}
-
-.cert-row--open .cert-row__toggle {
-  transform: rotate(90deg);
-}
-
-.cert-row__body {
-  display: none !important;
-  padding-top: 32px;
-}
-
-.cert-row--open .cert-row__body {
-  display: block !important;
-}
-
-.cert-row__photo {
-  width: 652px;
-  background: var(--color-bg-alt);
-}
-
-.cert-row__photo img {
-  width: 100%;
-  height: auto;
-  display: block;
 }
 
 /* Mobile cert cards (kept from v1) */
