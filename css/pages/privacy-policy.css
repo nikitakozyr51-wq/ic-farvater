@@ -7,12 +7,12 @@
 /* Page Top */
 .policy-page__top {
   padding: 48px 0 80px;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .policy-page__top-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .policy-page__title-wrap {
@@ -36,26 +36,27 @@
   color: var(--color-text-muted);
   padding-top: 12px;
   text-transform: uppercase;
+  align-self: end;
 }
 
-/* Content rows — two-column editorial */
+/* Content rows — two-column editorial (50/50 grid) */
 .policy-page__content {
   padding-bottom: 80px;
 }
 
 .policy-row {
-  display: flex;
-  gap: 80px;
-  padding: 48px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 48px;
+  padding: 64px 0;
   border-top: 1px solid var(--color-border);
 }
 
 .policy-row__meta {
-  width: 400px;
-  flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
+  padding-right: 24px;
 }
 
 .policy-row__num {
@@ -63,6 +64,7 @@
   font-weight: 600;
   letter-spacing: 1px;
   color: var(--color-text-muted);
+  text-transform: uppercase;
 }
 
 .policy-row__title {
@@ -74,24 +76,28 @@
   line-height: 1.2;
 }
 
+/* Right column — body text */
 .policy-row__body {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
 }
 
 .policy-row__body p {
   font-size: var(--text-16);
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.75;
   color: var(--color-text);
+}
+
+.policy-row__body strong {
+  font-weight: 600;
 }
 
 .policy-row__body ul {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
   padding-left: 0;
   list-style: none;
 }
@@ -99,10 +105,10 @@
 .policy-row__body li {
   font-size: var(--text-16);
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.75;
   color: var(--color-text);
   display: flex;
-  gap: 12px;
+  gap: 14px;
 }
 
 .policy-row__body li::before {
@@ -116,10 +122,10 @@
   text-decoration: underline;
 }
 
-/* Responsive */
+/* Mobile */
 @media (max-width: 768px) {
   .policy-page__top-inner {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 24px;
   }
   .policy-page__title {
@@ -127,11 +133,11 @@
     letter-spacing: -1px;
   }
   .policy-row {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 24px;
-    padding: 32px 0;
+    padding: 40px 0;
   }
   .policy-row__meta {
-    width: 100%;
+    padding-right: 0;
   }
 }
