@@ -64,17 +64,17 @@
 
 .catalog__content-inner {
   display: flex;
-  gap: 48px;
-  padding-top: 48px;
+  gap: 96px;
 }
 
 
 /* ===== SIDEBAR — v2 accordion filters ===== */
 .catalog__sidebar {
-  width: 200px;
+  width: 240px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
+  padding-top: 12px;
   position: sticky;
   top: 80px;
   align-self: flex-start;
