@@ -43,14 +43,30 @@ function initCertAccordion() {
   });
 }
 
-/** Service accordion toggle */
+/** Service accordion — one open at a time */
 function initServiceAccordion() {
-  document.querySelectorAll('.service-row__header').forEach(btn => {
+  const items = document.querySelectorAll('.service-item');
+  if (!items.length) return;
+
+  items.forEach(item => {
+    const btn = item.querySelector('.service-item__header');
+    if (!btn) return;
+
     btn.addEventListener('click', () => {
-      const row = btn.closest('.service-row');
-      const isOpen = row.classList.toggle('service-row--open');
-      btn.setAttribute('aria-expanded', isOpen);
-      btn.querySelector('.service-row__arrow').textContent = isOpen ? '—' : '→';
+      const isOpen = item.classList.contains('service-item--open');
+
+      // Close all
+      items.forEach(i => {
+        i.classList.remove('service-item--open');
+        const b = i.querySelector('.service-item__header');
+        if (b) b.setAttribute('aria-expanded', 'false');
+      });
+
+      // Open clicked (unless it was already open)
+      if (!isOpen) {
+        item.classList.add('service-item--open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
     });
   });
 }
