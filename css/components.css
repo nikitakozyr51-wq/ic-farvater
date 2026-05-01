@@ -732,6 +732,103 @@ p.product-card__desc {
   transform: translateX(-50%) rotate(90deg);
 }
 
+/* ===== PRIVACY POLICY PAGE ===== */
+.privacy-page {
+  padding-top: 128px;
+  padding-bottom: 80px;
+}
+.privacy-page .container {
+  max-width: 800px;
+}
+.privacy-page__title {
+  margin-bottom: 8px;
+}
+.privacy-page__meta {
+  font-size: var(--text-14);
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  margin-bottom: 64px;
+}
+.privacy-section {
+  border-top: 1px solid var(--color-border);
+  padding-top: 32px;
+  margin-bottom: 32px;
+}
+.privacy-section__title {
+  font-size: var(--text-14);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 16px;
+}
+.privacy-section p {
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+.privacy-section ul {
+  padding-left: 24px;
+  margin-bottom: 12px;
+}
+.privacy-section ul li {
+  margin-bottom: 6px;
+  line-height: 1.7;
+}
+.privacy-section a {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
+/* ===== COOKIE BANNER ===== */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  background: var(--color-text);
+  color: var(--color-bg);
+  padding: 20px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border-top: 1px solid var(--color-border);
+}
+.cookie-banner.cookie-banner--hidden {
+  display: none;
+}
+.cookie-banner__text {
+  font-size: var(--text-14);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-bg);
+}
+.cookie-banner__text a {
+  color: var(--color-bg);
+  text-decoration: underline;
+}
+.cookie-banner__btn {
+  flex-shrink: 0;
+  padding: 12px 28px;
+  background: var(--color-bg);
+  color: var(--color-text);
+  border: none;
+  border-radius: 100px;
+  font-family: var(--font-primary);
+  font-size: var(--text-14);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.cookie-banner__btn:hover {
+  opacity: 0.85;
+}
+
 /* Body: hidden by default, animates via grid */
 .service-item__body {
   display: grid;

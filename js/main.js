@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCertAccordion();
   initServiceAccordion();
   initContactForm();
+  initCookieBanner();
 });
 
 /** Mobile burger menu toggle */
@@ -97,5 +98,23 @@ function initServiceAccordion() {
       }
     });
   });
+}
+
+/** Cookie consent banner */
+function initCookieBanner() {
+  const banner = document.getElementById('cookieBanner');
+  if (!banner) return;
+  if (localStorage.getItem('cookieAccepted') === 'true') {
+    banner.classList.add('cookie-banner--hidden');
+    return;
+  }
+  banner.classList.remove('cookie-banner--hidden');
+  const btn = banner.querySelector('.cookie-banner__btn');
+  if (btn) {
+    btn.addEventListener('click', () => {
+      localStorage.setItem('cookieAccepted', 'true');
+      banner.classList.add('cookie-banner--hidden');
+    });
+  }
 }
 

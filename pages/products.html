@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -17,12 +17,10 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="../css/reset.css?v=5">
   <link rel="stylesheet" href="../css/variables.css?v=5">
-  <link rel="stylesheet" href="../css/base.css?v=7">
+  <link rel="stylesheet" href="../css/base.css?v=8">
   <link rel="stylesheet" href="../css/layout.css?v=7">
-  <link rel="stylesheet" href="../css/components.css?v=8">
+  <link rel="stylesheet" href="../css/components.css?v=9">
   <link rel="stylesheet" href="../css/pages/products.css?v=10">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/animations.css?v=5">
   <link rel="stylesheet" href="../css/mobile.css?v=7" media="(max-width: 768px)">
 </head>
@@ -218,13 +216,13 @@
     <div class="footer__brand">IC FARVATER</div>
     <div class="footer__bottom">
       <span>&copy; 2026 IC ФАРВАТЕР</span>
-      <span>ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</span>
+      <a href="privacy-policy.html" class="footer__link">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
     </div>
   </div></footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js?v=5" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/gsap.min.js?v=5" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/ScrollTrigger.min.js?v=5" defer></script>
+  <script src="../js/vendor/lenis.min.js" defer></script>
+  <script src="../js/vendor/gsap.min.js" defer></script>
+  <script src="../js/vendor/ScrollTrigger.min.js" defer></script>
   <script src="../js/products.js?v=5" defer></script>
   <script src="../js/connectors-data.js?v=12" defer></script>
   <script src="../js/connectors-parsers.js?v=5" defer></script>
@@ -233,5 +231,10 @@
   <script src="../js/catalog.js?v=12" defer></script>
   <script src="../js/main.js?v=5" defer></script>
   <script src="../js/animations.js?v=5" defer></script>
+  <!-- Cookie Banner -->
+  <div class="cookie-banner" id="cookieBanner">
+    <p class="cookie-banner__text">Мы используем файлы cookie для корректной работы сайта. Продолжая использовать сайт, вы соглашаетесь с нашей <a href="privacy-policy.html">Политикой конфиденциальности</a>.</p>
+    <button class="cookie-banner__btn" type="button">Принять</button>
+  </div>
 </body>
 </html>
