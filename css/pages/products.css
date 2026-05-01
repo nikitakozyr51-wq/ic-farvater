@@ -65,6 +65,7 @@
 .catalog__content-inner {
   display: flex;
   gap: 48px;
+  padding-top: 48px;
 }
 
 
@@ -176,14 +177,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
-  border: 1px solid var(--color-border);
+  width: 24px;
+  height: 24px;
+  background: var(--color-text);
   border-radius: 100px;
   font-family: inherit;
-  font-size: var(--text-14);
+  font-size: 11px;
   font-weight: 600;
-  color: var(--color-text);
+  color: var(--color-bg);
   flex-shrink: 0;
 }
 
@@ -199,7 +200,7 @@
   color: var(--color-bg);
   border: none;
   border-radius: 100px;
-  padding: 14px 0;
+  padding: 10px 16px;
   text-align: center;
   transition: opacity 0.2s;
 }
