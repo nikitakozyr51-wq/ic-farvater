@@ -95,7 +95,11 @@
         </div>
 
         <!-- Contact Form (right) -->
-        <form class="contact-form" id="contactForm" data-animate="fade-up">
+        <form class="contact-form" id="contactForm" data-animate="fade-up"
+              action="https://formsubmit.co/info@ic-farvater.ru" method="POST">
+          <input type="hidden" name="_subject" value="Новая заявка с сайта IC Farvater">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://nikitakozyr51-wq.github.io/ic-farvater/pages/contacts.html">
           <span class="contact-form__title">НАПИСАТЬ НАМ</span>
           <input type="text" class="contact-form__field" name="name" placeholder="ИМЯ" required>
           <input type="email" class="contact-form__field" name="email" placeholder="ЭЛЕКТРОННАЯ ПОЧТА" required>
