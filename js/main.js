@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initCertAccordion();
   initServiceAccordion();
+  initContactForm();
 });
 
 /** Mobile burger menu toggle */
@@ -29,6 +30,33 @@ function initMobileMenu() {
       burger.classList.remove('header__burger--open');
       burger.setAttribute('aria-expanded', 'false');
     });
+  });
+}
+
+/** Contact form → mailto */
+function initContactForm() {
+  const form = document.getElementById('contactForm');
+  if (!form) return;
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name    = form.querySelector('[name="name"]').value.trim();
+    const email   = form.querySelector('[name="email"]').value.trim();
+    const phone   = form.querySelector('[name="phone"]').value.trim();
+    const message = form.querySelector('[name="message"]').value.trim();
+
+    const body = [
+      `Имя: ${name}`,
+      `Email: ${email}`,
+      phone ? `Телефон: ${phone}` : '',
+      `\nСообщение:\n${message}`,
+    ].filter(Boolean).join('\n');
+
+    const mailto = `mailto:info@ic-farvater.ru`
+      + `?subject=${encodeURIComponent('Заявка с сайта IC Farvater — ' + name)}`
+      + `&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailto;
   });
 }
 
