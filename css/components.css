@@ -1097,6 +1097,8 @@ p.product-card__desc {
 
 .footer__link {
   display: block;
+  position: relative;
+  padding-left: 32px;
   font-size: var(--text-label);
   font-weight: 500;
   letter-spacing: 1px;
@@ -1107,7 +1109,9 @@ p.product-card__desc {
 }
 
 .footer__link::before {
-  content: "( )\00a0\00a0";
+  content: "( )";
+  position: absolute;
+  left: 0;
 }
 
 .footer__link:hover {
@@ -1115,7 +1119,7 @@ p.product-card__desc {
 }
 
 .footer__link:hover::before {
-  content: "(•)\00a0\00a0";
+  content: "(•)";
 }
 
 .footer__contacts {
