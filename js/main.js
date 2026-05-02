@@ -37,33 +37,52 @@ function initHeaderScroll() {
   }, { passive: true });
 }
 
-/** Header pill search — redirect to products or trigger catalog */
+/** Header search toggle — open on icon click, redirect on submit */
 function initHeaderSearch() {
-  const form = document.querySelector('.header__search');
-  if (!form) return;
+  const header = document.querySelector('.header');
+  const toggle = document.querySelector('.header__search-toggle');
+  const box = document.querySelector('.header__search-box');
+  const input = document.querySelector('.header__search-input');
+  const submit = document.querySelector('.header__search-submit');
 
-  const input = form.querySelector('.header__search-input');
-  if (!input) return;
+  if (!header || !toggle || !box || !input) return;
 
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const q = input.value.trim();
-    if (!q) return;
+  function openSearch() {
+    header.classList.add('header--search-open');
+    box.setAttribute('aria-hidden', 'false');
+    toggle.setAttribute('aria-expanded', 'true');
+    requestAnimationFrame(() => input.focus());
+  }
 
-    const onProducts = window.location.pathname.includes('products.html');
-    if (onProducts) {
-      const catalogInput = document.querySelector('.catalog__search-input');
-      if (catalogInput) {
-        catalogInput.value = q;
-        catalogInput.dispatchEvent(new Event('input', { bubbles: true }));
-        const catalog = document.querySelector('.catalog, .section--catalog');
-        if (catalog) catalog.scrollIntoView({ behavior: 'smooth' });
-      }
-    } else {
-      const base = window.location.pathname.includes('/pages/') ? 'products.html' : 'pages/products.html';
-      window.location.href = `${base}?search=${encodeURIComponent(q)}`;
-    }
+  function closeSearch() {
+    header.classList.remove('header--search-open');
+    box.setAttribute('aria-hidden', 'true');
+    toggle.setAttribute('aria-expanded', 'false');
     input.value = '';
+  }
+
+  function doSearch() {
+    const q = input.value.trim();
+    if (!q) { closeSearch(); return; }
+    const base = window.location.pathname.includes('/pages/') ? 'products.html' : 'pages/products.html';
+    window.location.href = `${base}?search=${encodeURIComponent(q)}`;
+  }
+
+  toggle.addEventListener('click', () => {
+    header.classList.contains('header--search-open') ? closeSearch() : openSearch();
+  });
+
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') doSearch();
+    if (e.key === 'Escape') closeSearch();
+  });
+
+  if (submit) submit.addEventListener('click', doSearch);
+
+  document.addEventListener('click', (e) => {
+    if (header.classList.contains('header--search-open') && !e.target.closest('.header__search-wrap')) {
+      closeSearch();
+    }
   });
 }
 

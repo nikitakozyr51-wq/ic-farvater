@@ -12,10 +12,10 @@
   <link rel="stylesheet" href="../css/variables.css?v=5">
   <link rel="stylesheet" href="../css/base.css?v=8">
   <link rel="stylesheet" href="../css/layout.css?v=7">
-  <link rel="stylesheet" href="../css/components.css?v=11">
+  <link rel="stylesheet" href="../css/components.css?v=12">
   <link rel="stylesheet" href="../css/pages/product-detail.css?v=5">
   <link rel="stylesheet" href="../css/animations.css?v=5">
-  <link rel="stylesheet" href="../css/mobile.css?v=9" media="(max-width: 768px)">
+  <link rel="stylesheet" href="../css/mobile.css?v=10" media="(max-width: 768px)">
 </head>
 <body>
 
@@ -24,6 +24,22 @@
     <div class="container header__inner">
       <a href="../index.html" class="header__logo">IC FARVATER</a>
       <nav class="header__nav">
+        <div class="header__search-wrap">
+          <button class="header__search-toggle" aria-label="Поиск" aria-expanded="false">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M11 11L14.5 14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <div class="header__search-box" aria-hidden="true">
+            <input type="text" class="header__search-input" placeholder="ПОИСК..." autocomplete="off" aria-label="Поиск по каталогу">
+            <button class="header__search-submit" type="button" aria-label="Найти">
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+                <path d="M1 6.5H12M8 2L12 6.5L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
         <a href="products.html" class="header__link header__link--active">Каталог</a>
         <a href="about.html" class="header__link">О компании</a>
         <a href="../index.html#services" class="header__link">Услуги</a>
@@ -33,18 +49,6 @@
           <a href="tel:+79967788842" class="header__nav-contact-value">+7 996 778-88-42</a>
         </div>
       </nav>
-      <form class="header__search" role="search">
-        <svg class="header__search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-          <circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.5"/>
-          <path d="M11 11L14.5 14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
-        <input type="text" class="header__search-input" placeholder="ПОИСК..." autocomplete="off" aria-label="Поиск по каталогу">
-        <button type="submit" class="header__search-submit" aria-label="Найти">
-          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
-            <path d="M1 6.5H12M8 2L12 6.5L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </button>
-      </form>
       <button class="header__burger" aria-label="Меню"><span></span><span></span><span></span></button>
     </div>
   </header>
@@ -131,7 +135,7 @@
   <script src="../js/vendor/ScrollTrigger.min.js" defer></script>
   <script src="../js/products.js?v=5" defer></script>
   <script src="../js/product-detail.js?v=5" defer></script>
-  <script src="../js/main.js?v=6" defer></script>
+  <script src="../js/main.js?v=7" defer></script>
   <script src="../js/animations.js?v=5" defer></script>
   <!-- Cookie Banner -->
   <div class="cookie-banner" id="cookieBanner">

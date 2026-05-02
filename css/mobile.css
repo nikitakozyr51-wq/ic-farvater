@@ -38,7 +38,7 @@ h3 {
 
 
 /* ===== HEADER — 56px + fullscreen menu ===== */
-.header__search {
+.header__search-wrap {
   display: none;
 }
 
