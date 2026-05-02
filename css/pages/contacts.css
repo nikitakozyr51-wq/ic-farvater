@@ -198,6 +198,20 @@
   transform: scale(0.97);
 }
 
+.contact-form__submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.contact-form__msg {
+  font-size: var(--text-14);
+  line-height: 1.5;
+  padding: 12px 16px;
+  border-left: 2px solid currentColor;
+}
+
+.contact-form__msg--ok  { color: #2a7a4b; }
+.contact-form__msg--err { color: #b03a2e; }
 
 /* Map Section */
 .map-section {

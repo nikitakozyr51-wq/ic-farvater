@@ -85,31 +85,47 @@ function initMobileMenu() {
   });
 }
 
-/** Contact form → mailto */
+/** Contact form → /scripts/send.php */
 function initContactForm() {
   const form = document.getElementById('contactForm');
   if (!form) return;
 
-  form.addEventListener('submit', (e) => {
+  const btn = form.querySelector('.contact-form__submit');
+
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const name    = form.querySelector('[name="name"]').value.trim();
-    const email   = form.querySelector('[name="email"]').value.trim();
-    const phone   = form.querySelector('[name="phone"]').value.trim();
-    const message = form.querySelector('[name="message"]').value.trim();
 
-    const body = [
-      `Имя: ${name}`,
-      `Email: ${email}`,
-      phone ? `Телефон: ${phone}` : '',
-      `\nСообщение:\n${message}`,
-    ].filter(Boolean).join('\n');
+    const data = new FormData(form);
+    if (btn) { btn.disabled = true; btn.textContent = 'ОТПРАВКА...'; }
+    removeFormMessage(form);
 
-    const mailto = `mailto:info@ic-farvater.ru`
-      + `?subject=${encodeURIComponent('Заявка с сайта IC Farvater — ' + name)}`
-      + `&body=${encodeURIComponent(body)}`;
+    try {
+      const res = await fetch('/scripts/send.php', { method: 'POST', body: data });
+      const json = await res.json();
 
-    window.location.href = mailto;
+      if (json.ok) {
+        showFormMessage(form, 'Спасибо! Мы свяжемся с вами в течение рабочего дня.', true);
+        form.reset();
+      } else {
+        showFormMessage(form, json.error || 'Произошла ошибка. Попробуйте позже.', false);
+      }
+    } catch {
+      showFormMessage(form, 'Нет соединения с сервером. Напишите нам: info@ic-farvater.ru', false);
+    } finally {
+      if (btn) { btn.disabled = false; btn.textContent = 'ОТПРАВИТЬ'; }
+    }
   });
+}
+
+function showFormMessage(form, text, success) {
+  const el = document.createElement('p');
+  el.className = 'contact-form__msg contact-form__msg--' + (success ? 'ok' : 'err');
+  el.textContent = text;
+  form.appendChild(el);
+}
+
+function removeFormMessage(form) {
+  form.querySelectorAll('.contact-form__msg').forEach(el => el.remove());
 }
 
 /** Cert accordion toggle */
