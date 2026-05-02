@@ -126,9 +126,14 @@
     }
   }
 
-  document.addEventListener('DOMContentLoaded', function() {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      render();
+      initPriceDrawer();
+    });
+  } else {
     render();
     initPriceDrawer();
-  });
+  }
   window.addEventListener('hashchange', render);
 })();

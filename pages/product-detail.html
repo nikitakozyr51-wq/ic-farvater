@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="../css/base.css?v=8">
   <link rel="stylesheet" href="../css/layout.css?v=7">
   <link rel="stylesheet" href="../css/components.css?v=12">
-  <link rel="stylesheet" href="../css/pages/product-detail.css?v=7">
+  <link rel="stylesheet" href="../css/pages/product-detail.css?v=8">
   <link rel="stylesheet" href="../css/animations.css?v=5">
   <link rel="stylesheet" href="../css/mobile.css?v=11" media="(max-width: 768px)">
 </head>
@@ -96,7 +96,7 @@
           </div>
 
           <div class="product-detail__actions">
-            <button class="product-detail__btn">ЗАПРОСИТЬ ЦЕНУ</button>
+            <button class="product-detail__btn" type="button">ЗАПРОСИТЬ ЦЕНУ</button>
             <a href="products.html" class="product-detail__back">НАЗАД К КАТАЛОГУ</a>
           </div>
         </div>
@@ -152,10 +152,22 @@
       </div>
       <div class="price-drawer__product-name" id="drawerProductName"></div>
       <form class="price-drawer__form" id="priceDrawerForm" novalidate>
-        <input type="text" class="price-drawer__input" name="name" placeholder="ИМЯ" required autocomplete="name">
-        <input type="email" class="price-drawer__input" name="email" placeholder="ЭЛЕКТРОННАЯ ПОЧТА" required autocomplete="email">
-        <input type="tel" class="price-drawer__input" name="phone" placeholder="ТЕЛЕФОН" autocomplete="tel">
-        <textarea class="price-drawer__textarea" name="message" placeholder="КОММЕНТАРИЙ К ЗАПРОСУ"></textarea>
+        <label class="price-drawer__field">
+          <span class="price-drawer__field-label">ИМЯ</span>
+          <input type="text" class="price-drawer__input" name="name" placeholder="ИМЯ" required autocomplete="name">
+        </label>
+        <label class="price-drawer__field">
+          <span class="price-drawer__field-label">ЭЛЕКТРОННАЯ ПОЧТА</span>
+          <input type="email" class="price-drawer__input" name="email" placeholder="ЭЛЕКТРОННАЯ ПОЧТА" required autocomplete="email">
+        </label>
+        <label class="price-drawer__field">
+          <span class="price-drawer__field-label">ТЕЛЕФОН</span>
+          <input type="tel" class="price-drawer__input" name="phone" placeholder="ТЕЛЕФОН" autocomplete="tel">
+        </label>
+        <label class="price-drawer__field">
+          <span class="price-drawer__field-label">КОММЕНТАРИЙ</span>
+          <textarea class="price-drawer__textarea" name="message" placeholder="КОММЕНТАРИЙ К ЗАПРОСУ"></textarea>
+        </label>
         <label class="price-drawer__consent">
           <input type="checkbox" name="consent" required>
           <span>Согласен(на) на обработку персональных данных в соответствии с <a href="privacy-policy.html">Политикой конфиденциальности</a></span>
@@ -187,7 +199,7 @@
   <script src="../js/vendor/gsap.min.js" defer></script>
   <script src="../js/vendor/ScrollTrigger.min.js" defer></script>
   <script src="../js/products.js?v=5" defer></script>
-  <script src="../js/product-detail.js?v=6" defer></script>
+  <script src="../js/product-detail.js?v=7" defer></script>
   <script src="../js/main.js?v=7" defer></script>
   <script src="../js/animations.js?v=5" defer></script>
   <!-- Cookie Banner -->
