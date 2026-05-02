@@ -1,11 +1,11 @@
 /* ===== PRIVACY POLICY PAGE ===== */
 
-.privacy-page {
+.pp-inverted {
   --color-bg: #112F6E;
   --color-text: #F5F3EF;
 }
 
-.privacy-page .footer {
+.pp-inverted .footer {
   --color-bg: #F5F3EF;
   --color-text: #112F6E;
 }
