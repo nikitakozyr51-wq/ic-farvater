@@ -237,12 +237,15 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   border-radius: 100px;
+  border: 1px solid var(--color-bg);
   text-decoration: none;
-  transition: opacity 0.2s;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 }
 
 .hero__btn:hover {
-  opacity: 0.8;
+  background: transparent;
+  color: var(--color-bg);
+  border-color: var(--color-bg);
 }
 
 /* ===== ABOUT BLOCK ===== */
@@ -399,23 +402,36 @@
   text-transform: uppercase;
   border-radius: 100px;
   border: 1px solid var(--color-text);
-  transition: opacity 0.2s;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 }
 
 .btn-pill:hover {
-  opacity: 0.75;
+  background: transparent;
+  color: var(--color-text);
 }
 
 .btn-pill--white-solid {
-  background: #F5F3EF;
+  background: var(--color-bg);
   color: var(--color-text);
-  border-color: #F5F3EF;
+  border-color: var(--color-bg);
+}
+
+.btn-pill--white-solid:hover {
+  background: transparent;
+  color: var(--color-bg);
+  border-color: var(--color-bg);
 }
 
 .btn-pill--white-outline {
   background: transparent;
-  color: #F5F3EF;
-  border-color: #F5F3EF;
+  color: var(--color-bg);
+  border-color: var(--color-bg);
+}
+
+.btn-pill--white-outline:hover {
+  background: var(--color-bg);
+  color: var(--color-text);
+  border-color: var(--color-bg);
 }
 
 /* ===== CABLES SPLIT (50/50) ===== */
@@ -1007,7 +1023,7 @@ p.product-card__desc {
   letter-spacing: 1px;
   text-transform: uppercase;
   cursor: pointer;
-  transition: opacity 0.2s;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 }
 
 .btn:active {
@@ -1023,7 +1039,8 @@ p.product-card__desc {
 }
 
 .btn--primary:hover {
-  opacity: 0.75;
+  background: transparent;
+  color: var(--color-text);
 }
 
 .btn--outline {
@@ -1035,7 +1052,8 @@ p.product-card__desc {
 }
 
 .btn--outline:hover {
-  opacity: 0.75;
+  background: var(--color-text);
+  color: var(--color-bg);
 }
 
 .btn--sm {
