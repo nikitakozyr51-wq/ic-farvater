@@ -245,15 +245,22 @@
 }
 
 .catalog__search-btn {
-  font-family: inherit;
-  font-size: var(--text-16);
-  font-weight: 500;
-  color: var(--color-text);
-  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 100px;
+  background: var(--color-text);
+  color: var(--color-bg);
   border: none;
   cursor: pointer;
-  padding: 0;
   flex-shrink: 0;
+  transition: opacity 0.2s;
+}
+
+.catalog__search-btn:hover {
+  opacity: 0.75;
 }
 
 
