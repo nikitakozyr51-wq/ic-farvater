@@ -5,8 +5,8 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
-  initHeaderScroll();
   initHeaderSearch();
+  initActiveNavLink();
   initCertAccordion();
   initServiceAccordion();
   initContactForm();
@@ -83,6 +83,24 @@ function initMobileMenu() {
       burger.setAttribute('aria-expanded', 'false');
     });
   });
+}
+
+/** Highlight the nav link matching current page or hash */
+function initActiveNavLink() {
+  const links = document.querySelectorAll('.header__link');
+  if (!links.length) return;
+
+  function syncHash() {
+    const hash = window.location.hash;
+    if (!hash) return;
+    links.forEach(link => {
+      const href = link.getAttribute('href');
+      link.classList.toggle('header__link--active', href === hash || href.endsWith(hash));
+    });
+  }
+
+  syncHash();
+  window.addEventListener('hashchange', syncHash);
 }
 
 /** Contact form → /scripts/send.php */
