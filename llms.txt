@@ -9,18 +9,18 @@
 - Режим работы: пн–пт 10:00–18:00
 
 ## Страницы
-- [Главная](https://nikitakozyr51-wq.github.io/ic-farvater/): обзор компании и направлений
-- [О компании](https://nikitakozyr51-wq.github.io/ic-farvater/pages/about.html): история, лаборатория, сертификация
-- [Каталог](https://nikitakozyr51-wq.github.io/ic-farvater/pages/products.html): вся продукция
-- [Контакты](https://nikitakozyr51-wq.github.io/ic-farvater/pages/contacts.html): адрес, телефоны, карта
+- [Главная](https://ic-farvater.ru/): обзор компании и направлений
+- [О компании](https://ic-farvater.ru/pages/about.html): история, лаборатория, сертификация
+- [Каталог](https://ic-farvater.ru/pages/products.html): вся продукция
+- [Контакты](https://ic-farvater.ru/pages/contacts.html): адрес, телефоны, карта
 
 ## Продукция
-- [Микросхемы](https://nikitakozyr51-wq.github.io/ic-farvater/pages/microchips-detail.html): цифровые и аналоговые ИС, АЦП/ЦАП, процессоры, контроллеры питания
-- [СВЧ-транзисторы LDMOS](https://nikitakozyr51-wq.github.io/ic-farvater/pages/transistors-detail.html): для усилителей мощности, связи, радиолокации
-- [Печатные платы](https://nikitakozyr51-wq.github.io/ic-farvater/pages/pcb-detail.html): ОПП, ДПП, МПП до 40 слоёв, СВЧ, гибкие
-- [Разъёмы ЕТ-серии](https://nikitakozyr51-wq.github.io/ic-farvater/pages/connector-variant.html)
-- [Преобразователи напряжения](https://nikitakozyr51-wq.github.io/ic-farvater/pages/converter-variant.html): ИРТЫШ, ВОЛГА, ЕНИСЕЙ, КАМА
-- [СВЧ-конденсаторы ARC70](https://nikitakozyr51-wq.github.io/ic-farvater/pages/capacitor-variant.html)
+- [Микросхемы](https://ic-farvater.ru/pages/microchips-detail.html): цифровые и аналоговые ИС, АЦП/ЦАП, процессоры, контроллеры питания
+- [СВЧ-транзисторы LDMOS](https://ic-farvater.ru/pages/transistors-detail.html): для усилителей мощности, связи, радиолокации
+- [Печатные платы](https://ic-farvater.ru/pages/pcb-detail.html): ОПП, ДПП, МПП до 40 слоёв, СВЧ, гибкие
+- [Разъёмы ЕТ-серии](https://ic-farvater.ru/pages/connector-variant.html)
+- [Преобразователи напряжения](https://ic-farvater.ru/pages/converter-variant.html): ИРТЫШ, ВОЛГА, ЕНИСЕЙ, КАМА
+- [СВЧ-конденсаторы ARC70](https://ic-farvater.ru/pages/capacitor-variant.html)
 
 ## Услуги
 - Прямые поставки ЭКБ от отечественных производителей

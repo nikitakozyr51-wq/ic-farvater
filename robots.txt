@@ -25,4 +25,4 @@ Allow: /
 User-agent: YandexBot
 Allow: /
 
-Sitemap: https://nikitakozyr51-wq.github.io/ic-farvater/sitemap.xml
+Sitemap: https://ic-farvater.ru/sitemap.xml
