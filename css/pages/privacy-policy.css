@@ -29,7 +29,7 @@
 
 /* RIGHT — date + all sections */
 .policy-layout__right {
-  padding: 240px 0 120px 60px;
+  padding: 240px 0 80px 60px;
   display: flex;
   flex-direction: column;
 }
