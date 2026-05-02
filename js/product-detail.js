@@ -112,13 +112,13 @@
     if (form) {
       form.addEventListener('submit', function(e) {
         e.preventDefault();
-        form.hidden = true;
-        if (success) success.hidden = false;
+        form.style.display = 'none';
+        if (success) success.classList.add('is-visible');
         setTimeout(function() {
           closeDrawer();
           setTimeout(function() {
-            form.hidden = false;
-            if (success) success.hidden = true;
+            form.style.display = '';
+            if (success) success.classList.remove('is-visible');
             form.reset();
           }, 420);
         }, 2800);
