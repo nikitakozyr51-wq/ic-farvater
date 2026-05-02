@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -12,11 +12,9 @@
   <link rel="stylesheet" href="../css/variables.css?v=5">
   <link rel="stylesheet" href="../css/base.css?v=8">
   <link rel="stylesheet" href="../css/layout.css?v=7">
-  <link rel="stylesheet" href="../css/components.css?v=9">
+  <link rel="stylesheet" href="../css/components.css?v=11">
   <link rel="stylesheet" href="../css/pages/privacy-policy.css?v=9">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/mobile.css?v=7" media="(max-width: 768px)">
+  <link rel="stylesheet" href="../css/mobile.css?v=9" media="(max-width: 768px)">
 </head>
 <body>
 
@@ -34,6 +32,18 @@
           <a href="tel:+79967788842" class="header__nav-contact-value">+7 996 778-88-42</a>
         </div>
       </nav>
+      <form class="header__search" role="search">
+        <svg class="header__search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M11 11L14.5 14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <input type="text" class="header__search-input" placeholder="ПОИСК..." autocomplete="off" aria-label="Поиск по каталогу">
+        <button type="submit" class="header__search-submit" aria-label="Найти">
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+            <path d="M1 6.5H12M8 2L12 6.5L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </form>
       <button class="header__burger" aria-label="Меню"><span></span><span></span><span></span></button>
     </div>
   </header>
@@ -55,7 +65,8 @@
           <p>Настоящая Политика конфиденциальности (далее — Политика) определяет порядок обработки и защиты персональных данных физических лиц (далее — Пользователи), передающих свои персональные данные через сайт <strong>ic-farvater.ru</strong> (далее — Сайт).</p>
           <p>Оператором персональных данных является:</p>
           <p><strong>ООО «Айси Фарватер»</strong><br>
-          Юридический адрес: ул. Беринга, д. 1-А, оф. 46-Н, г. Санкт-Петербург, 199397<br>
+          ИНН 7801709112 · ОГРН 1227800016993<br>
+          Юридический адрес: ул. Беринга, д. 1-А, оф. 46-Н, г. Санкт-Петербург, 199406<br>
           Телефон: <a href="tel:+79967788842">+7 (996) 778-88-42</a><br>
           Email: <a href="mailto:info@ic-farvater.ru">info@ic-farvater.ru</a></p>
           <p>Обработка персональных данных осуществляется в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных».</p>
@@ -175,7 +186,7 @@
     </div>
     <div class="footer__brand">IC FARVATER</div>
     <div class="footer__bottom">
-      <span>&copy; 2026 IC ФАРВАТЕР</span>
+      <span>&copy; 2026 IC ФАРВАТЕР · ООО «Айси Фарватер» · ИНН 7801709112 · ОГРН 1227800016993</span>
       <a href="privacy-policy.html" class="footer__link">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
     </div>
   </div></footer>

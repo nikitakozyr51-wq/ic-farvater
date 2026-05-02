@@ -38,6 +38,10 @@ h3 {
 
 
 /* ===== HEADER — 56px + fullscreen menu ===== */
+.header__search {
+  display: none;
+}
+
 .header {
   height: 56px;
 }

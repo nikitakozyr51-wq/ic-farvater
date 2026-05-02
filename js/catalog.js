@@ -496,6 +496,15 @@
 
     applyHash();
     window.addEventListener('hashchange', applyHash);
+
+    var params = new URLSearchParams(window.location.search);
+    var searchParam = params.get('search');
+    if (searchParam) {
+      var searchInput = document.querySelector('.catalog__search-input');
+      if (searchInput) searchInput.value = searchParam;
+      state.search = searchParam;
+      updateView();
+    }
   }
 
   function applyHash() {

@@ -5,11 +5,67 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
+  initHeaderScroll();
+  initHeaderSearch();
   initCertAccordion();
   initServiceAccordion();
   initContactForm();
   initCookieBanner();
 });
+
+/** Hide header on scroll-down, reveal on scroll-up */
+function initHeaderScroll() {
+  const header = document.querySelector('.header');
+  if (!header) return;
+
+  let lastY = window.scrollY;
+  let ticking = false;
+
+  window.addEventListener('scroll', () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      const y = window.scrollY;
+      if (y > lastY && y > 120) {
+        header.classList.add('header--hidden');
+      } else {
+        header.classList.remove('header--hidden');
+      }
+      lastY = y;
+      ticking = false;
+    });
+  }, { passive: true });
+}
+
+/** Header pill search — redirect to products or trigger catalog */
+function initHeaderSearch() {
+  const form = document.querySelector('.header__search');
+  if (!form) return;
+
+  const input = form.querySelector('.header__search-input');
+  if (!input) return;
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const q = input.value.trim();
+    if (!q) return;
+
+    const onProducts = window.location.pathname.includes('products.html');
+    if (onProducts) {
+      const catalogInput = document.querySelector('.catalog__search-input');
+      if (catalogInput) {
+        catalogInput.value = q;
+        catalogInput.dispatchEvent(new Event('input', { bubbles: true }));
+        const catalog = document.querySelector('.catalog, .section--catalog');
+        if (catalog) catalog.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      const base = window.location.pathname.includes('/pages/') ? 'products.html' : 'pages/products.html';
+      window.location.href = `${base}?search=${encodeURIComponent(q)}`;
+    }
+    input.value = '';
+  });
+}
 
 /** Mobile burger menu toggle */
 function initMobileMenu() {
