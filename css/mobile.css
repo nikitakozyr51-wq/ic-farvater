@@ -287,18 +287,23 @@ h3 {
 }
 
 /* ===== PRODUCT CAROUSEL ===== */
-.product-carousel {
-  gap: 8px;
-}
-
 .product-carousel__btn {
-  width: 24px;
-  height: 24px;
+  top: 35%;
+  width: 28px;
+  height: 28px;
 }
 
 .product-carousel__btn svg {
   width: 16px;
   height: 16px;
+}
+
+.product-carousel__btn--prev {
+  left: -4px;
+}
+
+.product-carousel__btn--next {
+  right: -4px;
 }
 
 .product-carousel__track .product-cards-grid {
