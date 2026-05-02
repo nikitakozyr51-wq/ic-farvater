@@ -13,30 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initCookieBanner();
 });
 
-/** Hide header on scroll-down, reveal on scroll-up */
-function initHeaderScroll() {
-  const header = document.querySelector('.header');
-  if (!header) return;
-
-  let lastY = window.scrollY;
-  let ticking = false;
-
-  window.addEventListener('scroll', () => {
-    if (ticking) return;
-    ticking = true;
-    requestAnimationFrame(() => {
-      const y = window.scrollY;
-      if (y > lastY && y > 120) {
-        header.classList.add('header--hidden');
-      } else {
-        header.classList.remove('header--hidden');
-      }
-      lastY = y;
-      ticking = false;
-    });
-  }, { passive: true });
-}
-
 /** Header search toggle — open on icon click, redirect on submit */
 function initHeaderSearch() {
   const header = document.querySelector('.header');
