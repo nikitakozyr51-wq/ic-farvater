@@ -11690,7 +11690,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы LDMOS",
     "description": "Высокочастотный транзистор 1 ГГц ET09100",
-    "image": "https://ekb-test.ru/upload/uf/b47/5rsveloim8i46npdmk0n4svo2lyij2yy/ET09100.png",
+    "image": "../assets/images/products/items/ET09100.webp",
     "specs": {
       "Мощность": "30 Вт",
       "Рабочее напряжение": "13,6 В",
@@ -11770,7 +11770,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы LDMOS",
     "description": "Высокочастотный транзистор 1500 МГц ET1503V",
-    "image": "https://ekb-test.ru/upload/uf/d91/9t1l8p437c07cwa0ceb8sqivbdix49ie/ET1503V.png",
+    "image": "../assets/images/products/items/ET1503V.webp",
     "specs": {
       "Мощность": "30 Вт",
       "Рабочее напряжение": "50 В",
@@ -11816,7 +11816,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы LDMOS",
     "description": "Высокочастотный транзистор 500 МГц ET574F",
-    "image": "https://ekb-test.ru/upload/uf/8f8/79qcm13c46o58nke0r53eul3a02u61s7/ET574F.png",
+    "image": "../assets/images/products/items/ET574F.webp",
     "specs": {
       "Мощность": "700 Вт",
       "Рабочее напряжение": "50 В",
@@ -11831,7 +11831,7 @@ const PRODUCTS = [
     "category": "СВЧ-транзисторы",
     "subcategory": "СВЧ-транзисторы LDMOS",
     "description": "Высокочастотный транзистор 2 ГГц ET2006C",
-    "image": "https://ekb-test.ru/upload/uf/1d0/fauj0euv1a31chqup2jo7qlbh8vq56ux/ET2006C.png",
+    "image": "../assets/images/products/items/ET2006C.webp",
     "specs": {
       "Мощность": "24 Вт",
       "Рабочее напряжение": "12,5 В",
