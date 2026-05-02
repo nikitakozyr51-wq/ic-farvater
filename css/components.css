@@ -438,6 +438,7 @@
   max-width: var(--container-max);
   margin: 0 auto;
   padding: 80px var(--container-padding);
+  border-top: 1px solid var(--color-border);
 }
 
 .cables-split__img {
