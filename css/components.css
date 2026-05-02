@@ -1071,11 +1071,11 @@ p.product-card__desc {
 /* ===== PRODUCT CAROUSEL ===== */
 .product-carousel {
   position: relative;
+  overflow: hidden;
 }
 
 .product-carousel__track {
   width: 100%;
-  overflow: hidden;
 }
 
 .product-carousel__track .product-cards-grid {
@@ -1086,7 +1086,7 @@ p.product-card__desc {
 
 .product-carousel__btn {
   position: absolute;
-  top: 40%;
+  top: 45%;
   transform: translateY(-50%);
   width: 40px;
   height: 40px;
@@ -1103,11 +1103,11 @@ p.product-card__desc {
 }
 
 .product-carousel__btn--prev {
-  left: -52px;
+  left: 40px;
 }
 
 .product-carousel__btn--next {
-  right: -52px;
+  right: 40px;
 }
 
 .product-carousel__btn:hover:not(:disabled) {

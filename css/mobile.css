@@ -288,22 +288,22 @@ h3 {
 
 /* ===== PRODUCT CAROUSEL ===== */
 .product-carousel__btn {
-  top: 35%;
+  top: 40%;
   width: 28px;
   height: 28px;
 }
 
 .product-carousel__btn svg {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
 }
 
 .product-carousel__btn--prev {
-  left: -4px;
+  left: 12px;
 }
 
 .product-carousel__btn--next {
-  right: -4px;
+  right: 12px;
 }
 
 .product-carousel__track .product-cards-grid {
@@ -313,6 +313,7 @@ h3 {
 
 .product-carousel__track .product-card-v2 {
   flex: 0 0 calc(50% - 6px);
+  min-width: 0;
 }
 
 .product-card-v2__img {

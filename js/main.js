@@ -217,14 +217,13 @@ function initProductCarousels() {
     let offset = 0;
 
     function getStep() {
-      const card = grid.querySelector('.product-card-v2');
-      if (!card) return 0;
-      const gap = parseFloat(getComputedStyle(grid).columnGap || getComputedStyle(grid).gap) || 0;
-      return card.offsetWidth + gap;
+      const cards = grid.querySelectorAll('.product-card-v2');
+      if (cards.length < 2) return cards[0] ? cards[0].offsetWidth : 0;
+      return cards[1].offsetLeft - cards[0].offsetLeft;
     }
 
     function update(newOffset) {
-      const maxOffset = Math.max(0, grid.scrollWidth - track.clientWidth);
+      const maxOffset = Math.max(0, grid.scrollWidth - carousel.clientWidth);
       offset = Math.max(0, Math.min(newOffset, maxOffset));
       grid.style.transform = `translateX(-${offset}px)`;
       btnPrev.disabled = offset <= 0;
