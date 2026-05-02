@@ -1106,8 +1106,16 @@ p.product-card__desc {
   transition: opacity 0.25s ease;
 }
 
+.footer__link::before {
+  content: "( )\00a0\00a0";
+}
+
 .footer__link:hover {
   opacity: 0.5;
+}
+
+.footer__link:hover::before {
+  content: "(•)\00a0\00a0";
 }
 
 .footer__contacts {
