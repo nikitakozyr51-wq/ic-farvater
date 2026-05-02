@@ -388,6 +388,29 @@ h3 {
 }
 
 
+/* ===== SERVICE SPLIT ===== */
+.service-split {
+  flex-direction: column;
+  gap: 0;
+  padding: 48px 24px;
+}
+
+.service-split__left {
+  width: 100%;
+  gap: 24px;
+  padding-bottom: 24px;
+}
+
+.service-split__right {
+  padding-top: 0;
+}
+
+.service-split__title {
+  font-size: 28px;
+  letter-spacing: -0.5px;
+}
+
+
 /* ===== SERVICE ROWS ===== */
 .service-row {
   padding: 16px 0;

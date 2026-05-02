@@ -637,17 +637,23 @@ p.product-card__desc {
 }
 
 .service-split__cta {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  background: var(--color-text);
+  color: var(--color-bg);
+  border-radius: 100px;
+  padding: 12px 24px;
   font-size: var(--text-label);
   font-weight: 600;
-  letter-spacing: 0.5px;
-  color: var(--color-text);
-  text-decoration: none;
+  letter-spacing: 1px;
   text-transform: uppercase;
+  text-decoration: none;
   transition: opacity 0.2s;
 }
 
 .service-split__cta:hover {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .service-split__right {
