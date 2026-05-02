@@ -1,5 +1,15 @@
 /* ===== PRIVACY POLICY PAGE ===== */
 
+.privacy-page {
+  --color-bg: #112F6E;
+  --color-text: #F5F3EF;
+}
+
+.privacy-page .footer {
+  --color-bg: #F5F3EF;
+  --color-text: #112F6E;
+}
+
 .policy-page {
   margin-top: 64px;
 }
