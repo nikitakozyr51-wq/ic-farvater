@@ -288,22 +288,22 @@ h3 {
 
 /* ===== PRODUCT CAROUSEL ===== */
 .product-carousel__btn {
-  top: 40%;
-  width: 28px;
-  height: 28px;
+  top: 50%;
+  width: 36px;
+  height: 36px;
 }
 
 .product-carousel__btn svg {
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
 }
 
 .product-carousel__btn--prev {
-  left: 12px;
+  left: 8px;
 }
 
 .product-carousel__btn--next {
-  right: 12px;
+  right: 8px;
 }
 
 .product-carousel__track .product-cards-grid {

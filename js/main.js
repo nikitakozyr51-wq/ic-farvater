@@ -204,7 +204,7 @@ function initCookieBanner() {
   }
 }
 
-/** Product carousel — arrow navigation */
+/** Product carousel — infinite loop via DOM cloning */
 function initProductCarousels() {
   document.querySelectorAll('.product-carousel').forEach(carousel => {
     const track = carousel.querySelector('.product-carousel__track');
@@ -214,31 +214,49 @@ function initProductCarousels() {
 
     if (!track || !grid || !btnPrev || !btnNext) return;
 
-    let offset = 0;
+    const originals = Array.from(grid.querySelectorAll('.product-card-v2'));
+    const N = originals.length;
+    if (N === 0) return;
+
+    // Build [N clones][N originals][N clones] = 3N cards for seamless loop
+    const before = originals.map(c => { const cl = c.cloneNode(true); cl.setAttribute('aria-hidden', 'true'); return cl; });
+    const after  = originals.map(c => { const cl = c.cloneNode(true); cl.setAttribute('aria-hidden', 'true'); return cl; });
+    originals[0].before(...before);
+    grid.append(...after);
+
+    let index = N; // start at original set
 
     function getStep() {
       const cards = grid.querySelectorAll('.product-card-v2');
-      if (cards.length < 2) return cards[0] ? cards[0].offsetWidth : 0;
-      return cards[1].offsetLeft - cards[0].offsetLeft;
+      return cards.length > 1 ? cards[1].offsetLeft - cards[0].offsetLeft : cards[0].offsetWidth;
     }
 
-    function update(newOffset) {
-      const maxOffset = Math.max(0, grid.scrollWidth - carousel.clientWidth);
-      offset = Math.max(0, Math.min(newOffset, maxOffset));
-      grid.style.transform = `translateX(-${offset}px)`;
-      btnPrev.disabled = offset <= 0;
-      btnNext.disabled = offset >= maxOffset;
+    function goTo(i, animate) {
+      index = i;
+      if (!animate) {
+        grid.style.transition = 'none';
+        grid.style.transform = `translateX(-${index * getStep()}px)`;
+        grid.getBoundingClientRect();
+        requestAnimationFrame(() => { grid.style.transition = ''; });
+      } else {
+        grid.style.transform = `translateX(-${index * getStep()}px)`;
+      }
     }
 
-    btnPrev.addEventListener('click', () => update(offset - getStep()));
-    btnNext.addEventListener('click', () => update(offset + getStep()));
+    grid.addEventListener('transitionend', () => {
+      if (index >= N * 2) goTo(index - N, false);
+      else if (index < N) goTo(index + N, false);
+    });
 
-    update(0);
+    btnPrev.addEventListener('click', () => goTo(index - 1, true));
+    btnNext.addEventListener('click', () => goTo(index + 1, true));
+
+    goTo(N, false);
 
     let resizeTimer;
     window.addEventListener('resize', () => {
       clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(() => update(0), 150);
+      resizeTimer = setTimeout(() => goTo(N, false), 150);
     });
   });
 }
