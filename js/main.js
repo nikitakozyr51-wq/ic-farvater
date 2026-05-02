@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initServiceAccordion();
   initContactForm();
   initCookieBanner();
+  initProductCarousels();
 });
 
 /** Header search toggle — open on icon click, redirect on submit */
@@ -201,5 +202,45 @@ function initCookieBanner() {
       banner.classList.add('cookie-banner--hidden');
     });
   }
+}
+
+/** Product carousel — arrow navigation */
+function initProductCarousels() {
+  document.querySelectorAll('.product-carousel').forEach(carousel => {
+    const track = carousel.querySelector('.product-carousel__track');
+    const grid = track && track.querySelector('.product-cards-grid');
+    const btnPrev = carousel.querySelector('.product-carousel__btn--prev');
+    const btnNext = carousel.querySelector('.product-carousel__btn--next');
+
+    if (!track || !grid || !btnPrev || !btnNext) return;
+
+    let offset = 0;
+
+    function getStep() {
+      const card = grid.querySelector('.product-card-v2');
+      if (!card) return 0;
+      const gap = parseFloat(getComputedStyle(grid).columnGap || getComputedStyle(grid).gap) || 0;
+      return card.offsetWidth + gap;
+    }
+
+    function update(newOffset) {
+      const maxOffset = Math.max(0, grid.scrollWidth - track.clientWidth);
+      offset = Math.max(0, Math.min(newOffset, maxOffset));
+      grid.style.transform = `translateX(-${offset}px)`;
+      btnPrev.disabled = offset <= 0;
+      btnNext.disabled = offset >= maxOffset;
+    }
+
+    btnPrev.addEventListener('click', () => update(offset - getStep()));
+    btnNext.addEventListener('click', () => update(offset + getStep()));
+
+    update(0);
+
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => update(0), 150);
+    });
+  });
 }
 

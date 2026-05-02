@@ -286,6 +286,30 @@ h3 {
   gap: 12px;
 }
 
+/* ===== PRODUCT CAROUSEL ===== */
+.product-carousel {
+  gap: 8px;
+}
+
+.product-carousel__btn {
+  width: 24px;
+  height: 24px;
+}
+
+.product-carousel__btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.product-carousel__track .product-cards-grid {
+  display: flex;
+  gap: 12px;
+}
+
+.product-carousel__track .product-card-v2 {
+  flex: 0 0 calc(50% - 6px);
+}
+
 .product-card-v2__img {
   height: auto;
   aspect-ratio: 1 / 1;
