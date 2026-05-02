@@ -7,7 +7,7 @@
 /* Two-column layout: sticky title left / all content right */
 .policy-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   min-height: calc(100vh - 64px);
 }
 
@@ -25,6 +25,7 @@
   letter-spacing: -2px;
   line-height: 1.05;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 /* RIGHT — date + all sections */
