@@ -1122,6 +1122,15 @@ p.product-card__desc {
   content: "(•)";
 }
 
+.footer__link--no-bracket {
+  padding-left: 0;
+}
+
+.footer__link--no-bracket::before,
+.footer__link--no-bracket:hover::before {
+  content: none;
+}
+
 .footer__contacts {
   flex: 1;
   display: flex;
