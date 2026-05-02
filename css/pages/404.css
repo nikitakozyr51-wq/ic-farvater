@@ -86,11 +86,12 @@
   text-transform: uppercase;
   border: 1px solid var(--color-text);
   border-radius: 100px;
-  transition: opacity 0.2s;
+  transition: background 0.25s ease, color 0.25s ease;
 }
 
 .not-found__btn:hover {
-  opacity: 0.75;
+  background: transparent;
+  color: var(--color-text);
 }
 
 .not-found__btn:active {

@@ -69,11 +69,7 @@ p {
 }
 
 a {
-  transition: opacity 0.2s ease;
-}
-
-a:hover {
-  opacity: 0.6;
+  transition: color 0.2s ease, opacity 0.2s ease;
 }
 
 *:focus-visible {

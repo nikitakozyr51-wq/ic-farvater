@@ -160,11 +160,13 @@
   background: var(--color-text);
   color: var(--color-bg);
   flex-shrink: 0;
-  transition: opacity 0.2s;
+  border: 1px solid var(--color-text);
+  transition: background 0.25s ease, color 0.25s ease;
 }
 
 .header__search-submit:hover {
-  opacity: 0.7;
+  background: transparent;
+  color: var(--color-text);
 }
 
 /* ===== HERO ===== */
@@ -757,6 +759,7 @@ p.product-card__desc {
   align-self: flex-start;
   background: var(--color-text);
   color: var(--color-bg);
+  border: 1px solid var(--color-text);
   border-radius: 100px;
   padding: 12px 24px;
   font-size: var(--text-label);
@@ -764,11 +767,12 @@ p.product-card__desc {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
-  transition: opacity 0.2s;
+  transition: background 0.25s ease, color 0.25s ease;
 }
 
 .service-split__cta:hover {
-  opacity: 0.8;
+  background: transparent;
+  color: var(--color-text);
 }
 
 .service-split__right {
@@ -936,7 +940,7 @@ p.product-card__desc {
   padding: 12px 28px;
   background: var(--color-bg);
   color: var(--color-text);
-  border: none;
+  border: 1px solid var(--color-bg);
   border-radius: 100px;
   font-family: var(--font-primary);
   font-size: var(--text-14);
@@ -944,10 +948,12 @@ p.product-card__desc {
   letter-spacing: 1px;
   text-transform: uppercase;
   cursor: pointer;
-  transition: opacity 0.2s;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 }
 .cookie-banner__btn:hover {
-  opacity: 0.85;
+  background: transparent;
+  color: var(--color-bg);
+  border-color: var(--color-bg);
 }
 
 /* Body: hidden by default, animates via grid */
