@@ -32,8 +32,9 @@
 
 .catalog__title-count {
   font-size: var(--text-14);
-  font-weight: 400;
-  margin-top: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 0.25em;
 }
 
 .catalog__desc {

@@ -482,6 +482,12 @@
   text-transform: uppercase;
 }
 
+.cables-split__title-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
 
 /* ===== PRODUCT BANNER ===== */
 .product-banner {
