@@ -203,10 +203,14 @@
   inset: 0;
   z-index: 9999;
   pointer-events: none;
+  visibility: hidden;
+  transition: visibility 0s linear 0.4s;
 }
 
 .price-drawer.is-open {
   pointer-events: auto;
+  visibility: visible;
+  transition-delay: 0s;
 }
 
 .price-drawer__overlay {
