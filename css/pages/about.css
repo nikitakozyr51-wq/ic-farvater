@@ -81,163 +81,38 @@
   gap: var(--space-12);
 }
 
+.about__split-left .section-header__title {
+  line-height: 1;
+}
+
+.about__split-left .title-count {
+  margin-top: 0.4em;
+}
+
 .about__split-right {
-  padding-top: var(--space-24);
+  /* aligns content with title baseline (title height 40 + breathing room) */
 }
 
-/* Certs Section */
-.cert-row {
-  border-bottom: 1px solid var(--color-border);
-}
-
-.cert-row__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  background: none;
-  border: none;
-  padding: 24px 0;
-  cursor: pointer;
-  font-family: inherit;
-  color: inherit;
-}
-
-.cert-row__header:hover {
-  opacity: 0.6;
-}
-
-.cert-row__left {
-  display: flex;
-  align-items: center;
-  gap: var(--space-32);
-}
-
+/* Certs / FAQ — use shared .service-item styles from components.css */
 .cert-row__number {
   font-size: var(--text-14);
   font-weight: 600;
   letter-spacing: 1px;
   color: var(--color-text-muted);
-  min-width: 24px;
-}
-
-.cert-row__name {
-  font-size: var(--text-24);
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  text-transform: uppercase;
-  color: var(--color-text);
-}
-
-.cert-row__toggle--closed {
-  font-size: var(--text-14);
-  color: var(--color-text-muted);
-  flex-shrink: 0;
-}
-
-.cert-row__toggle--open {
-  font-size: var(--text-24);
-  color: var(--color-text);
-  flex-shrink: 0;
-  display: none;
-}
-
-.cert-row--open .cert-row__toggle--closed { display: none; }
-.cert-row--open .cert-row__toggle--open { display: block; }
-
-.cert-row__body {
-  display: none;
-  padding: 32px 0 40px;
-}
-
-.cert-row--open .cert-row__body {
-  display: block;
+  margin-right: var(--space-16);
 }
 
 .cert-row__photo {
   width: 100%;
+  max-width: 600px;
   background: var(--color-bg-alt);
+  margin-top: var(--space-16);
 }
 
 .cert-row__photo img {
   width: 100%;
   height: auto;
   display: block;
-}
-
-/* FAQ Section */
-.faq-list {
-  display: flex;
-  flex-direction: column;
-}
-
-.faq-item {
-  border-top: 1px solid var(--color-border);
-  padding: var(--space-24) 0;
-}
-
-.faq-item:last-child {
-  border-bottom: 1px solid var(--color-border);
-}
-
-.faq-item__q {
-  font-size: var(--text-16);
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: var(--color-text);
-  cursor: pointer;
-  list-style: none;
-  position: relative;
-  padding-right: 40px;
-}
-
-.faq-item__q::-webkit-details-marker { display: none; }
-
-.faq-item__q::after {
-  content: '+';
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: var(--text-24);
-  font-weight: 400;
-  color: var(--color-text-muted);
-  transition: transform 0.2s;
-}
-
-.faq-item[open] .faq-item__q::after {
-  content: '−';
-}
-
-.faq-item__a {
-  font-size: var(--text-16);
-  font-weight: 400;
-  line-height: 1.6;
-  color: var(--color-text-muted);
-  margin-top: var(--space-16);
-  max-width: 760px;
-}
-
-/* Mobile cert cards (kept from v1) */
-.cert-card {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-16);
-}
-
-.cert-card__img {
-  width: 100%;
-  height: 200px;
-  background: var(--color-bg-alt);
-}
-
-.cert-card__name {
-  font-size: var(--text-14);
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
 /* Responsive */
@@ -262,11 +137,5 @@
   .about__split {
     grid-template-columns: 1fr;
     row-gap: var(--space-32);
-  }
-  .about__split-right {
-    padding-top: 0;
-  }
-  .cert-row__photo {
-    height: 240px;
   }
 }

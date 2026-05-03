@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="../css/base.css?v=8">
   <link rel="stylesheet" href="../css/layout.css?v=7">
   <link rel="stylesheet" href="../css/components.css?v=14">
-  <link rel="stylesheet" href="../css/pages/about.css?v=9">
+  <link rel="stylesheet" href="../css/pages/about.css?v=10">
   <link rel="stylesheet" href="../css/animations.css?v=5">
   <link rel="stylesheet" href="../css/mobile.css?v=13" media="(max-width: 768px)">
 </head>
@@ -91,22 +91,20 @@
     <section class="section section--bordered">
       <div class="container about__split">
         <div class="about__split-left">
-          <h2 class="section-header__title">СЕРТИФИКАТ СООТВЕТСТВИЯ</h2>
+          <h2 class="section-header__title">СЕРТИФИКАТ<br>СООТВЕТСТВИЯ</h2>
           <span class="title-count">(02)</span>
         </div>
         <div class="about__split-right" data-animate="fade-up-stagger">
-          <div class="cert-row">
-            <button class="cert-row__header" aria-expanded="false">
-              <div class="cert-row__left">
-                <span class="cert-row__number">01</span>
-                <span class="cert-row__name">ISO 9001:2015</span>
-              </div>
-              <span class="cert-row__toggle cert-row__toggle--closed">↗</span>
-              <span class="cert-row__toggle cert-row__toggle--open">—</span>
+          <div class="service-item cert-row">
+            <button class="service-item__header" aria-expanded="false">
+              <span class="service-item__title"><span class="cert-row__number">01</span>&nbsp;&nbsp;ISO 9001:2015</span>
+              <span class="service-item__icon" aria-hidden="true"></span>
             </button>
-            <div class="cert-row__body">
-              <div class="cert-row__photo">
-                <img src="../assets/images/zkWqx.webp" alt="Сертификат ISO 9001:2015" loading="lazy">
+            <div class="service-item__body" role="region">
+              <div class="service-item__body-inner">
+                <div class="cert-row__photo">
+                  <img src="../assets/images/zkWqx.webp" alt="Сертификат ISO 9001:2015" loading="lazy">
+                </div>
               </div>
             </div>
           </div>
@@ -118,38 +116,87 @@
     <section class="section section--bordered">
       <div class="container about__split">
         <div class="about__split-left">
-          <h2 class="section-header__title">ЧАСТЫЕ ВОПРОСЫ</h2>
+          <h2 class="section-header__title">ЧАСТЫЕ<br>ВОПРОСЫ</h2>
           <span class="title-count">(03)</span>
         </div>
-        <div class="about__split-right faq-list" data-animate="fade-up-stagger">
-          <details class="faq-item">
-            <summary class="faq-item__q">Как быстро выполняется поставка?</summary>
-            <p class="faq-item__a">Сроки зависят от&nbsp;наличия позиций на&nbsp;складе и&nbsp;объёма заказа. Позиции из&nbsp;наличия отгружаем в&nbsp;течение 1–3 рабочих дней. Для нестандартных или крупных партий сроки согласовываются индивидуально на&nbsp;этапе заявки.</p>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-item__q">Работаете ли вы с&nbsp;предприятиями ОПК?</summary>
-            <p class="faq-item__a">Да. Среди наших клиентов — предприятия оборонно-промышленного комплекса, авиационной и&nbsp;космической отрасли. Работаем в&nbsp;рамках государственных контрактов, соблюдаем требования к&nbsp;документарному сопровождению.</p>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-item__q">Можно ли заменить иностранные компоненты на&nbsp;отечественные?</summary>
-            <p class="faq-item__a">Это одно из&nbsp;ключевых направлений работы. Мы подбираем отечественные аналоги под конкретные технические требования и&nbsp;при необходимости проводим испытания. Работаем с&nbsp;конструкторскими бюро на&nbsp;этапе проектирования.</p>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-item__q">Есть ли у&nbsp;вас собственная испытательная лаборатория?</summary>
-            <p class="faq-item__a">Да. Лаборатория проводит входной контроль и&nbsp;испытания компонентов по&nbsp;действующим стандартам. Это позволяет гарантировать подлинность и&nbsp;работоспособность ЭКБ до&nbsp;передачи заказчику — без привлечения сторонних организаций.</p>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-item__q">Есть ли минимальный объём заказа?</summary>
-            <p class="faq-item__a">Минимальный объём не&nbsp;установлен. Мы работаем как с&nbsp;единичными позициями для ремонта и&nbsp;разработки, так и&nbsp;с&nbsp;крупными партиями в&nbsp;рамках серийного производства.</p>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-item__q">Как подтверждается подлинность компонентов?</summary>
-            <p class="faq-item__a">Каждая партия сопровождается сертификатами соответствия и&nbsp;паспортами производителя. Компания работает напрямую с&nbsp;российскими производителями и&nbsp;авторизованными дистрибьюторами — цепочка поставки прозрачна и&nbsp;документирована. По&nbsp;запросу предоставляются протоколы входного контроля.</p>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-item__q">Каков порядок заключения договора?</summary>
-            <p class="faq-item__a">Договор заключается после согласования спецификации и&nbsp;условий поставки. Форма оплаты — предоплата или постоплата в&nbsp;зависимости от&nbsp;объёма и&nbsp;истории сотрудничества. Для старта достаточно направить запрос на&nbsp;info@ic-farvater.ru — менеджер подготовит коммерческое предложение в&nbsp;течение одного рабочего дня.</p>
-          </details>
+        <div class="about__split-right" data-animate="fade-up-stagger">
+          <div class="service-item">
+            <button class="service-item__header" aria-expanded="false">
+              <span class="service-item__title">КАК БЫСТРО ВЫПОЛНЯЕТСЯ ПОСТАВКА?</span>
+              <span class="service-item__icon" aria-hidden="true"></span>
+            </button>
+            <div class="service-item__body" role="region">
+              <div class="service-item__body-inner">
+                <p>Сроки зависят от&nbsp;наличия позиций на&nbsp;складе и&nbsp;объёма заказа. Позиции из&nbsp;наличия отгружаем в&nbsp;течение 1–3 рабочих дней. Для нестандартных или крупных партий сроки согласовываются индивидуально на&nbsp;этапе заявки.</p>
+              </div>
+            </div>
+          </div>
+          <div class="service-item">
+            <button class="service-item__header" aria-expanded="false">
+              <span class="service-item__title">РАБОТАЕТЕ ЛИ ВЫ С&nbsp;ПРЕДПРИЯТИЯМИ ОПК?</span>
+              <span class="service-item__icon" aria-hidden="true"></span>
+            </button>
+            <div class="service-item__body" role="region">
+              <div class="service-item__body-inner">
+                <p>Да. Среди наших клиентов — предприятия оборонно-промышленного комплекса, авиационной и&nbsp;космической отрасли. Работаем в&nbsp;рамках государственных контрактов, соблюдаем требования к&nbsp;документарному сопровождению.</p>
+              </div>
+            </div>
+          </div>
+          <div class="service-item">
+            <button class="service-item__header" aria-expanded="false">
+              <span class="service-item__title">МОЖНО ЛИ ЗАМЕНИТЬ ИНОСТРАННЫЕ КОМПОНЕНТЫ НА&nbsp;ОТЕЧЕСТВЕННЫЕ?</span>
+              <span class="service-item__icon" aria-hidden="true"></span>
+            </button>
+            <div class="service-item__body" role="region">
+              <div class="service-item__body-inner">
+                <p>Это одно из&nbsp;ключевых направлений работы. Мы подбираем отечественные аналоги под конкретные технические требования и&nbsp;при необходимости проводим испытания. Работаем с&nbsp;конструкторскими бюро на&nbsp;этапе проектирования.</p>
+              </div>
+            </div>
+          </div>
+          <div class="service-item">
+            <button class="service-item__header" aria-expanded="false">
+              <span class="service-item__title">ЕСТЬ ЛИ У&nbsp;ВАС СОБСТВЕННАЯ ИСПЫТАТЕЛЬНАЯ ЛАБОРАТОРИЯ?</span>
+              <span class="service-item__icon" aria-hidden="true"></span>
+            </button>
+            <div class="service-item__body" role="region">
+              <div class="service-item__body-inner">
+                <p>Да. Лаборатория проводит входной контроль и&nbsp;испытания компонентов по&nbsp;действующим стандартам. Это позволяет гарантировать подлинность и&nbsp;работоспособность ЭКБ до&nbsp;передачи заказчику — без привлечения сторонних организаций.</p>
+              </div>
+            </div>
+          </div>
+          <div class="service-item">
+            <button class="service-item__header" aria-expanded="false">
+              <span class="service-item__title">ЕСТЬ ЛИ МИНИМАЛЬНЫЙ ОБЪЁМ ЗАКАЗА?</span>
+              <span class="service-item__icon" aria-hidden="true"></span>
+            </button>
+            <div class="service-item__body" role="region">
+              <div class="service-item__body-inner">
+                <p>Минимальный объём не&nbsp;установлен. Мы работаем как с&nbsp;единичными позициями для ремонта и&nbsp;разработки, так и&nbsp;с&nbsp;крупными партиями в&nbsp;рамках серийного производства.</p>
+              </div>
+            </div>
+          </div>
+          <div class="service-item">
+            <button class="service-item__header" aria-expanded="false">
+              <span class="service-item__title">КАК ПОДТВЕРЖДАЕТСЯ ПОДЛИННОСТЬ КОМПОНЕНТОВ?</span>
+              <span class="service-item__icon" aria-hidden="true"></span>
+            </button>
+            <div class="service-item__body" role="region">
+              <div class="service-item__body-inner">
+                <p>Каждая партия сопровождается сертификатами соответствия и&nbsp;паспортами производителя. Компания работает напрямую с&nbsp;российскими производителями и&nbsp;авторизованными дистрибьюторами — цепочка поставки прозрачна и&nbsp;документирована. По&nbsp;запросу предоставляются протоколы входного контроля.</p>
+              </div>
+            </div>
+          </div>
+          <div class="service-item">
+            <button class="service-item__header" aria-expanded="false">
+              <span class="service-item__title">КАКОВ ПОРЯДОК ЗАКЛЮЧЕНИЯ ДОГОВОРА?</span>
+              <span class="service-item__icon" aria-hidden="true"></span>
+            </button>
+            <div class="service-item__body" role="region">
+              <div class="service-item__body-inner">
+                <p>Договор заключается после согласования спецификации и&nbsp;условий поставки. Форма оплаты — предоплата или постоплата в&nbsp;зависимости от&nbsp;объёма и&nbsp;истории сотрудничества. Для старта достаточно направить запрос на&nbsp;info@ic-farvater.ru — менеджер подготовит коммерческое предложение в&nbsp;течение одного рабочего дня.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -191,7 +238,7 @@
   <script src="../js/vendor/lenis.min.js" defer></script>
   <script src="../js/vendor/gsap.min.js" defer></script>
   <script src="../js/vendor/ScrollTrigger.min.js" defer></script>
-  <script src="../js/main.js?v=7" defer></script>
+  <script src="../js/main.js?v=8" defer></script>
   <script src="../js/animations.js?v=5" defer></script>
   <!-- Cookie Banner -->
   <div class="cookie-banner" id="cookieBanner">

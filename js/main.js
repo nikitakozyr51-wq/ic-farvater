@@ -158,7 +158,7 @@ function initCertAccordion() {
   });
 }
 
-/** Service accordion — one open at a time */
+/** Service accordion — one open at a time, scoped per group */
 function initServiceAccordion() {
   const items = document.querySelectorAll('.service-item');
   if (!items.length) return;
@@ -168,10 +168,11 @@ function initServiceAccordion() {
     if (!btn) return;
 
     btn.addEventListener('click', () => {
+      const group = item.parentElement;
       const isOpen = item.classList.contains('service-item--open');
 
-      // Close all
-      items.forEach(i => {
+      // Close siblings within the same group
+      group.querySelectorAll(':scope > .service-item').forEach(i => {
         i.classList.remove('service-item--open');
         const b = i.querySelector('.service-item__header');
         if (b) b.setAttribute('aria-expanded', 'false');
