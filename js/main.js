@@ -4,6 +4,7 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  initPageLoader();
   initMobileMenu();
   initHeaderSearch();
   initActiveNavLink();
@@ -13,6 +14,24 @@ document.addEventListener('DOMContentLoaded', () => {
   initCookieBanner();
   initProductCarousels();
 });
+
+/** Page loader — hide overlay once window finishes loading */
+function initPageLoader() {
+  const loader = document.getElementById('pageLoader');
+  if (!loader) return;
+
+  const hide = () => {
+    loader.classList.add('page-loader--hidden');
+    setTimeout(() => loader.remove(), 600);
+  };
+
+  if (document.readyState === 'complete') {
+    setTimeout(hide, 300);
+  } else {
+    window.addEventListener('load', () => setTimeout(hide, 300), { once: true });
+    setTimeout(hide, 4000);
+  }
+}
 
 /** Header search toggle — open on icon click, redirect on submit */
 function initHeaderSearch() {

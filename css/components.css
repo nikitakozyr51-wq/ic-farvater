@@ -1,3 +1,62 @@
+/* ===== PAGE LOADER ===== */
+.page-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  pointer-events: auto;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+.page-loader.page-loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.page-loader__logo {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: var(--color-text);
+  text-transform: uppercase;
+  opacity: 0;
+  animation: loader-logo-fade 1.4s ease-in-out infinite;
+}
+.page-loader__bar {
+  position: relative;
+  width: 200px;
+  height: 1px;
+  background: var(--color-border);
+  overflow: hidden;
+}
+.page-loader__bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -40%;
+  width: 40%;
+  height: 100%;
+  background: var(--color-text);
+  animation: loader-bar 1.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+@keyframes loader-logo-fade {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+@keyframes loader-bar {
+  0% { left: -40%; }
+  100% { left: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-loader__logo { animation: none; opacity: 1; }
+  .page-loader__bar::after { animation: none; left: 0; width: 100%; }
+}
+
 /* ===== HEADER ===== */
 .header {
   position: fixed;

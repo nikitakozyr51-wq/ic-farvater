@@ -605,7 +605,7 @@ h3 {
 .filter-group__items {
   display: flex !important;
   flex-direction: row;
-  gap: 12px;
+  gap: 20px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   padding-bottom: 0;
@@ -623,6 +623,25 @@ h3 {
   font-size: 14px;
   border: 1px solid var(--color-border);
   border-radius: 100px;
+  -webkit-tap-highlight-color: transparent;
+  background: transparent;
+  color: var(--color-text-muted);
+  transition: none;
+}
+
+.filter-radio:hover,
+.filter-radio:focus,
+.filter-radio:focus-visible {
+  background: transparent;
+  color: var(--color-text-muted);
+  border-color: var(--color-border);
+  outline: none;
+}
+
+.filter-radio:active {
+  background: transparent;
+  color: var(--color-text-muted);
+  border-color: var(--color-border);
 }
 
 .filter-radio::before {
@@ -633,7 +652,11 @@ h3 {
   display: none;
 }
 
-.filter-radio--active {
+.filter-radio--active,
+.filter-radio--active:hover,
+.filter-radio--active:focus,
+.filter-radio--active:focus-visible,
+.filter-radio--active:active {
   color: var(--color-bg);
   background: var(--color-text);
   border-color: var(--color-text);
