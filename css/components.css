@@ -1093,30 +1093,33 @@ p.product-card__desc {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 64px;
-  height: 64px;
+  width: 56px;
+  height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: none;
-  border: none;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 100px;
   padding: 0;
   color: var(--color-text);
   cursor: pointer;
-  transition: opacity 0.2s;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
   z-index: 2;
 }
 
 .product-carousel__btn--prev {
-  left: 20px;
+  left: 16px;
 }
 
 .product-carousel__btn--next {
-  right: 20px;
+  right: 16px;
 }
 
 .product-carousel__btn:hover {
-  opacity: 0.5;
+  background: var(--color-text);
+  color: var(--color-bg);
+  border-color: var(--color-text);
 }
 
 
