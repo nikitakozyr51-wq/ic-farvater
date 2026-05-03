@@ -331,6 +331,10 @@ h3 {
   margin-top: 24px;
 }
 
+.products-v2 .section-cta {
+  display: none;
+}
+
 
 /* ===== CABLES SPLIT — stacked, like regular section ===== */
 .cables-split {
