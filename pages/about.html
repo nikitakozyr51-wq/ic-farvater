@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="../css/base.css?v=8">
   <link rel="stylesheet" href="../css/layout.css?v=7">
   <link rel="stylesheet" href="../css/components.css?v=14">
-  <link rel="stylesheet" href="../css/pages/about.css?v=7">
+  <link rel="stylesheet" href="../css/pages/about.css?v=8">
   <link rel="stylesheet" href="../css/animations.css?v=5">
   <link rel="stylesheet" href="../css/mobile.css?v=13" media="(max-width: 768px)">
 </head>
@@ -68,10 +68,10 @@
       <div class="container about__top-inner">
         <div class="about__title-wrap">
           <h1 class="about__title" data-animate="split">О КОМПАНИИ</h1>
-          <span class="title-count">(01)</span>
+          <p class="about__desc-text" data-animate="fade-up">ООО «Айси Фарватер» — интегратор электронной компонентной базы для&nbsp;предприятий ОПК, авиации и&nbsp;космоса. Полный цикл: от&nbsp;подбора компонентов до&nbsp;испытаний и&nbsp;сертификации. Прямые контракты с&nbsp;производителями, собственная испытательная лаборатория, ISO&nbsp;9001:2015.</p>
         </div>
-        <div class="about__desc" data-animate="fade-up">
-          <p class="about__desc-text">IC ФАРВАТЕР — ИНТЕГРАТОР ЭКБ ПОЛНОГО ЦИКЛА: ОТ&nbsp;ПОДБОРА КОМПОНЕНТОВ ДО&nbsp;ИСПЫТАНИЙ И&nbsp;СЕРТИФИКАЦИИ.</p>
+        <div class="about__hero-image" data-animate="scale-reveal">
+          <img src="../assets/images/mission.webp" alt="Микроэлектроника" loading="lazy">
         </div>
       </div>
     </section>
@@ -79,20 +79,10 @@
     <!-- Mission Section -->
     <section class="section section--bordered">
       <div class="container container--stack">
-        <div class="section-header">
-          <div class="section-header__left">
-            <h2 class="section-header__title">МИССИЯ</h2>
-            <span class="title-count">(02)</span>
-          </div>
-        </div>
         <div class="mission__content" data-animate="fade-up">
-          <div class="mission__text">
-            <p>МЫ ОБЕСПЕЧИВАЕМ ПРЕДПРИЯТИЯ ОПК, АВИАЦИИ И КОСМОСА НАДЁЖНОЙ ЭЛЕКТРОННОЙ КОМПОНЕНТНОЙ БАЗОЙ. ПОЛНЫЙ ЦИКЛ — ПОДБОР, ПОСТАВКА, ИСПЫТАНИЯ, СЕРТИФИКАЦИЯ.</p>
-            <p class="text-muted">ОФИЦИАЛЬНЫЙ ДИСТРИБЬЮТОР ПРОДУКЦИИ ЭКБ ТЕСТ. ПРЯМЫЕ КОНТРАКТЫ С РОССИЙСКИМИ ПРОИЗВОДИТЕЛЯМИ МИКРОЭЛЕКТРОНИКИ.</p>
-          </div>
-          <div class="mission__image" data-animate="scale-reveal">
-            <img src="../assets/images/mission.webp" alt="Микроэлектроника" loading="lazy">
-          </div>
+          <p class="mission__col">IC Фарватер работает с&nbsp;предприятиями ОПК, авиационной и&nbsp;космической отрасли — там, где надёжность компонента определяет надёжность всей системы.</p>
+          <p class="mission__col">Мы обеспечиваем полный цикл: подбор, поставку, входной контроль, испытания и&nbsp;техническое сопровождение. В&nbsp;основе работы — прямые контракты с&nbsp;российскими производителями и&nbsp;собственная испытательная лаборатория.</p>
+          <p class="mission__col">Система менеджмента качества сертифицирована по&nbsp;ISO&nbsp;9001:2015. Каждая поставка документально подтверждена. Мы&nbsp;хотим, чтобы каждый клиент был уверен в&nbsp;качестве и&nbsp;сроках.</p>
         </div>
       </div>
     </section>
@@ -103,7 +93,7 @@
         <div class="section-header">
           <div class="section-header__left">
             <h2 class="section-header__title">СЕРТИФИКАТ СООТВЕТСТВИЯ</h2>
-            <span class="title-count">(03)</span>
+            <span class="title-count">(02)</span>
           </div>
         </div>
         <div class="certs-grid" data-animate="fade-up-stagger">
@@ -122,6 +112,48 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section--bordered">
+      <div class="container container--stack">
+        <div class="section-header">
+          <div class="section-header__left">
+            <h2 class="section-header__title">ЧАСТЫЕ ВОПРОСЫ</h2>
+            <span class="title-count">(03)</span>
+          </div>
+        </div>
+        <div class="faq-list" data-animate="fade-up-stagger">
+          <details class="faq-item">
+            <summary class="faq-item__q">Как быстро выполняется поставка?</summary>
+            <p class="faq-item__a">Сроки зависят от&nbsp;наличия позиций на&nbsp;складе и&nbsp;объёма заказа. Позиции из&nbsp;наличия отгружаем в&nbsp;течение 1–3 рабочих дней. Для нестандартных или крупных партий сроки согласовываются индивидуально на&nbsp;этапе заявки.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-item__q">Работаете ли вы с&nbsp;предприятиями ОПК?</summary>
+            <p class="faq-item__a">Да. Среди наших клиентов — предприятия оборонно-промышленного комплекса, авиационной и&nbsp;космической отрасли. Работаем в&nbsp;рамках государственных контрактов, соблюдаем требования к&nbsp;документарному сопровождению.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-item__q">Можно ли заменить иностранные компоненты на&nbsp;отечественные?</summary>
+            <p class="faq-item__a">Это одно из&nbsp;ключевых направлений работы. Мы подбираем отечественные аналоги под конкретные технические требования и&nbsp;при необходимости проводим испытания. Работаем с&nbsp;конструкторскими бюро на&nbsp;этапе проектирования.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-item__q">Есть ли у&nbsp;вас собственная испытательная лаборатория?</summary>
+            <p class="faq-item__a">Да. Лаборатория проводит входной контроль и&nbsp;испытания компонентов по&nbsp;действующим стандартам. Это позволяет гарантировать подлинность и&nbsp;работоспособность ЭКБ до&nbsp;передачи заказчику — без привлечения сторонних организаций.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-item__q">Есть ли минимальный объём заказа?</summary>
+            <p class="faq-item__a">Минимальный объём не&nbsp;установлен. Мы работаем как с&nbsp;единичными позициями для ремонта и&nbsp;разработки, так и&nbsp;с&nbsp;крупными партиями в&nbsp;рамках серийного производства.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-item__q">Как подтверждается подлинность компонентов?</summary>
+            <p class="faq-item__a">Каждая партия сопровождается сертификатами соответствия и&nbsp;паспортами производителя. Компания работает напрямую с&nbsp;российскими производителями и&nbsp;авторизованными дистрибьюторами — цепочка поставки прозрачна и&nbsp;документирована. По&nbsp;запросу предоставляются протоколы входного контроля.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-item__q">Каков порядок заключения договора?</summary>
+            <p class="faq-item__a">Договор заключается после согласования спецификации и&nbsp;условий поставки. Форма оплаты — предоплата или постоплата в&nbsp;зависимости от&nbsp;объёма и&nbsp;истории сотрудничества. Для старта достаточно направить запрос на&nbsp;info@ic-farvater.ru — менеджер подготовит коммерческое предложение в&nbsp;течение одного рабочего дня.</p>
+          </details>
         </div>
       </div>
     </section>
