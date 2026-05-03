@@ -253,8 +253,16 @@ function initProductCarousels() {
     if (N === 0) return;
 
     // Build [N clones][N originals][N clones] = 3N cards for seamless loop
-    const before = originals.map(c => { const cl = c.cloneNode(true); cl.setAttribute('aria-hidden', 'true'); return cl; });
-    const after  = originals.map(c => { const cl = c.cloneNode(true); cl.setAttribute('aria-hidden', 'true'); return cl; });
+    // Note: originals may have inline opacity/transform from GSAP fade-up-stagger;
+    // strip it on clones so they're visible immediately (clones aren't in GSAP's animation set).
+    const cloneCard = c => {
+      const cl = c.cloneNode(true);
+      cl.setAttribute('aria-hidden', 'true');
+      cl.style.cssText = '';
+      return cl;
+    };
+    const before = originals.map(cloneCard);
+    const after  = originals.map(cloneCard);
     originals[0].before(...before);
     grid.append(...after);
 
