@@ -34,6 +34,16 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
+// Защита от CSRF: пропускаем только запросы со своего домена
+$referer   = $_SERVER['HTTP_REFERER'] ?? '';
+$okOrigin  = ($origin === ALLOWED_ORIGIN);
+$okReferer = (strpos($referer, ALLOWED_ORIGIN . '/') === 0);
+if (!$okOrigin && !$okReferer) {
+    http_response_code(403);
+    echo json_encode(['ok' => false, 'error' => 'Forbidden']);
+    exit;
+}
+
 // Сбор данных
 $name    = trim($_POST['name']    ?? '');
 $email   = trim($_POST['email']   ?? '');
