@@ -77,16 +77,12 @@
 .about__split-left {
   display: flex;
   align-items: flex-start;
-  gap: var(--space-12);
+  gap: 8px;
 }
 
 .about__split-left .section-header__title {
   line-height: 1;
   white-space: nowrap;
-}
-
-.about__split-left .title-count {
-  margin-top: 0.4em;
 }
 
 .about__split-right {
@@ -97,11 +93,7 @@
 .about__title-row {
   display: flex;
   align-items: flex-start;
-  gap: var(--space-12);
-}
-
-.about__title-row .title-count {
-  margin-top: 0.4em;
+  gap: 8px;
 }
 
 /* Certs / FAQ — use shared .service-item styles from components.css */
