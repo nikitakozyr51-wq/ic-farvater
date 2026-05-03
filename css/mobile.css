@@ -600,10 +600,16 @@ h3 {
 .filter-group__items {
   display: flex !important;
   flex-direction: row;
-  gap: 8px;
+  gap: 12px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   padding-bottom: 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.filter-group__items::-webkit-scrollbar {
+  display: none;
 }
 
 .filter-radio {

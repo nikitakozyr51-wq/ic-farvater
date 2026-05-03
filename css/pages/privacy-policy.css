@@ -138,8 +138,10 @@
     border-bottom: 1px solid var(--color-border);
   }
   .policy-page__title {
-    font-size: var(--text-40);
-    letter-spacing: -1px;
+    font-size: 28px;
+    letter-spacing: -0.5px;
+    white-space: normal;
+    line-height: 1.1;
   }
   .policy-layout__right {
     padding: 40px 0 80px;
