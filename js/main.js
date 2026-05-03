@@ -259,9 +259,13 @@ function initProductCarousels() {
       const cl = c.cloneNode(true);
       cl.setAttribute('aria-hidden', 'true');
       cl.style.cssText = '';
-      // Force-load cloned images: lazy-loading uses IntersectionObserver,
-      // which doesn't trigger on transform-translated elements.
-      cl.querySelectorAll('img[loading="lazy"]').forEach(img => img.setAttribute('loading', 'eager'));
+      // Force-load cloned images: lazy state survives cloneNode in Blink/Webkit,
+      // and transform-translate doesn't trigger IntersectionObserver.
+      cl.querySelectorAll('img').forEach(img => {
+        img.removeAttribute('loading');
+        const src = img.getAttribute('src');
+        if (src) { img.removeAttribute('src'); img.setAttribute('src', src); }
+      });
       return cl;
     };
     const before = originals.map(cloneCard);
