@@ -42,6 +42,34 @@ h3 {
   display: none;
 }
 
+/* Search inside opened mobile drawer — full-width pill */
+.header__nav--open .header__search-wrap {
+  display: flex;
+  width: 100%;
+  margin-bottom: 24px;
+  position: relative;
+}
+.header__nav--open .header__search-toggle {
+  display: none;
+}
+.header__nav--open .header__search-box {
+  position: static;
+  transform: none;
+  width: 100%;
+  height: 52px;
+  padding: 0 6px 0 20px;
+  opacity: 1;
+  pointer-events: auto;
+  background: transparent;
+}
+.header__nav--open .header__search-input {
+  font-size: 14px;
+}
+.header__nav--open .header__search-submit {
+  width: 40px;
+  height: 40px;
+}
+
 .header {
   height: 56px;
 }
