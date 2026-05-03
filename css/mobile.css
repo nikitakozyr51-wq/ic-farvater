@@ -153,7 +153,7 @@ h3 {
 }
 
 .hero__btn {
-  top: 320px;
+  top: 280px;
   bottom: auto;
   left: 24px;
 }
@@ -1048,4 +1048,23 @@ p.cat-card__desc {
 
 .variant-card__info {
   margin-top: 8px;
+}
+
+
+/* --- Cookie banner --- */
+.cookie-banner {
+  flex-direction: column;
+  align-items: stretch;
+  padding: 16px 24px;
+  gap: 12px;
+}
+
+.cookie-banner__text {
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.cookie-banner__btn {
+  align-self: flex-start;
+  padding: 10px 22px;
 }
