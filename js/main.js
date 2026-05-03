@@ -206,8 +206,10 @@ function initCookieBanner() {
   });
 }
 
-/** Product carousel — infinite loop via DOM cloning */
+/** Product carousel — infinite loop via DOM cloning (desktop only) */
 function initProductCarousels() {
+  if (window.matchMedia('(max-width: 768px)').matches) return;
+
   document.querySelectorAll('.product-carousel').forEach(carousel => {
     const track = carousel.querySelector('.product-carousel__track');
     const grid = track && track.querySelector('.product-cards-grid');
