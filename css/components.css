@@ -607,6 +607,7 @@
 .section-header__left {
   display: flex;
   align-items: flex-start;
+  gap: var(--space-8);
 }
 
 .section-header__title {
@@ -621,7 +622,6 @@
   font-size: var(--text-14);
   font-weight: 600;
   letter-spacing: 1px;
-  margin-left: var(--space-8);
   margin-top: 0.25em;
 }
 

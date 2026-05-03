@@ -124,8 +124,12 @@ h3 {
 }
 
 
-/* ===== HERO — 400px ===== */
-.hero {
+/* ===== PAGE WRAPPERS — header is 56px on mobile ===== */
+.hero,
+.about,
+.contacts,
+.catalog,
+.product-detail {
   margin-top: 56px;
 }
 
@@ -208,6 +212,7 @@ h3 {
 
 .title-count {
   display: inline;
+  margin-left: 0;
 }
 
 .section-header-v2__desc {
