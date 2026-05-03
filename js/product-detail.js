@@ -76,64 +76,10 @@
     }
   }
 
-  function initPriceDrawer() {
-    var btn = document.querySelector('.product-detail__btn');
-    var drawer = document.getElementById('priceDrawer');
-    var overlay = document.getElementById('priceDrawerOverlay');
-    var closeBtn = document.getElementById('priceDrawerClose');
-    var productNameEl = document.getElementById('drawerProductName');
-    var form = document.getElementById('priceDrawerForm');
-    var success = document.getElementById('priceDrawerSuccess');
-
-    if (!btn || !drawer) return;
-
-    function openDrawer() {
-      var nameEl = document.getElementById('pd-name');
-      if (productNameEl && nameEl) productNameEl.textContent = nameEl.textContent;
-      drawer.classList.add('is-open');
-      drawer.setAttribute('aria-hidden', 'false');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeDrawer() {
-      drawer.classList.remove('is-open');
-      drawer.setAttribute('aria-hidden', 'true');
-      document.body.style.overflow = '';
-    }
-
-    btn.addEventListener('click', openDrawer);
-    if (overlay) overlay.addEventListener('click', closeDrawer);
-    if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
-
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape' && drawer.classList.contains('is-open')) closeDrawer();
-    });
-
-    if (form) {
-      form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        form.style.display = 'none';
-        if (success) success.classList.add('is-visible');
-        setTimeout(function() {
-          closeDrawer();
-          setTimeout(function() {
-            form.style.display = '';
-            if (success) success.classList.remove('is-visible');
-            form.reset();
-          }, 420);
-        }, 2800);
-      });
-    }
-  }
-
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function() {
-      render();
-      initPriceDrawer();
-    });
+    document.addEventListener('DOMContentLoaded', render);
   } else {
     render();
-    initPriceDrawer();
   }
   window.addEventListener('hashchange', render);
 })();
