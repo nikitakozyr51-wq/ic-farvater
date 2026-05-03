@@ -65,7 +65,18 @@
   flex-direction: column;
   gap: 16px;
   padding: 48px 0 0 0;
-  border-top: 1px solid var(--color-border);
+  border-top: none;
+  position: relative;
+}
+
+.policy-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: -100vw;
+  height: 1px;
+  background: var(--color-border);
 }
 
 .policy-section__title {
