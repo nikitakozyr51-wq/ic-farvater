@@ -63,7 +63,7 @@
 
 .not-found__band {
   width: 100%;
-  height: clamp(110px, 16vw, 230px);
+  height: clamp(120px, 16vw, 230px);
   overflow: hidden;
   position: relative;
 }
@@ -74,7 +74,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: var(--font-main, 'Inter', sans-serif);
-  font-size: clamp(120px, 18vw, 260px);
+  font-size: clamp(100px, 13vw, 200px);
   font-weight: 500;
   letter-spacing: -0.04em;
   line-height: 1;
@@ -83,7 +83,7 @@
 }
 
 .not-found__big--title {
-  font-size: clamp(110px, 16vw, 230px);
+  font-size: clamp(90px, 12vw, 180px);
   letter-spacing: -0.035em;
 }
 
