@@ -223,6 +223,18 @@
   color: var(--color-text);
 }
 
+/* Mobile-only search trigger in header (visible next to burger) */
+.header__search-mobile {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  color: var(--color-text);
+  position: relative;
+  z-index: 200;
+}
+
 /* ===== HERO ===== */
 .hero {
   position: relative;

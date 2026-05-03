@@ -125,6 +125,19 @@ h3 {
   z-index: 200;
 }
 
+.header__search-mobile {
+  display: inline-flex;
+  margin-left: auto;
+  margin-right: 16px;
+}
+.header--inverse .header__search-mobile {
+  color: var(--color-bg);
+}
+/* Hide mobile search btn when drawer is open */
+body.menu-open .header__search-mobile {
+  display: none;
+}
+
 .header__logo {
   position: relative;
   z-index: 200;
@@ -606,7 +619,7 @@ h3 {
 .catalog__sidebar {
   width: 100%;
   position: static;
-  gap: 10px;
+  gap: 6px;
   padding-top: 0;
 }
 
