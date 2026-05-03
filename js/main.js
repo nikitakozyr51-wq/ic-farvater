@@ -191,18 +191,19 @@ function initServiceAccordion() {
 function initCookieBanner() {
   const banner = document.getElementById('cookieBanner');
   if (!banner) return;
-  if (localStorage.getItem('cookieAccepted') === 'true') {
+  const choice = localStorage.getItem('cookieConsent');
+  if (choice === 'accepted' || choice === 'rejected' || localStorage.getItem('cookieAccepted') === 'true') {
     banner.classList.add('cookie-banner--hidden');
     return;
   }
   banner.classList.remove('cookie-banner--hidden');
-  const btn = banner.querySelector('.cookie-banner__btn');
-  if (btn) {
+  banner.querySelectorAll('[data-cookie-action]').forEach(btn => {
     btn.addEventListener('click', () => {
-      localStorage.setItem('cookieAccepted', 'true');
+      const action = btn.getAttribute('data-cookie-action');
+      localStorage.setItem('cookieConsent', action === 'accept' ? 'accepted' : 'rejected');
       banner.classList.add('cookie-banner--hidden');
     });
-  }
+  });
 }
 
 /** Product carousel — infinite loop via DOM cloning */
