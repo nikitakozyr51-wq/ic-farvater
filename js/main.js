@@ -259,6 +259,9 @@ function initProductCarousels() {
       const cl = c.cloneNode(true);
       cl.setAttribute('aria-hidden', 'true');
       cl.style.cssText = '';
+      // Force-load cloned images: lazy-loading uses IntersectionObserver,
+      // which doesn't trigger on transform-translated elements.
+      cl.querySelectorAll('img[loading="lazy"]').forEach(img => img.setAttribute('loading', 'eager'));
       return cl;
     };
     const before = originals.map(cloneCard);
