@@ -83,6 +83,7 @@
 
 .about__split-left .section-header__title {
   line-height: 1;
+  white-space: nowrap;
 }
 
 .about__split-left .title-count {
