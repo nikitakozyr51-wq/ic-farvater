@@ -578,7 +578,7 @@ h3 {
 .catalog__sidebar {
   width: 100%;
   position: static;
-  gap: 0;
+  gap: 16px;
   padding-top: 0;
 }
 
@@ -605,7 +605,7 @@ h3 {
 .filter-group__items {
   display: flex !important;
   flex-direction: row;
-  gap: 20px;
+  gap: 12px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   padding-bottom: 0;
