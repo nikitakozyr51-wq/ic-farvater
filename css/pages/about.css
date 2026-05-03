@@ -94,15 +94,18 @@
   /* aligns content with title baseline (title height 40 + breathing room) */
 }
 
-/* Certs / FAQ — use shared .service-item styles from components.css */
-.cert-row__number {
-  font-size: var(--text-14);
-  font-weight: 600;
-  letter-spacing: 1px;
-  color: var(--color-text-muted);
-  margin-right: var(--space-16);
+/* Title row with bracket counter */
+.about__title-row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-12);
 }
 
+.about__title-row .title-count {
+  margin-top: 0.4em;
+}
+
+/* Certs / FAQ — use shared .service-item styles from components.css */
 .cert-row__photo {
   width: 100%;
   max-width: 600px;
