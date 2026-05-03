@@ -120,12 +120,12 @@
     var p = item.product;
     var idx = item.index;
     var imgHtml = p.image
-      ? '<img src="' + p.image + '" alt="' + p.name + '" loading="lazy" onerror="this.style.display=\'none\'">'
+      ? '<img src="' + esc(p.image) + '" alt="' + esc(p.name) + '" loading="lazy" onerror="this.style.display=\'none\'">'
       : '';
     return '<a href="product-detail.html#' + p.id + '" class="product-card">' +
       '<div class="product-card__img">' + imgHtml + '</div>' +
       '<div class="product-card__info">' +
-        '<span class="product-card__name">' + p.name.toUpperCase() + '</span>' +
+        '<span class="product-card__name">' + esc(p.name).toUpperCase() + '</span>' +
         '<span class="product-card__count">(' + pad(idx + 1) + ')</span>' +
       '</div>' +
     '</a>';
