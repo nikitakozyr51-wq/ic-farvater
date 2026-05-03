@@ -196,6 +196,7 @@ h3 {
 
 .section-header__left {
   flex-wrap: wrap;
+  align-items: baseline;
   gap: 8px;
 }
 
@@ -211,8 +212,10 @@ h3 {
 }
 
 .title-count {
-  display: inline;
+  margin-top: 0;
   margin-left: 0;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .section-header-v2__desc {
@@ -233,6 +236,7 @@ h3 {
 
 .section-header-v2__top {
   flex-wrap: wrap;
+  align-items: baseline;
   gap: 8px;
 }
 
@@ -362,7 +366,8 @@ h3 {
 
 .cables-split__title-wrap {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
+  flex-wrap: wrap;
   gap: 8px;
   padding-bottom: 24px;
   border-bottom: 1px solid var(--color-border);
@@ -692,6 +697,11 @@ p.cat-card__desc {
   letter-spacing: -1px;
 }
 
+.product-detail__title-wrap {
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
 .product-detail__breadcrumb,
 .product-detail__subcategory {
   font-size: 14px;
@@ -778,6 +788,12 @@ p.cat-card__desc {
 .about__title {
   font-size: 40px;
   letter-spacing: -1px;
+}
+
+.about__title-row,
+.about__split-left {
+  align-items: baseline;
+  flex-wrap: wrap;
 }
 
 .about__desc {
@@ -869,6 +885,11 @@ p.cat-card__desc {
 .contacts__title {
   font-size: 40px;
   letter-spacing: -1px;
+}
+
+.contacts__title-wrap {
+  align-items: baseline;
+  flex-wrap: wrap;
 }
 
 .contacts__desc {
