@@ -236,7 +236,7 @@ function initCookieBanner() {
   });
 }
 
-/** Product carousel — infinite loop via DOM cloning (desktop only) */
+/** Product carousel — bounded scroll, desktop only */
 function initProductCarousels() {
   if (window.matchMedia('(max-width: 768px)').matches) return;
 
@@ -248,58 +248,27 @@ function initProductCarousels() {
 
     if (!track || !grid || !btnPrev || !btnNext) return;
 
-    const originals = Array.from(grid.querySelectorAll('.product-card-v2'));
-    const N = originals.length;
-    if (N === 0) return;
+    const cards = Array.from(grid.querySelectorAll('.product-card-v2'));
+    const N = cards.length;
+    if (N < 2) return;
 
-    // Build [N clones][N originals][N clones] = 3N cards for seamless loop.
-    // Build clones from extracted data — cloneNode inherits GSAP's inline styles
-    // (opacity:0, translate) and the lazy-load deferred state, both of which
-    // leave clones invisible.
-    const cardsData = originals.map(c => {
-      const img = c.querySelector('img');
-      const label = c.querySelector('.product-card-v2__label');
-      return {
-        href: c.getAttribute('href') || '',
-        imgSrc: img ? img.getAttribute('src') : '',
-        imgAlt: img ? img.getAttribute('alt') || '' : '',
-        label: label ? label.textContent : '',
-      };
-    });
-
-    const buildClone = (data) => {
-      const a = document.createElement('a');
-      a.className = 'product-card-v2';
-      a.href = data.href;
-      a.setAttribute('aria-hidden', 'true');
-      const imgWrap = document.createElement('div');
-      imgWrap.className = 'product-card-v2__img';
-      const img = document.createElement('img');
-      img.src = data.imgSrc;
-      img.alt = data.imgAlt;
-      imgWrap.appendChild(img);
-      const label = document.createElement('span');
-      label.className = 'product-card-v2__label';
-      label.textContent = data.label;
-      a.appendChild(imgWrap);
-      a.appendChild(label);
-      return a;
-    };
-
-    const before = cardsData.map(buildClone);
-    const after  = cardsData.map(buildClone);
-    originals[0].before(...before);
-    grid.append(...after);
-
-    let index = N; // start at original set
+    let index = 0;
 
     function getStep() {
-      const cards = grid.querySelectorAll('.product-card-v2');
       return cards.length > 1 ? cards[1].offsetLeft - cards[0].offsetLeft : cards[0].offsetWidth;
     }
 
-    function goTo(i, animate) {
-      index = i;
+    function visibleCount() {
+      const step = getStep();
+      return step > 0 ? Math.round(track.offsetWidth / step) : 4;
+    }
+
+    function maxIndex() {
+      return Math.max(0, N - visibleCount());
+    }
+
+    function go(i, animate) {
+      index = Math.max(0, Math.min(i, maxIndex()));
       if (!animate) {
         grid.style.transition = 'none';
         grid.style.transform = `translateX(-${index * getStep()}px)`;
@@ -308,22 +277,20 @@ function initProductCarousels() {
       } else {
         grid.style.transform = `translateX(-${index * getStep()}px)`;
       }
+      btnPrev.style.opacity = index <= 0 ? '0.25' : '';
+      btnPrev.disabled = index <= 0;
+      btnNext.style.opacity = index >= maxIndex() ? '0.25' : '';
+      btnNext.disabled = index >= maxIndex();
     }
 
-    grid.addEventListener('transitionend', () => {
-      if (index >= N * 2) goTo(index - N, false);
-      else if (index < N) goTo(index + N, false);
-    });
-
-    btnPrev.addEventListener('click', () => goTo(index - 1, true));
-    btnNext.addEventListener('click', () => goTo(index + 1, true));
-
-    goTo(N, false);
+    btnPrev.addEventListener('click', () => go(index - 1, true));
+    btnNext.addEventListener('click', () => go(index + 1, true));
+    go(0, false);
 
     let resizeTimer;
     window.addEventListener('resize', () => {
       clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(() => goTo(N, false), 150);
+      resizeTimer = setTimeout(() => go(index, false), 150);
     });
   });
 }
