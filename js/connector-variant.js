@@ -10,9 +10,18 @@
 
   if (!slug || isNaN(idx) || typeof CONNECTOR_SERIES === 'undefined') return;
 
+  const $ = (id) => document.getElementById(id);
+  const nameEl = $('cv-name');
+  const seriesLinkEl = $('cv-series-link');
+  const subcatEl = $('cv-subcategory');
+  const imgEl = $('cv-image');
+  const descEl = $('cv-description');
+  const specsEl = $('cv-specs');
+  const backEl = $('cv-back');
+
   const series = CONNECTOR_SERIES.find(s => s.slug === slug);
   if (!series || !series.items[idx]) {
-    document.getElementById('cv-name').textContent = 'ВАРИАНТ НЕ НАЙДЕН';
+    if (nameEl) nameEl.textContent = 'ВАРИАНТ НЕ НАЙДЕН';
     return;
   }
 
@@ -23,14 +32,14 @@
 
   document.title = item.name + ' — IC FARVATER';
 
-  const seriesLink = document.getElementById('cv-series-link');
-  seriesLink.textContent = series.name;
-  seriesLink.href = 'products.html#connectors/' + slug;
+  if (seriesLinkEl) {
+    seriesLinkEl.textContent = series.name;
+    seriesLinkEl.href = 'products.html#connectors/' + slug;
+  }
 
-  document.getElementById('cv-name').textContent = item.name;
-  document.getElementById('cv-subcategory').textContent = series.name + (series.tu ? ' · ' + series.tu : '');
+  if (nameEl) nameEl.textContent = item.name;
+  if (subcatEl) subcatEl.textContent = series.name + (series.tu ? ' · ' + series.tu : '');
 
-  const img = document.getElementById('cv-image');
   const typeField = parser && parser.columns
     ? (parser.columns.indexOf('Часть') !== -1 ? 'Часть' : parser.columns.indexOf('Тип') !== -1 ? 'Тип' : null)
     : null;
@@ -42,19 +51,21 @@
     if (/^Розетка/i.test(itemType) && byType['Розетка']) return byType['Розетка'];
     return series.image || '';
   }
-  const picked = pickVariantImage();
-  if (picked) {
-    img.src = picked;
-    img.alt = item.name;
-  } else {
-    img.style.display = 'none';
+  if (imgEl) {
+    const picked = pickVariantImage();
+    if (picked) {
+      imgEl.src = picked;
+      imgEl.alt = item.name;
+    } else {
+      imgEl.style.display = 'none';
+    }
   }
 
-  document.getElementById('cv-description').textContent =
-    (series.description || '') + (item.type ? ' Тип: ' + item.type + '.' : '');
+  if (descEl) {
+    descEl.textContent = (series.description || '') + (item.type ? ' Тип: ' + item.type + '.' : '');
+  }
 
   // Specs: ТУ + tип + parsed columns
-  const specsEl = document.getElementById('cv-specs');
   const specs = [];
   specs.push(['СЕРИЯ', series.name]);
   if (item.type) specs.push(['ТИП', item.type]);
@@ -66,14 +77,16 @@
     });
   }
 
-  specsEl.innerHTML = specs.map(([k, v]) =>
-    '<div class="product-detail__spec-row">' +
-      '<span class="product-detail__spec-key">' + esc(k) + '</span>' +
-      '<span class="product-detail__spec-value">' + esc(v) + '</span>' +
-    '</div>'
-  ).join('');
+  if (specsEl) {
+    specsEl.innerHTML = specs.map(([k, v]) =>
+      '<div class="product-detail__spec-row">' +
+        '<span class="product-detail__spec-key">' + esc(k) + '</span>' +
+        '<span class="product-detail__spec-value">' + esc(v) + '</span>' +
+      '</div>'
+    ).join('');
+  }
 
-  document.getElementById('cv-back').href = 'products.html#connectors/' + slug;
+  if (backEl) backEl.href = 'products.html#connectors/' + slug;
 
   function esc(str) {
     const d = document.createElement('div');

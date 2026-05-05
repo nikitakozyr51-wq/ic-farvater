@@ -191,7 +191,7 @@
   outline: none;
   background: transparent;
   font-size: 13px;
-  font-family: var(--font-main);
+  font-family: var(--font-primary);
   font-weight: 600;
   letter-spacing: 0.5px;
   text-transform: uppercase;
