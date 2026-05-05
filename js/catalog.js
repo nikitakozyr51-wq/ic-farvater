@@ -413,6 +413,11 @@
     radios.forEach(function(btn) {
       btn.addEventListener('click', function() {
         var key = btn.getAttribute('data-category');
+        var isActive = btn.classList.contains('filter-radio--active');
+        if (isActive && key !== 'all') {
+          activateCategory('all');
+          return;
+        }
         activateCategory(key);
       });
     });
