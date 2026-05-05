@@ -1330,3 +1330,9 @@ p.product-card__desc {
   letter-spacing: 0.5px;
   color: var(--color-bg);
 }
+
+.footer__legal-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+}

@@ -582,6 +582,12 @@ body.menu-open .header__search-mobile {
   font-size: 11px;
 }
 
+.footer__legal-links {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
 
 /* ===== CATALOG PAGE ===== */
 .catalog__top {
