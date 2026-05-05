@@ -25,9 +25,9 @@
   <link rel="stylesheet" href="../css/base.css?v=8">
   <link rel="stylesheet" href="../css/layout.css?v=7">
   <link rel="stylesheet" href="../css/components.css?v=25">
-  <link rel="stylesheet" href="../css/pages/products.css?v=16">
+  <link rel="stylesheet" href="../css/pages/products.css?v=17">
   <link rel="stylesheet" href="../css/animations.css?v=5">
-  <link rel="stylesheet" href="../css/mobile.css?v=23" media="(max-width: 768px)">
+  <link rel="stylesheet" href="../css/mobile.css?v=24" media="(max-width: 768px)">
 </head>
 <body>
 
@@ -100,6 +100,21 @@
 
           <div class="filter-header">
             <span class="filter-header__title">ФИЛЬТРЫ</span>
+            <div class="catalog__view-switch" role="group" aria-label="Вид каталога">
+              <button type="button" class="catalog__view-btn catalog__view-btn--active" data-view="grid" aria-label="Сетка" aria-pressed="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <rect x="1" y="1" width="6" height="6" stroke="currentColor" stroke-width="1.5"/>
+                  <rect x="9" y="1" width="6" height="6" stroke="currentColor" stroke-width="1.5"/>
+                  <rect x="1" y="9" width="6" height="6" stroke="currentColor" stroke-width="1.5"/>
+                  <rect x="9" y="9" width="6" height="6" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </button>
+              <button type="button" class="catalog__view-btn" data-view="list" aria-label="Список" aria-pressed="false">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M1 3H15M1 8H15M1 13H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </button>
+            </div>
           </div>
 
           <!-- Категория -->
@@ -152,25 +167,6 @@
                 <path d="M1 6.5H12M8 2L12 6.5L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </button>
-          </div>
-          <div class="catalog__toolbar" id="catalog-toolbar">
-            <span class="catalog__counter" id="catalog-counter">(6 КАТЕГОРИЙ)</span>
-            <div class="catalog__view-switch" role="group" aria-label="Вид каталога">
-              <span class="catalog__view-label">VIEW</span>
-              <button type="button" class="catalog__view-btn catalog__view-btn--active" data-view="grid" aria-label="Сетка" aria-pressed="true">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                  <rect x="1" y="1" width="6" height="6" stroke="currentColor" stroke-width="1.5"/>
-                  <rect x="9" y="1" width="6" height="6" stroke="currentColor" stroke-width="1.5"/>
-                  <rect x="1" y="9" width="6" height="6" stroke="currentColor" stroke-width="1.5"/>
-                  <rect x="9" y="9" width="6" height="6" stroke="currentColor" stroke-width="1.5"/>
-                </svg>
-              </button>
-              <button type="button" class="catalog__view-btn" data-view="list" aria-label="Список" aria-pressed="false">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                  <path d="M1 3H15M1 8H15M1 13H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                </svg>
-              </button>
-            </div>
           </div>
           <div class="catalog__grid" id="products-grid">
 
@@ -287,7 +283,7 @@
   <script src="../js/connectors-parsers.js?v=5" defer></script>
   <script src="../js/converters-data.js?v=12" defer></script>
   <script src="../js/capacitors-data.js?v=12" defer></script>
-  <script src="../js/catalog.js?v=15" defer></script>
+  <script src="../js/catalog.js?v=16" defer></script>
   <script src="../js/main.js?v=18" defer></script>
   <script src="../js/animations.js?v=6" defer></script>
   <script defer>

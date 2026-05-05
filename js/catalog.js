@@ -57,7 +57,6 @@
     } else {
       enterBrowseMode();
     }
-    updateCounter();
   }
 
   // --- Category ---
@@ -523,17 +522,6 @@
         try { localStorage.setItem('catalog-view', view); } catch (e) {}
       });
     });
-  }
-
-  function updateCounter() {
-    var counter = document.getElementById('catalog-counter');
-    if (!counter) return;
-    if (browseMode) {
-      counter.textContent = '(6 КАТЕГОРИЙ)';
-      return;
-    }
-    var n = getFiltered().length;
-    counter.textContent = '(' + n + ' ' + (n === 1 ? 'ТОВАР' : (n >= 2 && n <= 4 ? 'ТОВАРА' : 'ТОВАРОВ')) + ')';
   }
 
   // --- Init ---
