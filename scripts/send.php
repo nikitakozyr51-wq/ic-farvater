@@ -2,16 +2,15 @@
 /**
  * IC Farvater — обработчик формы контактов
  * Разместить на Beget в папке /scripts/send.php
- *
- * Настройка:
- *   1. Замени TO_EMAIL на свой адрес
- *   2. Убедись что домен ic-farvater.ru прописан в ALLOWED_ORIGIN
- *   3. Загрузи файл на хостинг
  */
 
 define('TO_EMAIL',       'info@ic-farvater.ru');
 define('FROM_EMAIL',     'noreply@ic-farvater.ru');
 define('ALLOWED_ORIGIN', 'https://ic-farvater.ru');
+define('FILE_MAX_COUNT',  5);
+define('FILE_MAX_TOTAL',  10 * 1024 * 1024);
+
+$ALLOWED_EXT = ['pdf','doc','docx','xls','xlsx','csv','txt','png','jpg','jpeg','zip','rar','7z'];
 
 header('Content-Type: application/json; charset=utf-8');
 
@@ -68,20 +67,91 @@ if (!$consent) {
     exit;
 }
 
+// Сбор и валидация вложений
+$attachments = [];
+if (!empty($_FILES['attachments']) && is_array($_FILES['attachments']['name'])) {
+    $files = $_FILES['attachments'];
+    $count = count($files['name']);
+
+    // Отсеиваем "пустые" слоты (когда форма отправлена без файлов)
+    $real = [];
+    for ($i = 0; $i < $count; $i++) {
+        if (($files['error'][$i] ?? UPLOAD_ERR_NO_FILE) === UPLOAD_ERR_NO_FILE) continue;
+        $real[] = $i;
+    }
+
+    if (count($real) > FILE_MAX_COUNT) {
+        http_response_code(400);
+        echo json_encode(['ok' => false, 'error' => 'Максимум ' . FILE_MAX_COUNT . ' файлов']);
+        exit;
+    }
+
+    $totalSize = 0;
+    $finfo = function_exists('finfo_open') ? finfo_open(FILEINFO_MIME_TYPE) : false;
+
+    foreach ($real as $i) {
+        if ($files['error'][$i] !== UPLOAD_ERR_OK) {
+            http_response_code(400);
+            echo json_encode(['ok' => false, 'error' => 'Ошибка загрузки файла: ' . $files['name'][$i]]);
+            if ($finfo) finfo_close($finfo);
+            exit;
+        }
+        $tmp  = $files['tmp_name'][$i];
+        $name_f = $files['name'][$i];
+        if (!is_uploaded_file($tmp)) {
+            http_response_code(400);
+            echo json_encode(['ok' => false, 'error' => 'Некорректный файл']);
+            if ($finfo) finfo_close($finfo);
+            exit;
+        }
+
+        $ext = strtolower(pathinfo($name_f, PATHINFO_EXTENSION));
+        if (!in_array($ext, $ALLOWED_EXT, true)) {
+            http_response_code(400);
+            echo json_encode(['ok' => false, 'error' => "Тип «.$ext» не поддерживается"]);
+            if ($finfo) finfo_close($finfo);
+            exit;
+        }
+
+        $totalSize += $files['size'][$i];
+        if ($totalSize > FILE_MAX_TOTAL) {
+            http_response_code(400);
+            echo json_encode(['ok' => false, 'error' => 'Превышен общий размер 10 MB']);
+            if ($finfo) finfo_close($finfo);
+            exit;
+        }
+
+        $mime = $finfo ? finfo_file($finfo, $tmp) : 'application/octet-stream';
+
+        $attachments[] = [
+            'name' => $name_f,
+            'mime' => $mime ?: 'application/octet-stream',
+            'data' => file_get_contents($tmp),
+        ];
+    }
+
+    if ($finfo) finfo_close($finfo);
+}
+
 // Санитизация
 $name    = htmlspecialchars($name,    ENT_QUOTES, 'UTF-8');
-$email   = htmlspecialchars($email,   ENT_QUOTES, 'UTF-8');
+$email_s = htmlspecialchars($email,   ENT_QUOTES, 'UTF-8');
 $phone   = htmlspecialchars($phone,   ENT_QUOTES, 'UTF-8');
 $message = htmlspecialchars($message, ENT_QUOTES, 'UTF-8');
 
 // Текст письма
+$attachLine = $attachments
+    ? 'Вложений:  ' . count($attachments)
+    : 'Вложений:  нет';
+
 $subject = 'Новая заявка с сайта IC Farvater';
 $body    = implode("\n", [
     "Новая заявка с сайта ic-farvater.ru",
     str_repeat('-', 40),
     "Имя:      $name",
-    "Email:    $email",
+    "Email:    $email_s",
     "Телефон:  " . ($phone ?: 'не указан'),
+    $attachLine,
     "",
     "Сообщение:",
     $message,
@@ -90,19 +160,49 @@ $body    = implode("\n", [
     "Дата: " . date('d.m.Y H:i') . " (МСК)",
 ]);
 
-$headers = implode("\r\n", [
-    "From: IC Farvater <" . FROM_EMAIL . ">",
-    "Reply-To: $email",
-    "Content-Type: text/plain; charset=UTF-8",
-    "X-Mailer: PHP/" . phpversion(),
-]);
+$subjectEnc = '=?UTF-8?B?' . base64_encode($subject) . '?=';
 
-$sent = mail(
-    TO_EMAIL,
-    '=?UTF-8?B?' . base64_encode($subject) . '?=',
-    $body,
-    $headers
-);
+if (empty($attachments)) {
+    // Простое plain-text письмо
+    $headers = implode("\r\n", [
+        "From: IC Farvater <" . FROM_EMAIL . ">",
+        "Reply-To: $email",
+        "Content-Type: text/plain; charset=UTF-8",
+        "MIME-Version: 1.0",
+        "X-Mailer: PHP/" . phpversion(),
+    ]);
+    $sent = mail(TO_EMAIL, $subjectEnc, $body, $headers);
+} else {
+    // MIME multipart с вложениями
+    $boundary = '=_b_' . md5(uniqid('', true));
+    $eol = "\r\n";
+
+    $headers = implode($eol, [
+        "From: IC Farvater <" . FROM_EMAIL . ">",
+        "Reply-To: $email",
+        "MIME-Version: 1.0",
+        "Content-Type: multipart/mixed; boundary=\"$boundary\"",
+        "X-Mailer: PHP/" . phpversion(),
+    ]);
+
+    $msg  = "--$boundary$eol";
+    $msg .= "Content-Type: text/plain; charset=UTF-8$eol";
+    $msg .= "Content-Transfer-Encoding: 8bit$eol$eol";
+    $msg .= $body . $eol;
+
+    foreach ($attachments as $att) {
+        $fnameEnc = '=?UTF-8?B?' . base64_encode($att['name']) . '?=';
+        $msg .= "--$boundary$eol";
+        $msg .= "Content-Type: " . $att['mime'] . "; name=\"$fnameEnc\"$eol";
+        $msg .= "Content-Disposition: attachment; filename=\"$fnameEnc\"$eol";
+        $msg .= "Content-Transfer-Encoding: base64$eol$eol";
+        $msg .= chunk_split(base64_encode($att['data'])) . $eol;
+    }
+
+    $msg .= "--$boundary--$eol";
+
+    $sent = mail(TO_EMAIL, $subjectEnc, $msg, $headers);
+}
 
 if ($sent) {
     echo json_encode(['ok' => true]);

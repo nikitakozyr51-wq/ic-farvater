@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="../css/base.css?v=8">
   <link rel="stylesheet" href="../css/layout.css?v=7">
   <link rel="stylesheet" href="../css/components.css?v=25">
-  <link rel="stylesheet" href="../css/pages/contacts.css?v=7">
+  <link rel="stylesheet" href="../css/pages/contacts.css?v=8">
   <link rel="stylesheet" href="../css/animations.css?v=5">
   <link rel="stylesheet" href="../css/mobile.css?v=22" media="(max-width: 768px)">
 </head>
@@ -126,12 +126,21 @@
         </div>
 
         <!-- Contact Form (right) -->
-        <form class="contact-form" id="contactForm" data-animate="fade-up">
+        <form class="contact-form" id="contactForm" enctype="multipart/form-data" data-animate="fade-up">
           <span class="contact-form__title">НАПИСАТЬ НАМ</span>
           <input type="text" class="contact-form__field" name="name" placeholder="ИМЯ" required>
           <input type="email" class="contact-form__field" name="email" placeholder="ЭЛЕКТРОННАЯ ПОЧТА" required>
           <input type="tel" class="contact-form__field" name="phone" placeholder="ТЕЛЕФОН">
           <textarea class="contact-form__textarea" name="message" placeholder="СООБЩЕНИЕ" required></textarea>
+          <div class="contact-form__file">
+            <input type="file" id="contactFiles" name="attachments[]"
+                   multiple
+                   accept=".pdf,.doc,.docx,.xls,.xlsx,.csv,.txt,.png,.jpg,.jpeg,.zip,.rar,.7z"
+                   hidden>
+            <label for="contactFiles" class="contact-form__file-trigger">+ ПРИКРЕПИТЬ ФАЙЛ</label>
+            <span class="contact-form__file-hint">PDF, DOC, XLS, JPG, ZIP — до 5 файлов, 10&nbsp;MB</span>
+            <ul class="contact-form__file-list" id="contactFilesList"></ul>
+          </div>
           <label class="contact-form__consent">
             <input type="checkbox" name="consent" required>
             <span>Я даю <a href="consent.html">согласие на обработку персональных данных</a> и подтверждаю, что ознакомлен(а) с <a href="privacy-policy.html">Политикой конфиденциальности</a></span>
@@ -191,7 +200,7 @@
   <script src="../js/vendor/lenis.min.js" defer></script>
   <script src="../js/vendor/gsap.min.js" defer></script>
   <script src="../js/vendor/ScrollTrigger.min.js" defer></script>
-  <script src="../js/main.js?v=17" defer></script>
+  <script src="../js/main.js?v=18" defer></script>
   <script src="../js/animations.js?v=6" defer></script>
   <!-- Cookie Banner -->
   <div class="cookie-banner cookie-banner--hidden" id="cookieBanner">

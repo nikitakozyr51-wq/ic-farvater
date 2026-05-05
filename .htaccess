@@ -1,0 +1,5 @@
+# IC Farvater — PHP upload limits для формы заявки
+# (контакты: до 5 файлов, 10 MB суммарно)
+php_value upload_max_filesize 10M
+php_value post_max_size 12M
+php_value max_file_uploads 5

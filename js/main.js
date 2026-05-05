@@ -135,11 +135,16 @@ function initActiveNavLink() {
 }
 
 /** Contact form → /scripts/send.php */
+const CONTACT_FILE_MAX_COUNT = 5;
+const CONTACT_FILE_MAX_TOTAL = 10 * 1024 * 1024;
+const CONTACT_FILE_ALLOWED = ['pdf','doc','docx','xls','xlsx','csv','txt','png','jpg','jpeg','zip','rar','7z'];
+
 function initContactForm() {
   const form = document.getElementById('contactForm');
   if (!form) return;
 
   const btn = form.querySelector('.contact-form__submit');
+  const fileState = initContactFiles(form);
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -155,6 +160,7 @@ function initContactForm() {
       if (json.ok) {
         showFormMessage(form, 'Спасибо! Мы свяжемся с вами в течение рабочего дня.', true);
         form.reset();
+        if (fileState) fileState.clear();
       } else {
         showFormMessage(form, json.error || 'Произошла ошибка. Попробуйте позже.', false);
       }
@@ -164,6 +170,93 @@ function initContactForm() {
       if (btn) { btn.disabled = false; btn.textContent = 'ОТПРАВИТЬ'; }
     }
   });
+}
+
+function initContactFiles(form) {
+  const input = form.querySelector('#contactFiles');
+  const list = form.querySelector('#contactFilesList');
+  if (!input || !list) return null;
+
+  const selected = [];
+
+  const sync = () => {
+    const dt = new DataTransfer();
+    selected.forEach(f => dt.items.add(f));
+    input.files = dt.files;
+    render();
+  };
+
+  const render = () => {
+    list.innerHTML = '';
+    selected.forEach((file, idx) => {
+      const li = document.createElement('li');
+      li.className = 'contact-form__file-item';
+
+      const name = document.createElement('span');
+      name.className = 'contact-form__file-name';
+      name.textContent = file.name;
+
+      const size = document.createElement('span');
+      size.className = 'contact-form__file-size';
+      size.textContent = formatFileSize(file.size);
+
+      const remove = document.createElement('button');
+      remove.type = 'button';
+      remove.className = 'contact-form__file-remove';
+      remove.setAttribute('aria-label', 'Удалить файл');
+      remove.textContent = '✕';
+      remove.addEventListener('click', () => {
+        selected.splice(idx, 1);
+        sync();
+      });
+
+      li.appendChild(name);
+      li.appendChild(size);
+      li.appendChild(remove);
+      list.appendChild(li);
+    });
+  };
+
+  input.addEventListener('change', (e) => {
+    removeFormMessage(form);
+    const incoming = Array.from(e.target.files || []);
+    const errors = [];
+
+    for (const file of incoming) {
+      const ext = (file.name.split('.').pop() || '').toLowerCase();
+      if (!CONTACT_FILE_ALLOWED.includes(ext)) {
+        errors.push(`Тип «.${ext}» не поддерживается: ${file.name}`);
+        continue;
+      }
+      if (selected.length + 1 > CONTACT_FILE_MAX_COUNT) {
+        errors.push(`Максимум ${CONTACT_FILE_MAX_COUNT} файлов`);
+        break;
+      }
+      const total = selected.reduce((s, f) => s + f.size, 0) + file.size;
+      if (total > CONTACT_FILE_MAX_TOTAL) {
+        errors.push('Превышен общий размер 10 MB');
+        break;
+      }
+      selected.push(file);
+    }
+
+    if (errors.length) showFormMessage(form, errors[0], false);
+    sync();
+    e.target.value = '';
+  });
+
+  return {
+    clear: () => {
+      selected.length = 0;
+      sync();
+    }
+  };
+}
+
+function formatFileSize(bytes) {
+  if (bytes < 1024) return bytes + ' B';
+  if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + ' KB';
+  return (bytes / (1024 * 1024)).toFixed(1) + ' MB';
 }
 
 function showFormMessage(form, text, success) {
