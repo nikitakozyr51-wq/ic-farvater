@@ -57,6 +57,7 @@
     } else {
       enterBrowseMode();
     }
+    updateCounter();
   }
 
   // --- Category ---
@@ -122,10 +123,12 @@
     var imgHtml = p.image
       ? '<img src="' + esc(p.image) + '" alt="' + esc(p.name) + '" loading="lazy" onerror="this.style.display=\'none\'">'
       : '';
+    var category = p.category ? esc(p.category).toUpperCase() : '';
     return '<a href="product-detail.html#' + p.id + '" class="product-card">' +
       '<div class="product-card__img">' + imgHtml + '</div>' +
       '<div class="product-card__info">' +
         '<span class="product-card__name">' + esc(p.name).toUpperCase() + '</span>' +
+        '<span class="product-card__category">' + category + '</span>' +
         '<span class="product-card__count">(' + pad(idx + 1) + ')</span>' +
       '</div>' +
     '</a>';
@@ -491,6 +494,48 @@
     });
   }
 
+  // --- View switch (Grid / List) ---
+
+  function applyView(view) {
+    var grid = document.getElementById('products-grid');
+    var dyn = document.getElementById('catalog-products');
+    var btns = document.querySelectorAll('.catalog__view-btn');
+    var isList = view === 'list';
+    if (grid) grid.classList.toggle('catalog__grid--list', isList);
+    if (dyn) dyn.classList.toggle('catalog__grid--list', isList);
+    btns.forEach(function(b) {
+      var active = b.getAttribute('data-view') === view;
+      b.classList.toggle('catalog__view-btn--active', active);
+      b.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
+  }
+
+  function initViewSwitch() {
+    var btns = document.querySelectorAll('.catalog__view-btn');
+    if (!btns.length) return;
+    var saved = 'grid';
+    try { saved = localStorage.getItem('catalog-view') || 'grid'; } catch (e) {}
+    applyView(saved);
+    btns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var view = btn.getAttribute('data-view');
+        applyView(view);
+        try { localStorage.setItem('catalog-view', view); } catch (e) {}
+      });
+    });
+  }
+
+  function updateCounter() {
+    var counter = document.getElementById('catalog-counter');
+    if (!counter) return;
+    if (browseMode) {
+      counter.textContent = '(6 КАТЕГОРИЙ)';
+      return;
+    }
+    var n = getFiltered().length;
+    counter.textContent = '(' + n + ' ' + (n === 1 ? 'ТОВАР' : (n >= 2 && n <= 4 ? 'ТОВАРА' : 'ТОВАРОВ')) + ')';
+  }
+
   // --- Init ---
 
   function init() {
@@ -510,6 +555,7 @@
     initApplicationRadios();
     initCategoryCards();
     initSearch();
+    initViewSwitch();
 
     var resetBtn = document.getElementById('sidebar-reset');
     if (resetBtn) resetBtn.addEventListener('click', resetAll);

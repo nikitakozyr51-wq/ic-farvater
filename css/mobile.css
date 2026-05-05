@@ -761,6 +761,40 @@ p.cat-card__desc {
   display: none;
 }
 
+/* Toolbar mobile */
+.catalog__toolbar {
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px 0;
+  margin-bottom: 16px;
+}
+
+.catalog__view-switch {
+  gap: 8px;
+}
+
+.catalog__view-label {
+  display: none;
+}
+
+/* List view mobile — only name + arrow */
+.catalog__grid--list .cat-card,
+.catalog__grid--list .product-card {
+  grid-template-columns: 1fr 13px;
+  gap: 12px;
+  padding: 14px 12px;
+}
+
+.catalog__grid--list .cat-card:hover,
+.catalog__grid--list .product-card:hover {
+  padding-left: 16px;
+}
+
+.catalog__grid--list .cat-card__desc,
+.catalog__grid--list .product-card__category {
+  display: none;
+}
+
 
 /* ===== PRODUCT DETAIL ===== */
 .product-detail__top {

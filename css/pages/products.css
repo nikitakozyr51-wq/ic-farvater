@@ -373,3 +373,163 @@ p.cat-card__desc {
   text-transform: uppercase;
   padding: 48px 0;
 }
+
+
+/* ===== TOOLBAR (counter + view switch) ===== */
+.catalog__toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.catalog__counter {
+  font-size: var(--text-14);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.catalog__view-switch {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.catalog__view-label {
+  font-size: var(--text-14);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.catalog__view-btn {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: var(--color-text-muted);
+  transition: color 0.2s ease;
+}
+
+.catalog__view-btn:hover {
+  color: var(--color-text);
+}
+
+.catalog__view-btn--active {
+  color: var(--color-text);
+}
+
+
+/* ===== LIST VIEW ===== */
+.catalog__grid--list {
+  display: block;
+  gap: 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.catalog__grid--list .catalog__grid-row {
+  display: contents;
+}
+
+.catalog__grid--list .cat-card,
+.catalog__grid--list .product-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) 2fr 16px;
+  align-items: center;
+  gap: 24px;
+  padding: 20px 16px;
+  border-bottom: 1px solid var(--color-border);
+  transition: background 0.2s ease, padding-left 0.2s ease;
+  text-decoration: none;
+  position: relative;
+}
+
+.catalog__grid--list .cat-card:hover,
+.catalog__grid--list .product-card:hover {
+  background: var(--color-bg-alt);
+  padding-left: 24px;
+}
+
+.catalog__grid--list .cat-card__img,
+.catalog__grid--list .product-card__img {
+  display: none;
+}
+
+.catalog__grid--list .cat-card__info,
+.catalog__grid--list .product-card__info {
+  display: contents;
+}
+
+.catalog__grid--list .cat-card__name,
+.catalog__grid--list .product-card__name {
+  font-size: var(--text-14);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.catalog__grid--list .cat-card__desc,
+.catalog__grid--list .product-card__category {
+  font-size: var(--text-14);
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.catalog__grid--list .product-card__count {
+  display: none;
+}
+
+.catalog__grid--list .cat-card::after,
+.catalog__grid--list .product-card::after {
+  content: '';
+  width: 13px;
+  height: 13px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='13' height='13' viewBox='0 0 13 13' fill='none'><path d='M1 6.5H12M8 2L12 6.5L8 11' stroke='%23112F6E' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-self: end;
+}
+
+.catalog__grid--list .catalog__products-row {
+  display: block;
+  gap: 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.catalog__grid--list .catalog__category-section {
+  gap: 16px;
+}
+
+.catalog__all-products.catalog__grid--list {
+  gap: 48px;
+}
+
+/* Hide image-related hover effects in list */
+.catalog__grid--list .cat-card:hover .cat-card__img img {
+  transform: none;
+}
+
+/* Product card category visible only in list-view */
+.product-card__category {
+  display: none;
+}
+
+.catalog__grid--list .product-card__category {
+  display: block;
+}
