@@ -428,7 +428,7 @@ p.cat-card__desc {
   gap: 24px;
   padding: 20px 16px;
   border-bottom: 1px solid var(--color-border);
-  transition: background 0.2s ease, padding-left 0.2s ease;
+  transition: background-color 0.15s ease, color 0.15s ease;
   text-decoration: none;
   position: relative;
 }
@@ -436,14 +436,15 @@ p.cat-card__desc {
 .catalog__grid--list .cat-card:hover,
 .catalog__grid--list .product-card:hover {
   background: var(--color-text);
-  padding-left: 24px;
 }
 
+.catalog__grid--list .cat-card:hover,
 .catalog__grid--list .cat-card:hover .cat-card__name,
-.catalog__grid--list .cat-card:hover .cat-card__desc,
+.catalog__grid--list .cat-card:hover p.cat-card__desc,
+.catalog__grid--list .product-card:hover,
 .catalog__grid--list .product-card:hover .product-card__name,
 .catalog__grid--list .product-card:hover .product-card__category {
-  color: var(--color-bg);
+  color: var(--color-bg) !important;
 }
 
 .catalog__grid--list .cat-card:hover::after,
