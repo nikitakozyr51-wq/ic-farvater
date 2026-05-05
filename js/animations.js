@@ -75,7 +75,6 @@
           ease: 'power2.out',
           force3D: true,
           overwrite: true,
-          clearProps: 'transform',
         });
       },
     });
@@ -101,7 +100,6 @@
           ease: 'power2.out',
           force3D: true,
           overwrite: true,
-          clearProps: 'transform',
         });
       },
     });
