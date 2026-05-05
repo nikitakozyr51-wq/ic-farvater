@@ -418,6 +418,20 @@
     });
   }
 
+  // --- Sidebar: application radios (visual toggle only, no filtering yet) ---
+
+  function initApplicationRadios() {
+    var radios = document.querySelectorAll('.filter-radio[data-application]');
+    radios.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var wasActive = btn.classList.contains('filter-radio--active');
+        radios.forEach(function(r) { r.classList.remove('filter-radio--active'); });
+        if (!wasActive) btn.classList.add('filter-radio--active');
+        updateClearButton();
+      });
+    });
+  }
+
   // --- Clear / reset ---
 
   function resetAll() {
@@ -488,6 +502,7 @@
 
     initFilterGroups();
     initCategoryRadios();
+    initApplicationRadios();
     initCategoryCards();
     initSearch();
 
