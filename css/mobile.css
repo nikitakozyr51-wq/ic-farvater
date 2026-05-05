@@ -263,14 +263,8 @@ body.menu-open .header__search-mobile {
   display: none;
 }
 
-.cables-split__lead,
-.cables-split__para,
-.cables-split__list {
-  max-width: 100%;
-}
-
-.cables-split__list li {
-  padding: 10px 0;
+.cables-split__desc {
+  display: none;
 }
 
 
