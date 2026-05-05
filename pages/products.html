@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="../css/base.css?v=8">
   <link rel="stylesheet" href="../css/layout.css?v=7">
   <link rel="stylesheet" href="../css/components.css?v=19">
-  <link rel="stylesheet" href="../css/pages/products.css?v=12">
+  <link rel="stylesheet" href="../css/pages/products.css?v=13">
   <link rel="stylesheet" href="../css/animations.css?v=5">
   <link rel="stylesheet" href="../css/mobile.css?v=19" media="(max-width: 768px)">
 </head>
@@ -172,7 +172,7 @@
                 </div>
                 <div class="cat-card__info">
                   <h3 class="cat-card__name">РАЗЪЁМЫ</h3>
-                  <p class="cat-card__desc">19 СЕРИЙ ЕТ ДЛЯ ОТВЕТСТВЕННЫХ ПРИМЕНЕНИЙ.</p>
+                  <p class="cat-card__desc"><span id="et-series-count">23</span> СЕРИИ ЕТ ДЛЯ ОТВЕТСТВЕННЫХ ПРИМЕНЕНИЙ.</p>
                 </div>
               </div>
               <div class="cat-card" data-category="converters">
@@ -268,6 +268,20 @@
   <script src="../js/catalog.js?v=12" defer></script>
   <script src="../js/main.js?v=17" defer></script>
   <script src="../js/animations.js?v=5" defer></script>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', function () {
+      var el = document.getElementById('et-series-count');
+      if (!el || typeof CONNECTOR_SERIES === 'undefined') return;
+      var n = CONNECTOR_SERIES.length;
+      el.textContent = n;
+      var word = el.parentNode;
+      var mod10 = n % 10, mod100 = n % 100;
+      var form = (mod10 === 1 && mod100 !== 11) ? 'СЕРИЯ'
+        : (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)) ? 'СЕРИИ'
+        : 'СЕРИЙ';
+      word.innerHTML = '<span id="et-series-count">' + n + '</span> ' + form + ' ЕТ ДЛЯ ОТВЕТСТВЕННЫХ ПРИМЕНЕНИЙ.';
+    });
+  </script>
   <!-- Cookie Banner -->
   <div class="cookie-banner cookie-banner--hidden" id="cookieBanner">
     <p class="cookie-banner__text">Мы используем файлы cookie для корректной работы сайта. Продолжая использовать сайт, вы соглашаетесь с нашей <a href="privacy-policy.html">Политикой конфиденциальности</a>.</p>
