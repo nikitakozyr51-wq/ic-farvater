@@ -1338,3 +1338,9 @@ p.product-card__desc {
   align-items: flex-end;
   gap: 8px;
 }
+
+.footer__copyright {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+}
