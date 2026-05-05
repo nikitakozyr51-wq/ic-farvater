@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="../css/base.css?v=8">
   <link rel="stylesheet" href="../css/layout.css?v=7">
   <link rel="stylesheet" href="../css/components.css?v=25">
-  <link rel="stylesheet" href="../css/pages/contacts.css?v=8">
+  <link rel="stylesheet" href="../css/pages/contacts.css?v=9">
   <link rel="stylesheet" href="../css/animations.css?v=5">
   <link rel="stylesheet" href="../css/mobile.css?v=22" media="(max-width: 768px)">
 </head>
@@ -137,8 +137,10 @@
                    multiple
                    accept=".pdf,.doc,.docx,.xls,.xlsx,.csv,.txt,.png,.jpg,.jpeg,.zip,.rar,.7z"
                    hidden>
-            <label for="contactFiles" class="contact-form__file-trigger">+ ПРИКРЕПИТЬ ФАЙЛ</label>
-            <span class="contact-form__file-hint">PDF, DOC, XLS, JPG, ZIP — до 5 файлов, 10&nbsp;MB</span>
+            <label for="contactFiles" class="contact-form__file-trigger">
+              <span class="contact-form__file-trigger-text">+ ПРИКРЕПИТЬ ФАЙЛ</span>
+              <span class="contact-form__file-trigger-hint">PDF, XLS, JPG · до 5, 10&nbsp;MB</span>
+            </label>
             <ul class="contact-form__file-list" id="contactFilesList"></ul>
           </div>
           <label class="contact-form__consent">

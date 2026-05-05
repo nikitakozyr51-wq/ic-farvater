@@ -336,6 +336,101 @@
   height: 80px;
 }
 
+/* File upload (dark variant) */
+.price-drawer__file {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.price-drawer__file-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  padding: 12px 0 10px;
+  border-bottom: 1px solid rgba(245, 243, 239, 0.25);
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.price-drawer__file-trigger:hover {
+  border-bottom-color: #F5F3EF;
+}
+
+.price-drawer__file-trigger-text {
+  font-family: var(--font-primary);
+  font-size: var(--text-16);
+  color: #F5F3EF;
+}
+
+.price-drawer__file-trigger-hint {
+  font-size: 12px;
+  color: rgba(245, 243, 239, 0.45);
+  text-align: right;
+}
+
+.price-drawer__file-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.price-drawer__file-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0 8px;
+  border-bottom: 1px solid rgba(245, 243, 239, 0.18);
+  font-size: var(--text-14);
+  color: #F5F3EF;
+}
+
+.price-drawer__file-name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.price-drawer__file-size {
+  flex-shrink: 0;
+  color: rgba(245, 243, 239, 0.55);
+  font-size: 12px;
+}
+
+.price-drawer__file-remove {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  background: none;
+  border: none;
+  color: rgba(245, 243, 239, 0.55);
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.price-drawer__file-remove:hover {
+  color: #F5F3EF;
+}
+
+.price-drawer__error {
+  font-size: 12px;
+  color: #ff8a8a;
+  padding: 8px 0;
+  display: none;
+}
+
+.price-drawer__error.is-visible {
+  display: block;
+}
+
 .price-drawer__consent {
   display: flex;
   align-items: flex-start;
