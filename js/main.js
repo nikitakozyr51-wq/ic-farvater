@@ -252,24 +252,42 @@ function initProductCarousels() {
     const N = originals.length;
     if (N === 0) return;
 
-    // Build [N clones][N originals][N clones] = 3N cards for seamless loop
-    // Note: originals may have inline opacity/transform from GSAP fade-up-stagger;
-    // strip it on clones so they're visible immediately (clones aren't in GSAP's animation set).
-    const cloneCard = c => {
-      const cl = c.cloneNode(true);
-      cl.setAttribute('aria-hidden', 'true');
-      cl.style.cssText = '';
-      // Force-load cloned images: lazy state survives cloneNode in Blink/Webkit,
-      // and transform-translate doesn't trigger IntersectionObserver.
-      cl.querySelectorAll('img').forEach(img => {
-        img.removeAttribute('loading');
-        const src = img.getAttribute('src');
-        if (src) { img.removeAttribute('src'); img.setAttribute('src', src); }
-      });
-      return cl;
+    // Build [N clones][N originals][N clones] = 3N cards for seamless loop.
+    // Build clones from extracted data — cloneNode inherits GSAP's inline styles
+    // (opacity:0, translate) and the lazy-load deferred state, both of which
+    // leave clones invisible.
+    const cardsData = originals.map(c => {
+      const img = c.querySelector('img');
+      const label = c.querySelector('.product-card-v2__label');
+      return {
+        href: c.getAttribute('href') || '',
+        imgSrc: img ? img.getAttribute('src') : '',
+        imgAlt: img ? img.getAttribute('alt') || '' : '',
+        label: label ? label.textContent : '',
+      };
+    });
+
+    const buildClone = (data) => {
+      const a = document.createElement('a');
+      a.className = 'product-card-v2';
+      a.href = data.href;
+      a.setAttribute('aria-hidden', 'true');
+      const imgWrap = document.createElement('div');
+      imgWrap.className = 'product-card-v2__img';
+      const img = document.createElement('img');
+      img.src = data.imgSrc;
+      img.alt = data.imgAlt;
+      imgWrap.appendChild(img);
+      const label = document.createElement('span');
+      label.className = 'product-card-v2__label';
+      label.textContent = data.label;
+      a.appendChild(imgWrap);
+      a.appendChild(label);
+      return a;
     };
-    const before = originals.map(cloneCard);
-    const after  = originals.map(cloneCard);
+
+    const before = cardsData.map(buildClone);
+    const after  = cardsData.map(buildClone);
     originals[0].before(...before);
     grid.append(...after);
 
