@@ -1324,7 +1324,7 @@ p.product-card__desc {
 .footer__bottom {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 24px;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   font-size: var(--text-label);
@@ -1334,6 +1334,7 @@ p.product-card__desc {
 
 .footer__legal-links {
   display: inline-flex;
-  align-items: center;
-  gap: 24px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
 }
