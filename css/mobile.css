@@ -481,7 +481,6 @@ body.menu-open .header__search-mobile {
 
 .service-split__left {
   width: 100%;
-  gap: 24px;
   padding-bottom: 24px;
 }
 
@@ -492,6 +491,11 @@ body.menu-open .header__search-mobile {
 .service-split__title {
   font-size: 28px;
   letter-spacing: -0.5px;
+  margin-bottom: 16px;
+}
+
+.service-split__desc {
+  margin-bottom: 24px;
 }
 
 

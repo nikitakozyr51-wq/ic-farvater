@@ -819,7 +819,6 @@ p.product-card__desc {
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  gap: 48px;
 }
 
 .service-split__title {
@@ -829,12 +828,14 @@ p.product-card__desc {
   line-height: 1.1;
   text-transform: uppercase;
   color: var(--color-text);
+  margin-bottom: 24px;
 }
 
 .service-split__desc {
   font-size: var(--text-16);
   line-height: 1.6;
   color: var(--color-text-muted);
+  margin-bottom: 40px;
 }
 
 .service-split__cta {
