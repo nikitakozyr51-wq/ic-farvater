@@ -168,7 +168,7 @@
 /* Clear row */
 .filter-clear-row {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: 12px;
   padding-top: 24px;
 }
@@ -177,19 +177,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   border-radius: 100px;
-  background: var(--color-bg-alt);
+  border: 1.5px solid var(--color-text);
+  background: transparent;
   font-family: inherit;
-  font-size: var(--text-14);
+  font-size: var(--text-16);
   font-weight: 600;
   color: var(--color-text);
   flex-shrink: 0;
+  line-height: 1;
 }
 
 .filter-clear-btn {
   flex: 1;
+  min-height: 56px;
   font-family: inherit;
   font-size: var(--text-14);
   font-weight: 600;
@@ -198,9 +201,9 @@
   cursor: pointer;
   background: var(--color-text);
   color: var(--color-bg);
-  border: 1px solid var(--color-text);
+  border: 1.5px solid var(--color-text);
   border-radius: 100px;
-  padding: 14px 0;
+  padding: 0;
   text-align: center;
   transition: background 0.25s ease, color 0.25s ease;
 }
