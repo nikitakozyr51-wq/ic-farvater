@@ -586,7 +586,7 @@
 }
 
 .product-banner__wrap:hover .product-banner__img {
-  transform: scale(1.04);
+  transform: scale(1.02);
 }
 
 .product-banner__content {
