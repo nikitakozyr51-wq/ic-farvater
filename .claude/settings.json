@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python \"D:\\\\site\\\\.claude\\\\skills\\\\ui-ux-pro-max-skill\\\\src\\\\ui-ux-pro-max\\\\scripts\\\\search.py\" \"footer alignment grid Swiss minimal\" --domain layout)",
+      "Bash(python \"D:\\\\site\\\\.claude\\\\skills\\\\ui-ux-pro-max-skill\\\\src\\\\ui-ux-pro-max\\\\scripts\\\\search.py\" \"footer 12-column grid Swiss minimal alignment legal links\" --domain ux --max-results 6)",
+      "Bash(python \"D:\\\\site\\\\.claude\\\\skills\\\\ui-ux-pro-max-skill\\\\src\\\\ui-ux-pro-max\\\\scripts\\\\search.py\" \"Swiss style typographic minimal footer\" --domain style --max-results 5)"
+    ]
+  }
+}

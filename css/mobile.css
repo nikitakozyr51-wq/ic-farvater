@@ -592,6 +592,14 @@ body.menu-open .header__search-mobile {
   gap: 8px;
 }
 
+.footer__legal-links a + a {
+  margin-left: 0;
+}
+
+.footer__legal-links a + a::before {
+  display: none;
+}
+
 
 /* ===== CATALOG PAGE ===== */
 .catalog__top {

@@ -1335,5 +1335,21 @@ p.product-card__desc {
 .footer__legal-links {
   display: inline-flex;
   align-items: center;
-  gap: 24px;
+  gap: 0;
+}
+
+.footer__legal-links a + a {
+  position: relative;
+  margin-left: 24px;
+}
+
+.footer__legal-links a + a::before {
+  content: '·';
+  position: absolute;
+  left: -14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-bg);
+  opacity: 0.5;
+  pointer-events: none;
 }
