@@ -207,6 +207,7 @@ body.menu-open .header__search-mobile {
 }
 
 .about-block__text {
+  grid-column: 1 / -1;
   width: 100%;
 }
 
@@ -220,8 +221,10 @@ body.menu-open .header__search-mobile {
 }
 
 .about-block__img {
+  grid-column: 1 / -1;
   width: 100%;
   height: 342px;
+  aspect-ratio: auto;
 }
 
 .about-block__img img {
@@ -390,12 +393,14 @@ body.menu-open .header__search-mobile {
 }
 
 .cables-split__img {
+  grid-column: 1 / -1;
   aspect-ratio: 1 / 1;
   height: auto;
   order: 2;
 }
 
 .cables-split__text {
+  grid-column: 1 / -1;
   order: 1;
 }
 
