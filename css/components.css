@@ -354,13 +354,13 @@
 }
 
 .about-block__img {
-  grid-column: 6 / span 7;
+  grid-column: 8 / -1;
   width: 100%;
   aspect-ratio: 660 / 530;
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .about-block__img img {
