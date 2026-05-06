@@ -295,7 +295,7 @@ body.menu-open .header__search-mobile {
 }
 
 .title-count {
-  margin-top: 0;
+  margin-top: 0.6em;
   margin-left: 0;
   flex-shrink: 0;
   white-space: nowrap;
@@ -319,7 +319,7 @@ body.menu-open .header__search-mobile {
 
 .section-header-v2__top {
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items: flex-start;
   gap: 8px;
 }
 
@@ -466,7 +466,7 @@ body.menu-open .header__search-mobile {
 
 .cables-split__title-wrap {
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 8px;
   padding-bottom: 24px;
