@@ -244,6 +244,9 @@
 
 .hero--image {
   height: 780px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 96px;
 }
 
 .hero__bg {
@@ -259,13 +262,13 @@
 .hero--image .container {
   position: relative;
   z-index: 1;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-24);
+  align-items: flex-start;
 }
 
 .hero__title {
-  position: absolute;
-  top: 280px;
-  left: var(--container-padding);
   max-width: 1200px;
   font-size: var(--text-72);
   font-weight: 500;
@@ -280,9 +283,6 @@
 }
 
 .hero__sub {
-  position: absolute;
-  top: 532px;
-  left: var(--container-padding);
   max-width: 500px;
   font-size: var(--text-16);
   font-weight: 400;
@@ -291,9 +291,6 @@
 }
 
 .hero__btn {
-  position: absolute;
-  top: 634px;
-  left: var(--container-padding);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -308,6 +305,7 @@
   border: 1px solid var(--color-bg);
   text-decoration: none;
   transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  margin-top: var(--space-8);
 }
 
 .hero__btn:hover {
