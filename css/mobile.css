@@ -447,7 +447,7 @@ body.menu-open .header__search-mobile {
 .cables-split {
   grid-template-columns: 1fr;
   height: auto;
-  padding: 0 24px;
+  padding: 0 24px 48px;
   border-top: 1px solid var(--color-border);
 }
 
@@ -491,6 +491,10 @@ body.menu-open .header__search-mobile {
 
 
 /* ===== PRODUCT BANNER — square, no crop ===== */
+.product-banner {
+  padding: 48px 0;
+}
+
 .product-banner__wrap {
   height: auto;
   aspect-ratio: 1 / 1;
