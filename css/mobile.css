@@ -42,11 +42,10 @@ h3 {
   display: none;
 }
 
-/* Search inside opened mobile drawer — full-width pill */
+/* Search inside opened mobile drawer — flat row matching menu links */
 .header__nav--open .header__search-wrap {
   display: flex;
   width: 100%;
-  margin-bottom: 24px;
   position: relative;
 }
 .header__nav--open .header__search-toggle {
@@ -56,18 +55,42 @@ h3 {
   position: static;
   transform: none;
   width: 100%;
-  height: 52px;
-  padding: 0 6px 0 20px;
+  height: 72px;
+  padding: 0;
+  gap: 12px;
   opacity: 1;
   pointer-events: auto;
   background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+  border-radius: 0;
 }
 .header__nav--open .header__search-input {
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--color-text);
+}
+.header__nav--open .header__search-input::placeholder {
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 .header__nav--open .header__search-submit {
-  width: 40px;
-  height: 40px;
+  width: auto;
+  height: auto;
+  background: transparent;
+  color: var(--color-text-muted);
+  border: none;
+  padding: 0 4px;
+}
+.header__nav--open .header__search-submit:hover,
+.header__nav--open .header__search-submit:focus,
+.header__nav--open .header__search-submit:active {
+  background: transparent;
+  color: var(--color-text);
 }
 
 .header {
