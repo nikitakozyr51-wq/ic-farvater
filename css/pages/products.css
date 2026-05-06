@@ -412,7 +412,6 @@ p.cat-card__desc {
 .catalog__grid--list {
   display: block;
   gap: 0;
-  border-top: 1px solid var(--color-border);
 }
 
 .catalog__grid--list .catalog__grid-row {
