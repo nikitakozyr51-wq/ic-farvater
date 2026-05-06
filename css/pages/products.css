@@ -441,8 +441,13 @@ p.cat-card__desc {
 .catalog__grid--list .cat-card:hover,
 .catalog__grid--list .product-card:hover,
 .catalog__grid--list .cat-card:hover *,
-.catalog__grid--list .product-card:hover * {
-  color: var(--color-bg) !important;
+.catalog__grid--list .product-card:hover *,
+.catalog__grid--list .cat-card:hover .cat-card__name,
+.catalog__grid--list .cat-card:hover p.cat-card__desc,
+.catalog__grid--list .product-card:hover .product-card__name,
+.catalog__grid--list .product-card:hover .product-card__category,
+.catalog__grid--list .product-card:hover .product-card__count {
+  color: #F5F3EF !important;
 }
 
 .catalog__grid--list .cat-card:hover::after,
