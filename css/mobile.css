@@ -149,19 +149,20 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 24px;
-  height: 24px;
-  gap: 5px;
+  width: 22px;
+  height: 22px;
+  gap: 4px;
   position: relative;
   z-index: 200;
 }
 
 .header__burger span {
   display: block;
-  width: 24px;
+  width: 22px;
   height: 2px;
   flex-shrink: 0;
   background: var(--color-text);
+  border-radius: 2px;
 }
 
 .header__search-mobile {
@@ -279,7 +280,7 @@ body.menu-open .header__search-mobile {
 
 .section-header__left {
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items: flex-start;
   gap: 8px;
 }
 
@@ -846,7 +847,7 @@ p.cat-card__desc {
 }
 
 .product-detail__title-wrap {
-  align-items: baseline;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
@@ -940,7 +941,7 @@ p.cat-card__desc {
 
 .about__title-row,
 .about__split-left {
-  align-items: baseline;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
@@ -1036,7 +1037,7 @@ p.cat-card__desc {
 }
 
 .contacts__title-wrap {
-  align-items: baseline;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
