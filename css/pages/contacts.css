@@ -144,7 +144,7 @@
   color: var(--color-text-muted);
 }
 
-/* File upload — стиль "как поле формы" (border-bottom, 48px) */
+/* File upload — тот же ритм, что у placeholder-ов полей выше */
 .contact-form__file {
   display: flex;
   flex-direction: column;
@@ -152,7 +152,7 @@
 
 .contact-form__file-trigger {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   gap: 16px;
   width: 100%;
@@ -160,7 +160,7 @@
   padding: 0 0 var(--space-12) 0;
   border-bottom: 1px solid var(--color-border);
   cursor: pointer;
-  transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease, color 0.2s ease;
 }
 
 .contact-form__file-trigger:hover {
@@ -170,17 +170,25 @@
 .contact-form__file-trigger-text {
   font-family: var(--font-primary);
   font-size: var(--text-14);
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 1px;
   text-transform: uppercase;
+  color: var(--color-text-muted);
+  transition: color 0.2s ease;
+}
+
+.contact-form__file-trigger:hover .contact-form__file-trigger-text {
   color: var(--color-text);
 }
 
 .contact-form__file-trigger-hint {
-  font-size: var(--text-14);
-  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
   color: var(--color-text-muted);
   text-align: right;
+  opacity: 0.75;
 }
 
 .contact-form__file-list {
