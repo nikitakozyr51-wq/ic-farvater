@@ -445,12 +445,12 @@ p.cat-card__desc {
 .catalog__grid--list .product-card:hover .product-card__name,
 .catalog__grid--list .product-card:hover .product-card__category,
 .catalog__grid--list .product-card:hover .product-card__count {
-  color: #FFFFFF !important;
+  color: #F5F3EF !important;
 }
 
 .catalog__grid--list .cat-card:hover::after,
 .catalog__grid--list .product-card:hover::after {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='13' height='13' viewBox='0 0 13 13' fill='none'><path d='M1 6.5H12M8 2L12 6.5L8 11' stroke='%23FFFFFF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='13' height='13' viewBox='0 0 13 13' fill='none'><path d='M1 6.5H12M8 2L12 6.5L8 11' stroke='%23F5F3EF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>");
 }
 
 .catalog__grid--list .cat-card__img,
