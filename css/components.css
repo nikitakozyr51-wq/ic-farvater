@@ -357,11 +357,10 @@
   grid-column: 6 / span 7;
   width: 100%;
   aspect-ratio: 660 / 530;
-  overflow: visible;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -150px;
 }
 
 .about-block__img img {
