@@ -364,6 +364,11 @@ body.menu-open .header__search-mobile {
   display: none;
 }
 
+/* Limit homepage product carousels to 4 cards on mobile */
+.products-v2 .product-cards-grid > .product-card-v2:nth-child(n+5) {
+  display: none;
+}
+
 .product-card-v2__img {
   height: auto;
   aspect-ratio: 1 / 1;
