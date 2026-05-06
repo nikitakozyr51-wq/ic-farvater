@@ -383,15 +383,15 @@ p.cat-card__desc {
 .catalog__view-switch {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 12px;
 }
 
 .catalog__view-btn {
-  width: 24px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-family: inherit;
+  font-size: var(--text-14);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   background: transparent;
   border: none;
   padding: 0;
@@ -400,12 +400,20 @@ p.cat-card__desc {
   transition: color 0.2s ease;
 }
 
+.catalog__view-btn::before {
+  content: '( ) ';
+}
+
 .catalog__view-btn:hover {
   color: var(--color-text);
 }
 
 .catalog__view-btn--active {
   color: var(--color-text);
+}
+
+.catalog__view-btn--active::before {
+  content: '(\2022) ';
 }
 
 
