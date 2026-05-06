@@ -447,6 +447,14 @@ p.cat-card__desc {
 .catalog__grid--list .product-card:hover .product-card__category,
 .catalog__grid--list .product-card:hover .product-card__count {
   color: #F5F3EF !important;
+  opacity: 1 !important;
+}
+
+.catalog__grid--list .cat-card:hover,
+.catalog__grid--list .product-card:hover,
+.catalog__grid--list a.cat-card:hover,
+.catalog__grid--list a.product-card:hover {
+  transform: none !important;
 }
 
 .catalog__grid--list .cat-card:hover::after,
