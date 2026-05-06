@@ -514,11 +514,19 @@ p.cat-card__desc {
 }
 
 .catalog__grid--list .catalog__category-section {
-  gap: 16px;
+  gap: 0;
+}
+
+.catalog__grid--list .catalog__category-section + .catalog__category-section {
+  margin-top: 32px;
 }
 
 .catalog__all-products.catalog__grid--list {
-  gap: 48px;
+  gap: 0;
+}
+
+.catalog__grid--list .catalog__category-title {
+  margin-bottom: 0;
 }
 
 /* Hide image-related hover effects in list */
