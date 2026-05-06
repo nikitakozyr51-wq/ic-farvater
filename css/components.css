@@ -355,16 +355,19 @@
 }
 
 .about-block__img {
-  aspect-ratio: 1 / 1;
   width: 100%;
+  height: 530px;
   background: var(--color-bg-alt);
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-block__img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 /* ===== PRODUCTS V2 (4-card grid) ===== */
@@ -872,6 +875,7 @@ p.product-card__desc {
 .service-split__right {
   display: flex;
   flex-direction: column;
+  padding-top: 280px;
 }
 
 .service-item {

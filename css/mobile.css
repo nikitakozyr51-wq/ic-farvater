@@ -206,11 +206,6 @@ body.menu-open .header__search-mobile {
   gap: 24px;
 }
 
-.about-block__img {
-  aspect-ratio: 1 / 1;
-  height: auto;
-}
-
 .about-block__text {
   width: 100%;
 }
