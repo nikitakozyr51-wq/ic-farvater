@@ -442,7 +442,7 @@
   // --- Clear / reset ---
 
   function resetAll() {
-    document.querySelectorAll('.filter-radio--active').forEach(function(r) {
+    document.querySelectorAll('.filter-radio--active:not([data-view])').forEach(function(r) {
       r.classList.remove('filter-radio--active');
     });
 
@@ -457,7 +457,7 @@
   }
 
   function updateClearButton() {
-    var active = document.querySelectorAll('.filter-radio--active:not([data-category="all"])');
+    var active = document.querySelectorAll('.filter-radio--active:not([data-category="all"]):not([data-view])');
     var countEl = document.getElementById('sidebar-count');
     if (countEl) countEl.textContent = active.length;
   }
