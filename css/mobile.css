@@ -530,6 +530,10 @@ body.menu-open .header__search-mobile {
   padding-bottom: 24px;
 }
 
+.service-split__right {
+  padding-top: 0;
+}
+
 .service-split__title {
   font-size: 28px;
   letter-spacing: -0.5px;
