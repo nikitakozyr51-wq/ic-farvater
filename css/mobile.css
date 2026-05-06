@@ -303,16 +303,16 @@ body.menu-open .header__search-mobile {
   align-self: start;
 }
 
-/* Title wraps: grid 1fr auto so count stays at top-right of multi-line titles */
+/* Title wraps: flex no-wrap so count stays inline next to title's first line */
 .section-header-v2__top,
 .cables-split__title-wrap,
 .about-block__title-wrap,
 .about__title-row,
 .contacts__title-wrap,
 .product-detail__title-wrap {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: start;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
   gap: 8px;
 }
 
