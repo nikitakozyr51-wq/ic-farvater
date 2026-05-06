@@ -495,19 +495,19 @@
   function applyView(view) {
     var grid = document.getElementById('products-grid');
     var dyn = document.getElementById('catalog-products');
-    var btns = document.querySelectorAll('.catalog__view-btn');
+    var btns = document.querySelectorAll('.filter-radio[data-view]');
     var isList = view === 'list';
     if (grid) grid.classList.toggle('catalog__grid--list', isList);
     if (dyn) dyn.classList.toggle('catalog__grid--list', isList);
     btns.forEach(function(b) {
       var active = b.getAttribute('data-view') === view;
-      b.classList.toggle('catalog__view-btn--active', active);
+      b.classList.toggle('filter-radio--active', active);
       b.setAttribute('aria-pressed', active ? 'true' : 'false');
     });
   }
 
   function initViewSwitch() {
-    var btns = document.querySelectorAll('.catalog__view-btn');
+    var btns = document.querySelectorAll('.filter-radio[data-view]');
     if (!btns.length) return;
     applyView('grid');
     try { localStorage.removeItem('catalog-view'); } catch (e) {}

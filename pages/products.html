@@ -25,9 +25,9 @@
   <link rel="stylesheet" href="../css/base.css?v=8">
   <link rel="stylesheet" href="../css/layout.css?v=7">
   <link rel="stylesheet" href="../css/components.css?v=25">
-  <link rel="stylesheet" href="../css/pages/products.css?v=30">
+  <link rel="stylesheet" href="../css/pages/products.css?v=31">
   <link rel="stylesheet" href="../css/animations.css?v=5">
-  <link rel="stylesheet" href="../css/mobile.css?v=25" media="(max-width: 768px)">
+  <link rel="stylesheet" href="../css/mobile.css?v=26" media="(max-width: 768px)">
 </head>
 <body>
 
@@ -100,9 +100,17 @@
 
           <div class="filter-header">
             <span class="filter-header__title">ФИЛЬТРЫ</span>
-            <div class="catalog__view-switch" role="group" aria-label="Вид каталога">
-              <button type="button" class="catalog__view-btn catalog__view-btn--active" data-view="grid" aria-label="Сетка" aria-pressed="true">GRID</button>
-              <button type="button" class="catalog__view-btn" data-view="list" aria-label="Список" aria-pressed="false">LIST</button>
+          </div>
+
+          <!-- Вид -->
+          <div class="filter-group" data-filter="view">
+            <button class="filter-group__header" aria-expanded="true">
+              <span class="filter-group__name">ВИД</span>
+              <svg class="filter-group__chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="filter-group__items">
+              <button type="button" class="filter-radio filter-radio--active" data-view="grid" aria-pressed="true">СЕТКА</button>
+              <button type="button" class="filter-radio" data-view="list" aria-pressed="false">СПИСОК</button>
             </div>
           </div>
 
@@ -272,7 +280,7 @@
   <script src="../js/connectors-parsers.js?v=5" defer></script>
   <script src="../js/converters-data.js?v=12" defer></script>
   <script src="../js/capacitors-data.js?v=12" defer></script>
-  <script src="../js/catalog.js?v=17" defer></script>
+  <script src="../js/catalog.js?v=18" defer></script>
   <script src="../js/main.js?v=18" defer></script>
   <script src="../js/animations.js?v=6" defer></script>
   <script defer>

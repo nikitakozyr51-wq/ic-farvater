@@ -808,11 +808,6 @@ p.cat-card__desc {
   display: none;
 }
 
-/* View switch mobile — compact */
-.catalog__view-switch {
-  gap: 4px;
-}
-
 /* List view mobile — only name + arrow */
 .catalog__grid--list .cat-card,
 .catalog__grid--list .product-card {
