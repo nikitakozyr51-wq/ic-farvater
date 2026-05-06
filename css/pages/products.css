@@ -439,11 +439,9 @@ p.cat-card__desc {
 }
 
 .catalog__grid--list .cat-card:hover,
-.catalog__grid--list .cat-card:hover .cat-card__name,
-.catalog__grid--list .cat-card:hover p.cat-card__desc,
 .catalog__grid--list .product-card:hover,
-.catalog__grid--list .product-card:hover .product-card__name,
-.catalog__grid--list .product-card:hover .product-card__category {
+.catalog__grid--list .cat-card:hover *,
+.catalog__grid--list .product-card:hover * {
   color: var(--color-bg) !important;
 }
 
@@ -501,7 +499,6 @@ p.cat-card__desc {
 .catalog__grid--list .catalog__products-row {
   display: block;
   gap: 0;
-  border-top: 1px solid var(--color-border);
 }
 
 .catalog__grid--list .catalog__category-section {
