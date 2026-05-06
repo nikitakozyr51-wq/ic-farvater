@@ -296,10 +296,24 @@ body.menu-open .header__search-mobile {
 }
 
 .title-count {
-  margin-top: 0.6em;
+  margin-top: 0;
   margin-left: 0;
   flex-shrink: 0;
   white-space: nowrap;
+  align-self: start;
+}
+
+/* Title wraps: grid 1fr auto so count stays at top-right of multi-line titles */
+.section-header-v2__top,
+.cables-split__title-wrap,
+.about-block__title-wrap,
+.about__title-row,
+.contacts__title-wrap,
+.product-detail__title-wrap {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+  gap: 8px;
 }
 
 .section-header-v2__desc {
@@ -466,10 +480,6 @@ body.menu-open .header__search-mobile {
 }
 
 .cables-split__title-wrap {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 8px;
   padding-bottom: 24px;
   border-bottom: 1px solid var(--color-border);
 }
