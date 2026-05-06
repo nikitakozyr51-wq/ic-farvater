@@ -445,9 +445,6 @@
     document.querySelectorAll('.filter-radio--active').forEach(function(r) {
       r.classList.remove('filter-radio--active');
     });
-    // Set "ВСЕ" as active
-    var allBtn = document.querySelector('.filter-radio[data-category="all"]');
-    if (allBtn) allBtn.classList.add('filter-radio--active');
 
     state.sort = 'recommended';
     state.category = null;
@@ -512,14 +509,12 @@
   function initViewSwitch() {
     var btns = document.querySelectorAll('.catalog__view-btn');
     if (!btns.length) return;
-    var saved = 'grid';
-    try { saved = localStorage.getItem('catalog-view') || 'grid'; } catch (e) {}
-    applyView(saved);
+    applyView('grid');
+    try { localStorage.removeItem('catalog-view'); } catch (e) {}
     btns.forEach(function(btn) {
       btn.addEventListener('click', function() {
         var view = btn.getAttribute('data-view');
         applyView(view);
-        try { localStorage.setItem('catalog-view', view); } catch (e) {}
       });
     });
   }
