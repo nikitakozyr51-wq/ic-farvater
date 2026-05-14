@@ -29,6 +29,19 @@
     return n < 10 ? '0' + n : '' + n;
   }
 
+  // Normalize search strings: lowercase + map Latin homoglyphs to Cyrillic
+  // (DB mixes Russian and Latin product codes; e.g. "ET-2RMG" ↔ "ЕТ-2РМГ").
+  // Both query and haystack go through this, so direction doesn't matter — they converge.
+  var HOMOGLYPH_MAP = {
+    'a':'а','b':'в','c':'с','e':'е','h':'н','k':'к','m':'м',
+    'o':'о','p':'р','r':'р','s':'с','t':'т','x':'х','y':'у'
+  };
+  function normalize(s) {
+    if (s == null) return '';
+    s = String(s).toLowerCase();
+    return s.replace(/[abcehkmoprstxy]/g, function(ch) { return HOMOGLYPH_MAP[ch] || ch; });
+  }
+
   // --- Mode switching ---
 
   function enterFilterMode() {
@@ -93,13 +106,13 @@
   function getFiltered() {
     if (typeof PRODUCTS === 'undefined') return [];
     var results = [];
+    var q = state.search ? normalize(state.search) : '';
 
     for (var i = 0; i < PRODUCTS.length; i++) {
       var p = PRODUCTS[i];
       if (state.category && p.category !== state.category) continue;
-      if (state.search) {
-        var q = state.search.toLowerCase();
-        var hay = (p.name + ' ' + p.description + ' ' + p.category + ' ' + (p.subcategory || '')).toLowerCase();
+      if (q) {
+        var hay = normalize(p.name + ' ' + p.description + ' ' + p.category + ' ' + (p.subcategory || ''));
         if (hay.indexOf(q) === -1) continue;
       }
       results.push({ product: p, index: i });
@@ -112,6 +125,114 @@
     }
 
     return results;
+  }
+
+  // --- Search across series + products (used when a search query is active) ---
+  // Series matches go FIRST and link to the modern *-variant.html pages.
+  // PRODUCTS entries whose name matches a series name are skipped (avoid old duplicates).
+
+  var SEARCH_SOURCES = [
+    { data: 'CONNECTOR_SERIES', key: 'connectors', category: 'Разъёмы',
+      variant: 'connector-variant.html', fallbackImg: '../assets/images/products/connectors.webp' },
+    { data: 'CONVERTER_SERIES', key: 'converters', category: 'Преобразователи напряжения',
+      variant: 'converter-variant.html', fallbackImg: '../assets/images/products/converters.webp' },
+    { data: 'CAPACITOR_SERIES', key: 'capacitors', category: 'СВЧ-конденсаторы',
+      variant: 'capacitor-variant.html', fallbackImg: '../assets/images/products/capacitors.webp' }
+  ];
+
+  function getSearchResults() {
+    var q = normalize(state.search);
+    if (!q) return { series: [], products: [] };
+
+    var seriesResults = [];
+    var seriesNameSet = {};
+
+    SEARCH_SOURCES.forEach(function(src) {
+      var DATA = window[src.data];
+      if (!DATA) return;
+      if (state.category && state.category !== src.category) return;
+
+      DATA.forEach(function(series) {
+        seriesNameSet[normalize(series.name)] = true;
+        var hay = normalize(series.name + ' ' + (series.tu || '') + ' ' + (series.description || ''));
+        var matched = hay.indexOf(q) !== -1;
+        if (!matched && series.items) {
+          for (var i = 0; i < series.items.length; i++) {
+            if (normalize(series.items[i].name).indexOf(q) !== -1) { matched = true; break; }
+          }
+        }
+        if (matched) seriesResults.push({ series: series, src: src });
+      });
+    });
+
+    var productResults = [];
+    if (typeof PRODUCTS !== 'undefined') {
+      for (var i = 0; i < PRODUCTS.length; i++) {
+        var p = PRODUCTS[i];
+        if (state.category && p.category !== state.category) continue;
+        if (seriesNameSet[normalize(p.name)]) continue;
+        var hay = normalize(p.name + ' ' + p.description + ' ' + p.category + ' ' + (p.subcategory || ''));
+        if (hay.indexOf(q) === -1) continue;
+        productResults.push({ product: p, index: i });
+      }
+    }
+
+    return { series: seriesResults, products: productResults };
+  }
+
+  function renderSeriesSearchCard(r) {
+    var s = r.series;
+    var src = r.src;
+    var img = s.image
+      ? '<img src="' + esc(s.image) + '" alt="' + esc(s.name) + '" loading="lazy" onerror="this.style.display=\'none\'">'
+      : '';
+    var countLabel = (s.count && s.count > 0) ? '(' + s.count + ')' : 'в разработке';
+    return '<a href="' + src.variant + '#' + esc(s.slug) + '" class="product-card">' +
+      '<div class="product-card__img">' + img + '</div>' +
+      '<div class="product-card__info">' +
+        '<span class="product-card__name">' + esc(s.name) + '</span>' +
+        '<span class="product-card__category">' + esc(src.category.toUpperCase()) + '</span>' +
+        '<span class="product-card__count">' + countLabel + '</span>' +
+      '</div>' +
+    '</a>';
+  }
+
+  function renderSearchView() {
+    var results = getSearchResults();
+    var html = '';
+
+    if (results.series.length > 0) {
+      html += '<div class="catalog__category-section">';
+      html += '<h2 class="catalog__category-title">СЕРИИ' +
+        ' <span class="title-count">(' + pad(results.series.length) + ')</span></h2>';
+      html += '<div class="catalog__products-row">';
+      for (var i = 0; i < results.series.length; i++) html += renderSeriesSearchCard(results.series[i]);
+      html += '</div></div>';
+    }
+
+    if (results.products.length > 0) {
+      var order = ['Микросхемы', 'Разъёмы', 'Преобразователи напряжения', 'СВЧ-конденсаторы', 'СВЧ-транзисторы', 'Печатные платы'];
+      var groups = {};
+      for (var j = 0; j < results.products.length; j++) {
+        var cat = results.products[j].product.category;
+        if (!groups[cat]) groups[cat] = [];
+        groups[cat].push(results.products[j]);
+      }
+      for (var c = 0; c < order.length; c++) {
+        var name = order[c];
+        var list = groups[name];
+        if (!list || list.length === 0) continue;
+        html += '<div class="catalog__category-section">';
+        html += '<h2 class="catalog__category-title">' + name.toUpperCase() +
+          ' <span class="title-count">(' + pad(list.length) + ')</span></h2>';
+        html += '<div class="catalog__products-row">';
+        for (var n = 0; n < list.length; n++) html += renderCard(list[n]);
+        html += '</div></div>';
+      }
+    }
+
+    if (html === '') html = '<p class="catalog__empty">НИЧЕГО НЕ НАЙДЕНО</p>';
+    dynamicContainer.innerHTML = html;
   }
 
   // --- Rendering ---
@@ -346,6 +467,12 @@
 
   function render() {
     if (!dynamicContainer) return;
+
+    if (state.search) {
+      hideSeriesTypeFilter();
+      renderSearchView();
+      return;
+    }
 
     if (currentSeriesCategory()) {
       renderSeriesCategory();
