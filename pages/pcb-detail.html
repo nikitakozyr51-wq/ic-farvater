@@ -200,11 +200,31 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://ic-farvater.ru/" },
-      { "@type": "ListItem", "position": 2, "name": "Каталог", "item": "https://ic-farvater.ru/pages/products.html" },
-      { "@type": "ListItem", "position": 3, "name": "Печатные платы", "item": "https://ic-farvater.ru/pages/pcb-detail.html" }
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://ic-farvater.ru/" },
+          { "@type": "ListItem", "position": 2, "name": "Каталог", "item": "https://ic-farvater.ru/pages/products.html" },
+          { "@type": "ListItem", "position": 3, "name": "Печатные платы", "item": "https://ic-farvater.ru/pages/pcb-detail.html" }
+        ]
+      },
+      {
+        "@type": "Product",
+        "@id": "https://ic-farvater.ru/pages/pcb-detail.html#product",
+        "name": "Печатные платы под заказ",
+        "description": "Производство печатных плат под заказ: ОПП, ДПП, МПП до 40 слоёв, СВЧ, гибкие и гибко-жёсткие. Класс точности до 6, ширина проводника от 0,07 мм. Технологическая проработка до запуска в производство.",
+        "category": "Печатные платы",
+        "image": "https://ic-farvater.ru/assets/images/9CN77.webp",
+        "url": "https://ic-farvater.ru/pages/pcb-detail.html",
+        "brand": { "@type": "Brand", "name": "IC Farvater" },
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "RUB",
+          "availability": "https://schema.org/InStock",
+          "seller": { "@id": "https://ic-farvater.ru/#organization" }
+        }
+      }
     ]
   }
   </script>
