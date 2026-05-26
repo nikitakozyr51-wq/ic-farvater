@@ -427,11 +427,11 @@
           <a href="pages/contacts.html" class="footer__link">КОНТАКТЫ</a>
         </nav>
         <nav class="footer__nav">
-          <a href="pages/products.html" class="footer__link">РАЗЪЁМЫ</a>
-          <a href="pages/products.html" class="footer__link">МИКРОСХЕМЫ</a>
-          <a href="pages/products.html" class="footer__link">ПРЕОБРАЗОВАТЕЛИ</a>
-          <a href="pages/products.html" class="footer__link">СВЧ-КОНДЕНСАТОРЫ</a>
-          <a href="pages/products.html" class="footer__link">СВЧ-ТРАНЗИСТОРЫ</a>
+          <a href="pages/connector-variant.html" class="footer__link">РАЗЪЁМЫ</a>
+          <a href="pages/microchips-detail.html" class="footer__link">МИКРОСХЕМЫ</a>
+          <a href="pages/converter-variant.html" class="footer__link">ПРЕОБРАЗОВАТЕЛИ</a>
+          <a href="pages/capacitor-variant.html" class="footer__link">СВЧ-КОНДЕНСАТОРЫ</a>
+          <a href="pages/transistors-detail.html" class="footer__link">СВЧ-ТРАНЗИСТОРЫ</a>
         </nav>
       </div>
     </div>
@@ -486,7 +486,51 @@
         "url": "https://ic-farvater.ru/",
         "name": "IC Farvater",
         "inLanguage": "ru-RU",
-        "publisher": { "@id": "https://ic-farvater.ru/#organization" }
+        "publisher": { "@id": "https://ic-farvater.ru/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://ic-farvater.ru/pages/products.html?search={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://ic-farvater.ru/#service-supply",
+        "name": "Прямые поставки электронных компонентов",
+        "description": "Прямые поставки ЭКБ от ведущих российских производителей без посредников. Работа с предприятиями ОПК, авиации, космоса и телекоммуникаций. Сертификаты соответствия и паспорта качества. Отгрузка со склада в Санкт-Петербурге, доставка по всей России.",
+        "serviceType": "Поставка электронных компонентов",
+        "areaServed": { "@type": "Country", "name": "Россия" },
+        "provider": { "@id": "https://ic-farvater.ru/#organization" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://ic-farvater.ru/#service-import-substitution",
+        "name": "Импортозамещение ЭКБ",
+        "description": "Подбор российских и дружественных аналогов зарубежной электронной компонентной базы. Более 5000 позиций с подтверждёнными аналогами. Анализ применимости, согласование с техническими службами заказчика и военной приёмкой.",
+        "serviceType": "Подбор аналогов ЭКБ",
+        "areaServed": { "@type": "Country", "name": "Россия" },
+        "provider": { "@id": "https://ic-farvater.ru/#organization" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://ic-farvater.ru/#service-cable-assembly",
+        "name": "Кабельные сборки на заказ",
+        "description": "Изготовление кабельных сборок по конструкторской документации заказчика. Категория качества «ВП», приёмка ОТК. Серийные партии и опытные образцы. Экранированные кабели до 6 мм², витые пары, монтаж пайкой и обжимом. Контроль качества в партнёрской лаборатории «ЭКБ ТЕСТ».",
+        "serviceType": "Изготовление кабельных сборок",
+        "areaServed": { "@type": "Country", "name": "Россия" },
+        "provider": { "@id": "https://ic-farvater.ru/#organization" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://ic-farvater.ru/#service-testing",
+        "name": "Испытательная лаборатория",
+        "description": "Испытания ЭКБ и кабельных изделий на соответствие ТУ, ГОСТ и военным стандартам. Аккредитованная партнёрская лаборатория «ЭКБ ТЕСТ» в Санкт-Петербурге. Климатические, механические, электрические испытания. Входной контроль ЭКБ по ОСТ В 11 0334. Стандартный цикл 5–10 рабочих дней.",
+        "serviceType": "Испытания ЭКБ",
+        "areaServed": { "@type": "Country", "name": "Россия" },
+        "provider": { "@id": "https://ic-farvater.ru/#organization" }
       }
     ]
   }
