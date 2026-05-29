@@ -1,0 +1,41 @@
+/* Design Tokens — Swiss Style, Beige/Navy */
+
+:root {
+  /* Colors — Beige/Navy palette */
+  --color-bg: #F5F3EF;
+  --color-bg-alt: #E9E8EB;
+  --color-text: #112F6E;
+  --color-text-muted: #6B7A94;
+  --color-border: #D7D3CB;
+
+  /* Typography — Inter only, responsive scale */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  /* Desktop sizes (default) */
+  --text-hero: 72px;
+  --text-section: 40px;
+  --text-subtitle: 24px;
+  --text-body: 16px;
+  --text-label: 14px;
+  /* Legacy aliases */
+  --text-72: 72px;
+  --text-40: 40px;
+  --text-24: 24px;
+  --text-16: 16px;
+  --text-14: 14px;
+
+  /* Spacing — 8px grid */
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-80: 80px;
+  --space-120: 120px;
+
+  /* Layout */
+  --container-max: 1920px;
+  --container-padding: 60px;
+}
