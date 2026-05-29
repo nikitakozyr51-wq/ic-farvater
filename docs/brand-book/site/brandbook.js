@@ -90,11 +90,20 @@
   }
   if (scrim) scrim.addEventListener('click', closeNav);
   links.forEach(function (l) { l.addEventListener('click', closeNav); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && nav && nav.classList.contains('open')) {
+      closeNav();
+      if (burger) burger.focus();
+    }
+  });
 
   /* ---------- Accordion demo (как на живом сайте) ---------- */
   var acc = document.getElementById('accDemo');
   if (acc) {
-    acc.querySelectorAll('.demo-acc__head').forEach(function (head) {
+    acc.querySelectorAll('.demo-acc__head').forEach(function (head, i) {
+      var body = head.parentElement.querySelector('.demo-acc__body');
+      if (body && !body.id) { body.id = 'accBody-' + (i + 1); }
+      if (body) { head.setAttribute('aria-controls', body.id); }
       head.addEventListener('click', function () {
         var open = head.parentElement.classList.toggle('is-open');
         head.setAttribute('aria-expanded', open ? 'true' : 'false');
@@ -102,13 +111,34 @@
     });
   }
 
-  /* ---------- Radio demo ---------- */
+  /* ---------- Radio demo (a11y: radiogroup) ---------- */
   var radio = document.getElementById('radioDemo');
   if (radio) {
-    radio.querySelectorAll('.demo-radio').forEach(function (r) {
-      r.addEventListener('click', function () {
-        radio.querySelectorAll('.demo-radio').forEach(function (x) { x.classList.remove('is-active'); });
-        r.classList.add('is-active');
+    radio.setAttribute('role', 'radiogroup');
+    var radios = Array.prototype.slice.call(radio.querySelectorAll('.demo-radio'));
+    radios.forEach(function (r) {
+      r.setAttribute('role', 'radio');
+      r.setAttribute('tabindex', '0');
+      r.setAttribute('aria-checked', r.classList.contains('is-active') ? 'true' : 'false');
+    });
+    function selectRadio(r, focus) {
+      radios.forEach(function (x) { x.classList.remove('is-active'); x.setAttribute('aria-checked', 'false'); });
+      r.classList.add('is-active');
+      r.setAttribute('aria-checked', 'true');
+      if (focus) { r.focus(); }
+    }
+    radios.forEach(function (r, idx) {
+      r.addEventListener('click', function () { selectRadio(r, false); });
+      r.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); selectRadio(r, false); return; }
+        var dir = 0;
+        if (e.key === 'ArrowRight' || e.key === 'ArrowDown') dir = 1;
+        else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') dir = -1;
+        if (dir !== 0) {
+          e.preventDefault();
+          var next = (idx + dir + radios.length) % radios.length;
+          selectRadio(radios[next], true);
+        }
       });
     });
   }

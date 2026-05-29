@@ -7,6 +7,7 @@
 <title>IC Фарватер — Бренд-бук</title>
 <meta name="description" content="Дизайн-система и бренд-бук IC Фарватер: цвет, типографика, логосистема, компоненты, применения.">
 <link rel="icon" type="image/svg+xml" href="assets/logo/lettermark.svg">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/Inter-500.woff2">
 <link rel="stylesheet" href="brandbook.css">
 </head>
 <body>
@@ -102,6 +103,14 @@
             <li><b>Достоверность.</b> Никаких выдуманных заявлений; числа — только из&nbsp;проверяемых источников.</li>
             <li><b>Чем мы НЕ являемся:</b> не&nbsp;маркетплейс, не&nbsp;кричащий рекламный бренд. Без клише и&nbsp;визуального шума.</li>
           </ul>
+
+          <h3 class="bb-h4">Опорные факты (verified)</h3>
+          <div class="bb-trust">
+            <div class="bb-trust__col"><div class="bb-trust__label">ISO&nbsp;9001</div><div class="bb-trust__copy">Система менеджмента качества</div></div>
+            <div class="bb-trust__col"><div class="bb-trust__label">«ЭКБ ТЕСТ»</div><div class="bb-trust__copy">Партнёрская испытательная лаборатория</div></div>
+            <div class="bb-trust__col"><div class="bb-trust__label">Импортозамещение</div><div class="bb-trust__copy">5000+ позиций аналогов</div></div>
+            <div class="bb-trust__col"><div class="bb-trust__label">Прямые поставки</div><div class="bb-trust__copy">1–3 рабочих дня</div></div>
+          </div>
         </div>
       </div>
     </section>
@@ -412,6 +421,12 @@
       </div>
     </section>
 
+    <!-- ============ CHAPTER BREAK · АКТ II (drenched-navy) ============ -->
+    <section class="bb-statement">
+      <div class="bb-statement__eyebrow">Акт II</div>
+      <p class="bb-statement__text">Один язык&nbsp;— все носители</p>
+    </section>
+
     <!-- ============ (11) КОМПОНЕНТЫ ============ -->
     <section class="bb-section" id="components">
       <div class="bb-wrap">
@@ -445,6 +460,20 @@
               </div>
             </div>
             <div class="bb-demo__cap"><b>.section-header-v2 · .product-card-v2</b><span>фото 1:1 на #E9E8EB · hover translateY(-6) + scale(1.06)</span></div>
+          </div>
+        </div>
+
+        <div class="bb-layer bb-layer--dev" data-fx>
+          <span class="bb-layer__tag">Таблица спецификаций</span>
+          <div class="bb-demo">
+            <div class="bb-demo__stage" style="background:var(--color-bg)">
+              <table class="bb-spectable">
+                <tr><td>Рабочее напряжение</td><td><span class="bb-spectable__ok" aria-hidden="true">✓</span><span class="sr-only">соответствует</span>+27&nbsp;В</td></tr>
+                <tr><td>Диапазон температур</td><td><span class="bb-spectable__ok" aria-hidden="true">✓</span><span class="sr-only">соответствует</span>−60…+125&nbsp;°с</td></tr>
+                <tr><td>Влагостойкость</td><td><span class="bb-spectable__ok" aria-hidden="true">✓</span><span class="sr-only">соответствует</span>по&nbsp;ГОСТ</td></tr>
+              </table>
+            </div>
+            <div class="bb-demo__cap"><b>.bb-spectable</b><span>паттерн product-detail (Nfinite-стиль) · tabular-nums · navy ✓</span></div>
           </div>
         </div>
 
@@ -665,10 +694,19 @@
             <tr><td>Шапка</td><td>96px</td><td>64 / 56</td></tr>
             <tr><td>Подвал</td><td>cream-альфа 100/70/60/40/15%</td><td>cream полный + линии white-15%</td></tr>
           </table>
-          <table class="bb-table">
-            <tr><th>Дата</th><th>Версия</th><th>Изменение</th></tr>
-            <tr><td>2026-05-29</td><td>1.0</td><td>Первый бренд-бук, эталон = живой сайт. Старый IC-V4 не тронут.</td></tr>
-          </table>
+          <h3 class="bb-h4">История версий</h3>
+          <div class="bb-rows">
+            <div class="bb-row"><span class="bb-row__idx">01 /</span><span class="bb-row__label">Первый бренд-бук · эталон = живой сайт</span><span class="bb-row__date">2026.05.30</span></div>
+          </div>
+
+          <div class="bb-callout">
+            <div class="bb-callout__title">Открытые вопросы · на решение заказчика</div>
+            <ul>
+              <li>Контраст muted-текста (#6B7A94 на&nbsp;#F5F3EF) — пограничный по&nbsp;WCAG&nbsp;AA для мелкого текста.</li>
+              <li>Формулировки «ВП» / «военная приёмка» в&nbsp;живом коде (ФЗ-38 / ФЗ-275) — фиксация дисциплины как рекомендации.</li>
+              <li>CMYK / Pantone для navy #112F6E не&nbsp;задан — согласовать с&nbsp;типографией при первой печати.</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>

@@ -36,7 +36,7 @@
   --container-padding:60px;
 
   /* Book-only */
-  --nav-w:308px;
+  --nav-w:248px;
   --hairline:1px solid var(--color-border);
   --ease:cubic-bezier(0.16,1,0.3,1);
 }
@@ -61,6 +61,7 @@ img,svg{display:block;max-width:100%;}
 button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
 ::selection{background:var(--color-text);color:var(--color-bg);}
 *:focus-visible{outline:2px solid var(--color-text);outline-offset:2px;}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;}
 
 /* =========================================================================
    КАРКАС: sticky TOC слева + контент
@@ -102,40 +103,46 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 /* ---------- Контент ---------- */
 .bb-main{min-width:0;}
 .bb-section{
-  padding:120px var(--container-padding);
+  padding:96px var(--container-padding);
   border-top:var(--hairline);
   scroll-margin-top:0;
 }
 .bb-section:first-of-type{border-top:none;}
-.bb-wrap{max-width:1100px;}
+.bb-wrap{max-width:1320px;}
 
 /* Заголовок главы (= .section-header-v2 живого сайта) */
 .bb-head{padding-bottom:32px;border-bottom:var(--hairline);margin-bottom:56px;}
 .bb-head__top{display:flex;align-items:flex-start;gap:10px;}
 .bb-head__title{font-size:var(--text-section);font-weight:500;line-height:1.1;letter-spacing:-1px;text-transform:uppercase;}
-.bb-head__num{font-size:var(--text-label);font-weight:600;letter-spacing:1px;}
-.bb-head__desc{margin-top:18px;max-width:600px;font-size:var(--text-body);line-height:1.6;color:var(--color-text-muted);}
+.bb-head__num{font-size:20px;font-weight:600;letter-spacing:1px;color:var(--color-text-muted);align-self:flex-start;margin-top:.15em;}
+.bb-head__desc{margin-top:18px;max-width:46ch;font-size:var(--text-body);line-height:1.6;color:var(--color-text);}
 
 /* Двухслойные блоки */
 .bb-layer{margin-bottom:40px;}
 .bb-layer__tag{
   display:inline-block;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;
   color:var(--color-text-muted);margin-bottom:14px;
-  padding-bottom:6px;border-bottom:2px solid var(--color-text);
 }
-.bb-layer--dev .bb-layer__tag{border-color:var(--color-text-muted);}
-.bb-layer p{max-width:600px;margin-bottom:14px;}
+.bb-layer--dev .bb-layer__tag{color:var(--color-text-muted);}
+.bb-layer p{max-width:46ch;margin-bottom:14px;}
 .bb-layer p:last-child{margin-bottom:0;}
+
+/* 2-кол редакционная анатомия (CSS-only через grid-column spanning) */
+@media (min-width:1025px){
+  .bb-layer{display:grid;grid-template-columns:180px 1fr;gap:48px;align-items:start;}
+  .bb-layer__tag{grid-column:1;grid-row:1 / -1;position:sticky;top:120px;align-self:start;margin-bottom:0;}
+  .bb-layer > :not(.bb-layer__tag){grid-column:2;}
+}
 .bb-muted{color:var(--color-text-muted);}
-.bb-src{font-size:12px;color:var(--color-text-muted);font-style:italic;}
+.bb-src{font-size:12px;color:var(--color-text);font-style:italic;}
 .bb-prop{font-size:11px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;color:var(--color-text-muted);border:1px solid var(--color-border);border-radius:100px;padding:2px 10px;display:inline-block;vertical-align:middle;}
 
 h2,h3,h4{text-transform:uppercase;font-weight:500;letter-spacing:-.4px;line-height:1.15;}
 .bb-h3{font-size:var(--text-subtitle);margin:48px 0 20px;}
 .bb-h4{font-size:15px;letter-spacing:.5px;margin:28px 0 14px;color:var(--color-text);}
-.bb-lead{font-size:18px;line-height:1.55;max-width:640px;}
+.bb-lead{font-size:18px;line-height:1.55;max-width:46ch;}
 
-ul.bb-list{list-style:none;max-width:640px;}
+ul.bb-list{list-style:none;max-width:560px;}
 ul.bb-list li{position:relative;padding:12px 0 12px 24px;border-top:var(--hairline);font-size:15px;}
 ul.bb-list li:first-child{border-top:none;}
 ul.bb-list li::before{content:'';position:absolute;left:0;top:18px;width:6px;height:6px;background:var(--color-text-muted);}
@@ -151,8 +158,35 @@ ul.bb-list li::before{content:'';position:absolute;left:0;top:18px;width:6px;hei
 .bb-callout{border:var(--hairline);padding:24px 28px;margin:28px 0;max-width:680px;background:var(--color-bg-alt);}
 .bb-callout__title{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:10px;}
 .bb-callout__title::before{content:'';width:7px;height:7px;background:var(--color-text);flex-shrink:0;}
-.bb-callout--flag .bb-callout__title::before{background:#9A6A1E;}
+.bb-callout--flag .bb-callout__title::before{background:var(--color-text-muted);}
 .bb-callout p{font-size:14px;color:var(--color-text);margin:0;line-height:1.6;}
+.bb-callout ul{list-style:none;margin:4px 0 0;}
+.bb-callout li{font-size:14px;color:var(--color-text);line-height:1.6;padding:8px 0 8px 22px;position:relative;border-top:var(--hairline);}
+.bb-callout li:first-child{border-top:none;}
+.bb-callout li::before{content:'⚠';position:absolute;left:0;top:8px;color:var(--color-text-muted);font-size:13px;}
+
+/* Trust strip (01) */
+.bb-trust{display:grid;grid-template-columns:repeat(4,1fr);border:var(--hairline);margin:8px 0 8px;}
+.bb-trust__col{padding:24px 24px;}
+.bb-trust__col + .bb-trust__col{border-left:1px solid var(--color-border);}
+.bb-trust__label{font-size:14px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--color-text);}
+.bb-trust__copy{font-size:13px;margin-top:8px;color:var(--color-text);line-height:1.5;}
+
+/* Tabular spec component (11) — паттерн product-detail (Nfinite) */
+.bb-spectable{width:100%;border-collapse:collapse;margin:8px 0 8px;font-variant-numeric:tabular-nums;}
+.bb-spectable td{padding:16px 16px;border-top:1px solid var(--color-border);font-size:15px;vertical-align:top;}
+.bb-spectable tr:last-child td{border-bottom:1px solid var(--color-border);}
+.bb-spectable td:first-child{color:var(--color-text);width:46%;}
+.bb-spectable td:last-child{font-weight:600;}
+.bb-spectable__ok{color:var(--color-text);margin-right:8px;font-weight:600;}
+
+/* Editorial rows (17 changelog) */
+.bb-rows{margin:8px 0 24px;}
+.bb-row{display:grid;grid-template-columns:48px 1fr auto;gap:16px;min-height:75px;align-items:center;border-top:1px solid var(--color-border);}
+.bb-row:last-child{border-bottom:1px solid var(--color-border);}
+.bb-row__idx{font-size:14px;font-weight:600;font-variant-numeric:tabular-nums;color:var(--color-text-muted);letter-spacing:.5px;}
+.bb-row__label{font-size:15px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;color:var(--color-text);}
+.bb-row__date{font-size:13px;font-variant-numeric:tabular-nums;letter-spacing:.5px;color:var(--color-text-muted);}
 
 /* =========================================================================
    ОБЛОЖКА (00)
@@ -161,8 +195,8 @@ ul.bb-list li::before{content:'';position:absolute;left:0;top:18px;width:6px;hei
 .bb-cover__top{display:flex;justify-content:space-between;align-items:baseline;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--color-text-muted);}
 .bb-cover__center{flex:1;display:flex;flex-direction:column;justify-content:center;}
 .bb-cover__kicker{font-size:14px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--color-text-muted);margin-bottom:24px;}
-.bb-cover__word{font-size:clamp(64px,13vw,200px);font-weight:500;letter-spacing:-.05em;line-height:.92;text-transform:uppercase;}
-.bb-cover__tagline{margin-top:32px;max-width:560px;font-size:18px;line-height:1.55;color:var(--color-text-muted);}
+.bb-cover__word{font-size:clamp(40px, calc((100vw - 360px)/8), 160px);font-weight:500;letter-spacing:-.05em;line-height:.92;text-transform:uppercase;}
+.bb-cover__tagline{margin-top:32px;max-width:560px;font-size:18px;line-height:1.55;color:var(--color-text);}
 .bb-cover__band{margin:0 calc(var(--container-padding) * -1);background:var(--color-text);color:var(--color-bg);padding:28px var(--container-padding);display:flex;flex-wrap:wrap;gap:8px 40px;font-size:13px;letter-spacing:.5px;text-transform:uppercase;}
 .bb-cover__band span{opacity:.9;}
 .bb-cover__band b{font-weight:600;opacity:1;}
@@ -188,7 +222,7 @@ ul.bb-list li::before{content:'';position:absolute;left:0;top:18px;width:6px;hei
 .bb-swatch__body{padding:14px 16px;}
 .bb-swatch__hex{font-size:15px;font-weight:600;font-variant-numeric:tabular-nums;letter-spacing:.5px;}
 .bb-swatch__token{font-size:12px;color:var(--color-text-muted);margin-top:4px;}
-.bb-swatch__role{font-size:12px;color:var(--color-text-muted);margin-top:10px;text-transform:uppercase;letter-spacing:.5px;}
+.bb-swatch__role{font-size:12px;color:var(--color-text);margin-top:10px;text-transform:uppercase;letter-spacing:.5px;}
 .bb-swatch__copy{font-size:10px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--color-text-muted);margin-top:10px;}
 
 .bb-alpha{display:flex;flex-wrap:wrap;border:var(--hairline);background:var(--color-text);color:var(--color-bg);}
@@ -249,7 +283,7 @@ ul.bb-list li::before{content:'';position:absolute;left:0;top:18px;width:6px;hei
 .demo-secheader{width:100%;padding-bottom:32px;border-bottom:1px solid var(--color-border);}
 .demo-secheader__top{display:flex;align-items:flex-start;gap:8px;}
 .demo-secheader__title{font-size:40px;font-weight:500;letter-spacing:-1px;text-transform:uppercase;}
-.demo-secheader__count{font-size:14px;font-weight:600;letter-spacing:1px;}
+.demo-secheader__count{font-size:20px;font-weight:600;letter-spacing:1px;color:var(--color-text-muted);align-self:flex-start;margin-top:.15em;}
 .demo-secheader__desc{margin-top:16px;font-size:16px;line-height:1.6;color:var(--color-text-muted);text-transform:uppercase;}
 
 /* Реальные ссылки подвала ( ) → (•) */
@@ -382,12 +416,12 @@ ul.bb-list li::before{content:'';position:absolute;left:0;top:18px;width:6px;hei
 /* =========================================================================
    ПОДВАЛ (drenched-navy)
    ========================================================================= */
-.bb-footer{background:var(--color-text);color:var(--color-bg);padding:80px var(--container-padding) 40px;border-top:none;}
+.bb-footer{background:var(--color-text);color:var(--color-bg);padding:80px var(--container-padding) 40px;border-top:none;overflow:hidden;}
 .bb-footer__top{display:flex;justify-content:space-between;gap:48px;flex-wrap:wrap;padding-bottom:48px;}
 .bb-footer__contacts{display:flex;flex-direction:column;gap:14px;font-size:14px;letter-spacing:.5px;line-height:1.6;text-transform:uppercase;}
 .bb-footer__contacts a:hover{opacity:.5;}
 .bb-footer__nav{display:flex;flex-direction:column;gap:12px;}
-.bb-footer__word{font-size:clamp(48px,12vw,160px);font-weight:500;letter-spacing:-.04em;line-height:1;text-transform:uppercase;padding:32px 0;border-top:1px solid rgba(255,255,255,.15);}
+.bb-footer__word{font-size:clamp(80px, calc((100vw - 120px)/8), 300px);font-weight:500;letter-spacing:-.03em;line-height:.85;text-transform:uppercase;padding:32px 0;border-top:1px solid rgba(255,255,255,.15);}
 .bb-footer__bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:24px;border-top:1px solid rgba(255,255,255,.15);font-size:12px;letter-spacing:.5px;text-transform:uppercase;color:var(--color-bg);}
 
 /* =========================================================================
@@ -452,10 +486,19 @@ ul.bb-list li::before{content:'';position:absolute;left:0;top:18px;width:6px;hei
   .bb-dd{grid-template-columns:1fr;}
   .demo-cards{grid-template-columns:repeat(2,1fr);}
   .bb-demo__stage{padding:24px;}
+  .bb-cover{padding:40px 24px 0;}
+  .bb-cover__top{flex-wrap:wrap;gap:4px;}
+  .bb-cover__tagline{font-size:16px;max-width:100%;}
   .bb-cover__band{flex-direction:column;gap:6px;}
   .bb-h3{font-size:20px;}
   .bb-table{font-size:13px;}
   .bb-table th,.bb-table td{padding:10px 10px;}
+  .bb-head__num,.demo-secheader__count{font-size:15px;}
+  .bb-trust{grid-template-columns:repeat(2,1fr);}
+  .bb-trust__col + .bb-trust__col{border-left:none;}
+  .bb-trust__col:nth-child(odd){border-left:none;}
+  .bb-trust__col:nth-child(even){border-left:1px solid var(--color-border);}
+  .bb-trust__col:nth-child(n+3){border-top:1px solid var(--color-border);}
 }
 
 /* =========================================================================
