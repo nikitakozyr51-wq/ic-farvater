@@ -417,7 +417,7 @@ ul.bb-list li::before{content:'';position:absolute;left:0;top:18px;width:6px;hei
 .mk-label{width:240px;background:#fff;border:1px solid var(--color-text);padding:14px 16px;}
 .mk-label__top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--color-border);padding-bottom:8px;margin-bottom:10px;}
 .mk-label__word{font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--color-text);}
-.mk-label__qr{width:34px;height:34px;background:repeating-conic-gradient(var(--color-text) 0 25%, #fff 0 50%) 0 0/8px 8px;border:1px solid var(--color-text);}
+.mk-label__qr{width:34px;height:34px;border:1px solid var(--color-text);}
 .mk-label__rows{display:flex;flex-direction:column;gap:5px;}
 .mk-label__row{display:flex;justify-content:space-between;font-size:10px;font-variant-numeric:tabular-nums;letter-spacing:.5px;}
 .mk-label__row span{color:var(--color-text-muted);text-transform:uppercase;}
@@ -539,7 +539,7 @@ ul.bb-list li::before{content:'';position:absolute;left:0;top:18px;width:6px;hei
   <!-- ============ TOC / NAV ============ -->
   <nav class="bb-nav" id="nav" aria-label="Содержание">
     <div class="bb-nav__brand">IC&nbsp;FARVATER</div>
-    <div class="bb-nav__sub">Бренд-бук · v1.0</div>
+    <div class="bb-nav__sub">Бренд-бук · v1.1</div>
     <ul class="bb-nav__list">
       <li><a class="bb-nav__link" href="#cover"><span class="bb-nav__num">(00)</span>Обложка</a></li>
       <li><a class="bb-nav__link" href="#essence"><span class="bb-nav__num">(01)</span>Суть бренда</a></li>
@@ -569,7 +569,7 @@ ul.bb-list li::before{content:'';position:absolute;left:0;top:18px;width:6px;hei
     <section class="bb-section bb-cover" id="cover">
       <div class="bb-cover__top">
         <span>IC&nbsp;FARVATER</span>
-        <span>Brand book · v1.0 · 2026</span>
+        <span>Brand book · v1.1 · 2026.05.30</span>
       </div>
       <div class="bb-cover__center">
         <div class="bb-cover__kicker">Дизайн-система бренда</div>
@@ -814,6 +814,7 @@ ul.bb-list li::before{content:'';position:absolute;left:0;top:18px;width:6px;hei
             <tr><td>Body / Label</td><td class="num">16 / 14px</td><td class="num">16 / 14px (без изменений)</td></tr>
           </table>
           <p class="bb-src">Источник: css/mobile.css l.13–27. Планшетного тира типографики нет — только Desktop и ≤768px.</p>
+          <p class="bb-src">Хром этого документа (оглавление, счётчики, подписи) использует служебную UI-шкалу 11–20px для плотности и редакционного ритма. Продуктовая тип-шкала бренда — строго 72 / 40 / 24 / 16 / 14.</p>
         </div>
       </div>
     </section>
@@ -1027,22 +1028,27 @@ ul.bb-list li::before{content:'';position:absolute;left:0;top:18px;width:6px;hei
       <div class="bb-wrap">
         <header class="bb-head" data-fx>
           <div class="bb-head__top"><h2 class="bb-head__title">Паттерны секций</h2><span class="bb-head__num">(12)</span></div>
-          <p class="bb-head__desc">Главная собрана из повторяемых рецептов. Их же переносим на другие страницы.</p>
+          <p class="bb-head__desc">Не список секций главной, а абстрактные рецепты — из&nbsp;любого собирается новая секция на&nbsp;любой странице.</p>
         </header>
+        <div class="bb-layer" data-fx>
+          <span class="bb-layer__tag">Коротко</span>
+          <p class="bb-lead">Не «список секций главной», а&nbsp;набор абстрактных рецептов: из&nbsp;любого собирается новая секция на&nbsp;любой странице. Каждый открывается одинаково&nbsp;— верхний hairline + H2 со&nbsp;счётчиком (NN).</p>
+        </div>
         <div class="bb-layer bb-layer--dev" data-fx>
-          <span class="bb-layer__tag">Последовательность главной</span>
-          <ul class="bb-list">
-            <li>Hero (фото + H1 + sub + CTA)</li>
-            <li><b>(01) Разъёмы</b> — section-header + карусель карточек + CTA «Каталог»</li>
-            <li><b>(02) About-block</b> — 2-кол (текст / фото), section--bordered</li>
-            <li><b>(03) СВЧ-компоненты</b> — section-header + карусель + CTA</li>
-            <li><b>Product-banner</b> — фото на&nbsp;всю ширину + оверлей + 2 кнопки</li>
-            <li><b>(04) Кабельные сборки</b> — cables-split, 2-кол зеркало</li>
-            <li><b>(05) Импортозамещение</b> — section-header + bottom-cards (3:2)</li>
-            <li><b>(06) Услуги</b> — service-split (колонка + аккордеон)</li>
-            <li>Footer</li>
-          </ul>
-          <p class="bb-src">Источник: index.html l.77–446. Подробные рецепты — docs/design-research/04-section-patterns.md.</p>
+          <span class="bb-layer__tag">4 рецепта</span>
+          <h3 class="bb-h4">1 · Carousel-секция</h3>
+          <p>Ряд однотипных карточек. Section-header (H2 + (NN) + desc + CTA-ссылка) → горизонтальная карусель <code>.product-card-v2</code> (фото 1:1 на&nbsp;#E9E8EB) со&nbsp;стрелками → опц. нижний CTA. На&nbsp;mobile&nbsp;— скролл с&nbsp;«подглядыванием» следующей карточки.</p>
+          <h3 class="bb-h4">2 · 2-кол сплит (50/50)</h3>
+          <p>Пара «текст ↔ фото», 12-кол grid, gap 24. Текст ~5 кол, фото ~6 кол. <b>Фото чередует сторону через секцию</b> (одна&nbsp;— справа <code>8 / -1</code>, следующая&nbsp;— слева <code>1 / span 6</code>). (NN)&nbsp;— superscript у&nbsp;текстовой колонки. На&nbsp;mobile&nbsp;— стек.</p>
+          <h3 class="bb-h4">3 · Service-split</h3>
+          <p>Услуги / FAQ. Grid <code>480px 1fr</code>, gap 80. Слева&nbsp;— H2 + (NN) + lead + CTA (прижата к&nbsp;верху); справа&nbsp;— аккордеон <code>.service-item</code> (<code>+/−</code>). На&nbsp;mobile&nbsp;— стек.</p>
+          <h3 class="bb-h4">4 · Drenched-секция</h3>
+          <p>Акцент-«погружение». Navy фон, cream текст, линии white-15%, вертикаль ~128px. Ровно <b>один</b> сильный объект: проверенная цифра (§02) <b>или</b> макро-компонент / вордмарк. Один drenched-блок на&nbsp;страницу.</p>
+          <p class="bb-src">Источник: components.css <code>.section-header-v2</code> / <code>.about-block</code> / <code>.cables-split</code> / <code>.service-split</code> / <code>.footer</code>.</p>
+        </div>
+        <div class="bb-callout" data-fx>
+          <div class="bb-callout__title">Пример · как собрана главная</div>
+          <p>Hero → Carousel (Разъёмы) → 2-кол сплит (about, фото справа) → Carousel (СВЧ) → product-banner (drenched) → 2-кол сплит зеркало (Кабельные, фото слева) → bottom-cards (Импортозамещение) → Service-split (Услуги) → Footer (drenched).</p>
         </div>
       </div>
     </section>
@@ -1114,13 +1120,13 @@ ul.bb-list li::before{content:'';position:absolute;left:0;top:18px;width:6px;hei
             </div>
 
             <div class="bb-app">
-              <div class="bb-app__frame"><div class="mk-label"><div class="mk-label__top"><span class="mk-label__word">IC&nbsp;FARVATER</span><span class="mk-label__qr"></span></div><div class="mk-label__rows"><div class="mk-label__row"><span>SKU</span><b>ЕТ-СНЦ23</b></div><div class="mk-label__row"><span>Part-no</span><b>23-19/14В</b></div><div class="mk-label__row"><span>Batch</span><b>2026-04</b></div></div></div></div>
+              <div class="bb-app__frame"><div class="mk-label"><div class="mk-label__top"><span class="mk-label__word">IC&nbsp;FARVATER</span><svg class="mk-label__qr" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" fill="#fff"/><g fill="#112F6E"><rect x="2" y="2" width="10" height="10"/><rect x="4" y="4" width="6" height="6" fill="#fff"/><rect x="6" y="6" width="2" height="2"/><rect x="22" y="2" width="10" height="10"/><rect x="24" y="4" width="6" height="6" fill="#fff"/><rect x="26" y="6" width="2" height="2"/><rect x="2" y="22" width="10" height="10"/><rect x="4" y="24" width="6" height="6" fill="#fff"/><rect x="6" y="26" width="2" height="2"/><rect x="16" y="16" width="2" height="2"/><rect x="20" y="16" width="2" height="2"/><rect x="24" y="16" width="2" height="2"/><rect x="28" y="16" width="2" height="2"/><rect x="16" y="20" width="2" height="2"/><rect x="16" y="24" width="2" height="2"/><rect x="16" y="28" width="2" height="2"/><rect x="22" y="22" width="3" height="3"/><rect x="28" y="22" width="2" height="2"/><rect x="22" y="28" width="2" height="2"/><rect x="28" y="28" width="2" height="2"/></g></svg></div><div class="mk-label__rows"><div class="mk-label__row"><span>SKU</span><b>ЕТ-СНЦ23</b></div><div class="mk-label__row"><span>Part-no</span><b>23-19/14В</b></div><div class="mk-label__row"><span>Batch</span><b>2026-04</b></div></div></div></div>
               <div class="bb-app__cap">Маркировка ЭКБ<span>этикетка компонента</span></div>
             </div>
 
           </div>
           <div class="bb-callout"><div class="bb-callout__title">Блок реквизитов (канон)</div><p>ООО «Айси Фарватер» · ИНН 7801709112 · ОГРН 1227800016993 · ул. Беринга&nbsp;1-А, оф.&nbsp;46-Н, Санкт-Петербург, 199406 · +7&nbsp;996&nbsp;778-88-42 · info@ic-farvater.ru</p></div>
-          <p class="bb-src">navy #112F6E → задать соответствие CMYK/Pantone у&nbsp;типографии при первой печати.</p>
+          <p class="bb-src">navy #112F6E → задать соответствие CMYK/Pantone у&nbsp;типографии при первой печати. Белый #FFFFFF на&nbsp;мокапах&nbsp;— физический бумажный носитель (визитка / бланк / этикетка), не&nbsp;экранная поверхность; экран&nbsp;— всегда cream #F5F3EF.</p>
         </div>
       </div>
     </section>
@@ -1141,7 +1147,7 @@ ul.bb-list li::before{content:'';position:absolute;left:0;top:18px;width:6px;hei
               <li>&amp;nbsp; после коротких предлогов/союзов.</li>
               <li>Отступы кратны 8px.</li>
               <li>Кнопки — пилюли (100px); всё иначе без скруглений.</li>
-              <li>Один drenched-navy блок на&nbsp;страницу.</li>
+              <li>Один drenched-navy блок на&nbsp;контентную страницу (редакционные акт-разделители бренд-бука — отдельный приём).</li>
               <li>Счётчики секций — round (NN).</li>
               <li>Фото компонентов — contain на&nbsp;#E9E8EB.</li>
               <li>Каждое число — из&nbsp;проверяемого источника.</li>
@@ -1211,7 +1217,8 @@ ul.bb-list li::before{content:'';position:absolute;left:0;top:18px;width:6px;hei
           </table>
           <h3 class="bb-h4">История версий</h3>
           <div class="bb-rows">
-            <div class="bb-row"><span class="bb-row__idx">01 /</span><span class="bb-row__label">Первый бренд-бук · эталон = живой сайт</span><span class="bb-row__date">2026.05.30</span></div>
+            <div class="bb-row"><span class="bb-row__idx">01 /</span><span class="bb-row__label">v1.0 · Первый бренд-бук · эталон = живой сайт</span><span class="bb-row__date">2026.05.29</span></div>
+            <div class="bb-row"><span class="bb-row__idx">02 /</span><span class="bb-row__label">v1.1 · Studio-elevation + единый файл · (12) → абстрактные рецепты</span><span class="bb-row__date">2026.05.30</span></div>
           </div>
 
           <div class="bb-callout">
@@ -1245,7 +1252,7 @@ ul.bb-list li::before{content:'';position:absolute;left:0;top:18px;width:6px;hei
       <div class="bb-footer__word">IC&nbsp;FARVATER</div>
       <div class="bb-footer__bottom">
         <span>© 2026 ООО «Айси Фарватер» · ИНН 7801709112</span>
-        <span>Бренд-бук v1.0 · эталон — живой сайт</span>
+        <span>Бренд-бук v1.1 · эталон — живой сайт</span>
       </div>
     </footer>
 
@@ -1342,6 +1349,16 @@ ul.bb-list li::before{content:'';position:absolute;left:0;top:18px;width:6px;hei
       var open = nav.classList.toggle('open');
       if (scrim) scrim.classList.toggle('show', open);
       burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if (open) { var f = nav.querySelector('a[href],button'); if (f) f.focus(); }
+    });
+    // focus trap inside the open mobile drawer
+    nav.addEventListener('keydown', function (e) {
+      if (e.key !== 'Tab' || !nav.classList.contains('open')) return;
+      var items = nav.querySelectorAll('a[href],button:not([disabled])');
+      if (!items.length) return;
+      var first = items[0], last = items[items.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
     });
   }
   if (scrim) scrim.addEventListener('click', closeNav);

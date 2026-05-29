@@ -86,6 +86,16 @@
       var open = nav.classList.toggle('open');
       if (scrim) scrim.classList.toggle('show', open);
       burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if (open) { var f = nav.querySelector('a[href],button'); if (f) f.focus(); }
+    });
+    // focus trap inside the open mobile drawer
+    nav.addEventListener('keydown', function (e) {
+      if (e.key !== 'Tab' || !nav.classList.contains('open')) return;
+      var items = nav.querySelectorAll('a[href],button:not([disabled])');
+      if (!items.length) return;
+      var first = items[0], last = items[items.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
     });
   }
   if (scrim) scrim.addEventListener('click', closeNav);

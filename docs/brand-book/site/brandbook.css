@@ -407,7 +407,7 @@ ul.bb-list li::before{content:'';position:absolute;left:0;top:18px;width:6px;hei
 .mk-label{width:240px;background:#fff;border:1px solid var(--color-text);padding:14px 16px;}
 .mk-label__top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--color-border);padding-bottom:8px;margin-bottom:10px;}
 .mk-label__word{font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--color-text);}
-.mk-label__qr{width:34px;height:34px;background:repeating-conic-gradient(var(--color-text) 0 25%, #fff 0 50%) 0 0/8px 8px;border:1px solid var(--color-text);}
+.mk-label__qr{width:34px;height:34px;border:1px solid var(--color-text);}
 .mk-label__rows{display:flex;flex-direction:column;gap:5px;}
 .mk-label__row{display:flex;justify-content:space-between;font-size:10px;font-variant-numeric:tabular-nums;letter-spacing:.5px;}
 .mk-label__row span{color:var(--color-text-muted);text-transform:uppercase;}
