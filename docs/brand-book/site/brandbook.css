@@ -386,9 +386,10 @@ ul.bb-list li::before{content:'';position:absolute;left:0;top:18px;width:6px;hei
 /* =========================================================================
    МОТИОН (fade-up при скролле)
    ========================================================================= */
-[data-fx]{opacity:0;transform:translateY(20px);transition:opacity .7s var(--ease),transform .7s var(--ease);}
-[data-fx].in{opacity:1;transform:none;}
-@media (prefers-reduced-motion:reduce){[data-fx]{opacity:1;transform:none;transition:none;}}
+/* Прячем для анимации ТОЛЬКО если JS активен (.js на <html>). Без JS — контент виден. */
+.js [data-fx]{opacity:0;transform:translateY(20px);transition:opacity .7s var(--ease),transform .7s var(--ease);}
+.js [data-fx].in{opacity:1;transform:none;}
+@media (prefers-reduced-motion:reduce){.js [data-fx]{opacity:1;transform:none;transition:none;}}
 
 /* =========================================================================
    АДАПТИВ
