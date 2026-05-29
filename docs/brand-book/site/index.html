@@ -14,7 +14,7 @@
 <!-- Mobile topbar -->
 <div class="bb-topbar">
   <span class="bb-topbar__brand">IC FARVATER · бренд-бук</span>
-  <button class="bb-burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  <button class="bb-burger" id="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
 </div>
 <div class="bb-scrim" id="scrim"></div>
 
@@ -66,6 +66,13 @@
         <span>ИНН 7801709112</span>
         <span>+7 996 778-88-42</span>
       </div>
+    </section>
+
+    <!-- ============ BRAND STATEMENT (тезис) ============ -->
+    <section class="bb-statement">
+      <div class="bb-statement__eyebrow">Дизайн-принцип</div>
+      <p class="bb-statement__text">Инженерная точность <em>и</em> премиальная подача. Один визуальный язык&nbsp;— <em>от</em>&nbsp;сайта <em>до</em>&nbsp;этикетки компонента.</p>
+      <div class="bb-statement__meta"><span>Swiss-сетка 8px</span><span>Inter</span><span>Cream + Navy</span><span>Без теней, без лишнего</span></div>
     </section>
 
     <!-- ============ (01) СУТЬ БРЕНДА ============ -->
@@ -147,7 +154,7 @@
           </table>
 
           <div class="bb-callout bb-callout--flag" data-fx>
-            <div class="bb-callout__title">⚠ Флаг расхождения (см. 17)</div>
+            <div class="bb-callout__title">Флаг расхождения · см. (17)</div>
             <p>Сейчас на живом сайте присутствуют «согласование с&nbsp;военной приёмкой» и&nbsp;«категория качества «ВП»» (index.html и&nbsp;schema.org). Бренд-бук фиксирует дисциплину как рекомендацию; правка живого текста — отдельное решение заказчика.</p>
           </div>
 
@@ -244,7 +251,7 @@
             <li>Без теней, градиентов, blur. Без ярких акцентов вне палитры.</li>
             <li>Скругление — только pill-кнопки (100px) и&nbsp;леттермарк-квадрат. Иначе <code>border-radius: 0</code>.</li>
           </ul>
-          <div class="bb-callout bb-callout--flag"><div class="bb-callout__title">⚠ Контраст (a11y)</div><p>#6B7A94 на&nbsp;#F5F3EF — пограничный по&nbsp;WCAG&nbsp;AA для мелкого текста. Для длинного body предпочтителен #112F6E.</p></div>
+          <div class="bb-callout bb-callout--flag"><div class="bb-callout__title">Контраст · a11y</div><p>#6B7A94 на&nbsp;#F5F3EF — пограничный по&nbsp;WCAG&nbsp;AA для мелкого текста. Для длинного body предпочтителен #112F6E.</p></div>
         </div>
       </div>
     </section>
@@ -303,7 +310,7 @@
           <p class="bb-src">4 · 8 · 12 · 16 · 24 · 32 · 48 · 64 · 80 · 120 px. Источник: css/variables.css l.27–36.</p>
 
           <h3 class="bb-h4">Контейнер · 12 колонок</h3>
-          <button class="bb-toggle" id="gridToggle">Показать 12-колоночную сетку</button>
+          <button class="bb-toggle" id="gridToggle" type="button" aria-pressed="false">Показать 12-колоночную сетку</button>
           <div class="bb-gridbox" id="gridbox"><div class="bb-gridbox__cols" id="gridcols"></div></div>
           <table class="bb-table">
             <tr><th>Параметр</th><th>Desktop</th><th>Mobile (≤768)</th></tr>
@@ -446,9 +453,9 @@
           <div class="bb-demo">
             <div class="bb-demo__stage" style="background:var(--color-bg)">
               <div class="demo-acc" id="accDemo">
-                <div class="demo-acc__item"><button class="demo-acc__head"><span class="demo-acc__title">Прямые поставки</span><span class="demo-acc__icon"></span></button><div class="demo-acc__body"><div class="demo-acc__bodyinner"><p>Прямые поставки ЭКБ от&nbsp;ведущих российских производителей — без&nbsp;посредников.</p></div></div></div>
-                <div class="demo-acc__item"><button class="demo-acc__head"><span class="demo-acc__title">Импортозамещение</span><span class="demo-acc__icon"></span></button><div class="demo-acc__body"><div class="demo-acc__bodyinner"><p>Подбираем российские и&nbsp;дружественные аналоги. Более 5000 позиций.</p></div></div></div>
-                <div class="demo-acc__item"><button class="demo-acc__head"><span class="demo-acc__title">Кабельные сборки</span><span class="demo-acc__icon"></span></button><div class="demo-acc__body"><div class="demo-acc__bodyinner"><p>Изготовление кабельных сборок по&nbsp;КД заказчика.</p></div></div></div>
+                <div class="demo-acc__item"><button class="demo-acc__head" type="button" aria-expanded="false"><span class="demo-acc__title">Прямые поставки</span><span class="demo-acc__icon"></span></button><div class="demo-acc__body"><div class="demo-acc__bodyinner"><p>Прямые поставки ЭКБ от&nbsp;ведущих российских производителей — без&nbsp;посредников.</p></div></div></div>
+                <div class="demo-acc__item"><button class="demo-acc__head" type="button" aria-expanded="false"><span class="demo-acc__title">Импортозамещение</span><span class="demo-acc__icon"></span></button><div class="demo-acc__body"><div class="demo-acc__bodyinner"><p>Подбираем российские и&nbsp;дружественные аналоги. Более 5000 позиций.</p></div></div></div>
+                <div class="demo-acc__item"><button class="demo-acc__head" type="button" aria-expanded="false"><span class="demo-acc__title">Кабельные сборки</span><span class="demo-acc__icon"></span></button><div class="demo-acc__body"><div class="demo-acc__bodyinner"><p>Изготовление кабельных сборок по&nbsp;КД заказчика.</p></div></div></div>
               </div>
             </div>
             <div class="bb-demo__cap"><b>.service-item</b><span>иконка +/− · тело grid 0fr→1fr (0.4s)</span></div>

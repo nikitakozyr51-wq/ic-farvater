@@ -31,7 +31,13 @@
 
   /* ---------- Click-to-copy (свотчи, тип-строки) ---------- */
   document.querySelectorAll('[data-copy]').forEach(function (el) {
-    el.addEventListener('click', function () { copy(el.getAttribute('data-copy')); });
+    el.setAttribute('role', 'button');
+    el.setAttribute('tabindex', '0');
+    function go() { copy(el.getAttribute('data-copy')); }
+    el.addEventListener('click', go);
+    el.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); }
+    });
   });
 
   /* ---------- Scrollspy ---------- */
@@ -70,11 +76,16 @@
   var burger = document.getElementById('burger');
   var nav = document.getElementById('nav');
   var scrim = document.getElementById('scrim');
-  function closeNav() { if (nav) nav.classList.remove('open'); if (scrim) scrim.classList.remove('show'); }
+  function closeNav() {
+    if (nav) nav.classList.remove('open');
+    if (scrim) scrim.classList.remove('show');
+    if (burger) burger.setAttribute('aria-expanded', 'false');
+  }
   if (burger && nav) {
     burger.addEventListener('click', function () {
-      nav.classList.toggle('open');
-      if (scrim) scrim.classList.toggle('show');
+      var open = nav.classList.toggle('open');
+      if (scrim) scrim.classList.toggle('show', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
   }
   if (scrim) scrim.addEventListener('click', closeNav);
@@ -85,7 +96,8 @@
   if (acc) {
     acc.querySelectorAll('.demo-acc__head').forEach(function (head) {
       head.addEventListener('click', function () {
-        head.parentElement.classList.toggle('is-open');
+        var open = head.parentElement.classList.toggle('is-open');
+        head.setAttribute('aria-expanded', open ? 'true' : 'false');
       });
     });
   }
@@ -135,6 +147,7 @@
     gToggle.addEventListener('click', function () {
       var on = gBox.classList.toggle('show-cols');
       gToggle.classList.toggle('is-on', on);
+      gToggle.setAttribute('aria-pressed', on ? 'true' : 'false');
       gToggle.textContent = on ? 'Скрыть 12-колоночную сетку' : 'Показать 12-колоночную сетку';
     });
   }
